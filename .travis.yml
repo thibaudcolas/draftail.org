@@ -1,0 +1,15 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+install:
+  - npm ci
+  - npm install -g @commitlint/travis-cli@^7.0.0
+script:
+  - npm run test:ci
+  - commitlint-travis
+branches:
+  except:
+    - gh-pages
+notifications:
+  email: false

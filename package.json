@@ -1,0 +1,28 @@
+{
+  "name": "draftail.org",
+  "private": true,
+  "version": "0.1.0",
+  "description": "The draftail.org website",
+  "author": "Thibaud Colas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thibaudcolas/draftail.org.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thibaudcolas/draftail.org/issues"
+  },
+  "homepage": "https://www.draftail.org/",
+  "devDependencies": {
+    "@thibaudcolas/eslint-plugin-cookbook": "^4.0.1",
+    "eslint": "^5.6.1",
+    "prettier": "^1.14.3"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "scripts": {
+    "lint": "npx eslint . && prettier --list-different '**/*.{js,css,md,json,yaml,yml}'",
+    "format": "prettier --write '**/*.{js,css,md,json,yaml,yml}'",
+    "test:ci": "npm run lint -s"
+  }
+}
