@@ -1,0 +1,7 @@
+{
+  "docs": {
+    "Introduction": ["getting-started"],
+    "Guides": ["user-guide"],
+    "API Reference": ["api", "browser-support"]
+  }
+}
