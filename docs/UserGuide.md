@@ -21,7 +21,7 @@ One thing that sets Draftail apart from other editors is its configurability: **
 
 ## Online demo
 
-| [![Screenshot of Draftail](https://www.draftail.org/static/draftail-ui-screenshot.png)](https://www.draftail.org/)                    |
+| [![Screenshot of Draftail](/img/draftail-ui-screenshot.png)](https://www.draftail.org/)                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------- |
 | The Draftail website has a nice demo with most built-in features. [Go have a look and try out the editor!](https://www.draftail.org/) |
 
@@ -44,11 +44,11 @@ For mobile devices, Draftail is tested on the latest versions of iOS and Android
 
 Draftail is a simple editor. The toolbar contains all of the formatting options and other controls. You can write underneath.
 
-![Editor screenshot with toolbar](/docs/user-guide/editor.png)
+![Editor screenshot with toolbar](/img/user-guide/editor.png)
 
 Each control in the toolbar comes with its own tooltip, so you can see exactly what the button is for, as well as the related keyboard shortcuts. Here, the "H3" button is for **Heading level 3**.
 
-![Editor screenshot showing the toolbar’s tooltips to view keyboard shortcuts](/docs/user-guide/toolbar-tooltip.png)
+![Editor screenshot showing the toolbar’s tooltips to view keyboard shortcuts](/img/user-guide/toolbar-tooltip.png)
 
 ---
 
@@ -58,23 +58,23 @@ Each control in the toolbar comes with its own tooltip, so you can see exactly w
 
 That H3 control uses the `###` [Markdown](https://en.wikipedia.org/wiki/Markdown)-style shortcut. You can activate H3 formatting by typing `###` followed by a space at the start of a line:
 
-![Editor screenshot showing Markdown shortcuts](/docs/user-guide/markdown-shortcuts.gif)
+![Editor screenshot showing Markdown shortcuts](/img/user-guide/markdown-shortcuts.gif)
 
 And of course, normal shortcuts for common controls like bold, undo/redo are available as well:
 
-![Editor screenshot showing classic shortcuts](/docs/user-guide/classic-shortcuts.gif)
+![Editor screenshot showing classic shortcuts](/img/user-guide/classic-shortcuts.gif)
 
 Here is another example shortcut, `-` or `*` for list items:
 
-![Editor screenshot with shortcuts to toggle list items, and indent/de-indent or stop the list](/docs/user-guide/list-item-shortcuts.gif)
+![Editor screenshot with shortcuts to toggle list items, and indent/de-indent or stop the list]/img/user-guide/list-item-shortcuts.gif)
 
 If numbered lists were available in this editor, you could use `1.`. In the editor below, we’ve enabled line breaks and horizontal rules, which also have their own buttons and shortcuts:
 
-![Editor screenshot showing support for line breaks and horizontal rules with their corresponding shortcuts](/docs/user-guide/line-breaks-horizontal-rules.gif)
+![Editor screenshot showing support for line breaks and horizontal rules with their corresponding shortcuts]/img/user-guide/line-breaks-horizontal-rules.gif)
 
 If you forget the shortcut for a given control, it’s displayed in the tooltip.
 
-![Editor screenshot with a demo of undo/redo buttons and keyboard shortcuts](/docs/user-guide/undo-redo.gif)
+![Editor screenshot with a demo of undo/redo buttons and keyboard shortcuts](/img/user-guide/undo-redo.gif)
 
 Those shortcuts are extra convenient on touch screens, where it can be hard to move back and forth between text input and the toolbar. You can find the [full list of supported shortcuts](#keyboard-shortcuts) below, but bear in mind that they won’t be active unless the editor has the corresponding formatting enabled.
 
@@ -84,11 +84,11 @@ Those shortcuts are extra convenient on touch screens, where it can be hard to m
 
 When pasting content into a Draftail editor, the editor will only keep the formatting that is enabled. This depends on how the editor is set up of course – here are two examples. It can remove all formatting:
 
-![Editor screenshot with a demo of copy-pasting from Word, removing all formatting](/docs/user-guide/copy-paste-filter.gif)
+![Editor screenshot with a demo of copy-pasting from Word, removing all formatting](/img/user-guide/copy-paste-filter.gif)
 
 It can preserve what’s enabled in the editor (bold and italic here).
 
-![Editor screenshot with a demo of copy-pasting from Word, preserving italics and bold](/docs/user-guide/copy-paste-preserve.gif)
+![Editor screenshot with a demo of copy-pasting from Word, preserving italics and bold]/img/user-guide/copy-paste-preserve.gif)
 
 The editor may not preserve all formatting as-is, but it will always filter out unallowed formats. Pasting works well from Google Docs, Dropbox Paper, Word, and more.
 
@@ -100,11 +100,11 @@ The editor may not preserve all formatting as-is, but it will always filter out 
 
 It’s also possible to add links within text – and manage the links with their own tooltips:
 
-![Editor screenshot with a demo of rich text links](/docs/user-guide/rich-text-link.gif)
+![Editor screenshot with a demo of rich text links](/img/user-guide/rich-text-link.gif)
 
 Some editors may also contain images if configured. They are inserted with empty lines (that can be removed) above and below to make it easier to select the image.
 
-![Editor screenshot with a demo of an image block](/docs/user-guide/rich-text-image.gif)
+![Editor screenshot with a demo of an image block](/img/user-guide/rich-text-image.gif)
 
 ---
 
