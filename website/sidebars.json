@@ -1,7 +1,13 @@
 {
   "docs": {
-    "Introduction": ["getting-started"],
+    "Introduction": [
+      "getting-started",
+      "formatting-options",
+      "inline-styles",
+      "blocks",
+      "entities"
+    ],
     "Guides": ["user-guide"],
-    "API Reference": ["api", "browser-support"]
+    "API Reference": ["api", "theming", "browser-support"]
   }
 }
