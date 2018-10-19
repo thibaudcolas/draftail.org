@@ -1,4 +1,10 @@
 {
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thibaudcolas/draftail.org.git"
+  },
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "docusaurus-start",
