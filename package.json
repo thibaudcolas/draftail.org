@@ -25,6 +25,7 @@
   "scripts": {
     "lint": "npx eslint . && prettier --list-different '**/*.{js,css,md,json,yaml,yml}'",
     "format": "prettier --write '**/*.{js,css,md,json,yaml,yml}'",
-    "test:ci": "npm run lint -s"
+    "test:ci": "npm run lint -s",
+    "postinstall": "npm --prefix website install"
   }
 }
