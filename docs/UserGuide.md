@@ -16,7 +16,7 @@ One thing that sets Draftail apart from other editors is its configurability: **
   - [Copy-pasting content in the editor](#copy-pasting-content-in-the-editor)
 - [Links, images, and more](#links-images-and-more)
 - [Feedback](#feedback)
-- [Keyboard shortcuts](#keyboard-shortcuts)
+- [Keyboard shortcuts](KeyboardShortcuts.md)
 - [Credits](#credits)
 
 ## Online demo
@@ -54,7 +54,7 @@ Each control in the toolbar comes with its own tooltip, so you can see exactly w
 
 ### Using keyboard shortcuts
 
-> Have a look at the [full list of keyboard shortcuts](#keyboard-shortcuts).
+> Have a look at the [full list of keyboard shortcuts](KeyboardShortcuts.md).
 
 That H3 control uses the `###` [Markdown](https://en.wikipedia.org/wiki/Markdown)-style shortcut. You can activate H3 formatting by typing `###` followed by a space at the start of a line:
 
@@ -76,7 +76,7 @@ If you forget the shortcut for a given control, it’s displayed in the tooltip.
 
 ![Editor screenshot with a demo of undo/redo buttons and keyboard shortcuts](/img/user-guide/undo-redo.gif)
 
-Those shortcuts are extra convenient on touch screens, where it can be hard to move back and forth between text input and the toolbar. You can find the [full list of supported shortcuts](#keyboard-shortcuts) below, but bear in mind that they won’t be active unless the editor has the corresponding formatting enabled.
+Those shortcuts are extra convenient on touch screens, where it can be hard to move back and forth between text input and the toolbar. You can find the [full list of supported shortcuts](KeyboardShortcuts.md) next, but bear in mind that they won’t be active unless the editor has the corresponding formatting enabled.
 
 ---
 
@@ -118,52 +118,7 @@ See anything you like in here? Anything missing? We welcome all support, whether
 
 ## Keyboard shortcuts
 
-| Function                                          | Shortcut              | Shortcut (macOS)      | Markdown |
-| ------------------------------------------------- | --------------------- | --------------------- | -------- |
-| **Common actions**                                |                       |                       |          |
-| Copy                                              | `Ctrl + C`            | `⌘ + C`               |          |
-| Cut                                               | `Ctrl + X`            | `⌘ + X`               |          |
-| Paste                                             | `Ctrl + V`            | `⌘ + V`               |          |
-| Paste without formatting                          | `Ctrl + ⇧ + V`        | `⌘ + ⇧ + V`           |          |
-| Undo                                              | `Ctrl + Z`            | `⌘ + Z`               |          |
-| Redo                                              | `Ctrl + ⇧ + Z`        | `⌘ + ⇧ + Z`           |          |
-| Insert or edit link                               | `Ctrl + K`            | `⌘ + K`               |          |
-| Open link                                         | `Alt + ↵`             | `⌥ + ↵`               |          |
-| Insert horizontal rule                            |                       |                       | `---`    |
-| **Text formatting (if enabled)**                  |                       |                       |          |
-| Bold                                              | `Ctrl + B`            | `⌘ + B`               |          |
-| Italic                                            | `Ctrl + I`            | `⌘ + I`               |          |
-| Underline                                         | `Ctrl + U`            | `⌘ + U`               |          |
-| Monospace (code)                                  | `Ctrl + J`            | `⌘ + J`               |          |
-| Strikethrough                                     | `Ctrl + ⇧ + X`        | `⌘ + ⇧ + X`           |          |
-| Superscript                                       | `Ctrl + .`            | `⌘ + .`               |          |
-| Subscript                                         | `Ctrl + ,`            | `⌘ + ,`               |          |
-| **Paragraph formatting (if enabled)**             |                       |                       |          |
-| Increase list indentation                         | `↹`                   | `↹`                   |          |
-| Decrease list indentation                         | `⇧ + ↹`               | `⇧ + ↹`               |          |
-| Apply normal text style                           | `Ctrl + Alt + 0`      | `⌘ + ⌥ + 0`           | `⌫`      |
-| Apply heading style [1-6]                         | `Ctrl + Alt + [1-6]`  | `⌘ + ⌥ + [1-6]`       | `##`     |
-| Numbered list                                     | `Ctrl + ⇧ + 7`        | `⌘ + ⇧ + 7`           | `1.`     |
-| Bulleted list                                     | `Ctrl + ⇧ + 8`        | `⌘ + ⇧ + 8`           | `-`      |
-| Blockquote                                        |                       |                       | `>`      |
-| Code block                                        |                       |                       | ` ``` `  |
-| Go to new line                                    | `↵`                   | `↵`                   |          |
-| Insert soft new line                              | `⇧ + ↵`               | `⇧ + ↵`               |          |
-| Insert soft new line                              | `Ctrl + ↵`            | `⌘ + ↵`               |          |
-| **Text selection with keyboard**                  |                       |                       |          |
-| Select all                                        | `Ctrl + A`            | `⌘ + A`               |          |
-| Extend selection one character                    | `⇧ + ← or →`          | `⇧ + ← or →`          |          |
-| Extend selection one line                         | `⇧ + ↑ or ↓`          | `⇧ + ↑ or ↓`          |          |
-| Extend selection one word                         | `Alt + ⇧ + ← or →`    | `⌥ + ⇧ + ← or →`      |          |
-| Extend selection to the beginning of the line     | `Ctrl + ⇧ + ←`        | `⌘ + ⇧ + ←`           |          |
-| Extend selection to the end of the line           | `Ctrl + ⇧ + →`        | `⌘ + ⇧ + →`           |          |
-| Extend selection to the beginning of the document | `⇧ + ⇱`               | `⇧ + ⇱`               |          |
-| Extend selection to the end of the document       | `⇧ + ⇲`               | `⇧ + ⇲`               |          |
-| **Text selection with mouse**                     |                       |                       |          |
-| Select word                                       | `Double-click`        | `Double-click`        |          |
-| Extend selection one word at a time               | `Double-click + Drag` | `Double-click + Drag` |          |
-| Select paragraph                                  | `Triple-click`        | `Triple-click`        |          |
-| Extend selection one paragraph at a time          | `Triple-click + Drag` | `Triple-click + Drag` |          |
+Please have a look at the [full list of keyboard shortcuts](KeyboardShortcuts.md).
 
 ## Credits
 

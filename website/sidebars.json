@@ -7,7 +7,7 @@
       "blocks",
       "entities"
     ],
-    "Guides": ["user-guide"],
+    "Guides": ["user-guide", "keyboard-shortcuts"],
     "API Reference": ["api", "theming", "browser-support"]
   }
 }
