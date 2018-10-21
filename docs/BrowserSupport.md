@@ -33,3 +33,7 @@ Draft.js and Draftail build upon ES6 language features. If targeting browsers th
 
 - [Draft.js required polyfills](https://draftjs.org/docs/advanced-topics-issues-and-pitfalls#polyfills).
 - [`position: sticky` support](https://caniuse.com/#feat=css-sticky), and [`stickyfill` polyfill](https://github.com/wilddeer/stickyfill).
+
+## Known issues
+
+Please have a look at [Draft.js Known Issues](https://draftjs.org/docs/advanced-topics-issues-and-pitfalls#known-issues), as well as Draftail’s list of [Known issues with Draftail, Draft.js, contenteditable, and other dependencies (springload/draftail#138)](https://github.com/springload/draftail/issues/138).
