@@ -5,9 +5,10 @@
       "formatting-options",
       "inline-styles",
       "blocks",
-      "entities"
+      "entities",
+      "advanced-extensions"
     ],
     "Guides": ["user-guide", "keyboard-shortcuts"],
-    "API Reference": ["api", "theming", "browser-support"]
+    "API Reference": ["api", "ui-customisations", "browser-support"]
   }
 }
