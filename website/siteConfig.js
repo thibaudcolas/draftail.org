@@ -35,9 +35,9 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: "img/docusaurus.svg",
-  footerIcon: "img/docusaurus.svg",
-  favicon: "img/favicon.png",
+  // headerIcon: "img/docusaurus.svg",
+  // footerIcon: "img/docusaurus.svg",
+  // favicon: "img/favicon.png",
 
   /* Colors for website */
   colors: {
@@ -79,9 +79,10 @@ const siteConfig = {
   ogImage: "img/docusaurus.png",
   twitterImage: "img/docusaurus.png",
 
-  // You may provide arbitrary config keys to be used as needed by your
-  // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+  /**
+   * Arbitrary config keys.
+   */
+  repoUrl: "https://github.com/springload/draftail",
 }
 
 module.exports = siteConfig
