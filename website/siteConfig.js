@@ -79,6 +79,11 @@ const siteConfig = {
   ogImage: "img/docusaurus.png",
   twitterImage: "img/docusaurus.png",
 
+  scrollToTop: true,
+  scrollToTopOptions: {
+    zIndex: 100,
+  },
+
   /**
    * Arbitrary config keys.
    */
