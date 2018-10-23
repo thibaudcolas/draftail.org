@@ -22,6 +22,14 @@ const siteConfig = {
   // Used for publishing and more
   projectName: "draftail.org",
   organizationName: "thibaudcolas",
+  cname: "staging.draftail.org",
+
+  disableHeaderTitle: false,
+  disableTitleTagline: true,
+
+  editUrl: "https://github.com/thibaudcolas/draftail.org/edit/master/docs/",
+
+  enableUpdateTime: true,
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
@@ -37,7 +45,7 @@ const siteConfig = {
   /* path to images for header/footer */
   // headerIcon: "img/docusaurus.svg",
   // footerIcon: "img/docusaurus.svg",
-  // favicon: "img/favicon.png",
+  favicon: "img/favicon/favicon.ico",
 
   /* Colors for website */
   colors: {
@@ -76,8 +84,8 @@ const siteConfig = {
   cleanUrl: true,
 
   // Open Graph and Twitter card images.
-  ogImage: "img/docusaurus.png",
-  twitterImage: "img/docusaurus.png",
+  // ogImage: "img/docusaurus.png",
+  // twitterImage: "img/docusaurus.png",
 
   scrollToTop: true,
   scrollToTopOptions: {
