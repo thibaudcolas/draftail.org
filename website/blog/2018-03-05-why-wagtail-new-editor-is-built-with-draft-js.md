@@ -9,6 +9,8 @@ Have you ever worked with rich text editors? You know how frustrating of an expe
 
 It’s time to add some noodles and flavour, give some structure to our bland broth and enjoy rich text again.
 
+<!--truncate-->
+
 ## Introducing Draft.js
 
 > [Draft.js](https://draftjs.org/) is a framework for building rich text editors in React, powered by an immutable model and abstracting over cross-browser differences.
