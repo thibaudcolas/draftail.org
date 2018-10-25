@@ -70,13 +70,7 @@ class Footer extends React.Component {
         </section>
 
         <section className="copyright">
-          <a
-            href="https://github.com/thibaudcolas"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            {this.props.config.copyright}
-          </a>
+        {this.props.config.copyright}
           .{" "}
           <a href="https://github.com/thibaudcolas/draftail.org">
             Website content
