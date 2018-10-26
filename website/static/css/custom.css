@@ -1,0 +1,22 @@
+.home-iframe {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: auto;
+  min-height: 1800px;
+}
+
+@media (min-width: 520px) {
+  .home-iframe {
+    min-height: 1300px;
+  }
+}
+
+@media (min-width: 840px) {
+  .home-iframe {
+    padding: 0 20px;
+    min-height: 1200px;
+  }
+}
