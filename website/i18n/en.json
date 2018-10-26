@@ -6,7 +6,7 @@
     "tagline": "📝🍸 A configurable rich text editor based on Draft.js, built for Wagtail",
     "docs": {
       "advanced-extensions": {
-        "title": "Advanced Extensions"
+        "title": "Advanced extensions"
       },
       "api": {
         "title": "API Reference"
@@ -25,6 +25,9 @@
       },
       "getting-started": {
         "title": "Getting Started"
+      },
+      "getting-started-with-extensions": {
+        "title": "Getting started with extensions"
       },
       "inline-styles": {
         "title": "Inline styles"
@@ -48,6 +51,7 @@
     "categories": {
       "Introduction": "Introduction",
       "Guides": "Guides",
+      "User Guides": "User Guides",
       "API Reference": "API Reference"
     }
   },

@@ -1,6 +1,6 @@
 ---
 id: advanced-extensions
-title: Advanced Extensions
+title: Advanced extensions
 ---
 
 > Those extensions require a good understanding of the [Draft.js](https://draftjs.org/) API.

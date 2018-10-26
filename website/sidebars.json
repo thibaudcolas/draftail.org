@@ -8,7 +8,8 @@
       "entities",
       "advanced-extensions"
     ],
-    "Guides": ["user-guide", "keyboard-shortcuts"],
+    "Guides": ["getting-started-with-extensions"],
+    "User Guides": ["user-guide", "keyboard-shortcuts"],
     "API Reference": ["api", "ui-customisations", "browser-support"]
   }
 }
