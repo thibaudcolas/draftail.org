@@ -51,16 +51,15 @@ const SplashContainer = (props) => (
   </div>
 )
 
-const Logo = (props) => (
-  <div className="projectLogo">
-    <img src={props.img_src} alt="Project Logo" />
-  </div>
-)
-
 const ProjectTitle = () => (
   <h2 className="projectTitle">
     {siteConfig.title}
-    <small>{siteConfig.tagline}</small>
+    <small>
+      {siteConfig.tagline}
+      <a href="https://github.com/wagtail/wagtail">
+        <img src={imgUrl("wagtail.svg")} alt="" width="32" />
+      </a>
+    </small>
   </h2>
 )
 
@@ -77,13 +76,16 @@ class HomeSplash extends React.Component {
     const language = this.props.language || ""
     return (
       <SplashContainer>
-        <Logo img_src={imgUrl("docusaurus.svg")} />
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl("doc1.html", language)}>Example Link</Button>
-            <Button href={docUrl("doc2.html", language)}>Example Link 2</Button>
+            {/* <Button href="#try">Try It Out</Button> */}
+            <Button href={docUrl("getting-started.html", language)}>
+              Get Started
+            </Button>
+            <Button href="https://github.com/springload/draftail">
+              GitHub
+            </Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -102,33 +104,35 @@ const Block = (props) => (
 )
 
 const Features = () => (
-  <Block layout="fourColumn">
+  <Block background="light" layout="fourColumn">
     {[
       {
-        content: "This is the content of my feature",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "top",
-        title: "Feature One",
+        content:
+          "Draftail is intuitive to use regardless of skill level. All formatting is available via the toolbar, and [keyboard shortcuts](/docs/keyboard-shortcuts). Power users can even use Markdown!",
+        // image: imgUrl("docusaurus.svg"),
+        // imageAlign: "top",
+        title: "Easy to use",
       },
       {
-        content: "The content of my second feature",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "top",
-        title: "Feature Two",
+        content:
+          "Rich text shouldn’t be a black box. Your use case may require special formatting. Draftail comes with an extensive API backed by [Draft.js](https://draftjs.org/).",
+        // image: imgUrl("docusaurus.svg"),
+        // imageAlign: "top",
+        title: "Extensible",
       },
     ]}
   </Block>
 )
 
-const FeatureCallout = () => (
-  <div
-    className="productShowcaseSection paddingBottom"
-    style={{ textAlign: "center" }}
-  >
-    <h2>Feature Callout</h2>
-    <MarkdownBlock>These are features of this project</MarkdownBlock>
-  </div>
-)
+// const FeatureCallout = () => (
+//   <div
+//     className="productShowcaseSection paddingBottom"
+//     style={{ textAlign: "center" }}
+//   >
+//     <h2>Feature Callout</h2>
+//     <MarkdownBlock>These are features of this project</MarkdownBlock>
+//   </div>
+// )
 
 const LearnHow = () => (
   <Block background="light">
@@ -170,23 +174,26 @@ const Description = () => (
 )
 
 const Showcase = (props) => {
-  if ((siteConfig.users || []).length === 0) {
-    return null
-  }
+  // if ((siteConfig.users || []).length === 0) {
+  //   return null
+  // }
 
-  const showcase = siteConfig.users
-    .filter((user) => user.pinned)
-    .map((user) => (
-      <a href={user.infoLink} key={user.infoLink}>
-        <img src={user.image} alt={user.caption} title={user.caption} />
-      </a>
-    ))
+  // const showcase = siteConfig.users
+  //   .filter((user) => user.pinned)
+  //   .map((user) => (
+  //     <a href={user.infoLink} key={user.infoLink}>
+  //       <img src={user.image} alt={user.caption} title={user.caption} />
+  //     </a>
+  //   ))
 
   return (
     <div className="productShowcaseSection paddingBottom">
-      <h2>Who is Using This?</h2>
-      <p>This project is used by all these people</p>
-      <div className="logos">{showcase}</div>
+      <h2>Who’s using Draftail?</h2>
+      <p>
+        Draftail is the default editor of{" "}
+        <a href="https://wagtail.io/">Wagtail</a>.
+      </p>
+      {/* <div className="logos">{showcase}</div> */}
       <div className="more-users">
         <a className="button" href={pageUrl("users.html", props.language)}>
           More {siteConfig.title} Users
@@ -209,11 +216,38 @@ class Index extends React.Component {
             className="home-iframe"
           />
           <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase language={language} />
+          {/* <FeatureCallout /> */}
+          {/* <LearnHow /> */}
+          {/* <TryOut /> */}
+          {/* <Description /> */}
+          {/* <Showcase language={language} /> */}
+          <Container padding={["bottom", "top"]}>
+            <a className="anchor" name="watch" />
+            <a className="hash-link" href="#watch" />
+            <div className="blockElement imageAlignSide twoByGridBlock">
+              <div className="video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/mf8AS5EwHvc"
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                />
+              </div>
+              <div className="blockContent">
+                <h2>Watch videos about Draftail</h2>
+                <div>
+                  <MarkdownBlock>
+                    Draftail was introduced as part of [Wagtail Space
+                    2018](https://www.youtube.com/watch?v=mf8AS5EwHvc) We also
+                    have a series on building [rich text
+                    extensions](https://www.youtube.com/playlist?list=PLjHJbyg4XIC9J0apkmJe0P3ai9j_PWFwj).
+                  </MarkdownBlock>
+                </div>
+              </div>
+            </div>
+          </Container>
         </div>
       </div>
     )

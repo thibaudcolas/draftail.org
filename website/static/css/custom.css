@@ -20,3 +20,23 @@
     min-height: 1200px;
   }
 }
+
+.projectTitle img {
+  vertical-align: middle;
+  margin-left: 0.25em;
+}
+
+.video {
+  margin: 0 5%;
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.video iframe {
+  display: block;
+  margin: 0 auto 10px;
+  min-height: 340px;
+  width: 100%;
+}

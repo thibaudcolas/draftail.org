@@ -36,6 +36,10 @@ const siteConfig = {
     { doc: "getting-started", label: "Docs" },
     { doc: "api", label: "API" },
     { blog: true, label: "Blog" },
+    {
+      href: "https://github.com/springload/draftail",
+      label: "GitHub",
+    },
   ],
 
   // If you have users set above, you add it here:
