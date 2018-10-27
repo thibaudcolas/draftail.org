@@ -211,6 +211,81 @@ class Index extends React.Component {
       <div>
         <HomeSplash language={language} />
         <div className="mainContainer">
+          <noscript>
+            <h2>
+              Draftail is an editor built with{" "}
+              <a href="https://github.com/facebook/draft-js">Draft.js</a>
+            </h2>
+            <p>Try it out by editing this text!</p>
+            <h3>Features 📝🍸</h3>
+            <p>
+              Draftail aims for a mouse-free experience. Most formatting can be
+              done with keyboard shortcuts only, inspired by{" "}
+              <a href="https://support.google.com/docs/answer/179738">
+                Google Docs
+              </a>{" "}
+              and <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>.
+            </p>
+            <hr />
+            <p>Here are important features worth highlighting:</p>
+            <ul class="bullet-list">
+              <li>
+                Support for{" "}
+                <a href="https://www.draftail.org/docs/keyboard-shortcuts">
+                  keyboard shortcuts
+                </a>
+                . Lots of them!
+              </li>
+              <li>
+                Autolists – start a line with <kbd>-</kbd>, <kbd>*</kbd>,{" "}
+                <kbd>1.</kbd> to create a list item.
+              </li>
+              <li>
+                Shortcuts for heading levels <kbd>##</kbd>, code blocks{" "}
+                <kbd>```</kbd>, and more.
+              </li>
+              <li>Undo / redo – until the end of times.</li>
+              <li>Common text types: headings, paragraphs, quotes, lists.</li>
+              <li>
+                Common text styles: <strong>Bold</strong>,{" "}
+                <em class="u-font-italic">Italic</em>, and many more.
+              </li>
+              <li>API to build custom controls for links, images, and more.</li>
+            </ul>
+            <p>
+              The embeds in this example are powered by{" "}
+              <a href="http://embed.ly/">Embedly</a>:
+            </p>
+            <span class="missing-inline"> </span>
+            <p>Try out some of the shortcuts:</p>
+            <ul class="bullet-list">
+              <li>
+                Apply <strong>H3</strong> heading style: <kbd>###</kbd> and{" "}
+                <kbd>Space</kbd>.
+              </li>
+              <li>
+                Make a list item: <kbd>-</kbd> and <kbd>Space</kbd>.
+              </li>
+              <li>
+                Use traditional combinations if that's your thing:{" "}
+                <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>8</kbd>, or{" "}
+                <kbd>⌘</kbd> + + on Mac.
+                <ul class="bullet-list">
+                  <li>
+                    Increase list indentation: <kbd>tab</kbd>.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Insert or edit a link: <kbd>ctrl</kbd> + <kbd>K</kbd> or{" "}
+                <kbd>⌘</kbd> + .
+              </li>
+              <li>
+                Open a link or document: <kbd>alt</kbd> + <kbd>enter</kbd> or{" "}
+                <kbd>option</kbd> + <kbd>enter</kbd>.
+              </li>
+            </ul>
+          </noscript>
           <iframe
             src="https://demo.draftail.org/examples/iframe.html?selectedKind=Draftail&selectedStory=Home"
             className="home-iframe"
