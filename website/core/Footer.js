@@ -70,8 +70,7 @@ class Footer extends React.Component {
         </section>
 
         <section className="copyright">
-        {this.props.config.copyright}
-          .{" "}
+          {this.props.config.copyright}.{" "}
           <a href="https://github.com/thibaudcolas/draftail.org">
             Website content
           </a>{" "}

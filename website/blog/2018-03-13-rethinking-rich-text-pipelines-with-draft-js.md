@@ -16,10 +16,10 @@ I believe the fundamental problem is one of control – for end users, control 
 
 Rich text pipelines usually process HTML, or a subset of it. With Draft.js, we instead work with a different content model that has been designed for rich text, and doesn’t rely on browser-managed HTML. Here is what you need to know:
 
-* [Draft.js](https://draftjs.org/) is a framework for building rich text editors, powered by an immutable model.
-* The content “source of truth” is separate from HTML rendered in the editor via [`contenteditable`](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content) (which has highly unreliable behavior between browsers).
-* It follows a fixed schema, with predefined formats (eg. bold) but also the opportunity to make custom ones.
-* There are strong constraints on content structure – what is block-level formatting and what is inline, what can have data and how.
+- [Draft.js](https://draftjs.org/) is a framework for building rich text editors, powered by an immutable model.
+- The content “source of truth” is separate from HTML rendered in the editor via [`contenteditable`](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content) (which has highly unreliable behavior between browsers).
+- It follows a fixed schema, with predefined formats (eg. bold) but also the opportunity to make custom ones.
+- There are strong constraints on content structure – what is block-level formatting and what is inline, what can have data and how.
 
 If you want to know the full story, have a look at [Why Wagtail’s new editor is built with Draft.js](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js).
 
@@ -54,9 +54,9 @@ By contrast, here is the Draft.js equivalent:
 
 No need to waste time reloading the page, all of the filtering happens on paste, in the browser. This is possible because:
 
-* The structured, fixed-schema content model is separate from contenteditable’s HTML. It is impossible to enter content that does not respect this schema.
-* A formats whitelist filters out all of the content that respects the schema, but is not enabled in the editor.
-* Draft.js comes with APIs to programmatically manipulate content, allowing further arbitrary processing.
+- The structured, fixed-schema content model is separate from contenteditable’s HTML. It is impossible to enter content that does not respect this schema.
+- A formats whitelist filters out all of the content that respects the schema, but is not enabled in the editor.
+- Draft.js comes with APIs to programmatically manipulate content, allowing further arbitrary processing.
 
 > Have a look at the [Draft.js filters](https://github.com/thibaudcolas/draftjs-filters) that power our editor to see how this works under the hood.
 
@@ -69,7 +69,7 @@ There again, Draft.js having a fixed schema and an API makes this much simpler. 
 ```javascript
 const contentLength = content
   .getBlockMap()
-  .reduce((total, block) => block.getText().length, 0);
+  .reduce((total, block) => block.getText().length, 0)
 ```
 
 ### Hydration and rendering
@@ -78,8 +78,8 @@ The content is now filtered, and saved in the database. Now we want to render it
 
 The Draft.js -> HTML conversion may seem like extra overhead, but its impact will be minimal compared to data retrieval for the hydration. Additionally, it provides us with an opportunity to **customise the front-end HTML our users will look at**, for example:
 
-* Adding classes to list items, `ul` and `ol` tags so you can use your favourite CSS architecture or methodology.
-* Automagically making all links pointing to third-party sites open in a separate tabs by adding `target="_blank"` on the `a` tags.
+- Adding classes to list items, `ul` and `ol` tags so you can use your favourite CSS architecture or methodology.
+- Automagically making all links pointing to third-party sites open in a separate tabs by adding `target="_blank"` on the `a` tags.
 
 In practice, the API allows completely arbitrary rendering. It comes from the [Draft.js exporter](https://github.com/springload/draftjs_exporter), and is heavily inspired by React’s [`createElement`](https://facebook.github.io/react/docs/top-level-api.html#react.createelement) (what powers JSX):
 

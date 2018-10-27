@@ -17,9 +17,9 @@ It’s time to add some noodles and flavour, give some structure to our bland br
 
 Sure, using React is nice, but what matters the most is the model:
 
-* The content “source of truth” is separate from HTML rendered in the editor via [`contenteditable`](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content) (which has highly unreliable behavior between browsers).
-* It follows a fixed schema, with predefined formats (eg. bold) but also the opportunity to make custom ones.
-* There are strong constraints on content structure – what is block-level formatting and what is inline, what can have data and how.
+- The content “source of truth” is separate from HTML rendered in the editor via [`contenteditable`](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content) (which has highly unreliable behavior between browsers).
+- It follows a fixed schema, with predefined formats (eg. bold) but also the opportunity to make custom ones.
+- There are strong constraints on content structure – what is block-level formatting and what is inline, what can have data and how.
 
 This model, called ContentState, is the most important characteristic of Draft.js. Conceptually, it addresses the frustrating brittleness of `contenteditable`, which is too permissive and might process content differently in each browser.
 
@@ -60,15 +60,15 @@ If you want a more in-depth introduction, here is a great talk from the creator 
 
 Draft.js isn’t the only tool to use this “content model separate from `contenteditable`” approach though: [Trix](https://trix-editor.org/), [Quill](https://quilljs.com/), [Slate](https://github.com/ianstormtaylor/slate), [ProseMirror](https://prosemirror.net/), and [Scribe](https://github.com/guardian/scribe) all work similarly. Where Draft.js distinguishes itself is that it is a _framework_, not a full-featured editor, not even a modular editor. Draft.js provides many low-level APIs, for example:
 
-* Process the input of a single character. This could be used to make an autocomplete, or to turn boring "quotes" into their “smart” equivalent. Or enhance emojis with accessible text.
-* Handle pasting or drag-and-drop in the editor. Auto-linkify, auto-embed, drag-drop image upload features start here.
-* Parse and filter editor content. Data migrations for rich text, anyone?
+- Process the input of a single character. This could be used to make an autocomplete, or to turn boring "quotes" into their “smart” equivalent. Or enhance emojis with accessible text.
+- Handle pasting or drag-and-drop in the editor. Auto-linkify, auto-embed, drag-drop image upload features start here.
+- Parse and filter editor content. Data migrations for rich text, anyone?
 
 The sky is the limit! This flexibility comes at a cost though: even seemingly basic rich text interactions might require extra code. Additionally, the model’s conceptual constraints can drastically reduce what the framework can be used for:
 
-* It is impossible to represent nested structures beyond nested lists (at least [for now](https://github.com/facebook/draft-js/pull/388)).
-* Highlights-heavy rich text is hard to work with (think comments or annotations on text containing a link).
-* Collaborative editing isn’t designed for.
+- It is impossible to represent nested structures beyond nested lists (at least [for now](https://github.com/facebook/draft-js/pull/388)).
+- Highlights-heavy rich text is hard to work with (think comments or annotations on text containing a link).
+- Collaborative editing isn’t designed for.
 
 > There is a good list of Draft.js conceptual frustrations in the [Slate documentation](https://github.com/ianstormtaylor/slate#why).
 
