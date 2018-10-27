@@ -86,16 +86,16 @@ const siteConfig = {
   // No .html extensions for paths.
   cleanUrl: true,
 
-  // Open Graph and Twitter card images.
-  // ogImage: "img/docusaurus.png",
-  // twitterImage: "img/docusaurus.png",
-
   scrollToTop: true,
   scrollToTopOptions: {
     zIndex: 100,
   },
 
   gaTrackingId: "UA-126695868-1",
+
+  // Open Graph and Twitter card images.
+  twitterImage: "img/draftail-ui-screenshot.png",
+  ogImage: "img/draftail-ui-screenshot.png",
 
   /**
    * Arbitrary config keys.
