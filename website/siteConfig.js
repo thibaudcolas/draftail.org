@@ -96,6 +96,8 @@ const siteConfig = {
   // Open Graph and Twitter card images.
   twitterImage: "img/draftail-ui-screenshot.png",
   ogImage: "img/draftail-ui-screenshot.png",
+  // Path to your web app manifest.
+  manifest: "img/favicon/manifest.json",
 
   /**
    * Arbitrary config keys.
