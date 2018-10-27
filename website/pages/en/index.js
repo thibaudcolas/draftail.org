@@ -212,7 +212,7 @@ class Index extends React.Component {
         <HomeSplash language={language} />
         <div className="mainContainer">
           <iframe
-            src="https://www.draftail.org/examples/iframe.html?selectedKind=Draftail&selectedStory=Home"
+            src="http://demo.draftail.org/examples/iframe.html?selectedKind=Draftail&selectedStory=Home"
             className="home-iframe"
           />
           <Features />
