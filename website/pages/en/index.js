@@ -228,7 +228,7 @@ class Index extends React.Component {
             </p>
             <hr />
             <p>Here are important features worth highlighting:</p>
-            <ul class="bullet-list">
+            <ul className="bullet-list">
               <li>
                 Support for{" "}
                 <a href="https://www.draftail.org/docs/keyboard-shortcuts">
@@ -248,7 +248,7 @@ class Index extends React.Component {
               <li>Common text types: headings, paragraphs, quotes, lists.</li>
               <li>
                 Common text styles: <strong>Bold</strong>,{" "}
-                <em class="u-font-italic">Italic</em>, and many more.
+                <em className="u-font-italic">Italic</em>, and many more.
               </li>
               <li>API to build custom controls for links, images, and more.</li>
             </ul>
@@ -256,9 +256,9 @@ class Index extends React.Component {
               The embeds in this example are powered by{" "}
               <a href="http://embed.ly/">Embedly</a>:
             </p>
-            <span class="missing-inline"> </span>
+            <span className="missing-inline"> </span>
             <p>Try out some of the shortcuts:</p>
-            <ul class="bullet-list">
+            <ul className="bullet-list">
               <li>
                 Apply <strong>H3</strong> heading style: <kbd>###</kbd> and{" "}
                 <kbd>Space</kbd>.
@@ -270,7 +270,7 @@ class Index extends React.Component {
                 Use traditional combinations if that's your thing:{" "}
                 <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>8</kbd>, or{" "}
                 <kbd>⌘</kbd> + + on Mac.
-                <ul class="bullet-list">
+                <ul className="bullet-list">
                   <li>
                     Increase list indentation: <kbd>tab</kbd>.
                   </li>
