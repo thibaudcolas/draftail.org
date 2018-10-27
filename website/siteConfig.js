@@ -17,12 +17,12 @@ const siteConfig = {
   tagline:
     "📝🍸 A configurable rich text editor based on Draft.js, built for Wagtail",
   baseUrl: "/",
-  url: "https://staging.draftail.org",
+  url: "https://www.draftail.org/",
 
   // Used for publishing and more
   projectName: "draftail.org",
   organizationName: "thibaudcolas",
-  cname: "staging.draftail.org",
+  cname: "www.draftail.org",
 
   disableHeaderTitle: false,
   disableTitleTagline: true,
