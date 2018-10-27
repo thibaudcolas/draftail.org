@@ -45,7 +45,7 @@ Any kind of custom "link" feature is a good fit for a Draftail extension. This c
 - Links that are not supported by the traditional "Link" feature. Anchor links come to mind.
 - Enhanced links with embedded content, or inline previews. The official ["stock" example](http://docs.wagtail.io/en/stable/advanced_topics/customisation/extending_draftail.html#creating-new-entities) is one of those. Here is what its attached quote card looked like on the Forbes website:
 
-[![Screenshot of a quote card in a Forbes article. The quote card expands from the word "Google" in the text, showing Google's stock and relevant articles.](/img/docs/getting-started-with-extensions/forbes-quotecard-expanded.png)](https://www.forbes.com/sites/jasonbloomberg/2018/02/04/the-real-reason-red-hat-is-acquiring-coreos/#70a79bf05c4d)
+[![Screenshot of a quote card in a Forbes article. The quote card expands from the word "Google" in the text, showing Google's stock and relevant articles.](assets/getting-started-with-extensions/forbes-quotecard-expanded.png)](https://www.forbes.com/sites/jasonbloomberg/2018/02/04/the-real-reason-red-hat-is-acquiring-coreos/#70a79bf05c4d)
 
 > Quote cards enrich Forbes articles with stock information, and also show related content that readers might find helpful.
 
@@ -59,7 +59,7 @@ By "token", I mean any content that could be confused with other plain text if i
 - Mentions, most likely with an autocomplete that turns them into links.
 - Any set of values specific to the site’s purpose. For example, a web design website might want a way to easily insert color codes into their content: `#E75480`.
 
-[![Screenshot of a mention UI in Draft.js, where the text @j triggers an autocomplete UI](/img/docs/getting-started-with-extensions/draftjs-plugin-mention.png)](https://www.draft-js-plugins.com/plugin/mention)
+[![Screenshot of a mention UI in Draft.js, where the text @j triggers an autocomplete UI](assets/getting-started-with-extensions/draftjs-plugin-mention.png)](https://www.draft-js-plugins.com/plugin/mention)
 
 > [Draft.js plugin](https://www.draft-js-plugins.com/plugin/mention) for a mention feature, where `@` triggers the autocomplete UI.
 
@@ -71,7 +71,7 @@ Anything that helps the end user without necessarily changing the content. The f
 - Highlighting – be it syntax highlighting for programmers, or highlighting of specific words that are particularly important in the content.
 - Spellcheckers and writing assistants. They will highlight content, as well as offer alternative text.
 
-[![Screenshot of the reading level plugin, with readability metrics updating as the user types in the editor](/img/docs/getting-started-with-extensions/reading-level-plugin.gif)](https://vixdigital.github.io/draftail-plugins/)
+[![Screenshot of the reading level plugin, with readability metrics updating as the user types in the editor](assets/getting-started-with-extensions/reading-level-plugin.gif)](https://vixdigital.github.io/draftail-plugins/)
 
 > The Reading Level plugin from VIX Digital is a great example. The metrics help you understand your content better, without interrupting the writing flow.
 > Better yet, it updates as you type, and is helpful regardless of whether your content is rich text or not.

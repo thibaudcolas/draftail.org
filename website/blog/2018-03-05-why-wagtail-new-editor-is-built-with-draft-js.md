@@ -92,7 +92,7 @@ The advantages of using Draft.js go beyond the editor UI component, because of t
 
 We wanted a lot of control over rich text features, which led us to build our own editor: [Draftail](https://www.draftail.org/).
 
-[![Screenshot of Draftail, with the toolbar, and some example content](/img/blog/why-wagtail-new-editor-is-built-with-draft-js/draftail-intro.png)](https://www.draftail.org/)
+[![Screenshot of Draftail, with the toolbar, and some example content](/blog/assets/why-wagtail-new-editor-is-built-with-draft-js/draftail-intro.png)](https://www.draftail.org/)
 
 It was nonetheless really useful to reuse established solutions for common rich text behaviors, and we also got to create reusable Draft.js-friendly packages, like the [Draft.js filters](https://github.com/thibaudcolas/draftjs-filters).
 

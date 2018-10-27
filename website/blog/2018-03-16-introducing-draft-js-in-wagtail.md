@@ -54,8 +54,8 @@ Why this happened, and how – read the following blog posts:
 
 Blog posts to learn more:
 
-- [Why Wagtail’s new editor is built with Draft.js](https://wagtail.io/blog/why-wagtail-new-editor-is-built-with-draft-js/)
-- [Rethinking rich text pipelines with Draft.js](https://wagtail.io/blog/rethinking-rich-text-pipelines-with-draft-js/)
+- [Why Wagtail’s new editor is built with Draft.js](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js)
+- [Rethinking rich text pipelines with Draft.js](/blog/2018/03/13/rethinking-rich-text-pipelines-with-draft-js)
 - (UI/UX blog post on its way)
 
 How you can help:

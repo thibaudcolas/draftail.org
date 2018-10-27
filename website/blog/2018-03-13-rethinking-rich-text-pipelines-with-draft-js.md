@@ -27,7 +27,7 @@ If you want to know the full story, have a look at [Why Wagtail’s new editor i
 
 With the presentations out of the way, let’s have a look at how Draft.js affects the overall rich text pipeline. Here is a representation of rich text processing from content entry to rendering on the site:
 
-![Diagram of the rich text lifecycle, from user input to page rendering](/img/blog/rethinking-rich-text-pipelines-with-draft-js/rich-text-lifecycle-v1.png)
+![Diagram of the rich text lifecycle, from user input to page rendering](/blog/assets/rethinking-rich-text-pipelines-with-draft-js/rich-text-lifecycle-v1.png)
 
 In words,
 
@@ -44,13 +44,13 @@ First off, why are there two filtering / validation steps in the diagram above? 
 
 Here is a GIF illustrating the popular “paste from Word” workflow with Wagtail’s previous `contenteditable` editor:
 
-![Screencast of Word copy-pasting into Wagtail’s previous editor. Some unwanted formatting makes its way into the saved content.](/img/blog/rethinking-rich-text-pipelines-with-draft-js/hallo-paste-from-word.gif)
+![Screencast of Word copy-pasting into Wagtail’s previous editor. Some unwanted formatting makes its way into the saved content.](/blog/assets/rethinking-rich-text-pipelines-with-draft-js/hallo-paste-from-word.gif)
 
 Pasting rich text preserves **a lot** of unwanted or irrelevant styles, and there is no indication whatsoever that the content is problematic. Saving the content and reloading the page, we see the server-side filtering kick into action and – _surprise_ – reveal Microsoft Word metadata and styles (wich is plain gibberish for a user). Even if that was properly removed, the rich text still contains unwanted formattings – subscript and superscript in this case.
 
 By contrast, here is the Draft.js equivalent:
 
-![Screencast of Word copy-pasting into Wagtail’s new editor. Content is correctly filtered on paste.](/img/blog/rethinking-rich-text-pipelines-with-draft-js/draftail-paste-from-word.gif)
+![Screencast of Word copy-pasting into Wagtail’s new editor. Content is correctly filtered on paste.](/blog/assets/rethinking-rich-text-pipelines-with-draft-js/draftail-paste-from-word.gif)
 
 No need to waste time reloading the page, all of the filtering happens on paste, in the browser. This is possible because:
 
