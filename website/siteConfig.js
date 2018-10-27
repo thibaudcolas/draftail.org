@@ -95,6 +95,8 @@ const siteConfig = {
     zIndex: 100,
   },
 
+  gaTrackingId: "UA-126695868-1",
+
   /**
    * Arbitrary config keys.
    */
