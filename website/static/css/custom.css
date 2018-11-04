@@ -21,6 +21,38 @@
   }
 }
 
+.custom-formats-iframe {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: auto;
+  min-height: 650px;
+}
+
+@media (min-width: 520px) {
+  .custom-formats-iframe {
+    min-height: 500px;
+  }
+}
+
+.all-formats-iframe {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: auto;
+  min-height: 2200px;
+}
+
+@media (min-width: 520px) {
+  .all-formats-iframe {
+    min-height: 2000px;
+  }
+}
+
 .projectTitle img {
   vertical-align: middle;
   margin-left: 0.25em;

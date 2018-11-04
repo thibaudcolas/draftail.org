@@ -76,6 +76,7 @@ class HomeSplash extends React.Component {
             <Button href={docUrl("getting-started", language)}>
               Get Started
             </Button>
+            <Button href={pageUrl("examples", language)}>View Examples</Button>
             <Button href="https://github.com/springload/draftail">
               GitHub
             </Button>
