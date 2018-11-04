@@ -80,7 +80,7 @@ class HomeSplash extends React.Component {
           <ProjectTitle />
           <PromoSection>
             {/* <Button href="#try">Try It Out</Button> */}
-            <Button href={docUrl("getting-started.html", language)}>
+            <Button href={docUrl("getting-started", language)}>
               Get Started
             </Button>
             <Button href="https://github.com/springload/draftail">
@@ -195,7 +195,7 @@ const Showcase = (props) => {
       </p>
       {/* <div className="logos">{showcase}</div> */}
       <div className="more-users">
-        <a className="button" href={pageUrl("users.html", props.language)}>
+        <a className="button" href={pageUrl("users", props.language)}>
           More {siteConfig.title} Users
         </a>
       </div>
