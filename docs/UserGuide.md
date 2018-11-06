@@ -96,7 +96,7 @@ The editor may not preserve all formatting as-is, but it will always filter out 
 
 ## Links, images, and more
 
-> :warning: Links and images aren’t default features of Draftail – their behavior may differ a lot depending on how the editor is configured.
+> 🚧 Links and images aren’t default features of Draftail – their behavior may differ a lot depending on how the editor is configured.
 
 It’s also possible to add links within text – and manage the links with their own tooltips:
 
