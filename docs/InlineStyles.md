@@ -51,3 +51,9 @@ inlineStyles={[
     },
 ]}
 ```
+
+### Example
+
+Those examples would render as:
+
+<iframe src="https://demo.draftail.org/examples/iframe.html?selectedKind=Docs&selectedStory=Inline%20styles" class="iframe iframe--docs-200"></iframe>

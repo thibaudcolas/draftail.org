@@ -42,3 +42,9 @@ You may also use CSS to style the block, via the `Draftail-block--tiny-text` cla
 ```
 
 More advanced blocks, requiring custom React components, aren't supported at the moment. If you need this, feel free to [create an issue](https://github.com/springload/draftail/issues/new).
+
+### Example
+
+With a live editor,
+
+<iframe src="https://demo.draftail.org/examples/iframe.html?selectedKind=Docs&selectedStory=Blocks" class="iframe iframe--docs-200"></iframe>

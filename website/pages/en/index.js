@@ -282,7 +282,7 @@ class Index extends React.Component {
           </noscript>
           <iframe
             src="https://demo.draftail.org/examples/iframe.html?selectedKind=Draftail&selectedStory=Home"
-            className="home-iframe"
+            className="iframe iframe--home"
           />
           <Features />
           {/* <FeatureCallout /> */}

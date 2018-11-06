@@ -1,56 +1,63 @@
-.home-iframe {
+.iframe {
   display: block;
   width: 100%;
-  max-width: 800px;
   margin: 0 auto;
-  padding: 0 10px;
   overflow: auto;
+}
+
+.iframe--home {
+  max-width: 800px;
+  padding: 0 10px;
   min-height: 1800px;
 }
 
 @media (min-width: 520px) {
-  .home-iframe {
+  .iframe--home {
     min-height: 1300px;
   }
 }
 
 @media (min-width: 840px) {
-  .home-iframe {
+  .iframe--home {
     padding: 0 20px;
     min-height: 1200px;
   }
 }
 
-.custom-formats-iframe {
-  display: block;
-  width: 100%;
+.iframe--custom {
   max-width: 800px;
-  margin: 0 auto;
   padding: 0 10px;
-  overflow: auto;
   min-height: 650px;
 }
 
 @media (min-width: 520px) {
-  .custom-formats-iframe {
+  .iframe--custom {
     min-height: 500px;
   }
 }
 
-.all-formats-iframe {
-  display: block;
-  width: 100%;
+.iframe--all {
   max-width: 800px;
-  margin: 0 auto;
   padding: 0 10px;
-  overflow: auto;
   min-height: 2200px;
 }
 
 @media (min-width: 520px) {
-  .all-formats-iframe {
+  .iframe--all {
     min-height: 2000px;
   }
+}
+
+.iframe--docs-200 {
+  min-height: 200px;
+}
+
+.iframe--docs-250 {
+  min-height: 250px;
+}
+
+.iframe--docs-400 {
+  min-height: 400px;
 }
 
 .projectTitle img {

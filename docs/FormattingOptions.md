@@ -15,6 +15,8 @@ Draftail, like Draft.js, distinguishes between 3 content formats:
 - Inline styles: Bold, Italic, Underline, Code, Strikethrough, Mark, Keyboard, Superscript, Subscript
 - And HR, BR
 
+<iframe src="https://demo.draftail.org/examples/iframe.html?selectedKind=Docs&selectedStory=Built-in%20formats" class="iframe iframe--docs-250"></iframe>
+
 Draftail does not come with built-in controls for things like images and links, so you can build your own exactly as you wish. This is particularly useful when integrating with content sources, like a CMS, an API, or other tools with a fixed schema.
 
 ## Configuring available formats

@@ -49,7 +49,7 @@ Optionally, entities can also take an `attributes` and `whitelist` props. These 
 }
 ```
 
-## Sources
+### Sources
 
 Sources are responsible for creating and editing entities, and are toggled when requested from the toolbar, or from a decorator or block. Here is a [simple image source](https://github.com/thibaudcolas/draftail-playground/blob/master/src/entities/ImageSource.js) which uses `window.prompt` to ask the user for an image's `src`, then creates an entity and its atomic block:
 
@@ -106,7 +106,7 @@ entityKey: PropTypes.string,
 entity: PropTypes.object,
 ```
 
-## Decorators
+### Decorators
 
 Decorators render inline entities based on their data.
 
@@ -139,7 +139,7 @@ onRemove: PropTypes.func.isRequired,
 
 The `onEdit` and `onRemove` props are meant so decorators can also serve in managing entities, eg. to build tooltips to edit links.
 
-## Blocks
+### Blocks
 
 Blocks render block-level entities based on their data, and can contain editing controls. Here is a [simple image block](https://github.com/thibaudcolas/draftail-playground/blob/master/src/entities/ImageBlock.js), rendering images with `src` and `alt` attributes:
 
@@ -183,3 +183,9 @@ blockProps: PropTypes.shape({
     onChange: PropTypes.func.isRequired,
 }).isRequired,
 ```
+
+### Example
+
+Here is an example of what this would look like in practice, with a very simple implementation of link and image chooser UIs.
+
+<iframe src="https://demo.draftail.org/examples/iframe.html?selectedKind=Docs&selectedStory=Entities" class="iframe iframe--docs-400"></iframe>
