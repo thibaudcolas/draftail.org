@@ -3,7 +3,25 @@ id: inline-styles
 title: Inline styles
 ---
 
-Custom inline styles only require a `style` prop, defining which [CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference) to apply when the format is active.
+## Built-in styles
+
+All you need to do is to use the predefined type for the block:
+
+```jsx
+import { INLINE_STYLE } from 'draftail';
+
+inlineStyles={[
+  {
+    type: INLINE_STYLE.BOLD,
+  },
+]}
+```
+
+All built-in styles come with default labels or icons, styles, as well as an english description and often keyboard shortcuts.
+
+## Custom styles
+
+Apart from a `type`, custom inline styles only require a `style` prop, defining which [CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference) to apply when the format is active.
 
 Here is a basic example:
 

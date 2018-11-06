@@ -3,6 +3,24 @@ id: blocks
 title: Blocks
 ---
 
+## Built-in blocks
+
+To use built-in blocks, simply use their predefined type.
+
+```jsx
+import { BLOCK_TYPE } from 'draftail';
+
+blockTypes={[
+  {
+    type: BLOCK_TYPE.BLOCKQUOTE,
+  },
+]}
+```
+
+Built-in blocks come with default labels or icons, styles, as well as an english description and often keyboard shortcuts.
+
+## Custom blocks
+
 Simple blocks are very easy to create. Add a new block type to `blockTypes`. Here is an example, creating a "Tiny text" block:
 
 ```jsx

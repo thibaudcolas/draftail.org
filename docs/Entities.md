@@ -3,7 +3,30 @@ id: entities
 title: Entities
 ---
 
-Creating custom entity types is a bit more involved because entities aren't simply on/off: they often need additional data (thus a UI to enter this data), and can be edited. The entity API is at a much lower level of abstraction than that of blocks and styles, and knowledge of the [Draft.js API](https://draftjs.org/docs/overview.html#content) is expected.
+## Built-in entities
+
+Put simply, there are no built-in entities in Draftail. The idea is to give as much control as possible over the UI as possible, thus having very little included by default, and providing an extensive API.
+
+That said, [Draft.js](https://draftjs.org), on which Draftail is built, does sometimes have special behavior for `LINK` and `IMAGE` entities (for example, it detects `a` and `img` tags in rich text when pasting, and converts them to entities). If possible, always try to use those built-in types before introducing new ones.
+
+```jsx
+import { ENTITY_TYPE } from 'draftail';
+
+entityTypes={[
+  {
+    type: ENTITY_TYPE.LINK,
+    // [...]
+  },
+  {
+    type: ENTITY_TYPE.IMAGE,
+    // [...]
+  },
+]}
+```
+
+## Custom entities
+
+Creating custom entity types is a bit more involved than custom blocks and inline styles because entities aren't simply on/off: they often need additional data (thus a UI to enter this data), and can be edited. The entity API is at a much lower level of abstraction than that of blocks and styles, and knowledge of the [Draft.js API](https://draftjs.org/docs/overview.html#content) is expected.
 
 Apart from the usual type/label/description/icon options, entities need:
 
