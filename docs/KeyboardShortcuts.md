@@ -5,6 +5,8 @@ title: Keyboard Shortcuts
 
 Here are all of the keyboard shortcuts supported by the editor. Please bear in mind shortcuts may not be available if the corresponding action isn't enabled in the current editor.
 
+> You can try all of those shortcuts on our [Examples](/examples#all) page.
+
 | Function                                          | Shortcut              | Shortcut (macOS)      | Markdown |
 | ------------------------------------------------- | --------------------- | --------------------- | -------- |
 | **Common actions**                                |                       |                       |          |
