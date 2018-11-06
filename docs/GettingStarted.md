@@ -3,7 +3,7 @@ id: getting-started
 title: Getting Started
 ---
 
-First, grab the package from npm:
+First, install the package and its peer dependencies:
 
 ```sh
 # Draftail's peerDependencies:
@@ -18,7 +18,7 @@ Import the styles for Draft.js, and the editor:
 @import "draftail/dist/draftail";
 ```
 
-Then, import the editor and use it in your code. Here is a [simple example](https://www.draftail.org/examples/):
+Then, import the editor and use it in your code. Here is a simple example:
 
 ```jsx
 import React from "react"
@@ -50,5 +50,9 @@ const editor = (
 
 ReactDOM.render(editor, document.querySelector("[data-mount]"))
 ```
+
+This will render the following:
+
+<iframe src="https://demo.draftail.org/examples/iframe.html?selectedKind=Draftail&selectedStory=Simple" width="320" height="160"></iframe>
 
 Finally, be sure to check out the [required polyfills](BrowserSupport.md).
