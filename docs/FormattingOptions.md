@@ -5,15 +5,17 @@ title: Formatting options
 
 Draftail, like Draft.js, distinguishes between 3 content formats:
 
-- Blocks, that provide structure to the content. Blocks do not overlap – no content can be both a paragraph and a title.
-- Inline styles, providing inline formatting for text. Styles can overlap: a piece of text can be both bold and italic.
-- Entities, annotating content with metadata to represent rich content beyond text. Entities can be inline (eg. a link applied on a portion of text), or block-based (eg. an embedded video).
+- [Inline styles](InlineStyles.md), providing inline formatting for text. They can overlap: text can be both bold and italic.
+- [Blocks](Blocks.md), that provide structure to the content. They do not overlap – no content can be both a paragraph and a title.
+- [Entities](Entities.md), annotating content with data to represent rich content beyond text. They can be inline (e.g. a link applied on a word), or block-based (e.g. an embedded video).
 
 ## Built-in formats
 
 - Block types: H1, H2, H3, H4, H5, H6, Blockquote, Code, UL, OL, P
 - Inline styles: Bold, Italic, Underline, Code, Strikethrough, Mark, Keyboard, Superscript, Subscript
 - And HR, BR
+
+View [an example all of the formats](/examples#all), or try them out below.
 
 <iframe src="https://demo.draftail.org/examples/iframe.html?selectedKind=Docs&selectedStory=Built-in%20formats" class="iframe iframe--docs-250"></iframe>
 
@@ -40,10 +42,10 @@ Draftail is meant to provide a consistent editing experience regardless of what 
 
 Here are quick questions to help you determine which formatting to use, depending on the use case:
 
-| In order to...                        | Use           |
-| ------------------------------------- | ------------- |
-| Format a portion of a line            | Inline styles |
-| Indicate the structure of the content | Blocks        |
-| Enter additional data/metadata        | Entities      |
+| In order to…                          | Use                              |
+| ------------------------------------- | -------------------------------- |
+| Format a portion of a line            | [Inline styles](InlineStyles.md) |
+| Indicate the structure of the content | [Blocks](Blocks.md)              |
+| Enter additional data/metadata        | [Entities](Entities.md)          |
 
 Then, your mileage may vary! There is good support for custom block-level and inline formatting. Custom entities or decorators require knowledge of the Draft.js API, which is very low-level.

@@ -3,6 +3,8 @@ id: entities
 title: Entities
 ---
 
+Entities annotate content with data to represent rich content beyond text. They can be inline (e.g. a link on a word), or block-based (e.g. an embedded video).
+
 ## Built-in entities
 
 Put simply, there are no built-in entities in Draftail. The idea is to give as much control as possible over the UI as possible, thus having very little included by default, and providing an extensive API.
@@ -26,7 +28,9 @@ entityTypes={[
 
 ## Custom entities
 
-Creating custom entity types is a bit more involved than custom blocks and inline styles because entities aren't simply on/off: they often need additional data (thus a UI to enter this data), and can be edited. The entity API is at a much lower level of abstraction than that of blocks and styles, and knowledge of the [Draft.js API](https://draftjs.org/docs/overview.html#content) is expected.
+Creating custom entity types is a bit more involved than custom blocks and inline styles because entities aren't simply on/off: they often need additional data (thus a UI to enter this data), and can be edited.
+
+> The entity API is at a much lower level of abstraction than that of blocks and styles, and knowledge of the [Draft.js API](https://draftjs.org/docs/overview.html#content) is expected, as well as of [React](https://reactjs.org/).
 
 Apart from the usual type/label/description/icon options, entities need:
 

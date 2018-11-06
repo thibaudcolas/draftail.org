@@ -3,6 +3,8 @@ id: blocks
 title: Blocks
 ---
 
+Blocks provide structure to the content. They do not overlap – no content can be both a paragraph and a title.
+
 ## Built-in blocks
 
 To use built-in blocks, simply use their predefined type.

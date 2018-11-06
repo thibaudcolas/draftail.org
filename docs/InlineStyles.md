@@ -3,6 +3,8 @@ id: inline-styles
 title: Inline styles
 ---
 
+Inline styles provide inline formatting for rich text. They can overlap: text can be both bold and italic.
+
 ## Built-in styles
 
 All you need to do is to use the predefined type for the block:

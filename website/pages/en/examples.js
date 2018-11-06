@@ -48,7 +48,7 @@ class Users extends React.Component {
               className="iframe iframe--custom"
             />
             <div className="prose">
-              <h2>All built-in formats</h2>
+              <h2 id="all">All built-in formats</h2>
               <p>
                 Here are all of the formatting options available by default in
                 Draftail or Draft.js. Most of them do not have much built-in
