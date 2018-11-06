@@ -3,16 +3,13 @@ id: blocks
 title: Blocks
 ---
 
-Simple blocks are very easy to create. Add a new block type to `blockTypes`, specifying which `element` to display the block as.
-
-Here is an example, creating a "Tiny text" block:
+Simple blocks are very easy to create. Add a new block type to `blockTypes`. Here is an example, creating a "Tiny text" block:
 
 ```jsx
 blockTypes={[
     {
         type: 'tiny-text',
         label: 'Tiny',
-        element: 'div',
     },
 ]}
 ```
