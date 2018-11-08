@@ -77,10 +77,20 @@ class HomeSplash extends React.Component {
               Get Started
             </Button>
             <Button href={pageUrl("examples", language)}>View Examples</Button>
-            <Button href="https://github.com/springload/draftail">
-              GitHub
-            </Button>
           </PromoSection>
+          <div className="githubButton" style={{ minHeight: "20px" }}>
+            <a
+              className="github-button"
+              href="https://github.com/springload/draftail"
+              data-icon="octicon-star"
+              data-count-href="/springload/draftail/stargazers"
+              data-show-count={true}
+              data-count-aria-label="# stargazers on GitHub"
+              aria-label="Star Draftail on GitHub"
+            >
+              Star
+            </a>
+          </div>
         </div>
       </SplashContainer>
     )
@@ -109,11 +119,18 @@ const Features = () => (
       },
       {
         content:
-          "Rich text shouldn’t be a black box. Your use case may require special formatting. Draftail comes with an extensive API backed by [Draft.js](https://draftjs.org/).",
+          "Rich text shouldn’t be a black box. Your use case may require special formatting. Draftail comes with an extensive API backed by [Draft.js](https://draftjs.org/) and [React](https://reactjs.org/).",
         // image: imgUrl("docusaurus.svg"),
         // imageAlign: "top",
         title: "Extensible",
       },
+      //      {
+      //        content:
+      //          "",
+      //        // image: imgUrl("docusaurus.svg"),
+      //        // imageAlign: "top",
+      //        title: "Pluggable",
+      //},
     ]}
   </Block>
 )
