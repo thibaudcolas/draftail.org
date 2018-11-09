@@ -54,7 +54,7 @@ inlineStyles={[
 ]}
 ```
 
-### Example
+### Examples
 
 Those examples would render as:
 

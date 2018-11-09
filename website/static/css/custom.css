@@ -8,19 +8,12 @@
 .iframe--home {
   max-width: 800px;
   padding: 0 10px;
-  min-height: 1800px;
+  min-height: 1200px;
 }
 
 @media (min-width: 520px) {
   .iframe--home {
-    min-height: 1300px;
-  }
-}
-
-@media (min-width: 840px) {
-  .iframe--home {
-    padding: 0 20px;
-    min-height: 1200px;
+    min-height: 800px;
   }
 }
 

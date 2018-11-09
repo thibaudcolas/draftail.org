@@ -48,7 +48,7 @@ const editor = (
 ReactDOM.render(editor, document.querySelector("[data-mount]"))
 ```
 
-This will render the following:
+Here is a demo of the result:
 
 <iframe src="https://demo.draftail.org/examples/iframe.html?selectedKind=Draftail&selectedStory=Simple" class="iframe iframe--docs-200"></iframe>
 

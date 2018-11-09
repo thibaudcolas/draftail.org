@@ -45,7 +45,7 @@ You may also use CSS to style the block, via the `Draftail-block--tiny-text` cla
 
 More advanced blocks, requiring custom React components, aren't supported at the moment. If you need this, feel free to [create an issue](https://github.com/springload/draftail/issues/new).
 
-### Example
+### Examples
 
 With a live editor,
 

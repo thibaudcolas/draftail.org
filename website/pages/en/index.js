@@ -265,37 +265,8 @@ class Index extends React.Component {
             </ul>
             <p>
               The embeds in this example are powered by{" "}
-              <a href="http://embed.ly/">Embedly</a>:
+              <a href="http://embed.ly/">Embedly</a>.
             </p>
-            <span className="missing-inline"> </span>
-            <p>Try out some of the shortcuts:</p>
-            <ul className="bullet-list">
-              <li>
-                Apply <strong>H3</strong> heading style: <kbd>###</kbd> and{" "}
-                <kbd>Space</kbd>.
-              </li>
-              <li>
-                Make a list item: <kbd>-</kbd> and <kbd>Space</kbd>.
-              </li>
-              <li>
-                Use traditional combinations if that's your thing:{" "}
-                <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>8</kbd>, or{" "}
-                <kbd>⌘</kbd> + + on Mac.
-                <ul className="bullet-list">
-                  <li>
-                    Increase list indentation: <kbd>tab</kbd>.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Insert or edit a link: <kbd>ctrl</kbd> + <kbd>K</kbd> or{" "}
-                <kbd>⌘</kbd> + .
-              </li>
-              <li>
-                Open a link or document: <kbd>alt</kbd> + <kbd>enter</kbd> or{" "}
-                <kbd>option</kbd> + <kbd>enter</kbd>.
-              </li>
-            </ul>
           </noscript>
           <iframe
             src="https://demo.draftail.org/examples/iframe.html?selectedKind=Draftail&selectedStory=Home"

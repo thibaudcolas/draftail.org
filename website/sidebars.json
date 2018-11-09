@@ -6,7 +6,8 @@
       "inline-styles",
       "blocks",
       "entities",
-      "advanced-extensions"
+      "decorators",
+      "arbitrary-controls"
     ],
     "Guides": ["getting-started-with-extensions"],
     "User Guides": ["user-guide", "keyboard-shortcuts"],
