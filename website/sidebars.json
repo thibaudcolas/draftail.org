@@ -11,6 +11,12 @@
     ],
     "Guides": ["getting-started-with-extensions"],
     "User Guides": ["user-guide", "keyboard-shortcuts"],
-    "API Reference": ["api", "ui-customisations", "browser-support"]
+    "API Reference": [
+      "api",
+      "ui-theming",
+      "customising-icons",
+      "i18n",
+      "browser-support"
+    ]
   }
 }

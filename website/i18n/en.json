@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "📝🍸 A configurable rich text editor based on Draft.js, built for Wagtail",
+    "tagline": "📝🍸 A configurable rich text editor based on Draft.js and React, built for Wagtail",
     "docs": {
       "api": {
         "title": "API Reference"
@@ -17,6 +17,9 @@
       "browser-support": {
         "title": "Browser support and polyfills"
       },
+      "customising-icons": {
+        "title": "Customising icons"
+      },
       "decorators": {
         "title": "Decorators"
       },
@@ -27,10 +30,13 @@
         "title": "Formatting options"
       },
       "getting-started": {
-        "title": "Getting Started"
+        "title": "Getting started"
       },
       "getting-started-with-extensions": {
         "title": "Getting started with extensions"
+      },
+      "i18n": {
+        "title": "i18n"
       },
       "inline-styles": {
         "title": "Inline styles"
@@ -38,8 +44,8 @@
       "keyboard-shortcuts": {
         "title": "Keyboard Shortcuts"
       },
-      "ui-customisations": {
-        "title": "UI Customisations"
+      "ui-theming": {
+        "title": "UI theming"
       },
       "user-guide": {
         "title": "User Guide"

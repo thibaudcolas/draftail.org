@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Getting Started
+title: Getting started
 ---
 
 First, install the package and its peer dependencies: [Draft.js](https://draftjs.org/) and [React](https://reactjs.org/).

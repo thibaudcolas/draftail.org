@@ -132,3 +132,7 @@ getEditorState: PropTypes.func,
 // Change any part of the EditorState.
 onChange: PropTypes.func,
 ```
+
+## Managing focus
+
+Draftail has a `focus()` API [like that of Draft.js](https://draftjs.org/docs/advanced-topics-managing-focus.html#content). Use it to imperatively move focus to the editor.
