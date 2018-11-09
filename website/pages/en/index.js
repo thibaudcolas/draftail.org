@@ -112,7 +112,7 @@ const Features = () => (
     {[
       {
         content:
-          "Draftail is intuitive to use regardless of skill level. All formatting is available via the toolbar, and [keyboard shortcuts](/docs/keyboard-shortcuts). Power users can even use Markdown!",
+          "Draftail is intuitive to use regardless of skill level. All rich text formatting is available via the toolbar, and [keyboard shortcuts](/docs/keyboard-shortcuts). Power users can even use Markdown!",
         // image: imgUrl("docusaurus.svg"),
         // imageAlign: "top",
         title: "Easy to use",
