@@ -3,12 +3,10 @@ id: getting-started
 title: Getting Started
 ---
 
-First, install the package and its peer dependencies:
+First, install the package and its peer dependencies: [Draft.js](https://draftjs.org/) and [React](https://reactjs.org/).
 
 ```sh
-# Draftail's peerDependencies:
-npm install --save draft-js@^0.10.5 react react-dom prop-types
-npm install --save draftail
+npm install --save draftail draft-js@^0.10.5 react react-dom prop-types
 ```
 
 Import the styles for Draft.js, and the editor:
@@ -18,7 +16,7 @@ Import the styles for Draft.js, and the editor:
 @import "draftail/dist/draftail";
 ```
 
-Then, import the editor and use it in your code. Here is a simple example:
+Then, import the editor and use it in your code as a React component. Here is a simple example:
 
 ```jsx
 import React from "react"

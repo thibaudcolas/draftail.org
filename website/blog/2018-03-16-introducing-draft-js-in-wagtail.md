@@ -64,4 +64,4 @@ How you can help:
 - **Try to [break it](hhttps://www.draftail.org/)** (and report issues 😄)
 - Review and improve the [user guide](/docs/user-guide)
 
-The presentation was originally available on [draftail-playground.herokuapp.com](https://draftail-playground.herokuapp.com/).
+The presentation was originally available on [playground.draftail.org/](http://playground.draftail.org/).

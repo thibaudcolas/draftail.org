@@ -5,7 +5,7 @@ title: Arbitrary controls
 
 > Those extensions require a good understanding of the [Draft.js](https://draftjs.org/) API.
 
-Draftail also has an API to add arbitrary controls in the toolbar, via the `controls` prop. This prop takes an array of React components, which will be given a `getEditorState` function and the `onChange` handler as props.
+Draftail also has an API to add arbitrary controls in the toolbar, via the [`controls`](API.md#controls-docs-arbitrary-controls) prop. This prop takes an array of React components, which will be given a `getEditorState` function and the `onChange` handler as props.
 
 - `getEditorState` can be used to retrieve and read the full Draft.js [EditorState](https://draftjs.org/docs/api-reference-editor-state).
 - `onChange` can be called with a new EditorState.

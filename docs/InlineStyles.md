@@ -7,7 +7,7 @@ Inline styles provide inline formatting for rich text. They can overlap: text ca
 
 ## Built-in styles
 
-All you need to do is to use the predefined type for the block:
+All you need to do is to use the predefined type for the block, via an object in [`inlineStyles`](API.md#inline-styles-docs-inline-styles):
 
 ```jsx
 import { INLINE_STYLE } from 'draftail';

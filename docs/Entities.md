@@ -32,7 +32,7 @@ Creating custom entity types is a bit more involved than custom blocks and inlin
 
 > The entity API is at a much lower level of abstraction than that of blocks and styles, and knowledge of the [Draft.js API](https://draftjs.org/docs/overview.html#content) is expected, as well as of [React](https://reactjs.org/) components and their lifecycle.
 
-Apart from the usual type/label/description/icon options, entities need:
+Apart from the usual type/label/description/icon options to pass via objects in [`entityTypes`](API.md#entities-docs-entities), entities need:
 
 - A `source`, a React component that will be rendered to display the UI when creating or editing an entity. This could involve a modal window, API calls, a tooltip, or any other mean of gathering entity data.
 - A `decorator`, a React component to display the entity within the editor area for inline entities (eg. links).

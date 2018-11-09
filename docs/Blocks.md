@@ -23,7 +23,7 @@ Built-in blocks come with default labels or icons, styles, as well as an english
 
 ## Custom blocks
 
-Simple blocks are very easy to create. Add a new block type to `blockTypes`. Here is an example, creating a "Tiny text" block:
+Simple blocks are very easy to create. Add a new block type to [`blockTypes`](API.md#blocks-docs-blocks). Here is an example, creating a "Tiny text" block:
 
 ```jsx
 blockTypes={[

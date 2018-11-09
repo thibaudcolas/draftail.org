@@ -5,7 +5,7 @@ title: Decorators
 
 > Those extensions require a good understanding of the [Draft.js](https://draftjs.org/) API.
 
-Custom decorators follow the Draft.js [CompositeDecorator](https://draftjs.org/docs/advanced-topics-decorators.html#compositedecorator) API. They can be specified as an array via the `decorators` prop of the editor, with `strategy` and `component` attributes.
+Custom decorators follow the Draft.js [CompositeDecorator](https://draftjs.org/docs/advanced-topics-decorators.html#compositedecorator) API. They can be specified as an array via the [`decorators`](API.md#decorators-docs-decorators) prop of the editor, with `strategy` and `component` attributes.
 
 A very basic example would be a hashtag decorator:
 

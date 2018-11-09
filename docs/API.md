@@ -58,22 +58,7 @@ maxListNesting: 1,
 stateSaveInterval: 250,
 ```
 
-## Blocks
-
-```jsx
-// Unique type shared between block instances.
-type: PropTypes.string.isRequired,
-// Describes the block in the editor UI, concisely.
-label: PropTypes.string,
-// Describes the block in the editor UI.
-description: PropTypes.string,
-// Represents the block in the editor UI.
-icon: [...], // see documentation.
-// DOM element used to display the block within the editor area.
-element: PropTypes.string,
-```
-
-## Inline styles
+## [Inline styles](InlineStyles.md)
 
 ```jsx
 // Unique type shared between inline style instances.
@@ -83,12 +68,27 @@ label: PropTypes.string,
 // Describes the inline style in the editor UI.
 description: PropTypes.string,
 // Represents the inline style in the editor UI.
-icon: [...], // see documentation.
+icon: [...],
 // CSS properties (in JS format) to apply for styling within the editor area.
 style: PropTypes.Object,
 ```
 
-## Entities
+## [Blocks](Blocks.md)
+
+```jsx
+// Unique type shared between block instances.
+type: PropTypes.string.isRequired,
+// Describes the block in the editor UI, concisely.
+label: PropTypes.string,
+// Describes the block in the editor UI.
+description: PropTypes.string,
+// Represents the block in the editor UI.
+icon: [...],
+// DOM element used to display the block within the editor area.
+element: PropTypes.string,
+```
+
+## [Entities](Entities.md)
 
 ```jsx
 // Unique type shared between entity instances.
@@ -98,7 +98,7 @@ label: PropTypes.string,
 // Describes the entity in the editor UI.
 description: PropTypes.string,
 // Represents the entity in the editor UI.
-icon: [...], // see documentation.
+icon: [...],
 // React component providing the UI to manage entities of this type.
 source: PropTypes.func.isRequired,
 // React component to display inline entities.
@@ -113,11 +113,22 @@ attributes: PropTypes.arrayOf(PropTypes.string),
 whitelist: PropTypes.object,
 ```
 
-## Decorators
+## [Decorators](Decorators.md)
 
 ```jsx
 // Determines which pieces of content are to be decorated.
 strategy: PropTypes.func,
 // React component to display the decoration.
 component: PropTypes.func,
+```
+
+## [Controls](ArbitraryControls.md)
+
+```jsx
+// Takes an array of React component, which receive the following props:
+
+// Retrieve the full Draft.js EditorState.
+getEditorState: PropTypes.func,
+// Change any part of the EditorState.
+onChange: PropTypes.func,
 ```
