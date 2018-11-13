@@ -3,7 +3,13 @@ id: api
 title: API Reference
 ---
 
-To change the behavior of the editor, pass props to `DraftailEditor`. Here are the available props, and their default values:
+## DraftailEditor
+
+```js
+import { DraftailEditor } from "draftail"
+```
+
+To change the behavior of the editor, pass props to the `DraftailEditor` component. Here are the available props, and their default values:
 
 ```jsx
 // Initial content of the editor. Use this to edit pre-existing content.
@@ -58,7 +64,13 @@ maxListNesting: 1,
 stateSaveInterval: 250,
 ```
 
-## [Inline styles](InlineStyles.md)
+### [Inline styles](InlineStyles.md)
+
+```jsx
+const editor = <DraftailEditor inlineStyles={[...]} />
+```
+
+Each item in `inlineStyles` can have the following props:
 
 ```jsx
 // Unique type shared between inline style instances.
@@ -73,7 +85,13 @@ icon: [...],
 style: PropTypes.Object,
 ```
 
-## [Blocks](Blocks.md)
+### [Blocks](Blocks.md)
+
+```jsx
+const editor = <DraftailEditor blockTypes={[...]} />
+```
+
+Each item in `blockTypes` can have the following props:
 
 ```jsx
 // Unique type shared between block instances.
@@ -88,7 +106,13 @@ icon: [...],
 element: PropTypes.string,
 ```
 
-## [Entities](Entities.md)
+### [Entities](Entities.md)
+
+```jsx
+const editor = <DraftailEditor entityTypes={[...]} />
+```
+
+Each item in `entityTypes` can have the following props:
 
 ```jsx
 // Unique type shared between entity instances.
@@ -113,7 +137,13 @@ attributes: PropTypes.arrayOf(PropTypes.string),
 whitelist: PropTypes.object,
 ```
 
-## [Decorators](Decorators.md)
+### [Decorators](Decorators.md)
+
+```jsx
+const editor = <DraftailEditor decorators={[...]} />
+```
+
+Each item in `decorators` can have the following props:
 
 ```jsx
 // Determines which pieces of content are to be decorated.
@@ -122,11 +152,15 @@ strategy: PropTypes.func,
 component: PropTypes.func,
 ```
 
-## [Controls](ArbitraryControls.md)
+### [Controls](ArbitraryControls.md)
 
 ```jsx
-// Takes an array of React component, which receive the following props:
+const editor = <DraftailEditor controls={[...]} />
+```
 
+Each item in `controls` can have the following props:
+
+```jsx
 // Retrieve the full Draft.js EditorState.
 getEditorState: PropTypes.func,
 // Change any part of the EditorState.
@@ -135,4 +169,4 @@ onChange: PropTypes.func,
 
 ## Managing focus
 
-Draftail has a `focus()` API [like that of Draft.js](https://draftjs.org/docs/advanced-topics-managing-focus.html#content). Use it to imperatively move focus to the editor.
+The `DraftailEditor` has a `focus()` API [like that of Draft.js](https://draftjs.org/docs/advanced-topics-managing-focus.html#content). Use it to imperatively move focus to the editor.
