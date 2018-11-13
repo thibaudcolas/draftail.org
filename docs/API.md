@@ -170,3 +170,65 @@ onChange: PropTypes.func,
 ## Managing focus
 
 The `DraftailEditor` has a `focus()` API [like that of Draft.js](https://draftjs.org/docs/advanced-topics-managing-focus.html#content). Use it to imperatively move focus to the editor.
+
+## Content format identifiers
+
+Draftail exports identifiers for common rich text formats to ensure the same identifiers are used consistently.
+
+```js
+import { INLINE_STYLE, BLOCK_TYPE, ENTITY_TYPE } from "draftail"
+```
+
+For inline styles:
+
+```js
+// See https://github.com/facebook/draft-js/blob/master/src/model/immutable/DefaultDraftInlineStyle.js
+export const INLINE_STYLE = {
+  BOLD: "BOLD",
+  ITALIC: "ITALIC",
+  CODE: "CODE",
+  UNDERLINE: "UNDERLINE",
+  STRIKETHROUGH: "STRIKETHROUGH",
+  MARK: "MARK",
+  QUOTATION: "QUOTATION",
+  SMALL: "SMALL",
+  SAMPLE: "SAMPLE",
+  INSERT: "INSERT",
+  DELETE: "DELETE",
+  KEYBOARD: "KEYBOARD",
+  SUPERSCRIPT: "SUPERSCRIPT",
+  SUBSCRIPT: "SUBSCRIPT",
+}
+```
+
+For blocks:
+
+```js
+// See https://github.com/facebook/draft-js/blob/master/src/model/immutable/DefaultDraftBlockRenderMap.js
+export const BLOCK_TYPE = {
+  // This is used to represent a normal text block (paragraph).
+  UNSTYLED: "unstyled",
+  HEADER_ONE: "header-one",
+  HEADER_TWO: "header-two",
+  HEADER_THREE: "header-three",
+  HEADER_FOUR: "header-four",
+  HEADER_FIVE: "header-five",
+  HEADER_SIX: "header-six",
+  UNORDERED_LIST_ITEM: "unordered-list-item",
+  ORDERED_LIST_ITEM: "ordered-list-item",
+  BLOCKQUOTE: "blockquote",
+  CODE: "code-block",
+  // This represents a "custom" block, not for rich text, with arbitrary content.
+  ATOMIC: "atomic",
+}
+```
+
+For entities:
+
+```js
+export const ENTITY_TYPE = {
+  LINK: "LINK",
+  IMAGE: "IMAGE",
+  HORIZONTAL_RULE: "HORIZONTAL_RULE",
+}
+```
