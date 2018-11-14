@@ -9,10 +9,14 @@
       "decorators",
       "arbitrary-controls"
     ],
-    "Guides": ["getting-started-with-extensions"],
+    "Guides": [
+      "getting-started-with-extensions",
+      "importing-and-exporting-html"
+    ],
     "User Guides": ["user-guide", "keyboard-shortcuts"],
     "API Reference": [
       "api",
+      "content-storage",
       "ui-theming",
       "customising-icons",
       "i18n",

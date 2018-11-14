@@ -17,6 +17,9 @@
       "browser-support": {
         "title": "Browser support and polyfills"
       },
+      "content-storage": {
+        "title": "Content storage"
+      },
       "customising-icons": {
         "title": "Customising icons"
       },
@@ -37,6 +40,9 @@
       },
       "i18n": {
         "title": "i18n"
+      },
+      "importing-and-exporting-html": {
+        "title": "Importing and exporting HTML"
       },
       "inline-styles": {
         "title": "Inline styles"
