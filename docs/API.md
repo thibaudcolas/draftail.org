@@ -64,6 +64,10 @@ maxListNesting: 1,
 stateSaveInterval: 250,
 ```
 
+### rawContentState and onSave
+
+`rawContentState` and `onSave` are used to initialise the editor with content, and to periodically save new content. They work with [raw ContentState](ContentStorage.md) objects representing the editor’s content, or `null` if the editor is empty.
+
 ### [Inline styles](InlineStyles.md)
 
 ```jsx
