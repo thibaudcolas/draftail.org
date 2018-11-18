@@ -6,7 +6,7 @@
     "tagline": "📝🍸 A configurable rich text editor based on Draft.js and React, built for Wagtail",
     "docs": {
       "api": {
-        "title": "API Reference"
+        "title": "API reference"
       },
       "arbitrary-controls": {
         "title": "Arbitrary controls"

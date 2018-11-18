@@ -1,6 +1,6 @@
 ---
 id: user-guide
-title: User Guide
+title: User guide
 ---
 
 Draftail is an editor built for sites and apps of all shapes and sizes. It aims for a mouse-free, keyboard-centric experience. Most formatting can be done by using common keyboard shortcuts, inspired by [Google Docs](https://support.google.com/docs/answer/179738) and [Markdown](https://en.wikipedia.org/wiki/Markdown).

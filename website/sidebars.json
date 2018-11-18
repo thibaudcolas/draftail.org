@@ -13,8 +13,8 @@
       "getting-started-with-extensions",
       "importing-and-exporting-html"
     ],
-    "User Guides": ["user-guide", "keyboard-shortcuts"],
-    "API Reference": [
+    "User guides": ["user-guide", "keyboard-shortcuts"],
+    "API reference": [
       "api",
       "content-storage",
       "ui-theming",

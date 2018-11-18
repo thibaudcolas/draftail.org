@@ -1,6 +1,6 @@
 ---
 id: api
-title: API Reference
+title: API reference
 ---
 
 ## DraftailEditor
