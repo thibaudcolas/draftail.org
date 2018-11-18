@@ -78,19 +78,6 @@ class HomeSplash extends React.Component {
             </Button>
             <Button href={pageUrl("examples", language)}>View Examples</Button>
           </PromoSection>
-          <div className="githubButton" style={{ minHeight: "20px" }}>
-            <a
-              className="github-button"
-              href="https://github.com/springload/draftail"
-              data-icon="octicon-star"
-              data-count-href="/springload/draftail/stargazers"
-              data-show-count={true}
-              data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star Draftail on GitHub"
-            >
-              Star
-            </a>
-          </div>
         </div>
       </SplashContainer>
     )
