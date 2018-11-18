@@ -7,6 +7,8 @@ title: API reference
 
 ```js
 import { DraftailEditor } from "draftail"
+
+const editor = <DraftailEditor />
 ```
 
 To change the behavior of the editor, pass props to the `DraftailEditor` component. Here are the available props, and their default values:
