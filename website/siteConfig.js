@@ -73,6 +73,11 @@ const siteConfig = {
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Thibaud Colas`,
 
+  algolia: {
+    apiKey: "077ed44cb17520db8502e4c1b81d3e55",
+    indexName: "draftail",
+  },
+
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
     theme: "default",
