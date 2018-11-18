@@ -40,6 +40,8 @@ const content = `
 <p>This editor demonstrates <strong>HTML import and export</strong>.</p>
 <hr />
 <blockquote>Built with <a href="https://github.com/HubSpot/draft-convert">draft-convert</a></blockquote>
+<img src="static/example-lowres-image2.jpg"/>
+    <p></p>
 `
 
 const importerConfig = {
@@ -49,6 +51,12 @@ const importerConfig = {
       return createEntity(ENTITY_TYPE.LINK, "MUTABLE", { url: node.href })
     }
 
+    if (nodeName === "img") {
+      return createEntity(ENTITY_TYPE.IMAGE, "IMMUTABLE", {
+        src: node.src,
+      })
+    }
+
     if (nodeName === "hr") {
       return createEntity(ENTITY_TYPE.HORIZONTAL_RULE, "IMMUTABLE", {})
     }
@@ -56,7 +64,7 @@ const importerConfig = {
     return null
   },
   htmlToBlock: (nodeName) => {
-    if (nodeName === "hr") {
+    if (nodeName === "hr" || nodeName === "img") {
       // "atomic" blocks is how Draft.js structures block-level entities.
       return "atomic"
     }
@@ -121,6 +129,10 @@ const exporterConfig = {
       return <a href={entity.data.url}>{originalText}</a>
     }
 
+    if (entity.type === ENTITY_TYPE.IMAGE) {
+      return <img src={entity.data.src} alt={entity.data.alt} />
+    }
+
     if (entity.type === ENTITY_TYPE.HORIZONTAL_RULE) {
       return <hr />
     }
@@ -161,4 +173,4 @@ Again, most of the configuration work is with `convertToHTML`, but we also need 
 
 Here is a demo that initialises from HTML, and converts content to HTML on save (logged in the browser DevTools console).
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=HTML%20conversion" class="iframe iframe--docs-250"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=HTML%20conversion" class="iframe iframe--docs-400"></iframe>
