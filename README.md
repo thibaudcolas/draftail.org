@@ -7,3 +7,7 @@
 See anything you like in here? Anything missing? We welcome all support, whether on bug reports, feature requests, code, design, reviews, tests, documentation, and more. Please have a look at our [contribution guidelines](.github/CONTRIBUTING.md).
 
 If you just want to set up the project on your own computer, the contribution guidelines also contain all of the setup commands.
+
+## Credits
+
+The Draftail website is built with [Docusaurus](https://docusaurus.io/). Its search is powered by [Algolia DocSearch](https://community.algolia.com/docsearch/), and the site is hosted on [Netlify](https://www.netlify.com/).
