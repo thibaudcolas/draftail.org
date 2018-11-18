@@ -48,6 +48,6 @@ ReactDOM.render(editor, document.querySelector("[data-mount]"))
 
 Here is a demo of the result:
 
-<iframe src="https://demo.draftail.org/examples/iframe.html?selectedKind=Draftail&selectedStory=Simple" class="iframe iframe--docs-200"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Draftail&selectedStory=Simple" class="iframe iframe--docs-200"></iframe>
 
 Finally, be sure to check out the [required polyfills](BrowserSupport.md).

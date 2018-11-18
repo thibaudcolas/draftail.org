@@ -49,4 +49,4 @@ More advanced blocks, requiring custom React components, aren't supported at the
 
 With a live editor,
 
-<iframe src="https://demo.draftail.org/examples/iframe.html?selectedKind=Docs&selectedStory=Blocks" class="iframe iframe--docs-200"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=Blocks" class="iframe iframe--docs-200"></iframe>

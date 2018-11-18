@@ -44,7 +44,7 @@ class Users extends React.Component {
               </p>
             </div>
             <iframe
-              src="https://demo.draftail.org/examples/iframe.html?selectedKind=Examples&selectedStory=Custom%20formats"
+              src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Examples&selectedStory=Custom%20formats"
               className="iframe iframe--custom"
             />
             <div className="prose">
@@ -61,7 +61,7 @@ class Users extends React.Component {
               </p>
             </div>
             <iframe
-              src="https://demo.draftail.org/examples/iframe.html?selectedKind=Examples&selectedStory=All%20built-in%20formats"
+              src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Examples&selectedStory=All%20built-in%20formats"
               className="iframe iframe--all"
             />
           </div>
