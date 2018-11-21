@@ -29,6 +29,9 @@
       "entities": {
         "title": "Entities"
       },
+      "extensions-tutorial-max-length": {
+        "title": "Extensions tutorial: max length"
+      },
       "formatting-options": {
         "title": "Formatting options"
       },
@@ -54,7 +57,7 @@
         "title": "UI theming"
       },
       "user-guide": {
-        "title": "User Guide"
+        "title": "User guide"
       }
     },
     "links": {
@@ -66,8 +69,8 @@
     "categories": {
       "Introduction": "Introduction",
       "Guides": "Guides",
-      "User Guides": "User Guides",
-      "API Reference": "API Reference"
+      "User guides": "User guides",
+      "API reference": "API reference"
     }
   },
   "pages-strings": {
