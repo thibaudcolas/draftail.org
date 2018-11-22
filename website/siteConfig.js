@@ -36,6 +36,7 @@ const siteConfig = {
     { doc: "getting-started", label: "Docs" },
     { doc: "api", label: "API" },
     { blog: true, label: "Blog" },
+    { search: true },
     {
       href: "https://github.com/springload/draftail",
       label: "GitHub",

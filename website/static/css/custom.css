@@ -72,3 +72,103 @@
   min-height: 340px;
   width: 100%;
 }
+
+hr {
+  border-width: 1px 0 0 0;
+}
+
+blockquote {
+  background: #fafbfc;
+  border-left-color: #e0e0e0;
+  color: inherit;
+}
+
+/* ####### LINKS ####### */
+
+.mainContainer a:not(.hash-link) {
+  background-color: #eef8ff;
+  border-bottom: 1px dotted #007d7e;
+  color: #1a1a1a;
+  transition: all 0.25s ease-out;
+}
+
+.mainContainer a:not(.hash-link):hover {
+  background-color: transparent;
+  text-decoration: none !important;
+}
+
+.mainContainer a code {
+  background-color: transparent;
+}
+
+.mainContainer a.anchor {
+  border-width: 0;
+}
+
+.mainContainer a.button {
+  border-bottom-style: solid;
+  background-color: transparent;
+}
+
+/* ####### HEADER & FOOTER ####### */
+
+.algolia-autocomplete {
+  line-height: 20px;
+}
+
+/* ####### POST ####### */
+
+.read-more {
+  margin-top: 2rem;
+}
+
+.blogContainer .postHeader p.post-meta {
+  float: left;
+  font-size: 0.875rem;
+}
+
+.blogContainer .postHeader .authorBlock:before {
+  content: "by ";
+  font-size: 0.875rem;
+  margin: 1px 5px;
+}
+
+.blogContainer h2 {
+  font-size: 32px;
+}
+
+.blogContainer h3 {
+  font-size: 24px;
+}
+
+.blogContainer h4 {
+  font-size: 20px;
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.page-header > h1 {
+  font-size: 36px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.page-header > p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+table td code {
+  color: #393939;
+  word-break: normal;
+}
