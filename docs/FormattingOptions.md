@@ -15,7 +15,7 @@ Draftail, like Draft.js, distinguishes between 3 content formats:
 - Inline styles: Bold, Italic, Underline, Code, Strikethrough, Mark, Keyboard, Superscript, Subscript
 - And HR, BR
 
-View [an example all of the formats](/examples#all), or try them out below.
+View the [all-formats example](/examples#all), or try them out below.
 
 <iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=Built-in%20formats" class="iframe iframe--docs-250"></iframe>
 
