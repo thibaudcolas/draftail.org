@@ -80,12 +80,23 @@ const siteConfig = {
   },
 
   highlight: {
-    // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: "default",
+    theme: "tomorrow",
+    hljs: (hljs) => {
+      hljs.registerLanguage("json5", (hljs) => hljs.getLanguage("javascript"))
+    },
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: [],
+  scripts: [
+    {
+      src: "https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js",
+      defer: true,
+    },
+    {
+      src: "/js/code-blocks-buttons.js",
+      defer: true,
+    },
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: "separate",
