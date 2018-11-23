@@ -14,8 +14,7 @@ const users = [
 
 const siteConfig = {
   title: "Draftail",
-  tagline:
-    "📝🍸 A configurable rich text editor based on Draft.js and React, built for Wagtail",
+  tagline: "📝🍸 A configurable rich text editor built with Draft.js",
   baseUrl: "/",
   url: "https://www.draftail.org/",
 

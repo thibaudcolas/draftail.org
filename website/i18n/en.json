@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "📝🍸 A configurable rich text editor based on Draft.js and React, built for Wagtail",
+    "tagline": "📝🍸 A configurable rich text editor built with Draft.js",
     "docs": {
       "api": {
         "title": "API reference"

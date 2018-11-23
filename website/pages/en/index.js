@@ -47,12 +47,7 @@ const SplashContainer = (props) => (
 const ProjectTitle = () => (
   <h2 className="projectTitle">
     {siteConfig.title}
-    <small>
-      {siteConfig.tagline}
-      <a href="https://github.com/wagtail/wagtail">
-        <img src={imgUrl("wagtail.svg")} alt="" width="32" />
-      </a>
-    </small>
+    <small>{siteConfig.tagline}</small>
   </h2>
 )
 
@@ -188,8 +183,11 @@ const Showcase = (props) => {
     <div className="productShowcaseSection paddingBottom">
       <h2>Who’s using Draftail?</h2>
       <p>
-        Draftail is the default editor of{" "}
+        Draftail is the editor that powers{" "}
         <a href="https://wagtail.io/">Wagtail</a>.
+        <a href="https://wagtail.io/">
+          <img src={imgUrl("wagtail.svg")} alt="" width="32" />
+        </a>
       </p>
       {/* <div className="logos">{showcase}</div> */}
       <div className="more-users">
