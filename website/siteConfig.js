@@ -78,6 +78,8 @@ const siteConfig = {
     indexName: "draftail",
   },
 
+  usePrism: ["jsx"],
+
   highlight: {
     theme: "tomorrow",
     hljs: (hljs) => {
