@@ -1,12 +1,12 @@
 const React = require("react")
 
-const CompLibrary = require("../../core/CompLibrary.js")
+const CompLibrary = require("../../core/CompLibrary")
 
-const MarkdownBlock = CompLibrary.MarkdownBlock /* Used to read markdown */
+const MarkdownBlock = CompLibrary.MarkdownBlock
 const Container = CompLibrary.Container
 const GridBlock = CompLibrary.GridBlock
 
-const siteConfig = require(`${process.cwd()}/siteConfig.js`)
+const siteConfig = require(`${process.cwd()}/siteConfig`)
 
 function imgUrl(img) {
   return `${siteConfig.baseUrl}img/${img}`
@@ -90,80 +90,58 @@ const Block = (props) => (
 )
 
 const Features = () => (
-  <Block background="light" layout="fourColumn">
-    {[
-      {
-        content:
-          "Draftail is intuitive to use regardless of skill level. All rich text formatting is available via the toolbar, and [keyboard shortcuts](/docs/keyboard-shortcuts). Power users can even use Markdown!",
-        // image: imgUrl("docusaurus.svg"),
-        // imageAlign: "top",
-        title: "Easy to use",
-      },
-      {
-        content:
-          "Rich text shouldn’t be a black box. Your use case may require special formatting. Draftail comes with an extensive API backed by [Draft.js](https://draftjs.org/) and [React](https://reactjs.org/).",
-        // image: imgUrl("docusaurus.svg"),
-        // imageAlign: "top",
-        title: "Extensible",
-      },
-      //      {
-      //        content:
-      //          "",
-      //        // image: imgUrl("docusaurus.svg"),
-      //        // imageAlign: "top",
-      //        title: "Pluggable",
-      //},
-    ]}
-  </Block>
-)
+  <Container padding={["bottom", "top"]} background="light">
+    <GridBlock
+      align="center"
+      contents={[
+        {
+          content: `Draftail is easy to use regardless of skill level. All rich text formatting is available via the toolbar, and [keyboard shortcuts](/docs/keyboard-shortcuts). Power users can even use Markdown!`,
+          image: imgUrl("visuals/beachumbrella.svg"),
+          imageAlign: "top",
+          imageAlt: "",
+          title: "Easy to use",
+        },
+        {
+          content: `Rich text shouldn’t be a black box. Custom extensions for a specific use case shouldn't be a headache. Draftail comes with an extensive API backed by [Draft.js](https://draftjs.org/) and [React](https://reactjs.org/).`,
+          image: imgUrl("visuals/react.svg"),
+          imageAlign: "top",
+          imageAlt: "",
+          title: "Extensible",
+        },
 
-// const FeatureCallout = () => (
-//   <div
-//     className="productShowcaseSection paddingBottom"
-//     style={{ textAlign: "center" }}
-//   >
-//     <h2>Feature Callout</h2>
-//     <MarkdownBlock>These are features of this project</MarkdownBlock>
-//   </div>
-// )
-
-const LearnHow = () => (
-  <Block background="light">
-    {[
-      {
-        content: "Talk about learning how to use this",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "right",
-        title: "Learn How",
-      },
-    ]}
-  </Block>
-)
-
-const TryOut = () => (
-  <Block id="try">
-    {[
-      {
-        content: "Talk about trying this out",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "left",
-        title: "Try it Out",
-      },
-    ]}
-  </Block>
-)
-
-const Description = () => (
-  <Block background="dark">
-    {[
-      {
-        content: "This is another description of how this project is useful",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "right",
-        title: "Description",
-      },
-    ]}
-  </Block>
+        {
+          content: `Paste content from Word. Or just about [any editor](https://github.com/thibaudcolas/draftjs-filters#word-processor-support). Draftail will only keep the formatting you care about, and discard any cruft. [See it in action ](https://www.youtube.com/watch?v=q-uVc-7ZYso).`,
+          image: imgUrl("visuals/clipboard.svg"),
+          imageAlign: "top",
+          imageAlt: "",
+          title: "Word-friendly",
+        },
+      ]}
+      layout="threeColumn"
+    />
+    <br />
+    <br />
+    <GridBlock
+      align="center"
+      contents={[
+        {
+          content: `All of the editor’s labels can easily be translated. Have a look at our [example with react-intl](/docs/i18n).`,
+          image: imgUrl("visuals/meridianglobe.svg"),
+          imageAlign: "top",
+          imageAlt: "",
+          title: "Ready for translations",
+        },
+        {
+          content: `Draftail’s UI is very simple to customise, so it integrates perfectly within your app. Take a look at the [UI theming](/docs/ui-theming) docs.`,
+          image: imgUrl("visuals/artistpalette.svg"),
+          imageAlign: "top",
+          imageAlt: "",
+          title: "Theming",
+        },
+      ]}
+      layout="twoColumn"
+    />
+  </Container>
 )
 
 const Showcase = (props) => {
@@ -227,10 +205,8 @@ class Index extends React.Component {
             <ul className="bullet-list">
               <li>
                 Support for{" "}
-                <a href="https://www.draftail.org/docs/keyboard-shortcuts">
-                  keyboard shortcuts
-                </a>
-                . Lots of them!
+                <a href="/docs/keyboard-shortcuts">keyboard shortcuts</a>. Lots
+                of them!
               </li>
               <li>
                 Autolists – start a line with <kbd>-</kbd>, <kbd>*</kbd>,{" "}
@@ -258,25 +234,11 @@ class Index extends React.Component {
             className="iframe iframe--home"
           />
           <Features />
-          {/* <FeatureCallout /> */}
-          {/* <LearnHow /> */}
-          {/* <TryOut /> */}
-          {/* <Description /> */}
           {/* <Showcase language={language} /> */}
           <Container padding={["bottom", "top"]}>
             <a className="anchor" name="watch" />
             <a className="hash-link" href="#watch" />
             <div className="blockElement imageAlignSide twoByGridBlock">
-              <div className="video">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/mf8AS5EwHvc"
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                />
-              </div>
               <div className="blockContent">
                 <h2>Watch videos about Draftail</h2>
                 <div>
@@ -287,6 +249,16 @@ class Index extends React.Component {
                     extensions](https://www.youtube.com/playlist?list=PLjHJbyg4XIC9J0apkmJe0P3ai9j_PWFwj).
                   </MarkdownBlock>
                 </div>
+              </div>
+              <div className="video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/mf8AS5EwHvc"
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                />
               </div>
             </div>
           </Container>
