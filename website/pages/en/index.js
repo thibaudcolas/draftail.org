@@ -85,7 +85,7 @@ const Block = (props) => (
     id={props.id}
     background={props.background}
   >
-    <GridBlock align="center" contents={props.children} layout={props.layout} />
+    <GridBlock contents={props.children} layout={props.layout} />
   </Container>
 )
 
@@ -234,8 +234,19 @@ class Index extends React.Component {
             className="iframe iframe--home"
           />
           <Features />
-          {/* <Showcase language={language} /> */}
-          <Container padding={["bottom", "top"]}>
+          <Block id="wagtail" layout="oneColumn" background="white">
+            {[
+              {
+                content: `Draftail is the default rich text editor of [Wagtail](https://wagtail.io/), a Django content management system used by [hundreds of organisations](https://madewithwagtail.org/).`,
+                image: imgUrl("wagtail-page-edit-screenshot.png"),
+                imageAlign: "left",
+                imageAlt: "",
+                align: "left",
+                title: "Powering Wagtail",
+              },
+            ]}
+          </Block>
+          <Container padding={["bottom", "top"]} background="light">
             <a className="anchor" name="watch" />
             <a className="hash-link" href="#watch" />
             <div className="blockElement imageAlignSide twoByGridBlock">
