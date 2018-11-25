@@ -3,13 +3,13 @@ id: getting-started
 title: Getting started
 ---
 
-First, install the package and its peer dependencies: [Draft.js](https://draftjs.org/) and [React](https://reactjs.org/).
+Draftail is built with [Draft.js](https://draftjs.org/) and [React](https://reactjs.org/). Let’s start by installing them both, as well as Draftail:
 
 ```sh
 npm install --save draftail draft-js@^0.10.5 react react-dom prop-types
 ```
 
-Import the styles for Draft.js, and the editor:
+We will also need to import the styles of Draft.js, and of the editor:
 
 ```scss
 @import "draft-js/dist/Draft";
@@ -46,8 +46,8 @@ const editor = (
 ReactDOM.render(editor, document.querySelector("[data-mount]"))
 ```
 
-Here is a demo of the result:
+In this example, the editor will have four buttons in its toolbar: H3, bullet list, bold, and italic. Here is a demo of the result:
 
 <iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Draftail&selectedStory=Simple" class="iframe iframe--docs-200"></iframe>
 
-Finally, be sure to check out the [required polyfills](BrowserSupport.md).
+Draftail supports many more [formatting options](FormattingOptions.md). Be sure to also check out the [required polyfills](BrowserSupport.md).
