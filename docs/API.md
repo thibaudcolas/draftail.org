@@ -18,6 +18,10 @@ To change the behavior of the editor, pass props to the `DraftailEditor` compone
 rawContentState: null,
 // Called when changes occured. Use this to persist editor content.
 onSave: () => {},
+// Called when the editor receives focus.
+onFocus: null,
+// Called when the editor loses focus.
+onBlur: null,
 // Displayed when the editor is empty. Hidden if the user changes styling.
 placeholder: null,
 // Enable the use of horizontal rules in the editor.
