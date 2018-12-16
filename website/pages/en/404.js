@@ -1,4 +1,4 @@
-const React = require("react");
+const React = require("react")
 
 class ErrorPage extends React.Component {
   render() {
@@ -11,8 +11,8 @@ class ErrorPage extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-module.exports = ErrorPage;
+module.exports = ErrorPage
