@@ -15,11 +15,11 @@ class Versions extends React.Component {
         <Container className="mainContainer versionsContainer">
           <div className="post">
             <header className="postHeader">
-              <h2>{`${siteConfig.title} Versions`}</h2>
+              <h2>{`${siteConfig.title} versions`}</h2>
             </header>
             <p>New versions of this project are released periodically.</p>
             <a name="latest" />
-            <h3>Current version (Stable)</h3>
+            <h3>Current version (stable)</h3>
             <table className="versions">
               <tbody>
                 <tr>
@@ -29,7 +29,7 @@ class Versions extends React.Component {
                   </td>
                   <td>
                     <a href={`${repoUrl}/releases/tag/v${latestVersion}`}>
-                      Release Notes
+                      Release notes
                     </a>
                   </td>
                 </tr>
@@ -49,21 +49,21 @@ class Versions extends React.Component {
                     </a>
                   </td>
                   <td>
-                    <a href={repoUrl}>Source Code</a>
+                    <a href={repoUrl}>Source code</a>
                   </td>
                 </tr>
               </tbody>
             </table>
             <div>
               <a name="archive" />
-              <h3>Past Versions</h3>
+              <h3>Past versions</h3>
               <table className="versions">
                 <tbody>
                   {versions
                     .concat(undocumentedVersions)
                     .filter((v) => v !== latestVersion)
                     .map((version) => (
-                      <tr>
+                      <tr key={version}>
                         <th>{version}</th>
                         <td>
                           {version.startsWith("0") ? null : (
