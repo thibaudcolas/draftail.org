@@ -3,7 +3,7 @@ id: importing-and-exporting-html
 title: Importing and exporting HTML
 ---
 
-Like all Draft.js editors, Draftail does not process content directly. [Content storage](ContentStorage.md) can be done with the Draft.js representation, but it is also possible to import and export HTML instead.
+Like all Draft.js editors, Draftail does not process HTML directly: It uses its own content representation. [Content storage](ContentStorage.md) can be done with the Draft.js representation, but it is also possible to import and export HTML instead.
 
 ## Deciding how to store content
 
