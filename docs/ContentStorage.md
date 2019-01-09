@@ -55,3 +55,62 @@ const rawContentState = {
   },
 }
 ```
+
+### Blocks
+
+Think of blocks as [block-level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements) in HTML: headings, paragraphs, embeds, etc. They direct the flow of the content, taking up the whole width of their containers, following one-another vertically. All of the editor’s content is stored in this `blocks` array.
+
+Draft.js represents each block with the following attributes:
+
+- `key`, a unique identifier for the block.
+- `text`, the block’s content in plain-text form.
+- `type`, defining how the block behaves in the editor as well as how it should be displayed to end users.
+- `depth`, whether the block is visually nested (e.g. for lists), and if so by how many levels.
+- `inlineStyleRanges`, indicating where styles are applied in the text.
+- `entityRanges`, indicating where entities are applied.
+- `data`, additional data/metadata stored alongside the block.
+
+### Block type
+
+The block `type` generally defines how a block is meant to be used in the editor, and displayed later on in the content lifecycle. Blocks are `unstyled` by default.
+
+Draft.js comes with [predefined types](https://github.com/facebook/draft-js/blob/master/src/model/immutable/DefaultDraftBlockRenderMap.js), which generally map to HTML elements:
+
+- `unstyled`
+- `header-one`
+- `header-two`
+- `header-three`
+- `header-four`
+- `header-five`
+- `header-six`
+- `unordered-list-item`
+- `ordered-list-item`
+- `blockquote`
+- `code-block`
+- `atomic`, used for embedded, mostly non-textual content.
+
+### Inline styles
+
+`inlineStyleRanges` lists all of the locations in the block’s text where styles have been applied, based on starting `offset` and `length`. When multiple styles are applied to a given chunk of text, the ranges can overlap.
+
+Here as well, Draft.js comes with [predefined types of styles](https://github.com/facebook/draft-js/blob/master/src/model/immutable/DefaultDraftInlineStyle.js):
+
+- `BOLD`
+- `CODE`
+- `ITALIC`
+- `STRIKETHROUGH`
+- `UNDERLINE`
+
+### Entities
+
+Like for styles, `entityRanges` lists the positions in `text` where entities are applied as an `offset` and `length`. These cannot overlap. Entities are associated by `key`, which corresponds to the `entityMap`.
+
+In the `entityMap`, entities are stored as:
+
+- `type`, like for blocks, defining how the entity behaves in the editor and how it should be displayed.
+- `mutability` (`MUTABLE`/`IMMUTABLE`), whether changes in the text the entity is applied on are allowed (e.g. links on arbitrary text, vs mentions containing a person’s full name).
+- `data`, to store arbitrary data for the entity.
+
+---
+
+To learn more about Draft.js, check out resources listed on the [Awesome Draft.js](https://github.com/nikgraf/awesome-draft-js) list.
