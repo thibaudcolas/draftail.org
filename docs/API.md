@@ -179,7 +179,7 @@ onChange: PropTypes.func,
 
 ## Managing focus
 
-The `DraftailEditor` has a `focus()` API [like that of Draft.js](https://draftjs.org/docs/advanced-topics-managing-focus.html#content). Use it to imperatively move focus to the editor.
+The `DraftailEditor` has a `focus()` API [like that of Draft.js](https://draftjs.org/docs/advanced-topics-managing-focus.html#content). Use it to imperatively move focus to the editor. There are also `onFocus` and `onBlur` props to hook into the editor’s focus lifecycle, for example for [form validation](FormValidation.md).
 
 ## Content format identifiers
 
