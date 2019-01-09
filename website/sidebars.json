@@ -12,7 +12,8 @@
     "Guides": [
       "getting-started-with-extensions",
       "extensions-tutorial-max-length",
-      "importing-and-exporting-html"
+      "importing-and-exporting-html",
+      "form-validation"
     ],
     "User guides": ["user-guide", "keyboard-shortcuts"],
     "API reference": [
