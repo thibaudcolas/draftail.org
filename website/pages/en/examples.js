@@ -53,6 +53,9 @@ class Users extends React.Component {
                 Here are all of the formatting options available by default in
                 Draftail or Draft.js. Most of them do not have much built-in
                 behavior except from keyboard shortcuts.
+                <br />
+                In particular, images and links do not come with any UI for
+                choosers/pickers and tooltips.
               </p>
               <p>
                 <a href="https://github.com/springload/draftail/blob/master/examples/examples.story.js">
