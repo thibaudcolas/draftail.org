@@ -115,6 +115,21 @@
       },
       "version-1.0.0-user-guide": {
         "title": "User guide"
+      },
+      "version-1.1.0-api": {
+        "title": "API reference"
+      },
+      "version-1.1.0-content-storage": {
+        "title": "Content storage"
+      },
+      "version-1.1.0-form-validation": {
+        "title": "Form validation"
+      },
+      "version-1.1.0-getting-started": {
+        "title": "Getting started"
+      },
+      "version-1.1.0-importing-and-exporting-html": {
+        "title": "Importing and exporting HTML"
       }
     },
     "links": {
