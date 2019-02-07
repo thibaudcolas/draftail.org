@@ -6,7 +6,7 @@ title: Getting started
 Draftail is built with [Draft.js](https://draftjs.org/) and [React](https://reactjs.org/). Let’s start by installing them both, as well as Draftail:
 
 ```sh
-npm install --save draftail draft-js@^0.10.5 react react-dom prop-types
+npm install --save draftail draft-js@^0.10.5 react react-dom
 ```
 
 We will also need to import the styles of Draft.js, and of the editor:
