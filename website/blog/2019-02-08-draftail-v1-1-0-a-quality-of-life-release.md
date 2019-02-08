@@ -11,7 +11,7 @@ It’s been a while since the last Draftail release! [Draftail v1.1.0](https://w
 
 ## Bug fixes and new features
 
-This release comes with a new feature – support for [form validation](FormValidation.md) (and more), with [`onFocus`](API.md#managing-focus) and [`onBlur`](API.md#managing-focus) props for the editor. Thanks to [@TheSpicyMeatball](https://github.com/TheSpicyMeatball) for making this happen.
+This release comes with a new feature – support for [form validation](/docs/form-validation) (and more), with [`onFocus`](/docs/api#managing-focus) and [`onBlur`](/docs/api#managing-focus) props for the editor. Thanks to [@TheSpicyMeatball](https://github.com/TheSpicyMeatball) for making this happen.
 
 It also comes with many bug fixes:
 
