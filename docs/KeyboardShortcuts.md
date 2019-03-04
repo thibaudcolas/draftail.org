@@ -20,11 +20,11 @@ Here are all of the keyboard shortcuts supported by the editor. Please bear in m
 | Open link                                         | `Alt + ↵`             | `⌥ + ↵`               |          |
 | Insert horizontal rule                            |                       |                       | `---`    |
 | **Text formatting (if enabled)**                  |                       |                       |          |
-| Bold                                              | `Ctrl + B`            | `⌘ + B`               |          |
-| Italic                                            | `Ctrl + I`            | `⌘ + I`               |          |
+| Bold                                              | `Ctrl + B`            | `⌘ + B`               | `**`     |
+| Italic                                            | `Ctrl + I`            | `⌘ + I`               | `_`      |
 | Underline                                         | `Ctrl + U`            | `⌘ + U`               |          |
-| Monospace (code)                                  | `Ctrl + J`            | `⌘ + J`               |          |
-| Strikethrough                                     | `Ctrl + ⇧ + X`        | `⌘ + ⇧ + X`           |          |
+| Monospace (code)                                  | `Ctrl + J`            | `⌘ + J`               | `` ` ``  |
+| Strikethrough                                     | `Ctrl + ⇧ + X`        | `⌘ + ⇧ + X`           | `~`      |
 | Superscript                                       | `Ctrl + .`            | `⌘ + .`               |          |
 | Subscript                                         | `Ctrl + ,`            | `⌘ + ,`               |          |
 | **Paragraph formatting (if enabled)**             |                       |                       |          |
