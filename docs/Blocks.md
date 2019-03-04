@@ -51,4 +51,4 @@ With a live editor,
 
 ## Custom block rendering
 
-TODO
+For even more advanced blocks requiring custom React components to render, please refer to the [`plugins`](Plugins.md) API.
