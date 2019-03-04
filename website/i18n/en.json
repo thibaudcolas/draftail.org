@@ -139,6 +139,24 @@
       },
       "version-1.1.0-importing-and-exporting-html": {
         "title": "Importing and exporting HTML"
+      },
+      "version-1.2.0-api": {
+        "title": "API reference"
+      },
+      "version-1.2.0-blocks": {
+        "title": "Blocks"
+      },
+      "version-1.2.0-customising-toolbars": {
+        "title": "Customising toolbars"
+      },
+      "version-1.2.0-extensions-tutorial-linkify": {
+        "title": "Extensions tutorial: linkify"
+      },
+      "version-1.2.0-keyboard-shortcuts": {
+        "title": "Keyboard Shortcuts"
+      },
+      "version-1.2.0-plugins": {
+        "title": "Plugins"
       }
     },
     "links": {
