@@ -23,11 +23,17 @@
       "customising-icons": {
         "title": "Customising icons"
       },
+      "customising-toolbars": {
+        "title": "Customising toolbars"
+      },
       "decorators": {
         "title": "Decorators"
       },
       "entities": {
         "title": "Entities"
+      },
+      "extensions-tutorial-linkify": {
+        "title": "Extensions tutorial: linkify"
       },
       "extensions-tutorial-max-length": {
         "title": "Extensions tutorial: max length"
@@ -55,6 +61,9 @@
       },
       "keyboard-shortcuts": {
         "title": "Keyboard Shortcuts"
+      },
+      "plugins": {
+        "title": "Plugins"
       },
       "ui-theming": {
         "title": "UI theming"

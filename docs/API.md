@@ -64,6 +64,12 @@ entityTypes: [],
 decorators: [],
 // Additional React components to render in the toolbar.
 controls: [],
+// List of plugins of the draft-js-plugins architecture.
+plugins: [],
+// Optionally override the default Draftail toolbar, removing or replacing it.
+topToolbar: Toolbar,
+// Optionally add a custom toolbar underneath the editor, e.g. for metrics.
+bottomToolbar: null,
 // Max level of nesting for list items. 0 = no nesting. Maximum = 10.
 maxListNesting: 1,
 // Frequency at which to call the save callback (ms).
@@ -176,6 +182,14 @@ getEditorState: PropTypes.func,
 // Change any part of the EditorState.
 onChange: PropTypes.func,
 ```
+
+### [Plugins](Plugins.md)
+
+```jsx
+const editor = <DraftailEditor plugins={[...]} />
+```
+
+Each item in `plugins` follows the [draft-js-plugins API](https://github.com/draft-js-plugins/draft-js-plugins/blob/master/HOW_TO_CREATE_A_PLUGIN.md).
 
 ## Managing focus
 
