@@ -18,7 +18,7 @@ Draftail, like Draft.js, distinguishes between 3 content formats:
 
 View the [all-formats example](/examples#all), or try them out below.
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=Built-in%20formats" class="iframe iframe--docs-250"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--built-in-formats" class="iframe iframe--docs-250"></iframe>
 
 Draftail does not come with built-in controls for things like images and links, so you can build your own exactly as you wish. This is particularly useful when integrating with content sources, like a CMS, an API, or other tools with a fixed schema.
 

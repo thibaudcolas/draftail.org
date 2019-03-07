@@ -19,4 +19,4 @@ Controls can be used for a wide range of use cases:
 - Generating metrics based on the whole content of the editor
 - Applying one-off transformations to the editor (e.g. inserting content from third-party data sources, clear formatting).
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=Controls" class="iframe iframe--docs-200"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--controls" class="iframe iframe--docs-200"></iframe>

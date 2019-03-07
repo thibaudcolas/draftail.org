@@ -230,7 +230,7 @@ class Index extends React.Component {
             </p>
           </noscript>
           <iframe
-            src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Draftail&selectedStory=Home"
+            src="https://demo.draftail.org/storybook/iframe.html?id=draftail--home"
             className="iframe iframe--home"
           />
           <Features />

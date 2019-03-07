@@ -61,7 +61,7 @@ Finally, the last thing I love about this new documentation is that it can conta
 
 As part of [Hacktoberfest 2018](https://hacktoberfest.digitalocean.com/), the examples / demo / playground site for Draftail was rebuilt with [Storybook](https://storybook.js.org/) ([#163](https://github.com/springload/draftail/issues/163)).
 
-[![Screenshot of Storybook for Draftail, with the stories menu shown on the left side, and the "UI theming" story active on the right. This story shows the editor with a custom "focus mode" UI theme](/blog/assets/draftail-v1-1-0-a-quality-of-life-release/storybook-example.png)](https://demo.draftail.org/storybook/?selectedKind=Docs&selectedStory=UI%20theming)
+[![Screenshot of Storybook for Draftail, with the stories menu shown on the left side, and the "UI theming" story active on the right. This story shows the editor with a custom "focus mode" UI theme](/blog/assets/draftail-v1-1-0-a-quality-of-life-release/storybook-example.png)](https://demo.draftail.org/storybook/?path=/story/docs--ui-theming)
 
 > Demo of the editor’s theming capabilities. The left-hand menu lists all of the demos/stories.
 

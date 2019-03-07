@@ -48,7 +48,7 @@ You may also use CSS to style the block, via the `Draftail-block--tiny-text` cla
 
 With a live editor,
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=Blocks" class="iframe iframe--docs-200"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--blocks" class="iframe iframe--docs-200"></iframe>
 
 ## Custom block rendering
 

@@ -85,4 +85,4 @@ Here is a full demo, using [Formik](https://jaredpalmer.com/formik) as a validat
 </Formik>
 ```
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=Form%20validation" class="iframe iframe--docs-250"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--form-validation" class="iframe iframe--docs-250"></iframe>

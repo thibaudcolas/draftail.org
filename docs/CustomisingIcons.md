@@ -43,4 +43,4 @@ To customise the icons of BR, HR, and undo/redo buttons, use the `enableHorizont
 
 ## Example
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=Icons" class="iframe iframe--docs-200"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--icons" class="iframe iframe--docs-200"></iframe>

@@ -192,4 +192,4 @@ blockProps: PropTypes.shape({
 
 Here is an example of what this would look like in practice, with a very simple implementation of link and image chooser UIs.
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=Entities" class="iframe iframe--docs-400"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--entities" class="iframe iframe--docs-400"></iframe>

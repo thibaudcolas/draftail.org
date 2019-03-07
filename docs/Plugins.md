@@ -27,4 +27,4 @@ Please have a look at the official [How to create a plugin](https://github.com/d
 
 Here is an example of a custom "action list" plugin, which uses a custom block component:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Plugins&selectedStory=Actions" class="iframe iframe--docs-200"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=plugins--actions" class="iframe iframe--docs-200"></iframe>

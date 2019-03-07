@@ -55,4 +55,4 @@ In the above example, there are two use cases:
 
 Here is a demo:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Plugins&selectedStory=Linkify" class="iframe iframe--docs-200"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=plugins--linkify" class="iframe iframe--docs-200"></iframe>

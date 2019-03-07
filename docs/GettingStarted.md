@@ -48,6 +48,6 @@ ReactDOM.render(editor, document.querySelector("[data-mount]"))
 
 In this example, the editor will have four buttons in its toolbar: H3, bullet list, bold, and italic. Here is a demo of the result:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Draftail&selectedStory=Simple" class="iframe iframe--docs-200"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=draftail--simple" class="iframe iframe--docs-200"></iframe>
 
 Draftail supports many more [formatting options](FormattingOptions.md). Be sure to also check out the [required polyfills](BrowserSupport.md).

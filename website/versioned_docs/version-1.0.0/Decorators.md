@@ -31,4 +31,4 @@ Other more advanced examples could share state between the strategy and its rend
 
 ## Examples
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=Decorators" class="iframe iframe--docs-200"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--decorators" class="iframe iframe--docs-200"></iframe>

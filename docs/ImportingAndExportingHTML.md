@@ -173,4 +173,4 @@ Again, most of the configuration work is with `convertToHTML`, but we also need 
 
 Here is a demo that initialises from HTML, and converts content to HTML on save (logged in the browser DevTools console).
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=HTML%20conversion" class="iframe iframe--docs-400"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--html-conversion" class="iframe iframe--docs-400"></iframe>

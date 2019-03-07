@@ -57,4 +57,4 @@ Alternatively, only import the constants to reuse them elsewhere in your project
 
 ## Examples
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=UI%20theming" class="iframe iframe--docs-200"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--ui-theming" class="iframe iframe--docs-200"></iframe>

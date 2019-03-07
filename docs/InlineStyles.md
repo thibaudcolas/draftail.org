@@ -58,4 +58,4 @@ inlineStyles={[
 
 Those examples would render as:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?selectedKind=Docs&selectedStory=Inline%20styles" class="iframe iframe--docs-200"></iframe>
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--inline-styles" class="iframe iframe--docs-200"></iframe>
