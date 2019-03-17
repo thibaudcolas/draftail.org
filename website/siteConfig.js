@@ -29,6 +29,7 @@ const siteConfig = {
   editUrl: "https://github.com/thibaudcolas/draftail.org/edit/master/docs/",
 
   enableUpdateTime: true,
+  enableUpdateBy: true,
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
