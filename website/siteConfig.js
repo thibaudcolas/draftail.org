@@ -76,6 +76,9 @@ const siteConfig = {
   algolia: {
     apiKey: "077ed44cb17520db8502e4c1b81d3e55",
     indexName: "draftail",
+    algoliaOptions: {
+      facetFilters: ["version:VERSION"],
+    },
   },
 
   usePrism: ["jsx"],
