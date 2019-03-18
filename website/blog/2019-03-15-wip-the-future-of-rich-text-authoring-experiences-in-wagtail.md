@@ -30,7 +30,7 @@ Today's talk covers what I did before joining Torchbox. Some context:
 - Last year's talk: [Introducing Draft.js in Wagtail – Wagtail Space 2018](/blog/2018/03/16/introducing-draft-js-in-wagtail)
 - Today's talk: the missing "UI/UX blog post" that was supposed to be on its way a year ago.
 
-# Why this matters
+### Why this matters
 
 More context - motivations:
 
@@ -41,7 +41,7 @@ More context - motivations:
 - Other tools are innovating a lot with authoring experiences – [Dropbox Paper](https://paper.dropbox.com), Slack, [Notion](https://www.notion.so/)
   - [Wordpress Gutenberg editor](https://wordpress.org/gutenberg/)
 
-## Demos! 🌈
+### Demos! 🌈
 
 - Demoing things outside of Wagtail, but all of those examples can also work within Wagtail `*`
   - _`*` As soon as my [PR](https://github.com/wagtail/wagtail/pull/5117) is merged and released_ 😅
@@ -57,7 +57,7 @@ More context - motivations:
 - Slash commands for editing actions beyond rich text
 - Custom toolbars, blurring the line with StreamField
 
-## What next
+### What next
 
 - Polish and integrate some or all of those changes in Wagtail, out of the box or as plug and play extensions
 - Do more documentation, tutorials, so people can leverage those APIs to experiment with their own UIs
