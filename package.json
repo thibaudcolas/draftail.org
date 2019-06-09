@@ -24,7 +24,7 @@
   "dependencies": {},
   "peerDependencies": {},
   "scripts": {
-    "lint": "npx eslint . && prettier --list-different '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
+    "lint": "npx eslint --report-unused-disable-directives . && prettier --list-different '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
     "format": "prettier --write '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
     "test:ci": "npm run lint -s",
     "postinstall": "npm --prefix website install",
