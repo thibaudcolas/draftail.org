@@ -24,8 +24,8 @@
   "dependencies": {},
   "peerDependencies": {},
   "scripts": {
-    "lint": "npx eslint . && prettier --list-different '**/*.{js,css,md,json,yaml,yml}'",
-    "format": "prettier --write '**/*.{js,css,md,json,yaml,yml}'",
+    "lint": "npx eslint . && prettier --list-different '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
+    "format": "prettier --write '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
     "test:ci": "npm run lint -s",
     "postinstall": "npm --prefix website install",
     "prepare": "./.githooks/deploy.sh"
