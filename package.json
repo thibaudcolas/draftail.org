@@ -19,7 +19,7 @@
     "@commitlint/travis-cli": "7.6.1",
     "@thibaudcolas/eslint-plugin-cookbook": "4.0.1",
     "eslint": "5.16.0",
-    "prettier": "1.14.3"
+    "prettier": "1.18.2"
   },
   "dependencies": {},
   "peerDependencies": {},
