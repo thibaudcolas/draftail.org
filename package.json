@@ -14,9 +14,9 @@
   },
   "homepage": "https://www.draftail.org/",
   "devDependencies": {
-    "@commitlint/cli": "8.0.0",
-    "@commitlint/config-conventional": "8.0.0",
-    "@commitlint/travis-cli": "8.0.0",
+    "@commitlint/cli": "8.1.0",
+    "@commitlint/config-conventional": "8.1.0",
+    "@commitlint/travis-cli": "8.1.0",
     "@thibaudcolas/eslint-plugin-cookbook": "4.0.1",
     "eslint": "6.0.1",
     "prettier": "1.18.2"
