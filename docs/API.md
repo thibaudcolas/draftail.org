@@ -37,6 +37,9 @@ stripPastedStyles: true,
 // Set whether spellcheck is turned on for your editor.
 // See https://draftjs.org/docs/api-reference-editor.html#spellcheck.
 spellCheck: false,
+// Set whether the editor should be rendered in readOnly mode.
+// See https://draftjs.org/docs/api-reference-editor.html#readonly
+readOnly: false,
 // Optionally set the overriding text alignment for this editor.
 // See https://draftjs.org/docs/api-reference-editor.html#textalignment.
 textAlignment: null,
