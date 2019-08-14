@@ -17,7 +17,11 @@ To change the behavior of the editor, pass props to the `DraftailEditor` compone
 // Initial content of the editor. Use this to edit pre-existing content.
 rawContentState: null,
 // Called when changes occured. Use this to persist editor content.
-onSave: () => {},
+onSave: null,
+// Content of the editor, when using the editor as a controlled component. Incompatible with `rawContentState` and `onSave`.
+editorState: null,
+// Called whenever the editor state is updated. Use this to manage the content of a controlled editor. Incompatible with `rawContentState` and `onSave`.
+onChange: null,
 // Called when the editor receives focus.
 onFocus: null,
 // Called when the editor loses focus.
@@ -82,6 +86,14 @@ stateSaveInterval: 250,
 ### rawContentState and onSave
 
 `rawContentState` and `onSave` are used to initialise the editor with content, and to periodically save new content. They work with [raw ContentState](ContentStorage.md) objects representing the editor’s content, or `null` if the editor is empty.
+
+This is the editor’s [uncontrolled component](https://reactjs.org/docs/uncontrolled-components.html) API, which is easier to use for simple implementations. Have a look at the [controlled component](ControlledComponent.md) API as well, with [`editorState` and `onChange`](#editorstate-and-onchange).
+
+### editorState and onChange
+
+`editorState` and `onChange` are used to set the state of the editor, and update this state whenever there are changes to the editor’s content or selection. They work with [`EditorState`](ContentStorage.md#editorstate-vs-contentstate) objects representing all of the editor’s state.
+
+This is the editor’s [controlled component](https://reactjs.org/docs/forms.html#controlled-components) API, matching that of other Draft.js examples.
 
 ### [Inline styles](InlineStyles.md)
 
@@ -258,4 +270,25 @@ export const ENTITY_TYPE = {
   IMAGE: "IMAGE",
   HORIZONTAL_RULE: "HORIZONTAL_RULE",
 }
+```
+
+## [Data conversion helpers](ControlledComponent.md#data-conversion-helpers)
+
+Draftail exports the methods it uses internally to initialise the editor’s content via `rawContentState` and persist it in `onSave`: [`createEditorStateFromRaw`](#createeditorstatefromraw), and [`serialiseEditorStateToRaw`](#serialiseeditorstatetoraw).
+
+### createEditorStateFromRaw
+
+Creates a new EditorState from a RawDraftContentState, or an empty editor state by passing `null`.
+
+```js
+createEditorStateFromRaw = (rawContentState: ?RawDraftContentState) =>
+  EditorState
+```
+
+### serialiseEditorStateToRaw
+
+Serialises the editorState using `convertToRaw`, but returns `null` if the editor content is empty (no text, entities, styles).
+
+```js
+serialiseEditorStateToRaw = (editorState: EditorState) => RawDraftContentState
 ```

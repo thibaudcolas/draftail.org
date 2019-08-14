@@ -7,7 +7,7 @@ Draftail is easy to integrate with form validation, whether as simple "required"
 
 ## Integrating with a validation library
 
-Content entered in the editor can be stored for validation with the [`onSave`](API.md#rawcontentstate-and-onsave) prop. The editor also supports [`onFocus` and `onBlur`](API.md#managing-focus) to mark fields as touched/untouched and trigger or stop validation.
+Content entered in the editor can be stored for validation with the [`onSave`](API.md#rawcontentstate-and-onsave) prop, or with [`onChange`](API.md#editorstate-and-onchange). The editor also supports [`onFocus` and `onBlur`](API.md#managing-focus) to mark fields as touched/untouched and trigger or stop validation.
 
 ## Basic validation of required fields
 

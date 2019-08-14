@@ -21,6 +21,7 @@
     "API reference": [
       "api",
       "content-storage",
+      "controlled-component",
       "ui-theming",
       "customising-icons",
       "customising-toolbars",

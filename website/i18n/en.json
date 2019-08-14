@@ -20,6 +20,9 @@
       "content-storage": {
         "title": "Content storage"
       },
+      "controlled-component": {
+        "title": "Controlled component"
+      },
       "customising-icons": {
         "title": "Customising icons"
       },
@@ -71,91 +74,91 @@
       "user-guide": {
         "title": "User guide"
       },
-      "version-1.0.0-api": {
+      "version-1.0.0/version-1.0.0-api": {
         "title": "API reference"
       },
-      "version-1.0.0-arbitrary-controls": {
+      "version-1.0.0/version-1.0.0-arbitrary-controls": {
         "title": "Arbitrary controls"
       },
-      "version-1.0.0-blocks": {
+      "version-1.0.0/version-1.0.0-blocks": {
         "title": "Blocks"
       },
-      "version-1.0.0-browser-support": {
+      "version-1.0.0/version-1.0.0-browser-support": {
         "title": "Browser support and polyfills"
       },
-      "version-1.0.0-content-storage": {
+      "version-1.0.0/version-1.0.0-content-storage": {
         "title": "Content storage"
       },
-      "version-1.0.0-customising-icons": {
+      "version-1.0.0/version-1.0.0-customising-icons": {
         "title": "Customising icons"
       },
-      "version-1.0.0-decorators": {
+      "version-1.0.0/version-1.0.0-decorators": {
         "title": "Decorators"
       },
-      "version-1.0.0-entities": {
+      "version-1.0.0/version-1.0.0-entities": {
         "title": "Entities"
       },
-      "version-1.0.0-extensions-tutorial-max-length": {
+      "version-1.0.0/version-1.0.0-extensions-tutorial-max-length": {
         "title": "Extensions tutorial: max length"
       },
-      "version-1.0.0-formatting-options": {
+      "version-1.0.0/version-1.0.0-formatting-options": {
         "title": "Formatting options"
       },
-      "version-1.0.0-getting-started": {
+      "version-1.0.0/version-1.0.0-getting-started": {
         "title": "Getting started"
       },
-      "version-1.0.0-getting-started-with-extensions": {
+      "version-1.0.0/version-1.0.0-getting-started-with-extensions": {
         "title": "Getting started with extensions"
       },
-      "version-1.0.0-i18n": {
+      "version-1.0.0/version-1.0.0-i18n": {
         "title": "i18n"
       },
-      "version-1.0.0-importing-and-exporting-html": {
+      "version-1.0.0/version-1.0.0-importing-and-exporting-html": {
         "title": "Importing and exporting HTML"
       },
-      "version-1.0.0-inline-styles": {
+      "version-1.0.0/version-1.0.0-inline-styles": {
         "title": "Inline styles"
       },
-      "version-1.0.0-keyboard-shortcuts": {
+      "version-1.0.0/version-1.0.0-keyboard-shortcuts": {
         "title": "Keyboard Shortcuts"
       },
-      "version-1.0.0-ui-theming": {
+      "version-1.0.0/version-1.0.0-ui-theming": {
         "title": "UI theming"
       },
-      "version-1.0.0-user-guide": {
+      "version-1.0.0/version-1.0.0-user-guide": {
         "title": "User guide"
       },
-      "version-1.1.0-api": {
+      "version-1.1.0/version-1.1.0-api": {
         "title": "API reference"
       },
-      "version-1.1.0-content-storage": {
+      "version-1.1.0/version-1.1.0-content-storage": {
         "title": "Content storage"
       },
-      "version-1.1.0-form-validation": {
+      "version-1.1.0/version-1.1.0-form-validation": {
         "title": "Form validation"
       },
-      "version-1.1.0-getting-started": {
+      "version-1.1.0/version-1.1.0-getting-started": {
         "title": "Getting started"
       },
-      "version-1.1.0-importing-and-exporting-html": {
+      "version-1.1.0/version-1.1.0-importing-and-exporting-html": {
         "title": "Importing and exporting HTML"
       },
-      "version-1.2.0-api": {
+      "version-1.2.0/version-1.2.0-api": {
         "title": "API reference"
       },
-      "version-1.2.0-blocks": {
+      "version-1.2.0/version-1.2.0-blocks": {
         "title": "Blocks"
       },
-      "version-1.2.0-customising-toolbars": {
+      "version-1.2.0/version-1.2.0-customising-toolbars": {
         "title": "Customising toolbars"
       },
-      "version-1.2.0-extensions-tutorial-linkify": {
+      "version-1.2.0/version-1.2.0-extensions-tutorial-linkify": {
         "title": "Extensions tutorial: linkify"
       },
-      "version-1.2.0-keyboard-shortcuts": {
+      "version-1.2.0/version-1.2.0-keyboard-shortcuts": {
         "title": "Keyboard Shortcuts"
       },
-      "version-1.2.0-plugins": {
+      "version-1.2.0/version-1.2.0-plugins": {
         "title": "Plugins"
       }
     },

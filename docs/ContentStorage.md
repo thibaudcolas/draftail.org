@@ -111,6 +111,10 @@ In the `entityMap`, entities are stored as:
 - `mutability` (`MUTABLE`/`IMMUTABLE`), whether changes in the text the entity is applied on are allowed (e.g. links on arbitrary text, vs mentions containing a person’s full name).
 - `data`, to store arbitrary data for the entity.
 
+## EditorState vs ContentState
+
+While ContentState is what Draft.js uses to represent the editor’s content, the content is only one part of the state of the editor – [`EditorState`](https://draftjs.org/docs/api-reference-editor-state) is what Draft.js uses to store all of the editor’s state: content, text selection, undo/redo stack, and more.
+
 ---
 
 To learn more about Draft.js, check out resources listed on the [Awesome Draft.js](https://github.com/nikgraf/awesome-draft-js) list.

@@ -9,7 +9,7 @@ Like all Draft.js editors, Draftail does not process HTML directly: It uses its 
 
 In some use cases, it may be desirable to store rich text as HTML. This is particularly useful for websites which do not need further processing of their content when displaying it, or which already have existing HTML processing (for example in a CMS). There are also scenarios in which it might be better to store content with the Draft.js [ContentState](https://draftjs.org/docs/api-reference-content-state) representation, for example if the content is meant to be used in different mediums (web, mobile apps, email, etc).
 
-**In either case, Draftail has no preference as long as it is provided with raw ContentState when initialised with [`rawContentState`](API.md#rawcontentstate-and-onsave).**
+**In either case, Draftail has no preference as long as it is provided with raw ContentState when initialised with [`rawContentState`](API.md#rawcontentstate-and-onsave), or EditorState when using [`editorState`](API.md#editorstate-and-onchange).**
 
 There are a lot of tools available to convert content. We built the Python [Draft.js exporter](https://github.com/springload/draftjs_exporter) while working on Draftail, for use in Python backends. For the purpose of this guide, we will be doing the conversion in the browser with [draft-convert](https://github.com/HubSpot/draft-convert).
 
