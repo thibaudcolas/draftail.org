@@ -33,6 +33,10 @@ Put simply, none of the above changes are going to be useful for Draftail’s fi
 
 According to GitHub and npm statistics, the editor is used in [118 public repositories](https://github.com/springload/draftail/network/dependents) and gets downloaded [1’772 times per week on npm](https://www.npmjs.com/package/draftail). There are well known names in there – the [FEC](https://github.com/fecgov/fec-cms) in the US for their CMS, [NATO’s Communication and Information Agency](https://github.com/NCI-Agency/anet), [Sciences Po’s médialab](https://medialab.sciencespo.fr). [Saleor](https://getsaleor.com/), an up-and-coming e-commerce platform built on modern technologies also [announced on their blog](https://medium.com/saleor/february-release-of-saleor-three-new-dashboard-2-0-sections-6d775479882e) that the upcoming version of Saleor would be using Draftail for rich text content.
 
+![Screenshot of Draftail as it is used in Saleor 2.0, for a product description field](/blog/assets/draftail-v1-3-0-community-improvements-beyond-wagtail/draftail-in-saleor.png)
+
+> Draftail looking good in Saleor dashboard 2.0!
+
 I’m sure there are many more. If you’re using Draftail, please do [get in touch](https://github.com/thibaudcolas/draftail.org/issues/13) so others can see all of the cool things you’re doing with it!
 
 ### Up next
