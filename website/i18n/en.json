@@ -160,6 +160,24 @@
       },
       "version-1.2.0/version-1.2.0-plugins": {
         "title": "Plugins"
+      },
+      "version-1.3.0/version-1.3.0-api": {
+        "title": "API reference"
+      },
+      "version-1.3.0/version-1.3.0-content-storage": {
+        "title": "Content storage"
+      },
+      "version-1.3.0/version-1.3.0-controlled-component": {
+        "title": "Controlled component"
+      },
+      "version-1.3.0/version-1.3.0-form-validation": {
+        "title": "Form validation"
+      },
+      "version-1.3.0/version-1.3.0-getting-started": {
+        "title": "Getting started"
+      },
+      "version-1.3.0/version-1.3.0-importing-and-exporting-html": {
+        "title": "Importing and exporting HTML"
       }
     },
     "links": {

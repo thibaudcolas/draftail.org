@@ -1,0 +1,35 @@
+{
+  "version-1.3.0-docs": {
+    "Introduction": [
+      "version-1.3.0-getting-started",
+      "version-1.3.0-formatting-options",
+      "version-1.3.0-inline-styles",
+      "version-1.3.0-blocks",
+      "version-1.3.0-entities",
+      "version-1.3.0-decorators",
+      "version-1.3.0-arbitrary-controls",
+      "version-1.3.0-plugins"
+    ],
+    "Guides": [
+      "version-1.3.0-importing-and-exporting-html",
+      "version-1.3.0-form-validation",
+      "version-1.3.0-getting-started-with-extensions",
+      "version-1.3.0-extensions-tutorial-max-length",
+      "version-1.3.0-extensions-tutorial-linkify"
+    ],
+    "User guides": [
+      "version-1.3.0-user-guide",
+      "version-1.3.0-keyboard-shortcuts"
+    ],
+    "API reference": [
+      "version-1.3.0-api",
+      "version-1.3.0-content-storage",
+      "version-1.3.0-controlled-component",
+      "version-1.3.0-ui-theming",
+      "version-1.3.0-customising-icons",
+      "version-1.3.0-customising-toolbars",
+      "version-1.3.0-i18n",
+      "version-1.3.0-browser-support"
+    ]
+  }
+}
