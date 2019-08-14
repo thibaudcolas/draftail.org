@@ -3,7 +3,7 @@ id: controlled-component
 title: Controlled component
 ---
 
-Since v1.3.0, the editor can now be used as a [controlled component](https://reactjs.org/docs/forms.html#controlled-components) with its [`editorState` and `onChange`](API.md#editorstate-and-onchange) props, like a vanilla Draft.js editor. For example, with the `useState` hook:
+Since [v1.3.0](/blog/2019/08/15/draftail-v1-3-0-community-improvements-beyond-wagtail), the editor can now be used as a [controlled component](https://reactjs.org/docs/forms.html#controlled-components) with its [`editorState` and `onChange`](API.md#editorstate-and-onchange) props, like a vanilla Draft.js editor. For example, with the `useState` hook:
 
 ```js
 import React, { useState } from "react"
