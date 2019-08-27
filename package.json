@@ -13,18 +13,26 @@
     "url": "https://github.com/thibaudcolas/draftail.org/issues"
   },
   "homepage": "https://www.draftail.org/",
+  "browserslist": [
+    "> 1%",
+    "not IE 11",
+    "Firefox ESR",
+    "not OperaMini all"
+  ],
   "devDependencies": {
     "@commitlint/cli": "8.1.0",
     "@commitlint/config-conventional": "8.1.0",
     "@commitlint/travis-cli": "8.1.0",
     "@thibaudcolas/eslint-plugin-cookbook": "4.0.1",
+    "@thibaudcolas/stylelint-config-cookbook": "^3.0.0",
     "eslint": "6.2.2",
-    "prettier": "1.18.2"
+    "prettier": "1.18.2",
+    "stylelint": "^10.1.0"
   },
   "dependencies": {},
   "peerDependencies": {},
   "scripts": {
-    "lint": "npx eslint --report-unused-disable-directives . && prettier --list-different '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
+    "lint": "eslint --report-unused-disable-directives . && stylelint 'website/**/*.css' && prettier --list-different '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
     "format": "prettier --write '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
     "test:ci": "npm run lint -s",
     "postinstall": "npm --prefix website install",
