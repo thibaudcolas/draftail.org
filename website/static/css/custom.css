@@ -172,3 +172,7 @@ table td code {
   color: #393939;
   word-break: normal;
 }
+
+.nav-home img {
+  height: auto;
+}
