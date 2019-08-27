@@ -49,10 +49,12 @@ const siteConfig = {
   // If you have users set above, you add it here:
   users,
 
-  /* path to images for header/footer */
-  // headerIcon: "img/docusaurus.svg",
-  // footerIcon: "img/docusaurus.svg",
-  favicon: "img/favicon/favicon.ico",
+  // path to images for header/footer
+  headerIcon: "img/logo.svg",
+  footerIcon: "img/logo.svg",
+  favicon: "img/favicon/favicon.ico?v=2",
+  // Path to your web app manifest.
+  manifest: "img/favicon/site.webmanifest",
 
   /* Colors for website */
   colors: {
@@ -123,8 +125,6 @@ const siteConfig = {
   // Open Graph and Twitter card images.
   twitterImage: "img/draftail-ui-screenshot.png",
   ogImage: "img/draftail-ui-screenshot.png",
-  // Path to your web app manifest.
-  manifest: "img/favicon/manifest.json",
 
   /**
    * Arbitrary config keys.
