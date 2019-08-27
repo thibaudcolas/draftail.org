@@ -66,6 +66,8 @@ class Footer extends React.Component {
           </a>{" "}
           available as{" "}
           <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.
+          Emoji visuals from{" "}
+          <a href="https://github.com/mozilla/fxemoji">FxEmojis</a>.
         </section>
       </footer>
     )

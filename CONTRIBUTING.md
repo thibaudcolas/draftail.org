@@ -37,7 +37,7 @@ Original pencil icon is the [Noun project crayon](https://commons.wikimedia.org/
 
 ## Icons
 
-The wesite’s icons come from [IcoMoon](https://icomoon.io/).
+The wesite’s icons come from [IcoMoon](https://icomoon.io/). Emojis come from [FxEmojis](https://github.com/mozilla/fxemoji).
 
 ## Static editor content
 

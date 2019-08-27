@@ -10,4 +10,4 @@ If you just want to set up the project on your own computer, the contribution gu
 
 ## Credits
 
-The Draftail website is built with [Docusaurus](https://docusaurus.io/). Its search is powered by [Algolia DocSearch](https://community.algolia.com/docsearch/), and the site is hosted on [Netlify](https://www.netlify.com/). Image credit: [FirefoxEmoji](https://github.com/mozilla/fxemoji).
+The Draftail website is built with [Docusaurus](https://docusaurus.io/). Its search is powered by [Algolia DocSearch](https://community.algolia.com/docsearch/), and the site is hosted on [Netlify](https://www.netlify.com/). Image credit: [FxEmojis](https://github.com/mozilla/fxemoji).
