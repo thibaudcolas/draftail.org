@@ -38,7 +38,7 @@ You may also use CSS to style the block, via the `Draftail-block--tiny-text` cla
 
 ```css
 .Draftail-block--tiny-text {
-  font-size: 11px;
+  font-size: 0.7625rem;
   font-style: italic;
 }
 ```

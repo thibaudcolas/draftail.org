@@ -38,13 +38,13 @@ $draftail-toolbar-radius: 5px;
 Draftail also has a `draftail-richtext-styles` mixin you can use to make sure styles on rich text content don't leak to other parts of your site:
 
 ```scss
-@include draftail-richtext-styles {
+@include draftail-richtext-styles() {
   // Style Draft.js blockquotes.
   blockquote {
-    border-left: 1px solid #e5e5e5;
     padding: 0 0 0 20px;
     margin-left: 0;
     font-style: italic;
+    border-left: 1px solid #e5e5e5;
   }
 }
 ```
