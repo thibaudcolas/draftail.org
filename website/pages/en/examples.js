@@ -4,21 +4,8 @@ const CompLibrary = require("../../core/CompLibrary")
 
 const Container = CompLibrary.Container
 
-const siteConfig = require(`${process.cwd()}/siteConfig.js`)
-
-class Users extends React.Component {
+class Examples extends React.Component {
   render() {
-    if ((siteConfig.users || []).length === 0) {
-      return null
-    }
-
-    const editUrl = `${siteConfig.repoUrl}/edit/master/website/siteConfig.js`
-    const showcase = siteConfig.users.map((user) => (
-      <a href={user.infoLink} key={user.infoLink}>
-        <img src={user.image} alt={user.caption} title={user.caption} />
-      </a>
-    ))
-
     return (
       <div className="mainContainer">
         <Container padding={["bottom", "top"]}>
@@ -74,4 +61,6 @@ class Users extends React.Component {
   }
 }
 
-module.exports = Users
+Examples.title = "Examples"
+
+module.exports = Examples

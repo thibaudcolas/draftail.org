@@ -137,4 +137,6 @@ class CodeOfConduct extends React.Component {
   }
 }
 
+CodeOfConduct.title = "Code of conduct"
+
 module.exports = CodeOfConduct
