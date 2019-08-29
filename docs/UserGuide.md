@@ -66,11 +66,11 @@ And of course, normal shortcuts for common controls like bold, undo/redo are ava
 
 Here is another example shortcut, `-` or `*` for list items:
 
-![Editor screenshot with shortcuts to toggle list items, and indent/de-indent or stop the list]/img/user-guide/list-item-shortcuts.gif)
+![Editor screenshot with shortcuts to toggle list items, and indent/de-indent or stop the list](/img/user-guide/list-item-shortcuts.gif)
 
 If numbered lists were available in this editor, you could use `1.`. In the editor below, we’ve enabled line breaks and horizontal rules, which also have their own buttons and shortcuts:
 
-![Editor screenshot showing support for line breaks and horizontal rules with their corresponding shortcuts]/img/user-guide/line-breaks-horizontal-rules.gif)
+![Editor screenshot showing support for line breaks and horizontal rules with their corresponding shortcuts](/img/user-guide/line-breaks-horizontal-rules.gif)
 
 If you forget the shortcut for a given control, it’s displayed in the tooltip.
 
@@ -88,7 +88,7 @@ When pasting content into a Draftail editor, the editor will only keep the forma
 
 It can preserve what’s enabled in the editor (bold and italic here).
 
-![Editor screenshot with a demo of copy-pasting from Word, preserving italics and bold]/img/user-guide/copy-paste-preserve.gif)
+![Editor screenshot with a demo of copy-pasting from Word, preserving italics and bold](/img/user-guide/copy-paste-preserve.gif)
 
 The editor may not preserve all formatting as-is, but it will always filter out unallowed formats. Pasting works well from Google Docs, Dropbox Paper, Word, and more.
 
