@@ -1,6 +1,6 @@
 ---
 id: version-1.0.0-keyboard-shortcuts
-title: Keyboard Shortcuts
+title: Keyboard shortcuts
 original_id: keyboard-shortcuts
 ---
 

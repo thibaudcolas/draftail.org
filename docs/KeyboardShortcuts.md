@@ -1,6 +1,6 @@
 ---
 id: keyboard-shortcuts
-title: Keyboard Shortcuts
+title: Keyboard shortcuts
 ---
 
 Here are all of the keyboard shortcuts supported by the editor. Please bear in mind shortcuts may not be available if the corresponding action isn't enabled in the current editor.
