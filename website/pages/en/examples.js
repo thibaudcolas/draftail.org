@@ -1,6 +1,6 @@
 const React = require("react")
 
-const CompLibrary = require("../../core/CompLibrary.js")
+const CompLibrary = require("../../core/CompLibrary")
 
 const Container = CompLibrary.Container
 

@@ -78,6 +78,7 @@ const siteConfig = {
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Thibaud Colas`,
+  contactEmail: "thibaudcolas@gmail.com",
 
   // For the index-side config, see:
   // https://github.com/algolia/docsearch-configs/blob/master/configs/draftail.json.

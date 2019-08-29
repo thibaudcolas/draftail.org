@@ -33,16 +33,8 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>Community</h5>
-            <a
-              href="https://stackoverflow.com/search?q=draftail"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Stack Overflow
-            </a>
-            <a href="https://github.com/wagtail/wagtail/wiki/Slack">
-              Chat: #draftail
-            </a>
+            <a href={this.pageUrl("help")}>Help</a>
+            <a href={this.pageUrl("code-of-conduct")}>Code of conduct</a>
             <a
               href="https://twitter.com/thibaud_colas"
               target="_blank"
