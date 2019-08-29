@@ -123,7 +123,7 @@ class CodeOfConduct extends React.Component {
                 <a href="https://www.contributor-covenant.org">
                   Contributor Covenant
                 </a>
-                , version 1.4, available at
+                , version 1.4, available at{" "}
                 <a href="https://www.contributor-covenant.org/version/1/4/code-of-conduct">
                   https://www.contributor-covenant.org/version/1/4/code-of-conduct
                 </a>
