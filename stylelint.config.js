@@ -6,8 +6,15 @@ module.exports = {
       ["/color/", "z-index", "font-size", "font-family"],
       {
         // We need to have a special keyword to ignore hard-coded font sizes in code samples.
-        ignoreKeywords: ["currentColor", "inherit", "transparent", "0.7625rem"],
+        ignoreKeywords: [
+          "currentColor",
+          "inherit",
+          "transparent",
+          "initial",
+          "0.7625rem",
+        ],
       },
     ],
+    "scss/media-feature-value-dollar-variable": null,
   },
 }

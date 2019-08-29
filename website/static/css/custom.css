@@ -1,3 +1,19 @@
+:root {
+  --color-wagtail-007d7e: #007d7e;
+  --color-e0e0e0: #e0e0e0;
+  --color-eeeeee: #eee;
+  --color-1a1a1a: #1a1a1a;
+  --color-ffffff: #fff;
+  --color-000000: #000;
+  --color-393939: #393939;
+  --font-size-xs: 15px;
+  --font-size-xl: 8.8rem;
+  --font-size-h1: 2.25rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+}
+
 .iframe {
   display: block;
   width: 100%;
@@ -7,8 +23,8 @@
 
 .iframe--home {
   max-width: 800px;
-  padding: 0 10px;
   min-height: 1200px;
+  padding: 0 10px;
 }
 
 @media (min-width: 520px) {
@@ -19,8 +35,8 @@
 
 .iframe--custom {
   max-width: 800px;
-  padding: 0 10px;
   min-height: 650px;
+  padding: 0 10px;
 }
 
 @media (min-width: 520px) {
@@ -31,8 +47,8 @@
 
 .iframe--all {
   max-width: 800px;
-  padding: 0 10px;
   min-height: 2200px;
+  padding: 0 10px;
 }
 
 @media (min-width: 520px) {
@@ -54,60 +70,76 @@
 }
 
 .projectTitle img {
-  vertical-align: middle;
   margin-left: 0.25em;
+  vertical-align: middle;
 }
 
 .video {
-  margin: 0 5%;
   position: relative;
   width: 100%;
   min-width: 300px;
   max-width: 600px;
+  margin: 0 5%;
 }
 
 .video iframe {
   display: block;
-  margin: 0 auto 10px;
-  min-height: 340px;
   width: 100%;
+  min-height: 340px;
+  margin: 0 auto 10px;
 }
 
 hr {
-  border-width: 1px 0 0 0;
+  border: 0;
+  border-top: 1px;
 }
 
 blockquote {
-  background: #fafbfc;
-  border-left-color: #e0e0e0;
   color: inherit;
+  background: #fafbfc;
+  border-left-color: var(--color-e0e0e0);
 }
 
 /* ####### LINKS ####### */
 
 .mainContainer a:not(.hash-link) {
-  background-color: #eef8ff;
+  color: var(--color-1a1a1a);
+  background: #eef8ff;
   border-bottom: 1px dotted #007d7e;
-  color: #1a1a1a;
   transition: all 0.25s ease-out;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .mainContainer a:not(.hash-link) {
+    transition: none;
+  }
+}
+
+.authorPhoto a:not(.hash-link) {
+  background-color: initial;
+  border-bottom: none;
+}
+
+/* stylelint-disable-next-line selector-max-specificity */
 .mainContainer a:not(.hash-link):hover {
-  background-color: transparent;
-  text-decoration: none !important;
+  text-decoration: none;
+  background-color: initial;
 }
 
+/* stylelint-disable-next-line selector-max-type */
 .mainContainer a code {
-  background-color: transparent;
+  background-color: initial;
 }
 
+/* stylelint-disable-next-line selector-no-qualifying-type */
 .mainContainer a.anchor {
-  border-width: 0;
+  border: 0;
 }
 
+/* stylelint-disable-next-line selector-no-qualifying-type */
 .mainContainer a.button {
+  background-color: initial;
   border-bottom-style: solid;
-  background-color: transparent;
 }
 
 /* ####### HEADER & FOOTER ####### */
@@ -122,54 +154,57 @@ blockquote {
   margin-top: 2rem;
 }
 
-.blogContainer .postHeader p.post-meta {
+/* stylelint-disable-next-line selector-max-specificity */
+.blogContainer .postHeader .post-meta {
   float: left;
-  font-size: 0.875rem;
+  font-size: var(--font-size-xs);
 }
 
-.blogContainer .postHeader .authorBlock:before {
-  content: "by ";
-  font-size: 0.875rem;
+/* stylelint-disable-next-line selector-max-specificity, a11y/content-property-no-static-value */
+.blogContainer .postHeader .authorBlock::before {
   margin: 1px 5px;
+  font-size: var(--font-size-xs);
+  content: "by ";
 }
 
 .blogContainer h2 {
-  font-size: 32px;
+  font-size: var(--font-size-h2);
 }
 
 .blogContainer h3 {
-  font-size: 24px;
+  font-size: var(--font-size-h3);
 }
 
 .blogContainer h4 {
-  font-size: 20px;
+  font-size: var(--font-size-h4);
 }
 
 .page-header {
   padding-bottom: 9px;
   margin: 0 0 20px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid var(--color-eeeeee);
 }
 
 .page-header > h1 {
-  font-size: 36px;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 10px;
+  font-size: var(--font-size-h1);
 }
 
 .page-header > p {
-  font-size: 17px;
+  margin: 5px;
   font-weight: 300;
   line-height: 1.4;
-  margin: 5px;
 }
 
 .text-center {
   text-align: center;
 }
 
+/* stylelint-disable-next-line selector-max-type, no-descending-specificity */
 table td code {
-  color: #393939;
+  color: var(--color-393939);
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
   word-break: normal;
 }
 
