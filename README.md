@@ -1,4 +1,6 @@
-# [draftail.org](https://www.draftail.org/) [![Build Status](https://travis-ci.com/thibaudcolas/draftail.org.svg?branch=master)](https://travis-ci.com/thibaudcolas/draftail.org)
+# [draftail.org](https://www.draftail.org/) [<img src="https://raw.githubusercontent.com/thibaudcolas/draftail.org/master/.github/draftail-logo.svg?sanitize=true" width="90" height="90" align="right">](https://www.draftail.org/)
+
+[![Build Status](https://travis-ci.com/thibaudcolas/draftail.org.svg?branch=master)](https://travis-ci.com/thibaudcolas/draftail.org)
 
 > [Draftail](https://www.draftail.org/)’s website for [documentation](https://www.draftail.org/docs/getting-started), [demos](https://www.draftail.org/examples), and [blog articles](https://www.draftail.org/blog/).
 
