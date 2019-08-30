@@ -16,7 +16,8 @@
     ],
     "User guides": [
       "version-1.0.0-user-guide",
-      "version-1.0.0-keyboard-shortcuts"
+      "version-1.0.0-keyboard-shortcuts",
+      "version-1.0.0-markdown-support"
     ],
     "API reference": [
       "version-1.0.0-api",

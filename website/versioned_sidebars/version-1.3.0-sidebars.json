@@ -19,7 +19,8 @@
     ],
     "User guides": [
       "version-1.3.0-user-guide",
-      "version-1.3.0-keyboard-shortcuts"
+      "version-1.3.0-keyboard-shortcuts",
+      "version-1.3.0-markdown-support"
     ],
     "API reference": [
       "version-1.3.0-api",

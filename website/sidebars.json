@@ -17,7 +17,7 @@
       "extensions-tutorial-max-length",
       "extensions-tutorial-linkify"
     ],
-    "User guides": ["user-guide", "keyboard-shortcuts"],
+    "User guides": ["user-guide", "keyboard-shortcuts", "markdown-support"],
     "API reference": [
       "api",
       "content-storage",
