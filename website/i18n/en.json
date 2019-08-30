@@ -63,7 +63,10 @@
         "title": "Inline styles"
       },
       "keyboard-shortcuts": {
-        "title": "Keyboard Shortcuts"
+        "title": "Keyboard shortcuts"
+      },
+      "markdown-support": {
+        "title": "Markdown support"
       },
       "plugins": {
         "title": "Plugins"
@@ -120,7 +123,10 @@
         "title": "Inline styles"
       },
       "version-1.0.0/version-1.0.0-keyboard-shortcuts": {
-        "title": "Keyboard Shortcuts"
+        "title": "Keyboard shortcuts"
+      },
+      "version-1.0.0/version-1.0.0-markdown-support": {
+        "title": "Markdown support"
       },
       "version-1.0.0/version-1.0.0-ui-theming": {
         "title": "UI theming"
@@ -156,7 +162,7 @@
         "title": "Extensions tutorial: linkify"
       },
       "version-1.2.0/version-1.2.0-keyboard-shortcuts": {
-        "title": "Keyboard Shortcuts"
+        "title": "Keyboard shortcuts"
       },
       "version-1.2.0/version-1.2.0-plugins": {
         "title": "Plugins"

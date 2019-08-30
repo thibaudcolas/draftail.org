@@ -34,7 +34,14 @@ class Footer extends React.Component {
           <div>
             <h5>Community</h5>
             <a href={this.pageUrl("help")}>Help</a>
+            <a href={this.pageUrl("about")}>About</a>
             <a href={this.pageUrl("code-of-conduct")}>Code of conduct</a>
+          </div>
+          <div>
+            <h5>More</h5>
+            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
+            <a href="http://demo.draftail.org/storybook/">Storybook</a>
+            <a href={this.props.config.repoUrl}>GitHub</a>
             <a
               href="https://twitter.com/thibaud_colas"
               target="_blank"
@@ -42,12 +49,6 @@ class Footer extends React.Component {
             >
               Twitter
             </a>
-          </div>
-          <div>
-            <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="http://demo.draftail.org/storybook/">Storybook</a>
-            <a href={this.props.config.repoUrl}>GitHub</a>
           </div>
         </section>
 
