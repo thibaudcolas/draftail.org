@@ -64,7 +64,8 @@ class About extends React.Component {
               <ul>
                 <li>
                   Implementing basic formatting with strong guarantees should
-                  just be a matter of configuration.
+                  just be a matter of configuration – No need to reinvent your
+                  own Draft.js toolbar.
                 </li>
                 <li>
                   More advanced extensions should be able to reach out for
@@ -75,6 +76,18 @@ class About extends React.Component {
                   Experimenting with new capabilities to the editor shouldn’t
                   require constant core changes – there should be{" "}
                   <a href="/docs/plugins">plugin APIs</a>.
+                </li>
+              </ul>
+              <p>As a project, it’s also fundamental that:</p>
+              <ul>
+                <li>
+                  The documentation is outstanding, providing examples of all
+                  Draftail capabilities, and general Draft.js editor
+                  capabilities
+                </li>
+                <li>
+                  Draftail supports use cases it wasn’t initially envisioned for
+                  – like saving Draft.js content to HTML in JavaScript
                 </li>
               </ul>
               <h2>Roadmap</h2>
