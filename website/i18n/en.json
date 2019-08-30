@@ -71,6 +71,9 @@
       "plugins": {
         "title": "Plugins"
       },
+      "troubleshooting": {
+        "title": "Troubleshooting"
+      },
       "ui-theming": {
         "title": "UI theming"
       },
@@ -127,6 +130,9 @@
       },
       "version-1.0.0/version-1.0.0-markdown-support": {
         "title": "Markdown support"
+      },
+      "version-1.0.0/version-1.0.0-troubleshooting": {
+        "title": "Troubleshooting"
       },
       "version-1.0.0/version-1.0.0-ui-theming": {
         "title": "UI theming"
