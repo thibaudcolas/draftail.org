@@ -39,6 +39,12 @@ class About extends React.Component {
                 </a>{" "}
                 🎉 .
               </p>
+              <p>
+                A few years later, Draftail is now very capable for many use
+                cases, and it comes with a nice little{" "}
+                <a href="https://en.wikipedia.org/wiki/Fantail">fantail</a>{" "}
+                logo.
+              </p>
               <h2>Ambitions</h2>
               <p>
                 The main goal of Draftail is to provide a bullet-proof content
