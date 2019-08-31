@@ -24,10 +24,10 @@
     "@commitlint/config-conventional": "8.1.0",
     "@commitlint/travis-cli": "8.1.0",
     "@thibaudcolas/eslint-plugin-cookbook": "4.0.1",
-    "@thibaudcolas/stylelint-config-cookbook": "^3.0.0",
+    "@thibaudcolas/stylelint-config-cookbook": "3.0.0",
     "eslint": "6.3.0",
     "prettier": "1.18.2",
-    "stylelint": "^10.1.0"
+    "stylelint": "10.1.0"
   },
   "dependencies": {},
   "peerDependencies": {},
