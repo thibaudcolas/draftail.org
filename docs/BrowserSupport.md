@@ -27,6 +27,25 @@ title: Browser support and polyfills
 | ------- | --------- | ------- |
 | Chrome  | Android   | latest  |
 
+## JavaScript
+
+Draftail requires JavaScript to work. We would encourage integrators of the editor to include a ["please enable JavaScript"](https://www.enable-javascript.com/) message in a `<noscript>` tag to make it possible for end users to understand what to do.
+
+## Accessibility targets
+
+The standards we aim for are [WCAG2.1](https://www.w3.org/TR/WCAG21/), AA level, and [ATAG2.0](https://www.w3.org/TR/ATAG20/). Here are
+specific assistive technologies we aim to test for and support:
+
+| Type          | Assistive technology                                                                                |
+| ------------- | --------------------------------------------------------------------------------------------------- |
+| Screen reader | [NVDA](https://www.nvaccess.org/download/) on Windows with Firefox ESR                              |
+| Screen reader | [VoiceOver](https://support.apple.com/en-gb/guide/voiceover-guide/welcome/web) on macOS with Safari |
+| Magnification | [Windows Magnifier](https://support.microsoft.com/en-gb/help/11542/windows-use-magnifier)           |
+| Magnification | macOS Zoom                                                                                          |
+| Voice control | Windows Speech Recognition                                                                          |
+| Voice control | macOS Dictation                                                                                     |
+| Screen reader | Mobile [VoiceOver](https://support.apple.com/en-gb/guide/voiceover-guide/welcome/web) on iOS        |
+
 ## Polyfills
 
 Draft.js and Draftail build upon ES6 language features. If targeting browsers that do not support them, have a look at:
