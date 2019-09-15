@@ -39,7 +39,12 @@
     },
     {
       packagePatterns: ["eslint"],
-      groupName: "commitlint",
+      groupName: "eslint",
+      automerge: true,
+    },
+    {
+      packagePatterns: ["stylelint"],
+      groupName: "stylelint",
       automerge: true,
     },
     {
