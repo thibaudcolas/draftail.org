@@ -49,8 +49,8 @@ import { createEditorStateFromRaw, serialiseEditorStateToRaw } from "draftail"
 
 // Initialise with `null` if there’s no preexisting state.
 const editorState = createEditorStateFromRaw(null)
-// Initialise with the raw content state otherwise
-const editorState = createEditorStateFromRaw({ entityMap: {}, blocks: [] })
+// Initialise with the raw content state otherwise.
+const editorState = createEditorStateFromRaw(rawContentState)
 
 // Content will be `null` if there’s no textual content, or RawDraftContentState otherwise.
 const content = serialiseEditorStateToRaw(editorState)
