@@ -24,7 +24,7 @@ const siteConfig = {
   cname: "www.draftail.org",
 
   disableHeaderTitle: false,
-  disableTitleTagline: true,
+  disableTitleTagline: false,
 
   // See https://docusaurus.io/docs/en/adding-blog#changing-how-many-blog-posts-show-on-sidebar.
   blogSidebarCount: "ALL",
