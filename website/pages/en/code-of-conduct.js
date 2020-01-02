@@ -2,7 +2,7 @@ const React = require("react")
 
 const CompLibrary = require("../../core/CompLibrary")
 
-const Container = CompLibrary.Container
+const { Container } = CompLibrary
 
 const siteConfig = require(`${process.cwd()}/siteConfig`)
 
@@ -138,5 +138,6 @@ class CodeOfConduct extends React.Component {
 }
 
 CodeOfConduct.title = "Code of conduct"
+CodeOfConduct.description = "Contributor Covenant Code of Conduct, version 1.4"
 
 module.exports = CodeOfConduct

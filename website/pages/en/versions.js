@@ -93,5 +93,7 @@ class Versions extends React.Component {
 }
 
 Versions.title = "Versions"
+Versions.description =
+  "Documentation and release notes for older versions of Draftail"
 
 module.exports = Versions

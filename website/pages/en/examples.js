@@ -2,7 +2,7 @@ const React = require("react")
 
 const CompLibrary = require("../../core/CompLibrary")
 
-const Container = CompLibrary.Container
+const { Container } = CompLibrary
 
 class Examples extends React.Component {
   render() {
@@ -62,5 +62,7 @@ class Examples extends React.Component {
 }
 
 Examples.title = "Examples"
+Examples.description =
+  "View examples of various WYSIWYG formatting options and other types of Draft.js extensions"
 
 module.exports = Examples

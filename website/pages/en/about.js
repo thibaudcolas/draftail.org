@@ -2,7 +2,7 @@ const React = require("react")
 
 const CompLibrary = require("../../core/CompLibrary")
 
-const Container = CompLibrary.Container
+const { Container } = CompLibrary
 
 const siteConfig = require(`${process.cwd()}/siteConfig`)
 
@@ -183,5 +183,7 @@ class About extends React.Component {
 }
 
 About.title = "About"
+About.description =
+  "Building a WYSIWYG editor from scratch is (almost) never a good idea"
 
 module.exports = About

@@ -1,8 +1,8 @@
 const React = require("react")
 const CompLibrary = require("../../core/CompLibrary")
 
-const Container = CompLibrary.Container
-const GridBlock = CompLibrary.GridBlock
+const { Container } = CompLibrary
+const { GridBlock } = CompLibrary
 
 const siteConfig = require(`${process.cwd()}/siteConfig.js`)
 
@@ -63,5 +63,6 @@ class Help extends React.Component {
 }
 
 Help.title = "Help"
+Help.description = "If you need help with Draftail, here are things you can try"
 
 module.exports = Help

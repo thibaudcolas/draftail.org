@@ -2,9 +2,9 @@ const React = require("react")
 
 const CompLibrary = require("../../core/CompLibrary")
 
-const MarkdownBlock = CompLibrary.MarkdownBlock
-const Container = CompLibrary.Container
-const GridBlock = CompLibrary.GridBlock
+const { MarkdownBlock } = CompLibrary
+const { Container } = CompLibrary
+const { GridBlock } = CompLibrary
 
 const siteConfig = require(`${process.cwd()}/siteConfig`)
 
@@ -278,5 +278,8 @@ class Index extends React.Component {
     )
   }
 }
+
+Index.description =
+  "Keyboard shortcuts, Markdown, and powerful Draft.js & React customisations"
 
 module.exports = Index
