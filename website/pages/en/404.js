@@ -15,4 +15,6 @@ class ErrorPage extends React.Component {
   }
 }
 
+ErrorPage.title = "Page not found"
+
 module.exports = ErrorPage

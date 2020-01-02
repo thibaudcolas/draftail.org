@@ -1,7 +1,8 @@
 const React = require("react")
 
 const CompLibrary = require("../../core/CompLibrary")
-const Container = CompLibrary.Container
+
+const { Container } = CompLibrary
 
 const siteConfig = require(`${process.cwd()}/siteConfig`)
 const versions = require(`${process.cwd()}/versions.json`)
@@ -90,5 +91,7 @@ class Versions extends React.Component {
     )
   }
 }
+
+Versions.title = "Versions"
 
 module.exports = Versions
