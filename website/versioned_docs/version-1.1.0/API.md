@@ -243,3 +243,48 @@ export const ENTITY_TYPE = {
   HORIZONTAL_RULE: "HORIZONTAL_RULE",
 }
 ```
+
+## Reusable UI components
+
+Some of Draftail’s UI components can be reused to more easily build extensions that are consistent.
+
+### Icon
+
+The Icon can be reused to have consistent icon sizing between different extensions and the toolbar.
+
+```js
+import { Icon } from "draftail"
+
+const icon = <Icon icon="#square" />
+```
+
+Supported props:
+
+```jsx
+icon: string | string[] | Node,
+title: ?string,
+className: ?string,
+```
+
+There is further documentation about what formats are allowed for `icon`: [Customising icons](CustomisingIcons.md).
+
+### ToolbarButton
+
+The ToolbarButton can be reused when building custom [`controls`](ArbitraryControls.md) in the toolbar.
+
+```js
+import { ToolbarButton } from "draftail"
+
+const button = <ToolbarButton />
+```
+
+Supproted props:
+
+```jsx
+name: ?string,
+active: boolean,
+label: ?string,
+title: ?string,
+icon: ?IconProp,
+onClick: ?(string) => void,
+```
