@@ -105,15 +105,15 @@ Each item in `inlineStyles` can have the following props:
 
 ```jsx
 // Unique type shared between inline style instances.
-type: PropTypes.string.isRequired,
+type: string,
 // Describes the inline style in the editor UI, concisely.
-label: PropTypes.string,
+label?: string,
 // Describes the inline style in the editor UI.
-description: PropTypes.string,
+description?: string,
 // Represents the inline style in the editor UI.
 icon: [...],
 // CSS properties (in JS format) to apply for styling within the editor area.
-style: PropTypes.Object,
+style?: {},
 ```
 
 ### [Blocks](Blocks.md)
@@ -126,15 +126,15 @@ Each item in `blockTypes` can have the following props:
 
 ```jsx
 // Unique type shared between block instances.
-type: PropTypes.string.isRequired,
+type: string,
 // Describes the block in the editor UI, concisely.
-label: PropTypes.string,
+label?: string,
 // Describes the block in the editor UI.
-description: PropTypes.string,
+description?: string,
 // Represents the block in the editor UI.
 icon: [...],
 // DOM element used to display the block within the editor area.
-element: PropTypes.string,
+element?: string,
 ```
 
 ### [Entities](Entities.md)
@@ -147,25 +147,25 @@ Each item in `entityTypes` can have the following props:
 
 ```jsx
 // Unique type shared between entity instances.
-type: PropTypes.string.isRequired,
+type: string,
 // Describes the entity in the editor UI, concisely.
-label: PropTypes.string,
+label?: string,
 // Describes the entity in the editor UI.
-description: PropTypes.string,
+description?: string,
 // Represents the entity in the editor UI.
 icon: [...],
 // React component providing the UI to manage entities of this type.
-source: PropTypes.func.isRequired,
+source: ComponentType<{}>,
 // React component to display inline entities.
-decorator: PropTypes.func,
+decorator?: ComponentType<{}>,
 // React component to display block-level entities.
-block: PropTypes.func,
+block?: ComponentType<{}>,
 // Array of attributes the entity uses, to preserve when filtering entities on paste.
 // If undefined, all entity data is preserved.
-attributes: PropTypes.arrayOf(PropTypes.string),
+attributes?: $ReadOnlyArray<string>,
 // Attribute - regex mapping, to whitelist entities based on their data on paste.
 // For example, { url: '^https:' } will only preserve links that point to HTTPS URLs.
-whitelist: PropTypes.object,
+whitelist?: {},
 ```
 
 ### [Decorators](Decorators.md)
@@ -178,9 +178,9 @@ Each item in `decorators` can have the following props:
 
 ```jsx
 // Determines which pieces of content are to be decorated.
-strategy: PropTypes.func,
+strategy: (block: ContentBlock, callback: (start: number, end: number) => void, contentState: ContentState) => void,
 // React component to display the decoration.
-component: PropTypes.func,
+component: ComponentType<{}>,
 ```
 
 ### [Controls](ArbitraryControls.md)
@@ -193,9 +193,9 @@ Each item in `controls` can have the following props:
 
 ```jsx
 // Retrieve the full Draft.js EditorState.
-getEditorState: PropTypes.func,
+getEditorState: () => EditorState,
 // Change any part of the EditorState.
-onChange: PropTypes.func,
+onChange: (EditorState) => void,
 ```
 
 ### [Plugins](Plugins.md)

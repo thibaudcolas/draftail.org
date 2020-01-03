@@ -97,17 +97,17 @@ The source component is given the following props:
 
 ```jsx
 // The editorState is available for arbitrary content manipulation.
-editorState: PropTypes.object.isRequired,
+editorState: EditorState,
 // Takes the updated editorState, or null if there are no changes.
-onComplete: PropTypes.func.isRequired,
+onComplete: (nextState: EditorState) => void,
 // Closes the source, without focusing the editor again.
-onClose: PropTypes.func.isRequired,
+onClose: () => void,
 // Whole entityType configuration, as provided to the editor.
-entityType: PropTypes.object.isRequired,
+entityType: {},
 // Current entityKey to edit, if any.
-entityKey: PropTypes.string,
+entityKey: ?string,
 // Current entity to edit, if any.
-entity: PropTypes.object,
+entity: ?EntityInstance,
 ```
 
 ### Decorators
@@ -130,15 +130,15 @@ They receive the following props:
 
 ```jsx
 // Key of the entity being decorated.
-entityKey: PropTypes.string.isRequired,
+entityKey: string,
 // Full contentState, read-only.
-contentState: PropTypes.object.isRequired,
+contentState: ContentState,
 // The decorated nodes / entity text.
-children: PropTypes.node.isRequired,
+children: Node,
 // Call with the entityKey to trigger the entity source.
-onEdit: PropTypes.func.isRequired,
+onEdit: (entityKey: string) => void,
 // Call with the entityKey to remove the entity.
-onRemove: PropTypes.func.isRequired,
+onRemove: (entityKey: string, blockKey: string) => void,
 ```
 
 The `onEdit` and `onRemove` props are meant so decorators can also serve in managing entities, eg. to build tooltips to edit links.
@@ -165,27 +165,27 @@ They receive the following props:
 
 ```jsx
 // The current atomic block.
-block: PropTypes.object.isRequired,
-blockProps: PropTypes.shape({
-    // The editorState is available for arbitrary content manipulation.
-    editorState: PropTypes.object.isRequired,
-    // Current entity to manage.
-    entity: PropTypes.object.isRequired,
-    // Current entityKey to manage.
-    entityKey: PropTypes.string.isRequired,
-    // Whole entityType configuration, as provided to the editor.
-    entityType: PropTypes.object.isRequired,
-    // Make the whole editor read-only, except for the block.
-    lockEditor: PropTypes.func.isRequired,
-    // Make the editor editable again.
-    unlockEditor: PropTypes.func.isRequired,
-    // Shorthand to edit entity data.
-    onEditEntity: PropTypes.func.isRequired,
-    // Shorthand to remove an entity, and the related block.
-    onRemoveEntity: PropTypes.func.isRequired,
-    // Update the editorState with arbitrary changes.
-    onChange: PropTypes.func.isRequired,
-}).isRequired,
+block: ContentBlock,
+blockProps: {|
+  // The editorState is available for arbitrary content manipulation.
+  editorState: EditorState,
+  // Current entity to manage.
+  entity: EntityInstance,
+  // Current entityKey to manage.
+  entityKey: string,
+  // Whole entityType configuration, as provided to the editor.
+  entityType: {},
+  // Make the whole editor read-only, except for the block.
+  lockEditor: () => void,
+  // Make the editor editable again.
+  unlockEditor: () => void,
+  // Shorthand to edit entity data.
+  onEditEntity: (entityKey: string) => void,
+  // Shorthand to remove an entity, and the related block.
+  onRemoveEntity: (entityKey: string, blockKey: string) => void,
+  // Update the editorState with arbitrary changes.
+  onChange: (EditorState) => void,
+|},
 ```
 
 ### Examples
