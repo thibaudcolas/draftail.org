@@ -20,9 +20,9 @@
     "not OperaMini all"
   ],
   "devDependencies": {
-    "@commitlint/cli": "8.2.0",
-    "@commitlint/config-conventional": "8.2.0",
-    "@commitlint/travis-cli": "8.2.0",
+    "@commitlint/cli": "8.3.4",
+    "@commitlint/config-conventional": "8.3.4",
+    "@commitlint/travis-cli": "8.3.4",
     "@thibaudcolas/eslint-plugin-cookbook": "5.0.1",
     "@thibaudcolas/stylelint-config-cookbook": "3.0.1",
     "eslint": "6.8.0",
