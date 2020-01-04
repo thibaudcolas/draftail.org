@@ -1,17 +1,5 @@
 // See https://docusaurus.io/docs/site-config for all the possible site configuration options.
 
-// List of projects/orgs using your project for the users page.
-const users = [
-  {
-    caption: "User1",
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: "/img/docusaurus.svg",
-    infoLink: "https://www.facebook.com",
-    pinned: true,
-  },
-]
-
 const siteConfig = {
   title: "Draftail",
   tagline: "📝🍸 A configurable rich text editor built with Draft.js",
@@ -39,15 +27,30 @@ const siteConfig = {
     { doc: "getting-started", label: "Docs" },
     { doc: "api", label: "API" },
     { blog: true, label: "Blog" },
-    { search: true },
     {
       href: "https://github.com/springload/draftail",
       label: "GitHub",
     },
+    { search: true },
   ],
 
-  // If you have users set above, you add it here:
-  users,
+  users: [
+    {
+      caption: "Wagtail",
+      image: "/img/users/wagtail.svg",
+      infoLink: "https://github.com/wagtail/wagtail",
+    },
+    {
+      caption: "médialab Sciences Po",
+      image: "/img/users/medialab.svg",
+      infoLink: "https://github.com/medialab/website",
+    },
+    {
+      caption: "Saleor",
+      image: "/img/users/saleor.svg",
+      infoLink: "https://github.com/mirumee/saleor",
+    },
+  ],
 
   // path to images for header/footer
   headerIcon: "img/logo.svg",

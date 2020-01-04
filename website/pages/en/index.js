@@ -145,33 +145,29 @@ const Features = () => (
 )
 
 const Showcase = (props) => {
-  // if ((siteConfig.users || []).length === 0) {
-  //   return null
-  // }
-
-  // const showcase = siteConfig.users
-  //   .filter((user) => user.pinned)
-  //   .map((user) => (
-  //     <a href={user.infoLink} key={user.infoLink}>
-  //       <img src={user.image} alt={user.caption} title={user.caption} />
-  //     </a>
-  //   ))
+  if (siteConfig.users.length === 0) {
+    return null
+  }
 
   return (
     <div className="productShowcaseSection paddingBottom">
-      <h2>Who’s using Draftail?</h2>
-      <p>
-        Draftail is the editor that powers{" "}
-        <a href="https://wagtail.io/">Wagtail</a>.
-        <a href="https://wagtail.io/">
-          <img src={imgUrl("wagtail.svg")} alt="" width="32" />
-        </a>
-      </p>
-      {/* <div className="logos">{showcase}</div> */}
+      <h2>Who uses Draftail?</h2>
+      <div className="logos">
+        {siteConfig.users.map((user) => (
+          <a className="user-link" href={user.infoLink} key={user.infoLink}>
+            <img src={user.image} alt="" />
+            <span>{user.caption}</span>
+          </a>
+        ))}
+      </div>
       <div className="more-users">
-        <a className="button" href={pageUrl("users", props.language)}>
-          More {siteConfig.title} Users
-        </a>
+        <p>
+          Make a{" "}
+          <a href="https://github.com/thibaudcolas/draftail.org/edit/master/website/siteConfig.js">
+            Pull Request
+          </a>{" "}
+          to add your project.
+        </p>
       </div>
     </div>
   )
@@ -273,6 +269,7 @@ class Index extends React.Component {
               </div>
             </div>
           </Container>
+          <Showcase />
         </div>
       </div>
     )
