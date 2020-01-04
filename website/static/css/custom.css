@@ -102,8 +102,8 @@ blockquote {
 
 /* ####### LINKS ####### */
 
-/* stylelint-disable-next-line selector-max-specificity, a11y/media-prefers-reduced-motion */
-.mainContainer a:not(.hash-link):not(.user-link),
+/* stylelint-disable-next-line a11y/media-prefers-reduced-motion */
+.mainContainer a:not(.hash-link),
 .user-link span {
   color: var(--color-1a1a1a);
   background: #eef8ff;
@@ -112,8 +112,7 @@ blockquote {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  /* stylelint-disable-next-line selector-max-specificity */
-  .mainContainer a:not(.hash-link):not(.user-link),
+  .mainContainer a:not(.hash-link),
   .user-link span {
     transition: none;
   }
@@ -125,8 +124,20 @@ blockquote {
   border-bottom: none;
 }
 
+/* stylelint-disable-next-line selector-no-qualifying-type */
+.mainContainer a.user-link {
+  background-color: initial;
+  border-bottom: none;
+}
+
 /* stylelint-disable-next-line selector-max-specificity */
 .mainContainer a:not(.hash-link):hover {
+  text-decoration: none;
+  background-color: initial;
+}
+
+/* stylelint-disable-next-line selector-max-specificity, selector-no-qualifying-type */
+.mainContainer a.user-link:hover {
   text-decoration: none;
   background-color: initial;
 }
