@@ -52,3 +52,11 @@ In this example, the editor will have four buttons in its toolbar: H3, bullet li
 <iframe src="https://demo.draftail.org/storybook/iframe.html?id=draftail--simple" class="iframe iframe--docs-200"></iframe>
 
 Draftail supports many more [formatting options](FormattingOptions.md). Be sure to also check out the [required polyfills](BrowserSupport.md).
+
+## Why we need Draft.js and React
+
+[Draft.js](https://draftjs.org/) is the framework that Draftail is built upon, meant for rich text experiences in React-driven UIs. **Draftail is an opinionated implementation of a Draft.js editor** – abstracting away the complexities for the simple use cases.
+
+You don’t need any Draft.js knowledge to make use of Draftail, unless you want to invest into more custom rich text formatting. React knowledge is likely needed, however.
+
+If you want to learn more about Draftail’s implementation, read on: [Why Wagtail’s new editor is built with Draft.js](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js).

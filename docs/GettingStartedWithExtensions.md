@@ -95,6 +95,10 @@ You’re ready to wrangle with rich text. StreamField definitely won’t cut it 
 
 Some of those questions can be hard to answer if you don’t have experience building rich text extensions. My preferred approach is to get prototyping and build a [proof of concept (PoC)](https://en.wikipedia.org/wiki/Proof_of_concept).
 
+### Required knowledge
+
+Most of the time spent developing extensions will be spent with the APIs of [Draft.js](https://draftjs.org/), the framework that Draftail [is built upon](GettingStarted.md#why-we-need-draftjs-and-react). The Draftail documentation is a good resource to learn what types of extension are supported and general high-level concepts, but in order to develop an extension that manipulates the editor’s content, you will likely need to read the Draft.js docs – or search for examples of similar extensions built for Draft.js itself, which are likely reusable.
+
 ### Prototyping extensions
 
 Generally, the hardest part to build when creating a content extension is the editing UI (think: choosers as forms within modals, tooltips). Then, content storage and conversion is the most important part to "get right" from the beginning, since changes there will create stale content that can be hard to deal with. Here are my tips:

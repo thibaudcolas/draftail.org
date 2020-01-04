@@ -63,3 +63,11 @@ Draftail supports many more [formatting options](FormattingOptions.md). Be sure 
 ## Controlled component
 
 Optionally, the editor can also be used as a [controlled component](https://reactjs.org/docs/forms.html#controlled-components) like a standard Draft.js editor, with its editor state managed externally via the [`editorState` and `onChange`](API.md#editorstate-and-onchange) props. If you’re interested in this, have a look at the [controlled component](ControlledComponent.md) section of the documentation.
+
+## Why we need Draft.js and React
+
+[Draft.js](https://draftjs.org/) is the framework that Draftail is built upon, meant for rich text experiences in React-driven UIs. **Draftail is an opinionated implementation of a Draft.js editor** – abstracting away the complexities for the simple use cases.
+
+You don’t need any Draft.js knowledge to make use of Draftail, unless you want to invest into more custom rich text formatting. React knowledge is likely needed, however.
+
+If you want to learn more about Draftail’s implementation, read on: [Why Wagtail’s new editor is built with Draft.js](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js).

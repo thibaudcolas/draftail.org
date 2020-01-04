@@ -102,7 +102,7 @@ const Features = () => (
           title: "Easy to use",
         },
         {
-          content: `Rich text shouldn’t be a black box. Custom extensions for a specific use case shouldn't be a headache. Draftail comes with an extensive API backed by [Draft.js](https://draftjs.org/) and [React](https://reactjs.org/).`,
+          content: `Rich text shouldn’t be a black box. Custom extensions for a specific use case shouldn't be a headache. Draftail comes with an extensive API backed by [Draft.js and React](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js).`,
           image: imgUrl("visuals/react.svg"),
           imageAlign: "top",
           imageAlt: "",
