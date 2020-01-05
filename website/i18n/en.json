@@ -32,6 +32,9 @@
       "decorators": {
         "title": "Decorators"
       },
+      "draftjs-vs-draftail": {
+        "title": "Draft.js vs Draftail"
+      },
       "entities": {
         "title": "Entities"
       },
@@ -181,6 +184,9 @@
       },
       "version-1.3.0/version-1.3.0-controlled-component": {
         "title": "Controlled component"
+      },
+      "version-1.3.0/version-1.3.0-draftjs-vs-draftail": {
+        "title": "Draft.js vs Draftail"
       },
       "version-1.3.0/version-1.3.0-form-validation": {
         "title": "Form validation"
