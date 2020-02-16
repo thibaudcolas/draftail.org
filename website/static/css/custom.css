@@ -118,7 +118,6 @@ blockquote {
   }
 }
 
-/* stylelint-disable-next-line selector-max-specificity, no-descending-specificity */
 .authorPhoto a:not(.hash-link) {
   background-color: initial;
   border-bottom: none;
@@ -170,7 +169,6 @@ blockquote {
   margin-top: 2rem;
 }
 
-/* stylelint-disable-next-line selector-max-specificity */
 .blogContainer .postHeader .post-meta {
   float: left;
   font-size: var(--font-size-xs);
