@@ -64,7 +64,8 @@ class Footer extends React.Component {
           available as{" "}
           <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.
           Emoji visuals from{" "}
-          <a href="https://github.com/mozilla/fxemoji">FxEmojis</a>.
+          <a href="https://github.com/mozilla/fxemoji">FxEmojis</a>. This site
+          is powered by <a href="https://www.netlify.com/">Netlify</a>.
         </section>
       </footer>
     )
