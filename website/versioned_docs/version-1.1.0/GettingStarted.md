@@ -60,3 +60,7 @@ Draftail supports many more [formatting options](FormattingOptions.md). Be sure 
 You don’t need any Draft.js knowledge to make use of Draftail, unless you want to invest into more custom rich text formatting. React knowledge is likely needed, however.
 
 If you want to learn more about Draftail’s implementation, read on: [Why Wagtail’s new editor is built with Draft.js](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js).
+
+### Usage without React
+
+While Draftail depends on React, it’s perfectly possible to use it in a project that otherwise doesn’t use React. There are however a lot of other rich text editors that might be better suited for such scenarios – and writing Draftail extensions for any non-trivial formatting still does writing React code
