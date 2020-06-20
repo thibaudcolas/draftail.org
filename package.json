@@ -25,7 +25,7 @@
     "@commitlint/travis-cli": "8.3.5",
     "@thibaudcolas/eslint-plugin-cookbook": "6.0.0",
     "@thibaudcolas/stylelint-config-cookbook": "4.0.0",
-    "eslint": "7.2.0",
+    "eslint": "7.3.0",
     "prettier": "2.0.5",
     "stylelint": "13.6.0"
   },
