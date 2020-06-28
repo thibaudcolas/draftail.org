@@ -222,7 +222,7 @@ class Index extends React.Component {
             </ul>
             <p>
               The embeds in this example are powered by{" "}
-              <a href="http://embed.ly/">Embedly</a>.
+              <a href="https://embed.ly/">Embedly</a>.
             </p>
           </noscript>
           <iframe

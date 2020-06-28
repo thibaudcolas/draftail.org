@@ -3,7 +3,7 @@ id: content-storage
 title: Content storage
 ---
 
-Like all Draft.js editors, Draftail does not process content directly as HTML but as a more structured format called [ContentState](https://draftjs.org/docs/api-reference-content-state).
+Like all Draft.js editors, Draftail does not process content directly as HTML but as a more structured format called [ContentState](https://draftjs.org/docs/api-reference-content-state/).
 
 ## How Draft.js represents rich text
 
@@ -49,7 +49,7 @@ const rawContentState = {
       type: "LINK",
       mutability: "MUTABLE",
       data: {
-        url: "https://draftjs.org/docs/api-reference-content-state",
+        url: "https://draftjs.org/docs/api-reference-content-state/",
       },
     },
   },
