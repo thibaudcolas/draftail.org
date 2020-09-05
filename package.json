@@ -27,7 +27,7 @@
     "@thibaudcolas/stylelint-config-cookbook": "4.0.0",
     "eslint": "7.7.0",
     "prettier": "2.0.5",
-    "stylelint": "13.6.1"
+    "stylelint": "13.7.0"
   },
   "dependencies": {},
   "peerDependencies": {},
