@@ -45,7 +45,7 @@ const rawContentState = {
     },
   ],
   entityMap: {
-    "0": {
+    0: {
       type: "LINK",
       mutability: "MUTABLE",
       data: {
