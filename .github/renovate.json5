@@ -34,21 +34,25 @@
       packageNames: ["prettier"],
       groupName: "prettier",
       automerge: true,
+      automergeType: "branch",
     },
     {
       packagePatterns: ["^@commitlint"],
       groupName: "commitlint",
       automerge: true,
+      automergeType: "branch",
     },
     {
       packagePatterns: ["eslint"],
       groupName: "eslint",
       automerge: true,
+      automergeType: "branch",
     },
     {
       packagePatterns: ["stylelint"],
       groupName: "stylelint",
       automerge: true,
+      automergeType: "branch",
     },
     {
       packageNames: ["docusaurus"],
