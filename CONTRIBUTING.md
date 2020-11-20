@@ -27,7 +27,7 @@ npm run start
 
 ### Releases
 
-The website is automatically published on every push to master, with [Netlify](https://www.netlify.com). The search engine index is automatically rebuilt every 24hrs. Full config: [algolia/docsearch-configs:draftail.json](https://github.com/algolia/docsearch-configs/blob/master/configs/draftail.json)
+The website is automatically published on every push to main, with [Netlify](https://www.netlify.com). The search engine index is automatically rebuilt every 24hrs. Full config: [algolia/docsearch-configs:draftail.json](https://github.com/algolia/docsearch-configs/blob/master/configs/draftail.json)
 
 ## Favicons
 

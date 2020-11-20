@@ -17,7 +17,7 @@ const siteConfig = {
   // See https://docusaurus.io/docs/en/adding-blog#changing-how-many-blog-posts-show-on-sidebar.
   blogSidebarCount: "ALL",
 
-  editUrl: "https://github.com/thibaudcolas/draftail.org/edit/master/docs/",
+  editUrl: "https://github.com/thibaudcolas/draftail.org/edit/main/docs/",
 
   enableUpdateTime: true,
   enableUpdateBy: true,

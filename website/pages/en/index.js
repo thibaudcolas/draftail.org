@@ -163,7 +163,7 @@ const Showcase = (props) => {
       <div className="more-users">
         <p>
           Make a{" "}
-          <a href="https://github.com/thibaudcolas/draftail.org/edit/master/website/siteConfig.js">
+          <a href="https://github.com/thibaudcolas/draftail.org/edit/main/website/siteConfig.js">
             Pull Request
           </a>{" "}
           to add your project.
