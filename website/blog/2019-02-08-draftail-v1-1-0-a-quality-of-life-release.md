@@ -5,7 +5,7 @@ authorURL: https://twitter.com/thibaud_colas
 authorImageURL: https://avatars1.githubusercontent.com/u/877585?s=460&v=4
 ---
 
-It’s been a while since the last Draftail release! [Draftail v1.1.0](https://www.npmjs.com/package/draftail) is out; the [CHANGELOG](https://github.com/springload/draftail/blob/master/CHANGELOG.md#v110) is fairly short but I thought it would also be good to report on what’s been happening behind the scenes.
+It’s been a while since the last Draftail release! [Draftail v1.1.0](https://www.npmjs.com/package/draftail) is out; the [CHANGELOG](https://github.com/springload/draftail/blob/main/CHANGELOG.md#v110) is fairly short but I thought it would also be good to report on what’s been happening behind the scenes.
 
 <!-- truncate -->
 
@@ -24,7 +24,7 @@ None of those bugs were that critical, but I’m particularly happy to see them 
 
 ## Maintenance improvements
 
-The last major feature changes in Draftail happened nearly a year ago – [v0.17.0](https://github.com/springload/draftail/compare/v0.17.0...master), with two subsequent patch releases, which graduated to v1.0.0. This is a long time in the current JavaScript landscape, and part of the reason for this was that I was really concerned with adding features onto a project where stability is paramount. Via Wagtail, Draftail is used on hundreds (thousands?) of websites, and we definitely want to minimise breakage when making changes.
+The last major feature changes in Draftail happened nearly a year ago – [v0.17.0](https://github.com/springload/draftail/compare/v0.17.0...main), with two subsequent patch releases, which graduated to v1.0.0. This is a long time in the current JavaScript landscape, and part of the reason for this was that I was really concerned with adding features onto a project where stability is paramount. Via Wagtail, Draftail is used on hundreds (thousands?) of websites, and we definitely want to minimise breakage when making changes.
 
 To help with this, I worked on a number of much needed behind-the-scenes improvements to Draftail as a project:
 

@@ -5,7 +5,7 @@ authorURL: https://twitter.com/thibaud_colas
 authorImageURL: https://avatars1.githubusercontent.com/u/877585?s=460&v=4
 ---
 
-Time for a new release! Draftail [v1.3.0](https://github.com/springload/draftail/blob/master/CHANGELOG.md#v130) is out, and this is the first release to solely focus on improvements or fixes requested by users of Draftail outside of Wagtail, its first large-scale implementation.
+Time for a new release! Draftail [v1.3.0](https://github.com/springload/draftail/blob/main/CHANGELOG.md#v130) is out, and this is the first release to solely focus on improvements or fixes requested by users of Draftail outside of Wagtail, its first large-scale implementation.
 
 <!-- truncate -->
 

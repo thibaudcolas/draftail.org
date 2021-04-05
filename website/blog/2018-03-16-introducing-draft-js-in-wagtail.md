@@ -27,7 +27,7 @@ Why this happened, and how – read the following blog posts:
 
 ### Draftail
 
-- [Draftail Playground](https://draftail-playground.herokuapp.com/)
+- [Draftail Playground](https://playground.draftail.org/)
 - Rich text formats: [Draftail](https://www.draftail.org/)
 - Copy-paste: [Draft.js filters](https://thibaudcolas.github.io/draftjs-filters/)
 - More formats: [Draftail examples](https://www.draftail.org/examples)

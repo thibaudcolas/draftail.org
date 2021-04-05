@@ -37,7 +37,7 @@ class Help extends React.Component {
       },
       {
         title: "GitHub",
-        content: `At our [GitHub repository](${siteConfig.repoUrl}) – Browse and submit [issues](${siteConfig.repoUrl}/issues) or [pull requests](${siteConfig.repoUrl}/pulls) for bugs or enhancements. Be sure to also check out our [contributing guidelines](${siteConfig.repoUrl}/blob/master/docs/CONTRIBUTING.md).`,
+        content: `At our [GitHub repository](${siteConfig.repoUrl}) – Browse and submit [issues](${siteConfig.repoUrl}/issues) or [pull requests](${siteConfig.repoUrl}/pulls) for bugs or enhancements. Be sure to also check out our [contributing guidelines](${siteConfig.repoUrl}/blob/main/docs/CONTRIBUTING.md).`,
       },
     ]
 

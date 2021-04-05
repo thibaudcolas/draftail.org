@@ -5,7 +5,7 @@ authorURL: https://twitter.com/thibaud_colas
 authorImageURL: https://avatars1.githubusercontent.com/u/877585?s=460&v=4
 ---
 
-Draftail [v1.2.0](https://github.com/springload/draftail/blob/master/CHANGELOG.md#v120) is out, and it packs a punch. While the [previous release](/blog/2019/02/08/draftail-v1-1-0-a-quality-of-life-release) focused on maintainability and bug fixes, this time around it's all about shiny new features: support for the [Draft.js Plugins](https://www.draft-js-plugins.com/) architecture and its plugin ecosystem, and new ways to format content with Markdown shortcuts.
+Draftail [v1.2.0](https://github.com/springload/draftail/blob/main/CHANGELOG.md#v120) is out, and it packs a punch. While the [previous release](/blog/2019/02/08/draftail-v1-1-0-a-quality-of-life-release) focused on maintainability and bug fixes, this time around it's all about shiny new features: support for the [Draft.js Plugins](https://www.draft-js-plugins.com/) architecture and its plugin ecosystem, and new ways to format content with Markdown shortcuts.
 
 <!-- truncate -->
 
