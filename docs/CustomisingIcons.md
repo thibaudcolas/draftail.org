@@ -1,11 +1,12 @@
 ---
-id: customising-icons
+id: version-1.0.0-customising-icons
 title: Customising icons
+original_id: customising-icons
 ---
 
 ## Icon formats
 
-Draftail can use icons for buttons in the toolbar. There are multiple possible formats:
+A lot of the formatting options in Draftail rely on icons for toolbar buttons, allowing an `icon?: IconProp` attribute. There are multiple possible formats to this `IconProp`:
 
 - An SVG path data string (the `d` attribute of `<path />`), e.g. `'M10 10 H 90 V 90 H 10 Z'`.
 - An array of paths, e.g. `['M10 10 H 90 V 90 H 10 Z', 'M10 10 H 90 V 90 H 10 Z']`.

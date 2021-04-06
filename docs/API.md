@@ -111,7 +111,7 @@ label?: string,
 // Describes the inline style in the editor UI.
 description?: string,
 // Represents the inline style in the editor UI.
-icon: [...],
+icon?: IconProp,
 // CSS properties (in JS format) to apply for styling within the editor area.
 style?: {},
 ```
@@ -132,7 +132,7 @@ label?: string,
 // Describes the block in the editor UI.
 description?: string,
 // Represents the block in the editor UI.
-icon: [...],
+icon?: IconProp,
 // DOM element used to display the block within the editor area.
 element?: string,
 ```
@@ -153,7 +153,7 @@ label?: string,
 // Describes the entity in the editor UI.
 description?: string,
 // Represents the entity in the editor UI.
-icon: [...],
+icon?: IconProp,
 // React component providing the UI to manage entities of this type.
 source: ComponentType<{}>,
 // React component to display inline entities.
