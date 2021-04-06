@@ -96,7 +96,9 @@ This is the editor’s [uncontrolled component](https://reactjs.org/docs/uncontr
 
 This is the editor’s [controlled component](https://reactjs.org/docs/forms.html#controlled-components) API, matching that of other Draft.js examples.
 
-### [Inline styles](InlineStyles.md)
+### Inline styles
+
+How-to guide: [Inline styles](InlineStyles.md)
 
 ```jsx
 const editor = <DraftailEditor inlineStyles={[...]} />
@@ -117,7 +119,9 @@ icon?: IconProp,
 style?: {},
 ```
 
-### [Blocks](Blocks.md)
+### Blocks
+
+How-to guide: [Blocks](Blocks.md)
 
 ```jsx
 const editor = <DraftailEditor blockTypes={[...]} />
@@ -138,7 +142,9 @@ icon?: IconProp,
 element?: string,
 ```
 
-### [Entities](Entities.md)
+### Entities
+
+How-to guide: [Entities](Entities.md)
 
 ```jsx
 const editor = <DraftailEditor entityTypes={[...]} />
@@ -169,7 +175,9 @@ attributes?: $ReadOnlyArray<string>,
 whitelist?: {},
 ```
 
-### [Decorators](Decorators.md)
+### Decorators
+
+How-to guide: [Decorators](Decorators.md)
 
 ```jsx
 const editor = <DraftailEditor decorators={[...]} />
@@ -184,7 +192,9 @@ strategy: (block: ContentBlock, callback: (start: number, end: number) => void, 
 component: ComponentType<{}>,
 ```
 
-### [Controls](ArbitraryControls.md)
+### Controls
+
+How-to guide: [Controls](ArbitraryControls.md)
 
 ```jsx
 const editor = <DraftailEditor controls={[...]} />
@@ -199,7 +209,9 @@ getEditorState: () => EditorState,
 onChange: (EditorState) => void,
 ```
 
-### [Plugins](Plugins.md)
+### Plugins
+
+How-to guide: [Plugins](Plugins.md)
 
 ```jsx
 const editor = <DraftailEditor plugins={[...]} />
@@ -273,7 +285,9 @@ export const ENTITY_TYPE = {
 }
 ```
 
-## [Data conversion helpers](ControlledComponent.md#data-conversion-helpers)
+## Data conversion helpers
+
+How-to guide: [Data conversion helpers](ControlledComponent.md#data-conversion-helpers)
 
 Draftail exports the methods it uses internally to initialise the editor’s content via `rawContentState` and persist it in `onSave`: [`createEditorStateFromRaw`](#createeditorstatefromraw), and [`serialiseEditorStateToRaw`](#serialiseeditorstatetoraw).
 

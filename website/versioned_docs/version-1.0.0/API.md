@@ -71,7 +71,9 @@ stateSaveInterval: 250,
 
 `rawContentState` and `onSave` are used to initialise the editor with content, and to periodically save new content. They work with [raw ContentState](ContentStorage.md) objects representing the editor’s content, or `null` if the editor is empty.
 
-### [Inline styles](InlineStyles.md)
+### Inline styles
+
+How-to guide: [Inline styles](InlineStyles.md)
 
 ```jsx
 const editor = <DraftailEditor inlineStyles={[...]} />
@@ -92,7 +94,9 @@ icon?: IconProp,
 style?: {},
 ```
 
-### [Blocks](Blocks.md)
+### Blocks
+
+How-to guide: [Blocks](Blocks.md)
 
 ```jsx
 const editor = <DraftailEditor blockTypes={[...]} />
@@ -113,7 +117,9 @@ icon?: IconProp,
 element?: string,
 ```
 
-### [Entities](Entities.md)
+### Entities
+
+How-to guide: [Entities](Entities.md)
 
 ```jsx
 const editor = <DraftailEditor entityTypes={[...]} />
@@ -144,7 +150,9 @@ attributes?: $ReadOnlyArray<string>,
 whitelist?: {},
 ```
 
-### [Decorators](Decorators.md)
+### Decorators
+
+How-to guide: [Decorators](Decorators.md)
 
 ```jsx
 const editor = <DraftailEditor decorators={[...]} />
@@ -159,7 +167,9 @@ strategy: (block: ContentBlock, callback: (start: number, end: number) => void, 
 component: ComponentType<{}>,
 ```
 
-### [Controls](ArbitraryControls.md)
+### Controls
+
+How-to guide: [Controls](ArbitraryControls.md)
 
 ```jsx
 const editor = <DraftailEditor controls={[...]} />
