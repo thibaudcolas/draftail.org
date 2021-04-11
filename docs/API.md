@@ -79,7 +79,7 @@ topToolbar: Toolbar,
 bottomToolbar: null,
 // Max level of nesting for list items. 0 = no nesting. Maximum = 10.
 maxListNesting: 1,
-// Frequency at which to call the save callback (ms).
+// Frequency at which to call the onSave callback (ms).
 stateSaveInterval: 250,
 ```
 
