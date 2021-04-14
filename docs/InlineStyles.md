@@ -54,6 +54,8 @@ inlineStyles={[
 ]}
 ```
 
+All other props are optional, but styles need to have either a `label` or `icon` in order to appear in the toolbar.
+
 ### Examples
 
 Those examples would render as:

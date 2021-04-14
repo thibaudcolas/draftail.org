@@ -6,6 +6,16 @@ original_id: customising-toolbars
 
 By default, Draftail comes with a top static toolbar that contains all of the possible formatting, plus a few extra controls.
 
+## Hiding individual toolbar items
+
+With the default toolbar, items are directly derived from the formats (block, style, etc.) enabled in the editor. The buttons for specific items can be hidden with CSS only. For example, hiding a `LINK` button:
+
+```css
+.Draftail-ToolbarButton[name="LINK"] {
+  display: none;
+}
+```
+
 ## Disabling the toolbar
 
 It is possible to hide the toolbar by passing `null` to `topToolbar`:

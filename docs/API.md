@@ -118,7 +118,7 @@ type: string,
 /** CSS properties (in JS format) to apply for styling within the editor area. */
 style?: {},
 /** Describes the control in the editor UI, concisely. */
-label?: string,
+label?: ?string,
 /** Describes the control in the editor UI. */
 description?: string,
 /** Represents the control in the editor UI. */
@@ -139,7 +139,7 @@ Each item in `blockTypes` can have the following props:
 // Unique type shared between block instances.
 type: string,
 // Describes the block in the editor UI, concisely.
-label?: string,
+label?: ?string,
 // Describes the block in the editor UI.
 description?: string,
 // Represents the block in the editor UI.
@@ -162,7 +162,7 @@ Each item in `entityTypes` can have the following props:
 // Unique type shared between entity instances.
 type: string,
 // Describes the entity in the editor UI, concisely.
-label?: string,
+label?: ?string,
 // Describes the entity in the editor UI.
 description?: string,
 // Represents the entity in the editor UI.

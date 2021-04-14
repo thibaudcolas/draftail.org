@@ -5,6 +5,17 @@ title: Customising toolbars
 
 By default, Draftail comes with a top static toolbar that contains all of the possible formatting, plus a few extra controls.
 
+## Hiding individual toolbar items
+
+With the default toolbar, items are directly derived from the formats (block, style, etc.) enabled in the editor. The buttons for specific items can be hidden by:
+
+- Not defining a `label`, or `icon` for custom formats.
+- For built-in formats, setting a `label` of `null`
+
+Here is an example, using the default toolbar but with all heading styles hidden as individual buttons, and only present in the custom dropdown:
+
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--controls" class="iframe iframe--docs-200"></iframe>
+
 ## Disabling the toolbar
 
 It is possible to hide the toolbar by passing `null` to `topToolbar`:
