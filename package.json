@@ -25,7 +25,7 @@
     "@thibaudcolas/eslint-plugin-cookbook": "6.0.0",
     "@thibaudcolas/stylelint-config-cookbook": "4.0.0",
     "eslint": "7.29.0",
-    "prettier": "2.3.1",
+    "prettier": "2.3.2",
     "stylelint": "13.13.1"
   },
   "scripts": {
