@@ -24,7 +24,7 @@
     "@commitlint/config-conventional": "12.1.4",
     "@thibaudcolas/eslint-plugin-cookbook": "6.0.0",
     "@thibaudcolas/stylelint-config-cookbook": "4.0.0",
-    "eslint": "7.29.0",
+    "eslint": "7.30.0",
     "prettier": "2.3.2",
     "stylelint": "13.13.1"
   },
