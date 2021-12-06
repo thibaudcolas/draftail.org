@@ -73,4 +73,4 @@ If you want to learn more about Draftail’s implementation, read on: [Why Wagta
 
 ### Usage without React
 
-While Draftail depends on React, it’s perfectly possible to use it in a project that otherwise doesn’t use React. There are however a lot of other rich text editors that might be better suited for such scenarios – and writing Draftail extensions for any non-trivial formatting still does writing React code
+While Draftail depends on React, it’s perfectly possible to use it in a project that otherwise doesn’t use React. There are however a lot of other rich text editors that might be better suited for such scenarios – and writing Draftail extensions for any non-trivial formatting will still require writing React code
