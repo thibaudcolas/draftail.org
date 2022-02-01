@@ -29,7 +29,7 @@ Thanks to [@rmakovyak](https://github.com/rmakovyak) for fixing this – icons s
 
 ## State of Draftail
 
-Put simply, none of the above changes are going to be useful for Draftail’s first use case: as an editor for [Wagtail](https://wagtail.io). I find this wonderful: this reflects that the editor is beneficial for people outside of the Wagtail bubble, and, with those changes, it will become useful for even more use cases that I didn’t initially identify.
+Put simply, none of the above changes are going to be useful for Draftail’s first use case: as an editor for [Wagtail](https://wagtail.org). I find this wonderful: this reflects that the editor is beneficial for people outside of the Wagtail bubble, and, with those changes, it will become useful for even more use cases that I didn’t initially identify.
 
 According to GitHub and npm statistics, the editor is used in [118 public repositories](https://github.com/springload/draftail/network/dependents) and gets downloaded [1’772 times per week on npm](https://www.npmjs.com/package/draftail). There are well known names in there – the [FEC](https://github.com/fecgov/fec-cms) in the US for their CMS, [NATO’s Communication and Information Agency](https://github.com/NCI-Agency/anet), [Sciences Po’s médialab](https://medialab.sciencespo.fr). [Saleor](https://getsaleor.com/), an up-and-coming e-commerce platform built on modern technologies also [announced on their blog](https://medium.com/saleor/february-release-of-saleor-three-new-dashboard-2-0-sections-6d775479882e) that the upcoming version of Saleor would be using Draftail for rich text content.
 

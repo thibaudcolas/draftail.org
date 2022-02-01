@@ -233,7 +233,7 @@ class Index extends React.Component {
           <Block id="wagtail" layout="oneColumn" background="white">
             {[
               {
-                content: `Draftail is the default rich text editor of [Wagtail](https://wagtail.io/), a Django content management system used by [hundreds of organisations](https://madewithwagtail.org/).`,
+                content: `Draftail is the default rich text editor of [Wagtail](https://wagtail.org/), a Django content management system used by [hundreds of organisations](https://madewithwagtail.org/).`,
                 image: imgUrl("wagtail-page-edit-screenshot.png"),
                 imageAlign: "left",
                 imageAlt: "",

@@ -20,7 +20,7 @@ It also comes with many bug fixes:
 - Prevent crash in `DraftUtils.getEntitySelection`, when the provided entity key isn't valid (undefined, missing) ([#168](https://github.com/springload/draftail/pull/168))
 - Fix entity removal and editing not doing anything when the selection is backwards (right to left) ([#168](https://github.com/springload/draftail/pull/168)).
 
-None of those bugs were that critical, but I’m particularly happy to see them addressed because the reports came from users of Draftail I didn’t know about. Draftail was originally developped for [Wagtail](https://wagtail.io/), but we spent a great deal of effort to make sure it would be usable (and good!) outside of the CMS as well. It’s good to see others using the editor, and contribute to its maintenance.
+None of those bugs were that critical, but I’m particularly happy to see them addressed because the reports came from users of Draftail I didn’t know about. Draftail was originally developped for [Wagtail](https://wagtail.org/), but we spent a great deal of effort to make sure it would be usable (and good!) outside of the CMS as well. It’s good to see others using the editor, and contribute to its maintenance.
 
 ## Maintenance improvements
 

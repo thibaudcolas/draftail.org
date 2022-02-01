@@ -19,7 +19,7 @@ The TL;DR; is that there are a lot of issues with specific interactions within `
 
 ### Draftail vs StreamField
 
-Within Wagtail, [StreamField](http://docs.wagtail.io/en/stable/topics/streamfield.html) already delivers when it comes to free-form content. Sure, it's not rich text, but it's very usable for block-level content. Here is my rule of thumb for when to use one over the other:
+Within Wagtail, [StreamField](http://docs.wagtail.org/en/stable/topics/streamfield.html) already delivers when it comes to free-form content. Sure, it's not rich text, but it's very usable for block-level content. Here is my rule of thumb for when to use one over the other:
 
 - If it's text, use rich text.
 - If it's inline text formatting (bold, strikethrough, etc), use rich text.
@@ -44,7 +44,7 @@ Any kind of custom "link" feature is a good fit for a Draftail extension. This c
 
 - Links to specific entities from the domain model of your site. This could be links that have a specific icon next to them to denote their target is special, like branches of an chain store.
 - Links that are not supported by the traditional "Link" feature. Anchor links come to mind.
-- Enhanced links with embedded content, or inline previews. The official ["stock" example](http://docs.wagtail.io/en/stable/advanced_topics/customisation/extending_draftail.html#creating-new-entities) is one of those. Here is what its attached quote card looked like on the Forbes website:
+- Enhanced links with embedded content, or inline previews. The official ["stock" example](http://docs.wagtail.org/en/stable/advanced_topics/customisation/extending_draftail.html#creating-new-entities) is one of those. Here is what its attached quote card looked like on the Forbes website:
 
 [![Screenshot of a quote card in a Forbes article. The quote card expands from the word "Google" in the text, showing Google's stock and relevant articles.](assets/getting-started-with-extensions/forbes-quotecard-expanded.png)](https://www.forbes.com/sites/jasonbloomberg/2018/02/04/the-real-reason-red-hat-is-acquiring-coreos/#70a79bf05c4d)
 
