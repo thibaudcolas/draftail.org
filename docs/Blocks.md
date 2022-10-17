@@ -3,7 +3,7 @@ id: blocks
 title: Blocks
 ---
 
-Blocks provide structure to the content. They do not overlap – no content can be both a paragraph and a title.
+Blocks provide structure to the content. They do not overlap – no content can be both a paragraph and a heading.
 
 ## Built-in blocks
 

@@ -3,7 +3,7 @@ id: entities
 title: Entities
 ---
 
-Entities annotate content with data to represent rich content beyond text. They can be inline (e.g. a link on a word), or block-based (e.g. an embedded video).
+Entities annotate content with data to represent rich content beyond text. They can be inline (e.g. a link on a word), or block-based (e.g. an embedded video). They do not overlap – no content can be both a link and an embedded video (though there could be a combined "embedded video with link" entity).
 
 ## Built-in entities
 
@@ -28,9 +28,9 @@ entityTypes={[
 
 ## Custom entities
 
-Creating custom entity types is a bit more involved than custom blocks and inline styles because entities aren't simply on/off: they often need additional data (thus a UI to enter this data), and can be edited.
+Creating custom entity types is more involved than custom blocks and inline styles because entities aren't simply on/off: they often need additional data (thus a UI to enter this data), and can be edited.
 
-> The entity API is at a much lower level of abstraction than that of blocks and styles, and knowledge of the [Draft.js API](https://draftjs.org/docs/overview.html#content) is expected, as well as of [React](https://reactjs.org/) components and their lifecycle.
+> ⚠ The entity API is at a much lower level of abstraction than that of blocks and styles, and knowledge of the [Draft.js API](https://draftjs.org/docs/advanced-topics-entities) is expected, as well as of [React](https://reactjs.org/) components and their lifecycle.
 
 Apart from the usual type/label/description/icon options to pass via objects in [`entityTypes`](API.md#entities-docs-entities), entities need:
 
@@ -187,6 +187,10 @@ blockProps: {|
   onChange: (EditorState) => void,
 |},
 ```
+
+### Content storage
+
+Refer to our [Content storage](ContentStorage.md#entities) documentation for information on how entities are stored in Draft.js.
 
 ### Examples
 

@@ -7,8 +7,8 @@ original_id: formatting-options
 Draftail, like Draft.js, distinguishes between 3 content formats:
 
 - [Inline styles](InlineStyles.md), providing inline formatting for text. They can overlap: text can be both bold and italic.
-- [Blocks](Blocks.md), that provide structure to the content. They do not overlap – no content can be both a paragraph and a title.
-- [Entities](Entities.md), annotating content with data to represent rich content beyond text. They can be inline (e.g. a link applied on a word), or block-based (e.g. an embedded video).
+- [Blocks](Blocks.md), that provide structure to the content. They do not overlap – no content can be both a paragraph and a heading.
+- [Entities](Entities.md), annotating content with data to represent rich content beyond text. They can be inline (e.g. a link applied on a word), or block-based (e.g. an embedded video). They do not overlap – no content can be both a link and an embedded video (though there could be a combined "embedded video with link" entity)
 
 ## Built-in formats
 
