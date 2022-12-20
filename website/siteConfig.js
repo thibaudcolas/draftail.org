@@ -125,8 +125,6 @@ const siteConfig = {
     zIndex: 100,
   },
 
-  gaTrackingId: "UA-126695868-1",
-
   // Open Graph and Twitter card images.
   twitterImage: "img/draftail-ui-screenshot.png",
   ogImage: "img/draftail-ui-screenshot.png",
