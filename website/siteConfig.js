@@ -86,6 +86,7 @@ const siteConfig = {
   // For the index-side config, see:
   // https://github.com/algolia/docsearch-configs/blob/master/configs/draftail.json.
   algolia: {
+    appId: "BPY62S0W69",
     apiKey: "955c25bc248c31c769967251c34747a9",
     indexName: "draftail",
     algoliaOptions: {
