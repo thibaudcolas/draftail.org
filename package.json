@@ -26,7 +26,7 @@
     "@thibaudcolas/stylelint-config-cookbook": "4.0.0",
     "eslint": "7.32.0",
     "prettier": "2.8.8",
-    "stylelint": "13.13.1"
+    "stylelint": "15.10.1"
   },
   "scripts": {
     "lint": "eslint --report-unused-disable-directives . && stylelint '{website,docs}/**/*.{css,md}' && prettier --check '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
