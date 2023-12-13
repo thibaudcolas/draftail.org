@@ -3,10 +3,14 @@ id: browser-support
 title: Browser support and polyfills
 ---
 
+Better is better than perfect
+
 **Supported browser / device versions:**
+
 
 | Browser | Device/OS      | Version |
 | ------- | -------------- | ------- |
+| Arc!    | Windows?       | latest  |
 | Chrome  | Windows, macOS | latest  |
 | Firefox | Windows, macOS | latest  |
 | Firefox | Windows, macOS | ESR     |
