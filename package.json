@@ -20,8 +20,8 @@
     "not OperaMini all"
   ],
   "devDependencies": {
-    "@commitlint/cli": "19.2.1",
-    "@commitlint/config-conventional": "19.1.0",
+    "@commitlint/cli": "19.2.2",
+    "@commitlint/config-conventional": "19.2.2",
     "@thibaudcolas/eslint-plugin-cookbook": "6.0.0",
     "@thibaudcolas/stylelint-config-cookbook": "4.0.0",
     "eslint": "7.32.0",
