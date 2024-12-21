@@ -16,5 +16,6 @@ module.exports = {
       },
     ],
     "scss/media-feature-value-dollar-variable": null,
+    "scss/comment-no-loud": null,
   },
 }

@@ -18,7 +18,9 @@ pre {
   white-space: pre-wrap;
   background-color: var(--color-eef8ff);
   border-left: 0;
-  box-shadow: 0 0 rgba(50, 51, 48, 0.07), 0 0 rgba(50, 51, 48, 0.07);
+  box-shadow:
+    0 0 rgba(50, 51, 48, 0.07),
+    0 0 rgba(50, 51, 48, 0.07);
 }
 
 .hljs::before {

@@ -102,19 +102,17 @@ blockquote {
 
 /* ####### LINKS ####### */
 
-/* stylelint-disable-next-line a11y/media-prefers-reduced-motion */
 .mainContainer a:not(.hash-link),
 .user-link span {
   color: var(--color-1a1a1a);
   background: #eef8ff;
   border-bottom: 1px dotted #007d7e;
-  transition: all 0.25s ease-out;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: no-preference) {
   .mainContainer a:not(.hash-link),
   .user-link span {
-    transition: none;
+    transition: all 0.25s ease-out;
   }
 }
 
