@@ -22,7 +22,7 @@ Draftail also makes its Sass stylesheets available for extension:
 $draftail-editor-z-index: 100;
 
 // Import all of the styles in your build.
-@import "draftail/lib/index";
+@import "draftail/src/index";
 ```
 
 You can get very far by adding new default values for the variables in [`_constants.scss`](https://github.com/springload/draftail/blob/main/src/api/_constants.scss). For example,
@@ -33,7 +33,7 @@ $draftail-editor-border: 0;
 $draftail-editor-padding: 0;
 $draftail-toolbar-radius: 5px;
 
-@import "draftail/lib/index";
+@import "draftail/src/index";
 ```
 
 Draftail also has a `draftail-richtext-styles` mixin you can use to make sure styles on rich text content don't leak to other parts of your site:
