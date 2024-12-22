@@ -23,7 +23,7 @@ $draftail-editor-z-index: 100;
 @import "draftail/lib/index";
 ```
 
-You can get very far by adding new default values for the variables in [`_constants.scss`](https://github.com/springload/draftail/blob/main/lib/api/_constants.scss). For example,
+You can get very far by adding new default values for the variables in [`_constants.scss`](https://github.com/springload/draftail/blob/main/src/api/_constants.scss). For example,
 
 ```scss
 // Remove the editor's border and make the toolbar free-floating
@@ -41,9 +41,9 @@ Draftail also has a `draftail-richtext-styles` mixin you can use to make sure st
   // Style Draft.js blockquotes.
   blockquote {
     padding: 0 0 0 20px;
-    margin-left: 0;
+    margin-inline-start: 0;
     font-style: italic;
-    border-left: 1px solid #e5e5e5;
+    border-inline-start: 1px solid #e5e5e5;
   }
 }
 ```

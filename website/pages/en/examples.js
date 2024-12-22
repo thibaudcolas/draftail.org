@@ -25,7 +25,7 @@ class Examples extends React.Component {
                 time).
               </p>
               <p>
-                <a href="https://github.com/springload/draftail/blob/main/examples/examples.story.js">
+                <a href="https://github.com/springload/draftail/blob/main/examples/examples.story.tsx">
                   Source
                 </a>
               </p>
@@ -45,7 +45,7 @@ class Examples extends React.Component {
                 choosers/pickers and tooltips.
               </p>
               <p>
-                <a href="https://github.com/springload/draftail/blob/main/examples/examples.story.js">
+                <a href="https://github.com/springload/draftail/blob/main/examples/examples.story.tsx">
                   Source
                 </a>
               </p>
