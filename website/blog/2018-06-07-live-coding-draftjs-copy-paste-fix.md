@@ -1,7 +1,7 @@
 ---
 title: Live coding – Draft.js copy-paste fix
 author: Thibaud Colas
-authorURL: https://twitter.com/thibaud_colas
+authorURL: https://thib.me/
 authorImageURL: https://avatars1.githubusercontent.com/u/877585?s=460&v=4
 ---
 
@@ -11,13 +11,27 @@ Most of the functionality of Draftail comes from Draft.js, and so do the bugs. O
 
 ## Take one
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TVhFDnJAOYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=TVhFDnJAOYk">
+  <img
+    src="https://i.ytimg.com/vi_webp/TVhFDnJAOYk/maxresdefault.webp"
+    alt="Live coding – Draft.js copy-paste fix part one"
+    width="560"
+    height="315"
+  />
+</a>
 
 PR: [thibaudcolas/draftjs-conductor#2](https://github.com/thibaudcolas/draftjs-conductor/pull/2)
 
 ## Take two
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ExL5k0HppIg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=ExL5k0HppIg">
+  <img
+    src="https://i.ytimg.com/vi_webp/ExL5k0HppIg/maxresdefault.webp"
+    alt="Live coding – Draft.js copy-paste fix part two"
+    width="560"
+    height="315"
+  />
+</a>
 
 PR: [thibaudcolas/draftjs-conductor#3](https://github.com/thibaudcolas/draftjs-conductor/pull/3)
 

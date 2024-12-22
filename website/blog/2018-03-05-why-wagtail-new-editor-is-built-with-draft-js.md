@@ -1,7 +1,7 @@
 ---
 title: Why Wagtail’s new editor is built with Draft.js
 author: Thibaud Colas
-authorURL: https://twitter.com/thibaud_colas
+authorURL: https://thib.me/
 authorImageURL: https://avatars1.githubusercontent.com/u/877585?s=460&v=4
 ---
 
@@ -54,7 +54,14 @@ Content is stored as separate blocks containing plain text, with separate text r
 
 If you want a more in-depth introduction, here is a great talk from the creator of Draft.js:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/feUYwoLhE_4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=feUYwoLhE_4">
+  <img
+    src="https://i.ytimg.com/vi_webp/feUYwoLhE_4/maxresdefault.webp"
+    alt="React.js Conf 2016 - Isaac Salier-Hellendag - Rich Text Editing with React"
+    width="560"
+    height="315"
+  />
+</a>
 
 ## A framework for rich text
 

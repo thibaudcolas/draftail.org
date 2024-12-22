@@ -9,7 +9,14 @@ Here is a talk I gave at [Wagtail Space 2018](https://www.wagtail.space). The vi
 
 <!-- truncate -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mf8AS5EwHvc" frameBorder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=mf8AS5EwHvc">
+  <img
+    src="https://i.ytimg.com/vi_webp/mf8AS5EwHvc/maxresdefault.webp"
+    alt="Introducing Draft.js in Wagtail – Wagtail Space 2018"
+    width="560"
+    height="315"
+  />
+</a>
 
 Hi 👋, I'm [Thibaud](https://thib.me/)!.
 

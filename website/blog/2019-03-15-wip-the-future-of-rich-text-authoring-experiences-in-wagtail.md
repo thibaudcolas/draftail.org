@@ -9,7 +9,14 @@ Here is a talk I gave at [Wagtail Space 2019](https://www.wagtail.space/2019). T
 
 <!-- truncate -->
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Fp8nClLoQC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=Fp8nClLoQC0">
+  <img
+    src="https://i.ytimg.com/vi_webp/Fp8nClLoQC0/maxresdefault.webp"
+    alt="YouTube - The future of (rich text) authoring experiences in Wagtail"
+    width="560"
+    height="315"
+  />
+</a>
 
 ---
 

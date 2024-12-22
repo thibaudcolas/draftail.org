@@ -258,14 +258,14 @@ class Index extends React.Component {
                 </div>
               </div>
               <div className="video">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/mf8AS5EwHvc"
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                />
+                <a href="https://www.youtube.com/watch?v=mf8AS5EwHvc">
+                  <img
+                    src="https://i.ytimg.com/vi_webp/mf8AS5EwHvc/maxresdefault.webp"
+                    alt="Introducing Draft.js in Wagtail – Wagtail Space 2018"
+                    width="560"
+                    height="315"
+                  />
+                </a>
               </div>
             </div>
           </Container>
