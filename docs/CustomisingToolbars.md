@@ -3,7 +3,12 @@ id: customising-toolbars
 title: Customising toolbars
 ---
 
-By default, Draftail comes with a top static toolbar that contains all of the possible formatting, plus a few extra controls.
+By default, Draftail comes with many options for toolbars:
+
+- A top static toolbar that contains all of the possible formatting, plus a few extra controls.
+- A bottom static toolbar for meta information / less used controls.
+- A floating toolbar for inline formatting.
+- A command palette for commands.
 
 ## Hiding individual toolbar items
 
@@ -24,11 +29,19 @@ It is possible to hide the toolbar by passing `null` to `topToolbar`:
 
 ## Customising toolbars
 
-It’s also possible to provide your own custom component to `topToolbar` or `bottomToolbar`, for example to have a UI that is more adapted to a given use case:
+It’s also possible to provide your own custom component to `topToolbar`, `bottomToolbar` or `commandToolbar`, for example to have a UI that is more adapted to a given use case:
 
 <iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--custom-toolbars" class="iframe iframe--docs-200"></iframe>
 
-It is possible to reuse the `ToolbarButton` and `Icon` components from Draftail if necessary.
+The editor comes with a number of predefined toolbars:
+
+- `FloatingToolbar` (minimal height).
+- `BlockToolbar`, intended for keyboard and first-time users.
+- `MetaToolbar`, intended to display editor metadata at the bottom of the editor.
+- `InlineToolbar`, which is user-configurable to display either a static or floating toolbar.
+- `CommandPalette`, usable with the `commandPalette` rendering prop and the `commands` data prop.
+
+It is also possible to reuse the `ToolbarButton` and `Icon` components from Draftail if necessary.
 
 ## Toolbars with draft-js-plugins
 

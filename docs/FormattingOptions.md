@@ -49,3 +49,11 @@ Here are quick questions to help you determine which formatting to use, dependin
 | Enter additional data/metadata        | [Entities](Entities.md)          |
 
 Then, your mileage may vary! There is good support for custom block-level and inline formatting. Custom entities or decorators require knowledge of the Draft.js API, which is very low-level.
+
+## Single-line support
+
+In addition to different formatting options, the editor also supports single-line rich text fields with the `multiline={false}` prop. Here’s an example:
+
+<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--single-line" class="iframe iframe--docs-250"></iframe>
+
+In this mode, the editor will not allow line breaks, and any multiline pasted text gets converted to a single line.

@@ -11,6 +11,8 @@ To tweak the editor UI, Draftail uses old-fashioned stable, namespaced class nam
 
 Inspect the editor and target class names starting with `Draftail-`, or if unavailable `Draft` / `public-Draft` from Draft.js.
 
+Here’s an example: `Draftail-block--empty`, to style empty blocks differently from the rest.
+
 ## Sass theming
 
 Draftail also makes its Sass stylesheets available for extension:

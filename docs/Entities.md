@@ -96,18 +96,20 @@ class ImageSource extends Component {
 The source component is given the following props:
 
 ```jsx
-// The editorState is available for arbitrary content manipulation.
-editorState: EditorState,
-// Takes the updated editorState, or null if there are no changes.
-onComplete: (nextState: EditorState) => void,
-// Closes the source, without focusing the editor again.
-onClose: () => void,
-// Whole entityType configuration, as provided to the editor.
-entityType: {},
-// Current entityKey to edit, if any.
-entityKey: ?string,
-// Current entity to edit, if any.
-entity: ?EntityInstance,
+/** The editorState is available for arbitrary content manipulation. */
+editorState: EditorState;
+/** Takes the updated editorState, or null if there are no changes, and focuses the editor. */
+onComplete: (nextState: EditorState) => void;
+/** Closes the source, without focusing the editor again. */
+onClose: () => void;
+/** Current entity to edit, if any. */
+entityType: EntityTypeControl;
+/** Current entityKey to edit, if any. */
+entityKey?: string | null;
+/** Whole entityType configuration, as provided to the editor. */
+entity?: EntityInstance | null;
+/** Optionally set the overriding text directionality for this editor. */
+textDirectionality: TextDirectionality;
 ```
 
 ### Decorators
@@ -129,16 +131,18 @@ const Link = ({ entityKey, contentState, children }) => {
 They receive the following props:
 
 ```jsx
-// Key of the entity being decorated.
-entityKey: string,
-// Full contentState, read-only.
-contentState: ContentState,
-// The decorated nodes / entity text.
-children: Node,
-// Call with the entityKey to trigger the entity source.
-onEdit: (entityKey: string) => void,
-// Call with the entityKey to remove the entity.
-onRemove: (entityKey: string, blockKey: string) => void,
+/** The key of the decorated entity. */
+entityKey: string;
+/** The editor’s content. */
+contentState: ContentState;
+/** Rich text to be displayed inside the decorator. */
+children: React.ReactNode;
+/** Shorthand to edit entity data. */
+onEdit: (entityKey: string) => void;
+/** Shorthand to remove an entity, and the related block. */
+onRemove: (entityKey: string, blockKey?: string) => void;
+/** Optionally set the overriding text directionality for this editor. */
+textDirectionality: TextDirectionality;
 ```
 
 The `onEdit` and `onRemove` props are meant so decorators can also serve in managing entities, eg. to build tooltips to edit links.
@@ -164,29 +168,49 @@ class ImageBlock extends Component {
 They receive the following props:
 
 ```jsx
-// The current atomic block.
-block: ContentBlock,
-blockProps: {|
-  // The editorState is available for arbitrary content manipulation.
-  editorState: EditorState,
-  // Current entity to manage.
-  entity: EntityInstance,
-  // Current entityKey to manage.
-  entityKey: string,
-  // Whole entityType configuration, as provided to the editor.
-  entityType: {},
-  // Make the whole editor read-only, except for the block.
-  lockEditor: () => void,
-  // Make the editor editable again.
-  unlockEditor: () => void,
-  // Shorthand to edit entity data.
-  onEditEntity: (entityKey: string) => void,
-  // Shorthand to remove an entity, and the related block.
-  onRemoveEntity: (entityKey: string, blockKey: string) => void,
-  // Update the editorState with arbitrary changes.
-  onChange: (EditorState) => void,
-|},
+block: ContentBlock;
+blockProps: {
+  /** The editorState is available for arbitrary content manipulation. */
+  editorState: EditorState;
+  /** Current entity to manage. */
+  entity: EntityInstance;
+  /** Current entityKey to manage. */
+  entityKey: string;
+  /** Whole entityType configuration, as provided to the editor. */
+  entityType: EntityTypeControl;
+  /** Make the whole editor read-only, except for the block. */
+  lockEditor: () => void;
+  /** Make the editor editable again. */
+  unlockEditor: () => void;
+  /** Shorthand to edit entity data. */
+  onEditEntity: () => void;
+  /** Shorthand to remove an entity, and the related block. */
+  onRemoveEntity: () => void;
+  /** Update the editorState with arbitrary changes. */
+  onChange: (nextState: EditorState) => void;
+  /** Optionally set the overriding text directionality for this editor. */
+  textDirectionality: TextDirectionality;
+};
 ```
+
+### Custom paste processing
+
+Entities can also implement their own cut/copy - paste processing. For example, this can be helpful when pasting specific URLs should be converted to a custom entity rather than a generic link. The `onPaste` API signature for all entity types is:
+
+```jsx
+onPaste?: (
+  text: string,
+  html: string | null | undefined,
+  editorState: EditorState,
+  helpers: {
+    setEditorState: (state: EditorState) => void;
+    getEditorState: () => EditorState;
+  },
+  entityType: EntityTypeControl,
+) => "handled" | "not-handled";
+```
+
+When implementing this function, check the `text` and `html` arguments to determine if the pasted content should be converted to an entity. If so, return `"handled"` to prevent the default Draft.js behavior, and call the `setEditorState` function to update the editor state with the desired processing.
 
 ### Content storage
 

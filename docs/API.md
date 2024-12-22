@@ -3,6 +3,8 @@ id: api
 title: API reference
 ---
 
+For projects using TypeScript, Draftail includes type definitions.
+
 ## DraftailEditor
 
 ```js
@@ -15,79 +17,123 @@ To change the behavior of the editor, pass props to the `DraftailEditor` compone
 
 ```jsx
 /** Initial content of the editor. Use this to edit pre-existing content. */
-rawContentState: null,
-/** Called when changes occured. Use this to persist editor content. */
-onSave: null,
+rawContentState?: RawDraftContentState | null
+
+/** Called when changes occurred. Use this to persist editor content. */
+onSave?: ((content: null | RawDraftContentState) => void) | null
+
 /** Content of the editor, when using the editor as a controlled component. Incompatible with `rawContentState` and `onSave`. */
-editorState: null,
+editorState?: EditorState | null
+
 /** Called whenever the editor state is updated. Use this to manage the content of a controlled editor. Incompatible with `rawContentState` and `onSave`. */
-onChange: null,
+onChange?: ((editorState: EditorState) => void) | null
+
 /** Called when the editor receives focus. */
-onFocus: null,
+onFocus?: (() => void) | null
+
 /** Called when the editor loses focus. */
-onBlur: null,
+onBlur?: (() => void) | null
+
 /** Displayed when the editor is empty. Hidden if the user changes styling. */
-placeholder: null,
+placeholder?: string | null
+
 /** Enable the use of horizontal rules in the editor. */
-enableHorizontalRule: false,
+enableHorizontalRule: BoolControl
+
 /** Enable the use of line breaks in the editor. */
-enableLineBreak: false,
+enableLineBreak: BoolControl
+
 /** Show undo control in the toolbar. */
-showUndoControl: false,
+showUndoControl: BoolControl
+
 /** Show redo control in the toolbar. */
-showRedoControl: false,
-/** Disable copy/paste of rich text in the editor. */
-stripPastedStyles: true,
+showRedoControl: BoolControl
+
+/** Disable copy/paste of rich text in the editor. Default: true */
+stripPastedStyles: boolean
+
+/** Set if the editor supports multiple lines / blocks of text, or only a single line. Default: true */
+multiline: boolean
+
 /** Set whether spellcheck is turned on for your editor.
-  * See https://draftjs.org/docs/api-reference-editor.html#spellcheck.
-  */
-spellCheck: false,
+ * See https://draftjs.org/docs/api-reference-editor.html#spellcheck.
+ */
+spellCheck: boolean
+
 /** Set whether the editor should be rendered in readOnly mode.
-  * See https://draftjs.org/docs/api-reference-editor.html#readonly
-  */
-readOnly: false,
+ * See https://draftjs.org/docs/api-reference-editor.html#readonly
+ */
+readOnly: boolean
+
 /** Optionally set the overriding text alignment for this editor.
-  * See https://draftjs.org/docs/api-reference-editor.html#textalignment.
-  */
-textAlignment: null,
+ * See https://draftjs.org/docs/api-reference-editor.html#textalignment.
+ */
+textAlignment?: string | null
+
 /** Optionally set the overriding text directionality for this editor.
-  * See https://draftjs.org/docs/api-reference-editor.html#textdirectionality.
-  */
-textDirectionality: null,
+ * See https://draftjs.org/docs/api-reference-editor.html#textdirectionality.
+ */
+textDirectionality: TextDirectionality
+
 /** Set if auto capitalization is turned on and how it behaves.
-  * See https://draftjs.org/docs/api-reference-editor.html#autocapitalize-string.
-  */
-autoCapitalize: null,
+ * See https://draftjs.org/docs/api-reference-editor.html#autocapitalize-string.
+ */
+autoCapitalize?: string | null
+
 /** Set if auto complete is turned on and how it behaves.
-  * See https://draftjs.org/docs/api-reference-editor.html#autocomplete-string.
-  */
-autoComplete: null,
+ * See https://draftjs.org/docs/api-reference-editor.html#autocomplete-string.
+ */
+autoComplete?: string | null
+
 /** Set if auto correct is turned on and how it behaves.
-  * See https://draftjs.org/docs/api-reference-editor.html#autocorrect-string.
-  */
-autoCorrect: null,
+ * See https://draftjs.org/docs/api-reference-editor.html#autocorrect-string.
+ */
+autoCorrect?: string | null
+
 /** See https://draftjs.org/docs/api-reference-editor.html#aria-props. */
-ariaDescribedBy: null,
+ariaDescribedBy?: string | null
+ariaExpanded?: boolean | null
+ariaLabel?: string | null
+ariaLabelledBy?: string | null
+ariaOwneeID?: string | null
+ariaRequired?: string | null
+
 /** List of the available block types. */
-blockTypes: [],
+blockTypes: ReadonlyArray<BlockTypeControl>
+
 /** List of the available inline styles. */
-inlineStyles: [],
+inlineStyles: ReadonlyArray<InlineStyleControl>
+
 /** List of the available entity types. */
-entityTypes: [],
+entityTypes: ReadonlyArray<EntityTypeControl>
+
 /** List of active decorators. */
-decorators: [],
+decorators: ReadonlyArray<DraftDecorator>
+
 /** List of extra toolbar controls. */
-controls: [],
+controls: ReadonlyArray<ControlControl | LegacyControlControl>
+
+/** Optionally enable the command palette UI. */
+commands: boolean | ReadonlyArray<CommandCategory>
+
 /** List of plugins of the draft-js-plugins architecture. */
-plugins: [],
-/** Optionally override the default Draftail toolbar, removing or replacing it. */
-topToolbar: Toolbar,
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+plugins: ReadonlyArray<any>
+
+/** Optionally override the default Draftail toolbar, removing or replacing it. Default: Toolbar */
+topToolbar?: React.ComponentType<ToolbarProps> | null
+
 /** Optionally add a custom toolbar underneath the editor, e.g. for metrics. */
-bottomToolbar: null,
-/** Max level of nesting for list items. 0 = no nesting. Maximum = 10. */
-maxListNesting: 1,
-/** Frequency at which to call the onSave callback (ms). */
-stateSaveInterval: 250,
+bottomToolbar?: React.ComponentType<MetaToolbarProps> | null
+
+/** Optionally override the default command toolbar, removing or replacing it. Default: CommandPalette */
+commandToolbar?: React.ComponentType<CommandPaletteProps> | null
+
+/** Max level of nesting for list items. 0 = no nesting. Maximum = 10. Default: 1 */
+maxListNesting: number
+
+/** Frequency at which to call the onSave callback (ms). Default: 250 */
+stateSaveInterval: number
 ```
 
 ### rawContentState and onSave
@@ -113,16 +159,16 @@ const editor = <DraftailEditor inlineStyles={[...]} />
 Each item in `inlineStyles` can have the following props:
 
 ```jsx
-/** Unique type shared between inline style instances. */
+// Unique type shared between inline style instances.
 type: string,
-/** CSS properties (in JS format) to apply for styling within the editor area. */
-style?: {},
-/** Describes the control in the editor UI, concisely. */
-label?: ?string,
-/** Describes the control in the editor UI. */
-description?: string,
-/** Represents the control in the editor UI. */
-icon?: IconProp,
+// CSS properties (in JS format) to apply for styling within the editor area.
+style?: CSSProperties;
+// Describes the control in the editor UI, concisely.
+label?: string | null;
+// Describes the control in the editor UI.
+description?: string | null;
+// Represents the control in the editor UI.
+icon?: IconProp;
 ```
 
 ### Blocks
@@ -138,14 +184,14 @@ Each item in `blockTypes` can have the following props:
 ```jsx
 // Unique type shared between block instances.
 type: string,
-// Describes the block in the editor UI, concisely.
-label?: ?string,
-// Describes the block in the editor UI.
-description?: string,
-// Represents the block in the editor UI.
-icon?: IconProp,
+// Describes the control in the editor UI, concisely.
+label?: string | null;
+// Describes the control in the editor UI.
+description?: string | null;
+// Represents the control in the editor UI.
+icon?: IconProp;
 // DOM element used to display the block within the editor area.
-element?: string,
+element?: string;
 ```
 
 ### Entities
@@ -161,24 +207,42 @@ Each item in `entityTypes` can have the following props:
 ```jsx
 // Unique type shared between entity instances.
 type: string,
-// Describes the entity in the editor UI, concisely.
-label?: ?string,
-// Describes the entity in the editor UI.
-description?: string,
-// Represents the entity in the editor UI.
-icon?: IconProp,
-// React component providing the UI to manage entities of this type.
-source: ComponentType<{}>,
-// React component to display inline entities.
-decorator?: ComponentType<{}>,
-// React component to display block-level entities.
-block?: ComponentType<{}>,
-// Array of attributes the entity uses, to preserve when filtering entities on paste.
-// If undefined, all entity data is preserved.
-attributes?: $ReadOnlyArray<string>,
-// Attribute - regex mapping, to whitelist entities based on their data on paste.
-// For example, { url: '^https:' } will only preserve links that point to HTTPS URLs.
-whitelist?: {},
+// Describes the control in the editor UI, concisely.
+label?: string | null;
+// Describes the control in the editor UI.
+description?: string | null;
+// Represents the control in the editor UI.
+icon?: IconProp;
+/** React component providing the UI to manage entities of this type. */
+source: React.ComponentType<EntitySourceProps>;
+
+/** React component to display inline entities. */
+decorator?: React.ComponentType<EntityDecoratorProps>;
+
+/** React component to display block-level entities. */
+block?: React.ComponentType<EntityBlockProps>;
+
+/** Custom copy-paste processing checker. */
+onPaste?: (
+  text: string,
+  html: string | null | undefined,
+  editorState: EditorState,
+  helpers: {
+    setEditorState: (state: EditorState) => void;
+    getEditorState: () => EditorState;
+  },
+  entityType: EntityTypeControl,
+) => "handled" | "not-handled";
+
+/** Array of attributes the entity uses, to preserve when filtering entities on paste.
+ * If undefined, all entity data is preserved.
+ */
+attributes?: ReadonlyArray<string>;
+
+/** Attribute - regex mapping, to preserve entities based on their data on paste.
+ * For example, { url: '^https:' } will only preserve links that point to HTTPS URLs.
+ */
+allowlist?: { [attr: string]: string };
 ```
 
 ### Decorators
@@ -206,13 +270,16 @@ How-to guide: [Controls](ArbitraryControls.md)
 const editor = <DraftailEditor controls={[...]} />
 ```
 
-Each item in `controls` can have the following props:
+Each item in `controls` can either be `inline`, `block`, or `meta`, and have the following props:
 
 ```jsx
-// Retrieve the full Draft.js EditorState.
-getEditorState: () => EditorState,
-// Change any part of the EditorState.
-onChange: (EditorState) => void,
+// Or block or meta.
+inline: {
+  // Retrieve the full Draft.js EditorState.
+  getEditorState: () => EditorState,
+  // Change any part of the EditorState.
+  onChange: (EditorState) => void,
+}
 ```
 
 ### Plugins
@@ -331,9 +398,9 @@ const icon = <Icon icon="#square" />
 Supported props:
 
 ```jsx
-icon: string | string[] | Node,
-title: ?string,
-className: ?string,
+icon?: string | string[] | JSX.Element;;
+title?: string | null;
+className?: string | null;
 ```
 
 There is further documentation about what formats are allowed for `icon`: [Customising icons](CustomisingIcons.md).
