@@ -25,7 +25,7 @@ For the future of Draftail, it will make it much easier to experiment with new r
 
 The obvious tradeoff in introducing support for Draft.js Plugins is the performance cost of a plugin architecture on top of Draft.js. It's actually fairly minimal: for loading performance, the core of Draft.js Plugins (`draft-js-plugins-editor`) is relatively small: [about 4kB gzipped](https://bundlephobia.com/result?p=draft-js-plugins-editor). For rendering performance / responsivity of the editor, Draft.js is pretty good at limiting re-rendering and computations to only the subset of the editor that’s being edited. This makes the performance overhead relatively small as long as the plugins perform normally.
 
-The other tradeoff is in preserving the content filtering capabilities that make Draftail good: being able to trust the editor to filter out unsupported content, and only keep what is whitelisted. Here, the plugins come with a catch: since the architecture doesn’t support whitelisting supported content, types of formatting that can be introduced by plugins will need to be registered with the editor’s existing [APIs for content formats](/docs/formatting-options).
+The other tradeoff is in preserving the content filtering capabilities that make Draftail good: being able to trust the editor to filter out unsupported content, and only keep what is allowlisted. Here, the plugins come with a catch: since the architecture doesn’t support allowlisting supported content, types of formatting that can be introduced by plugins will need to be registered with the editor’s existing [APIs for content formats](/docs/formatting-options).
 
 ### Opportunities
 

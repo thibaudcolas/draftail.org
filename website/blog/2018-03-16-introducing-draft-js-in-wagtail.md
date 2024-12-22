@@ -1,7 +1,7 @@
 ---
 title: Introducing Draft.js in Wagtail
 author: Thibaud Colas
-authorURL: https://twitter.com/thibaud_colas
+authorURL: https://thib.me/
 authorImageURL: https://avatars1.githubusercontent.com/u/877585?s=460&v=4
 ---
 
@@ -11,7 +11,7 @@ Here is a talk I gave at [Wagtail Space 2018](https://www.wagtail.space). The vi
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mf8AS5EwHvc" frameBorder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-Hi 👋, I'm Thibaud! [@thibaud_colas](https://twitter.com/thibaud_colas).
+Hi 👋, I'm [Thibaud](https://thib.me/)!.
 
 Why this happened, and how – read the following blog posts:
 

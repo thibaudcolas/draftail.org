@@ -1,7 +1,7 @@
 ---
 title: "Draftail v1.3.0: community improvements, beyond Wagtail"
 author: Thibaud Colas
-authorURL: https://twitter.com/thibaud_colas
+authorURL: https://thib.me/
 authorImageURL: https://avatars1.githubusercontent.com/u/877585?s=460&v=4
 ---
 

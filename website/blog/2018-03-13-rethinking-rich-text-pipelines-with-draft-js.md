@@ -1,9 +1,8 @@
 ---
 title: Rethinking rich text pipelines with Draft.js
 author: Thibaud Colas
-authorURL: https://twitter.com/thibaud_colas
+authorURL: https://thib.me/
 authorImageURL: https://avatars1.githubusercontent.com/u/877585?s=460&v=4
-authorTwitter: thibaud_colas
 ---
 
 Discussing rich text capabilities in a CMS is an exercise in compromise. Authors want the flexibility to be creative in their content. Developers want to ensure said content fits in the box. This can feel like fighting over the bed covers with a spouse: everyone initially means well, but things turn sour and we all wish for a bigger duvet. Or a more understanding spouse.
@@ -40,7 +39,7 @@ This isn’t a simple process. The fundamental problem is that rich text is gene
 
 ### Content filtering and validation
 
-First off, why are there two filtering / validation steps in the diagram above? It seems rather wasteful! Unless, that is, the editor couldn’t be trusted with its content validation, and a second step was required to whitelist all formatting. This is exactly what [Wagtail](https://github.com/wagtail/wagtail) did before we switched to our Draft.js editor.
+First off, why are there two filtering / validation steps in the diagram above? It seems rather wasteful! Unless, that is, the editor couldn’t be trusted with its content validation, and a second step was required to allowlist all formatting. This is exactly what [Wagtail](https://github.com/wagtail/wagtail) did before we switched to our Draft.js editor.
 
 Here is a GIF illustrating the popular “paste from Word” workflow with Wagtail’s previous `contenteditable` editor:
 
@@ -55,7 +54,7 @@ By contrast, here is the Draft.js equivalent:
 No need to waste time reloading the page, all of the filtering happens on paste, in the browser. This is possible because:
 
 - The structured, fixed-schema content model is separate from contenteditable’s HTML. It is impossible to enter content that does not respect this schema.
-- A formats whitelist filters out all of the content that respects the schema, but is not enabled in the editor.
+- A formats allowlist filters out all of the content that respects the schema, but is not enabled in the editor.
 - Draft.js comes with APIs to programmatically manipulate content, allowing further arbitrary processing.
 
 > Have a look at the [Draft.js filters](https://github.com/thibaudcolas/draftjs-filters) that power our editor to see how this works under the hood.
