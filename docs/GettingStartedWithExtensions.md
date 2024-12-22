@@ -110,6 +110,4 @@ Generally, the hardest part to build when creating a content extension is the ed
 
 ## Going further
 
-[Draft.js Plugins](https://github.com/draft-js-plugins/draft-js-plugins) also offers a lot of general-purpose extensions for Draft.js. For Draftail in particular, as of today, the most advanced extensions to learn from are Wagtail’s built-in [Link, Document, Image, and Embed](https://github.com/wagtail/wagtail/blob/607f2ec0673814a54bd8c35f7cda42a4b37f73f2/client/src/components/Draftail/decorators/Link.js). They use the same APIs as any custom extension would, and offer quite good rich text interactions. To learn even more about making extensions, you might also enjoy a video tutorial where I go through the official "stock" example from start to finish, explaining what is going on along the way:
-
-<iframe src="https://player.twitch.tv/?autoplay=false&video=v266474479" frameborder="0" allowfullscreen="true" scrolling="no" height="315" width="560"></iframe>
+[Draft.js Plugins](https://github.com/draft-js-plugins/draft-js-plugins) also offers a lot of general-purpose extensions for Draft.js. For Draftail in particular, as of today, the most advanced extensions to learn from are Wagtail’s built-in [Link, Document, Image, and Embed](https://github.com/wagtail/wagtail/blob/607f2ec0673814a54bd8c35f7cda42a4b37f73f2/client/src/components/Draftail/decorators/Link.js). They use the same APIs as any custom extension would, and offer quite good rich text interactions.
