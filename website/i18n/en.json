@@ -205,6 +205,33 @@
       },
       "version-1.4.0/version-1.4.0-customising-toolbars": {
         "title": "Customising toolbars"
+      },
+      "version-2.0.0/version-2.0.0-api": {
+        "title": "API reference"
+      },
+      "version-2.0.0/version-2.0.0-arbitrary-controls": {
+        "title": "Arbitrary controls"
+      },
+      "version-2.0.0/version-2.0.0-browser-support": {
+        "title": "Browser support and polyfills"
+      },
+      "version-2.0.0/version-2.0.0-customising-toolbars": {
+        "title": "Customising toolbars"
+      },
+      "version-2.0.0/version-2.0.0-entities": {
+        "title": "Entities"
+      },
+      "version-2.0.0/version-2.0.0-formatting-options": {
+        "title": "Formatting options"
+      },
+      "version-2.0.0/version-2.0.0-getting-started": {
+        "title": "Getting started"
+      },
+      "version-2.0.0/version-2.0.0-importing-and-exporting-html": {
+        "title": "Importing and exporting HTML"
+      },
+      "version-2.0.0/version-2.0.0-ui-theming": {
+        "title": "UI theming"
       }
     },
     "links": {
