@@ -125,7 +125,6 @@ const siteConfig = {
     zIndex: 100,
   },
 
-  // Open Graph and Twitter card images.
   twitterImage: "img/draftail-ui-screenshot.png",
   ogImage: "img/draftail-ui-screenshot.png",
 

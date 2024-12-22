@@ -1,7 +1,6 @@
 ---
-id: version-1.0.0-customising-icons
+id: customising-icons
 title: Customising icons
-original_id: customising-icons
 ---
 
 ## Icon formats
