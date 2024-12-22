@@ -38,7 +38,7 @@ Apart from the usual type/label/description/icon options to pass via objects in 
 - A `decorator`, a React component to display the entity within the editor area for inline entities (eg. links).
 - Finally, the `block` is for block-level entities (think: image block, embed) to supply their React component.
 
-Optionally, entities can also take an `attributes` and `whitelist` props. These can be used to determine whitelisting rules when pasting content into the editor, to only keep the entities considered valid. If undefined, all entities are always preserved with all of their data.
+Optionally, entities can also take an `attributes` and `allowlist` props. These can be used to determine allowlisting rules when pasting content into the editor, to only keep the entities considered valid. If undefined, all entities are always preserved with all of their data.
 
 ```jsx
 {
@@ -47,7 +47,7 @@ Optionally, entities can also take an `attributes` and `whitelist` props. These 
     // Preserve the src and alt attributes and no other.
     attributes: ['src', 'alt'],
     // Preserve images for which the src starts with "http".
-    whitelist: {
+    allowlist: {
         src: '^http',
     },
 }

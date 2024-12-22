@@ -87,7 +87,7 @@ const editor = (
         decorator: Link,
         // We define what data the LINKs can have.
         attributes: ["url"],
-        whitelist: {
+        allowlist: {
           href: "^(?![#/])",
         },
       },
@@ -158,7 +158,7 @@ const editor = (
         decorator: Link,
         // We define what data the LINKs can have.
         attributes: ["url"],
-        whitelist: {
+        allowlist: {
           href: "^(?![#/])",
         },
       },

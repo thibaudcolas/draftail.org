@@ -48,5 +48,5 @@ Additionally, the editor supports overriding its [toolbars](CustomisingToolbars.
 Beyond supporting all of those APIs, most of the value in Draftail over plain Draft.js is:
 
 - Having good support for keyboard shortcuts and Markdown handling out of the box. There would be quite a lot of boilerplate code to write to get this with a vanilla editor.
-- Advanced support to whitelist only the formats you want the editor to support, automatically [filtering-out](https://github.com/thibaudcolas/draftjs-filters) paste of other formats the editor doesn’t have enabled.
+- Advanced support to allowlist only the formats you want the editor to support, automatically [filtering-out](https://github.com/thibaudcolas/draftjs-filters) paste of other formats the editor doesn’t have enabled.
 - Support for copy-paste of custom formatting between editors, which Draft.js doesn’t support [out of the box](https://github.com/thibaudcolas/draftjs-conductor).
