@@ -43,7 +43,7 @@ For mobile devices, Draftail is tested on the latest versions of iOS and Android
 
 ## The editor
 
-Draftail is a simple editor. The toolbar contains all of the formatting options and other controls. You can write underneath.
+Draftail is a simple editor. The toolbar contains all of the formatting options and other controls. You can write underneath. The placeholder text follows your cursor.
 
 ![Editor screenshot with toolbar](/img/user-guide/editor.png)
 
