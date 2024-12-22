@@ -17,7 +17,7 @@ pre {
   margin: 54px 0 20px;
   white-space: pre-wrap;
   background-color: var(--color-eef8ff);
-  border-left: 0;
+  border-inline-start: 0;
   box-shadow:
     0 0 rgba(50, 51, 48, 0.07),
     0 0 rgba(50, 51, 48, 0.07);
@@ -27,7 +27,7 @@ pre {
   position: absolute;
   right: 0;
   bottom: 100%;
-  left: 0;
+  inset-inline-start: 0;
   z-index: var(--z-index-code-block-header);
   display: block;
   height: 34px;

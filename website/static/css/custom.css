@@ -70,7 +70,7 @@
 }
 
 .projectTitle img {
-  margin-left: 0.25em;
+  margin-inline-start: 0.25em;
   vertical-align: middle;
 }
 
@@ -97,7 +97,7 @@ hr {
 blockquote {
   color: inherit;
   background: #fafbfc;
-  border-left-color: var(--color-e0e0e0);
+  border-inline-start-color: var(--color-e0e0e0);
 }
 
 /* ####### LINKS ####### */
@@ -168,7 +168,7 @@ blockquote {
 }
 
 .blogContainer .postHeader .post-meta {
-  float: left;
+  float: inline-start;
   font-size: var(--font-size-xs);
 }
 
