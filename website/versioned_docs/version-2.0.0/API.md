@@ -118,7 +118,6 @@ controls: ReadonlyArray<ControlControl | LegacyControlControl>
 commands: boolean | ReadonlyArray<CommandCategory>
 
 /** List of plugins of the draft-js-plugins architecture. */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 plugins: ReadonlyArray<any>
 
 /** Optionally override the default Draftail toolbar, removing or replacing it. Default: Toolbar */
