@@ -95,14 +95,16 @@ const Features = () => (
       align="center"
       contents={[
         {
-          content: `Draftail is easy to use regardless of skill level. All rich text formatting is available via the toolbar, and [keyboard shortcuts](/docs/keyboard-shortcuts). Power users can even use Markdown!`,
+          content:
+            "Draftail is easy to use regardless of skill level. All rich text formatting is available via the toolbar, and [keyboard shortcuts](/docs/keyboard-shortcuts). Power users can even use Markdown!",
           image: imgUrl("visuals/beachumbrella.svg"),
           imageAlign: "top",
           imageAlt: "",
           title: "Easy to use",
         },
         {
-          content: `Rich text shouldn’t be a black box. Custom extensions for a specific use case shouldn't be a headache. Draftail comes with an extensive API backed by [Draft.js and React](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js).`,
+          content:
+            "Rich text shouldn’t be a black box. Custom extensions for a specific use case shouldn't be a headache. Draftail comes with an extensive API backed by [Draft.js and React](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js).",
           image: imgUrl("visuals/react.svg"),
           imageAlign: "top",
           imageAlt: "",
@@ -110,7 +112,8 @@ const Features = () => (
         },
 
         {
-          content: `Paste content from Word. Or just about [any editor](https://github.com/thibaudcolas/draftjs-filters#word-processor-support). Draftail will only keep the formatting you care about, and discard any cruft. [See it in action ](https://www.youtube.com/watch?v=q-uVc-7ZYso).`,
+          content:
+            "Paste content from Word. Or just about [any editor](https://github.com/thibaudcolas/draftjs-filters#word-processor-support). Draftail will only keep the formatting you care about, and discard any cruft. [See it in action ](https://www.youtube.com/watch?v=q-uVc-7ZYso).",
           image: imgUrl("visuals/clipboard.svg"),
           imageAlign: "top",
           imageAlt: "",
@@ -125,14 +128,16 @@ const Features = () => (
       align="center"
       contents={[
         {
-          content: `All of the editor’s labels can easily be translated. Have a look at our [example with react-intl](/docs/i18n).`,
+          content:
+            "All of the editor’s labels can easily be translated. Have a look at our [example with react-intl](/docs/i18n).",
           image: imgUrl("visuals/meridianglobe.svg"),
           imageAlign: "top",
           imageAlt: "",
           title: "Ready for translations",
         },
         {
-          content: `Draftail’s UI is very simple to customise, so it integrates perfectly within your app. Take a look at the [UI theming](/docs/ui-theming) docs.`,
+          content:
+            "Draftail’s UI is very simple to customise, so it integrates perfectly within your app. Take a look at the [UI theming](/docs/ui-theming) docs.",
           image: imgUrl("visuals/artistpalette.svg"),
           imageAlign: "top",
           imageAlt: "",
@@ -226,6 +231,7 @@ class Index extends React.Component {
             </p>
           </noscript>
           <iframe
+            title="Draftail home demo"
             src="https://demo.draftail.org/storybook/iframe.html?id=draftail--home"
             className="iframe iframe--home"
           />
@@ -233,7 +239,8 @@ class Index extends React.Component {
           <Block id="wagtail" layout="oneColumn" background="white">
             {[
               {
-                content: `Draftail is the default rich text editor of [Wagtail](https://wagtail.org/), a Django content management system used by [hundreds of organisations](https://madewithwagtail.org/).`,
+                content:
+                  "Draftail is the default rich text editor of [Wagtail](https://wagtail.org/), a Django content management system used by [hundreds of organisations](https://madewithwagtail.org/).",
                 image: imgUrl("wagtail-page-edit-screenshot.png"),
                 imageAlign: "left",
                 imageAlt: "",
@@ -243,11 +250,9 @@ class Index extends React.Component {
             ]}
           </Block>
           <Container padding={["bottom", "top"]} background="light">
-            <a className="anchor" name="watch" />
-            <a className="hash-link" href="#watch" />
             <div className="blockElement imageAlignSide twoByGridBlock">
               <div className="blockContent">
-                <h2>Watch videos about Draftail</h2>
+                <h2 id="watch">Watch videos about Draftail</h2>
                 <div>
                   <MarkdownBlock>
                     Draftail was introduced as part of [Wagtail Space

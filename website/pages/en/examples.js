@@ -31,6 +31,7 @@ class Examples extends React.Component {
               </p>
             </div>
             <iframe
+              title="Draftail custom formats demo"
               src="https://demo.draftail.org/storybook/iframe.html?id=examples--custom-formats"
               className="iframe iframe--custom"
             />
@@ -51,6 +52,7 @@ class Examples extends React.Component {
               </p>
             </div>
             <iframe
+              title="Draftail all built-in formats demo"
               src="https://demo.draftail.org/storybook/iframe.html?id=examples--all-built-in-formats"
               className="iframe iframe--all"
             />

@@ -19,8 +19,7 @@ class Versions extends React.Component {
               <h2>{`${siteConfig.title} versions`}</h2>
             </header>
             <p>New versions of this project are released periodically.</p>
-            <a name="latest" />
-            <h3>Current version (stable)</h3>
+            <h3 id="latest">Current version (stable)</h3>
             <table className="versions">
               <tbody>
                 <tr>
@@ -37,8 +36,7 @@ class Versions extends React.Component {
               </tbody>
             </table>
             <p>This is the current stable version of the project.</p>
-            <a name="rc" />
-            <h3>Pre-release versions</h3>
+            <h3 id="rc">Pre-release versions</h3>
             <p>These are the latest changes that have yet to be released.</p>
             <table className="versions">
               <tbody>
@@ -56,8 +54,7 @@ class Versions extends React.Component {
               </tbody>
             </table>
             <div>
-              <a name="archive" />
-              <h3>Past versions</h3>
+              <h3 id="archive">Past versions</h3>
               <table className="versions">
                 <tbody>
                   {versions
