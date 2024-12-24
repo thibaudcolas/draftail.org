@@ -20,18 +20,14 @@
     "not OperaMini all"
   ],
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@commitlint/cli": "19.6.1",
     "@commitlint/config-conventional": "19.6.0",
-    "@thibaudcolas/eslint-plugin-cookbook": "6.0.0",
-    "@thibaudcolas/stylelint-config-cookbook": "4.0.0",
-    "eslint": "8.57.1",
-    "prettier": "3.4.2",
-    "stylelint": "12.0.1"
+    "prettier": "^3.4.2"
   },
   "scripts": {
-    "lint": "eslint --report-unused-disable-directives . && stylelint '{website,docs}/**/*.{css,md}' && prettier --check '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
-    "format": "prettier --write '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
-    "test:ci": "npm run lint -s",
+    "lint": "biome check && prettier --check '**/?(.)*.{md,yaml,yml,html}'",
+    "format": "biome format --write && prettier --write '**/?(.)*.{md,yaml,yml,html}'",
     "postinstall": "npm --prefix website install",
     "prepare": "./.githooks/deploy.sh"
   }

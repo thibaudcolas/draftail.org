@@ -49,14 +49,8 @@
       automergeType: "branch",
     },
     {
-      packagePatterns: ["eslint"],
-      groupName: "eslint",
-      automerge: true,
-      automergeType: "branch",
-    },
-    {
-      packagePatterns: ["stylelint"],
-      groupName: "stylelint",
+      packagePatterns: ["^@biomejs"],
+      groupName: "biome",
       automerge: true,
       automergeType: "branch",
     },
