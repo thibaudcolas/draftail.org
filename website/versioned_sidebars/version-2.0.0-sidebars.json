@@ -1,0 +1,38 @@
+{
+  "version-2.0.0-docs": {
+    "Introduction": [
+      "version-2.0.0-getting-started",
+      "version-2.0.0-formatting-options",
+      "version-2.0.0-inline-styles",
+      "version-2.0.0-blocks",
+      "version-2.0.0-entities",
+      "version-2.0.0-decorators",
+      "version-2.0.0-arbitrary-controls",
+      "version-2.0.0-plugins"
+    ],
+    "Guides": [
+      "version-2.0.0-importing-and-exporting-html",
+      "version-2.0.0-form-validation",
+      "version-2.0.0-getting-started-with-extensions",
+      "version-2.0.0-draftjs-vs-draftail",
+      "version-2.0.0-extensions-tutorial-max-length",
+      "version-2.0.0-extensions-tutorial-linkify"
+    ],
+    "User guides": [
+      "version-2.0.0-user-guide",
+      "version-2.0.0-keyboard-shortcuts",
+      "version-2.0.0-markdown-support"
+    ],
+    "API reference": [
+      "version-2.0.0-api",
+      "version-2.0.0-content-storage",
+      "version-2.0.0-controlled-component",
+      "version-2.0.0-ui-theming",
+      "version-2.0.0-customising-icons",
+      "version-2.0.0-customising-toolbars",
+      "version-2.0.0-i18n",
+      "version-2.0.0-browser-support",
+      "version-2.0.0-troubleshooting"
+    ]
+  }
+}
