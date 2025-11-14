@@ -1,0 +1,157 @@
+[
+  {
+    "name": "documentation",
+    "color": "0075ca",
+    "description": "Type: Documentation improvements, additions, or fixes"
+  },
+  {
+    "name": "content",
+    "color": "5319e7",
+    "description": "Type: Website content updates (pages, sections)"
+  },
+  {
+    "name": "tutorial",
+    "color": "1d76db",
+    "description": "Type: Guides, tutorials, and educational content"
+  },
+  {
+    "name": "blog",
+    "color": "d4c5f9",
+    "description": "Type: Blog post creation or updates"
+  },
+  {
+    "name": "bug",
+    "color": "d73a4a",
+    "description": "Type: Something isn't working"
+  },
+  {
+    "name": "infrastructure",
+    "color": "fbca04",
+    "description": "Type: CI/CD, build, deployment, tooling"
+  },
+  {
+    "name": "critical",
+    "color": "b60205",
+    "description": "Priority: Requires immediate attention"
+  },
+  {
+    "name": "high",
+    "color": "d93f0b",
+    "description": "Priority: Important, should be addressed soon"
+  },
+  {
+    "name": "medium",
+    "color": "fbca04",
+    "description": "Priority: Normal priority"
+  },
+  {
+    "name": "low",
+    "color": "0e8a16",
+    "description": "Priority: Nice to have, when time permits"
+  },
+  {
+    "name": "small",
+    "color": "c2e0c6",
+    "description": "Effort: < 2 hours of work"
+  },
+  {
+    "name": "medium effort",
+    "color": "fef2c0",
+    "description": "Effort: 2-8 hours of work"
+  },
+  {
+    "name": "large",
+    "color": "f9d0c4",
+    "description": "Effort: > 8 hours of work"
+  },
+  {
+    "name": "epic",
+    "color": "e99695",
+    "description": "Effort: Multi-day or multi-week project"
+  },
+  {
+    "name": "blocked",
+    "color": "d73a4a",
+    "description": "Status: Blocked by another issue or external factor"
+  },
+  {
+    "name": "needs discussion",
+    "color": "d876e3",
+    "description": "Status: Requires team discussion before proceeding"
+  },
+  {
+    "name": "needs info",
+    "color": "d4c5f9",
+    "description": "Status: Waiting for more information"
+  },
+  {
+    "name": "in progress",
+    "color": "0366d6",
+    "description": "Status: Currently being worked on"
+  },
+  {
+    "name": "ready",
+    "color": "0e8a16",
+    "description": "Status: Ready to be worked on"
+  },
+  {
+    "name": "draftail",
+    "color": "c5def5",
+    "description": "Scope: Related to Draftail library itself"
+  },
+  {
+    "name": "docusaurus",
+    "color": "bfdadc",
+    "description": "Scope: Related to Docusaurus framework"
+  },
+  {
+    "name": "dependencies",
+    "color": "e4e669",
+    "description": "Scope: Dependency updates or issues"
+  },
+  {
+    "name": "accessibility",
+    "color": "1d76db",
+    "description": "Scope: Accessibility improvements"
+  },
+  {
+    "name": "i18n",
+    "color": "bfd4f2",
+    "description": "Scope: Internationalization/localization"
+  },
+  {
+    "name": "search",
+    "color": "d4c5f9",
+    "description": "Scope: Search functionality (Algolia)"
+  },
+  {
+    "name": "duplicate",
+    "color": "cfd3d7",
+    "description": "Duplicate of another issue"
+  },
+  {
+    "name": "wontfix",
+    "color": "ffffff",
+    "description": "Will not be addressed"
+  },
+  {
+    "name": "enhancement",
+    "color": "a2eeef",
+    "description": "New feature or improvement"
+  },
+  {
+    "name": "good first issue",
+    "color": "7057ff",
+    "description": "Good for newcomers"
+  },
+  {
+    "name": "help wanted",
+    "color": "008672",
+    "description": "Extra attention needed from community"
+  },
+  {
+    "name": "bot",
+    "color": "ededed",
+    "description": "Created by automation"
+  }
+]
