@@ -169,10 +169,7 @@ const config: Config = {
       appId: "BPY62S0W69",
       apiKey: "955c25bc248c31c769967251c34747a9",
       indexName: "draftail",
-      contextualSearch: false,
-      searchParameters: {
-        facetFilters: ["version:2.0.0"],
-      },
+      contextualSearch: true,
     },
   } satisfies Preset.ThemeConfig,
 }
