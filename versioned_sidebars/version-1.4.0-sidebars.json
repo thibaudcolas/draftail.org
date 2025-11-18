@@ -1,0 +1,34 @@
+{
+  "docs": {
+    "Introduction": [
+      "getting-started",
+      "formatting-options",
+      "inline-styles",
+      "blocks",
+      "entities",
+      "decorators",
+      "arbitrary-controls",
+      "plugins"
+    ],
+    "Guides": [
+      "importing-and-exporting-html",
+      "form-validation",
+      "getting-started-with-extensions",
+      "draftjs-vs-draftail",
+      "extensions-tutorial-max-length",
+      "extensions-tutorial-linkify"
+    ],
+    "User guides": ["user-guide", "keyboard-shortcuts", "markdown-support"],
+    "API reference": [
+      "api",
+      "content-storage",
+      "controlled-component",
+      "ui-theming",
+      "customising-icons",
+      "customising-toolbars",
+      "i18n",
+      "browser-support",
+      "troubleshooting"
+    ]
+  }
+}

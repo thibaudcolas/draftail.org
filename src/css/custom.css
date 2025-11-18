@@ -1,0 +1,137 @@
+:root {
+  --ifm-color-primary-lightest: #00a2a4;
+  --ifm-color-primary-lighter: #009091;
+  --ifm-color-primary-light: #00898b;
+  --ifm-color-primary: #007d7e;
+  --ifm-color-primary-dark: #007071;
+  --ifm-color-primary-darker: #006a6b;
+  --ifm-color-primary-darkest: #005758;
+  --color-wagtail-007d7e: #007d7e;
+  --color-e0e0e0: #e0e0e0;
+  --color-eeeeee: #eee;
+  --color-1a1a1a: #1a1a1a;
+  --color-ffffff: #fff;
+  --color-000000: #000;
+  --color-393939: #393939;
+  --font-size-xs: 15px;
+  --font-size-xl: 8.8rem;
+  --font-size-h1: 2.25rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+}
+
+.iframe {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.iframe--home {
+  max-width: 800px;
+  min-height: 1200px;
+  padding: 0 10px;
+}
+
+@media (min-width: 520px) {
+  .iframe--home {
+    min-height: 800px;
+  }
+}
+
+.iframe--custom {
+  max-width: 800px;
+  min-height: 650px;
+  padding: 0 10px;
+}
+
+@media (min-width: 520px) {
+  .iframe--custom {
+    min-height: 500px;
+  }
+}
+
+.iframe--all {
+  max-width: 800px;
+  min-height: 2200px;
+  padding: 0 10px;
+}
+
+@media (min-width: 520px) {
+  .iframe--all {
+    min-height: 2000px;
+  }
+}
+
+.iframe--docs-200 {
+  min-height: 200px;
+}
+
+.iframe--docs-250 {
+  min-height: 250px;
+}
+
+.iframe--docs-400 {
+  min-height: 400px;
+}
+
+.projectTitle img {
+  margin-inline-start: 0.25em;
+  vertical-align: middle;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+  max-width: 600px;
+  margin: 0 5%;
+}
+
+.video iframe {
+  display: block;
+  width: 100%;
+  min-height: 340px;
+  margin: 0 auto 10px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px;
+}
+
+blockquote {
+  color: inherit;
+  background: #fafbfc;
+  border-inline-start-color: var(--color-e0e0e0);
+}
+
+/* Links within the content of pages */
+article a[class=""] {
+  color: var(--color-1a1a1a);
+  background: #eef8ff;
+  border-bottom: 1px dotted #007d7e;
+
+  &:hover {
+    text-decoration: none;
+    background-color: initial;
+  }
+
+  & code {
+    background-color: initial;
+  }
+}
+
+/* ####### HEADER & FOOTER ####### */
+
+.algolia-autocomplete {
+  line-height: 20px;
+}
+
+/* ####### POST ####### */
+
+table td code {
+  color: var(--color-393939);
+  word-break: normal;
+}

@@ -1,0 +1,108 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.getStarted {
+  margin: 0;
+}
+
+.featuresSection {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.featureImage {
+  margin-bottom: 1rem;
+}
+
+.bulletList {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+.bulletList li {
+  margin-bottom: 0.5rem;
+}
+
+.showcaseSection {
+  background-color: var(--ifm-background-color);
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.userLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+  transition: opacity 0.2s;
+}
+
+.userLink:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+}
+
+.userLink img {
+  display: block;
+  height: 110px;
+  margin-bottom: 0.5rem;
+}
+
+.userLink span {
+  font-size: 0.9rem;
+}
+
+.wagtailImage {
+  width: 100%;
+  height: auto;
+  border-radius: var(--ifm-border-radius);
+}
+
+.videoSection {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.video img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--ifm-border-radius);
+}
