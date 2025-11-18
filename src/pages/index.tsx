@@ -6,18 +6,6 @@ import clsx from "clsx"
 import type { ReactNode } from "react"
 import styles from "./index.module.css"
 
-function imgUrl(img) {
-  return useBaseUrl(`img/${img}`)
-}
-
-function docUrl(doc, language = "") {
-  return useBaseUrl(`docs/${language ? `${language}/` : ""}${doc}`)
-}
-
-function pageUrl(page, language = "") {
-  return useBaseUrl(language ? `${language}/` : "") + page
-}
-
 const FeatureCard = ({ image, title, children }): ReactNode => (
   <div className="text--center">
     <img
@@ -39,7 +27,7 @@ const Features = () => {
         <div className="row">
           <div className="col col--4 margin-bottom--lg">
             <FeatureCard
-              image={imgUrl("visuals/beachumbrella.svg")}
+              image={useBaseUrl("img/visuals/beachumbrella.svg")}
               title="Easy to use"
             >
               Draftail is easy to use regardless of skill level. All rich text
@@ -49,7 +37,10 @@ const Features = () => {
             </FeatureCard>
           </div>
           <div className="col col--4 margin-bottom--lg">
-            <FeatureCard image={imgUrl("visuals/react.svg")} title="Extensible">
+            <FeatureCard
+              image={useBaseUrl("img/visuals/react.svg")}
+              title="Extensible"
+            >
               Rich text shouldn't be a black box. Custom extensions for a
               specific use case shouldn't be a headache. Draftail comes with an
               extensive API backed by{" "}
@@ -61,7 +52,7 @@ const Features = () => {
           </div>
           <div className="col col--4 margin-bottom--lg">
             <FeatureCard
-              image={imgUrl("visuals/clipboard.svg")}
+              image={useBaseUrl("img/visuals/clipboard.svg")}
               title="Word-friendly"
             >
               Paste content from Word. Or just about{" "}
@@ -80,7 +71,7 @@ const Features = () => {
         <div className="row">
           <div className="col col--6 margin-bottom--lg">
             <FeatureCard
-              image={imgUrl("visuals/meridianglobe.svg")}
+              image={useBaseUrl("img/visuals/meridianglobe.svg")}
               title="Ready for translations"
             >
               All of the editor's labels can easily be translated. Have a look
@@ -89,7 +80,7 @@ const Features = () => {
           </div>
           <div className="col col--6 margin-bottom--lg">
             <FeatureCard
-              image={imgUrl("visuals/artistpalette.svg")}
+              image={useBaseUrl("img/visuals/artistpalette.svg")}
               title="Theming"
             >
               Draftail's UI is very simple to customise, so it integrates
@@ -106,17 +97,17 @@ const Features = () => {
 const users = [
   {
     caption: "Wagtail",
-    image: "/img/users/wagtail.svg",
+    image: "wagtail.svg",
     href: "https://github.com/wagtail/wagtail",
   },
   {
     caption: "médialab Sciences Po",
-    image: "/img/users/medialab.svg",
+    image: "medialab.svg",
     href: "https://github.com/medialab/website",
   },
   {
     caption: "Saleor",
-    image: "/img/users/saleor.svg",
+    image: "saleor.svg",
     href: "https://github.com/mirumee/saleor",
   },
 ]
@@ -129,7 +120,7 @@ const Showcase = () => {
         <div className={styles.logos}>
           {users.map((user) => (
             <a className={styles.userLink} href={user.href} key={user.href}>
-              <img src={useBaseUrl(user.image)} alt="" width={150} />
+              <img src={`/img/users/${user.image}`} alt="" width={150} />
               <span>{user.caption}</span>
             </a>
           ))}
@@ -157,7 +148,7 @@ export default function Home() {
                 "button button--primary button--lg",
                 styles.getStarted,
               )}
-              to={docUrl("getting-started")}
+              to={useBaseUrl("/docs/getting-started")}
             >
               Get Started
             </Link>
@@ -166,7 +157,7 @@ export default function Home() {
                 "button button--secondary button--lg",
                 styles.getStarted,
               )}
-              to={pageUrl("examples")}
+              to={useBaseUrl("/examples")}
             >
               View Examples
             </Link>
@@ -233,7 +224,7 @@ export default function Home() {
           <div className="row">
             <div className="col col--6">
               <img
-                src={imgUrl("wagtail-page-edit-screenshot.png")}
+                src={useBaseUrl("img/wagtail-page-edit-screenshot.png")}
                 alt=""
                 className={styles.wagtailImage}
               />

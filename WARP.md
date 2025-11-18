@@ -4,231 +4,181 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 
 ## Project Overview
 
-This is the documentation website for Draftail (a rich text editor built with Draft.js), built with Docusaurus v1. The site includes documentation, examples, blog posts, and API reference.
+This is the documentation website for [Draftail](https://www.draftail.org/), a configurable rich text editor built with Draft.js. The site is built with **Docusaurus 3** and includes documentation, blog posts, versioned docs, and examples.
 
-**Important repositories:**
+**Key technologies:**
 
-- This repo (draftail.org): Documentation website only
-- Main Draftail library: https://github.com/springload/draftail
+- Docusaurus 3.9.2 (React 19-based static site generator)
+- TypeScript
+- Biome 2.3.6 (linting and formatting)
+- Prettier (Markdown/YAML formatting)
+- Node.js 25 (managed via nvm)
+
+**Deployment:**
+
+- Automatically deployed to Netlify on every push to `main`
+- Search powered by Algolia DocSearch
+- Algolia search index rebuilt automatically every 24 hours
 
 ## Development Commands
 
-### Initial Setup
+### Setup
 
 ```bash
-nvm install
-npm install
+nvm install              # Install correct Node.js version
+npm install              # Install dependencies
 ```
-
-The `npm install` command automatically runs `postinstall`, which installs dependencies for the `website/` subdirectory.
 
 ### Development Server
 
-Start the local development server:
+```bash
+npm start                # Start dev server at http://localhost:3000
+```
+
+### Building
 
 ```bash
-cd website
-npm run start
+npm run build            # Build production site to build/
+npm run serve            # Preview production build locally
 ```
 
-This launches Docusaurus on http://localhost:3000 with hot reloading.
-
-### Linting and Formatting
-
-From the root directory:
+### Code Quality
 
 ```bash
-# Check all code and docs
-npm run lint
-
-# Auto-fix formatting issues
-npm run format
+npm run lint             # Lint with Biome + Prettier (JS/TS/CSS + MD/YAML)
+npm run format           # Auto-fix formatting issues
 ```
 
-**Linting tools:**
-
-- **Biome**: Lints and formats JavaScript, TypeScript, CSS, JSON (configured in `biome.json`)
-- **Prettier**: Formats Markdown, YAML, HTML files (configured in `prettier.config.js`)
-
-**Manual commands:**
+### Docusaurus Commands
 
 ```bash
-# Run Biome only
-npx @biomejs/biome check
-
-# Run Prettier only
-npx prettier --check '**/?(.)*.{md,yaml,yml,html}'
+npm run docusaurus       # Run Docusaurus CLI directly
+npm run swizzle          # Customize Docusaurus components
+npm run version          # Create a new documentation version
 ```
 
-### Git Hooks
-
-This project uses custom git hooks in `.githooks/`:
-
-- **pre-commit**: Runs Biome and Prettier on staged files, fails on whitespace errors
-- **commit-msg**: Validates commit messages with commitlint (conventional commits)
-
-Hooks are automatically installed via `npm run prepare` (runs after `npm install`).
-
-To bypass hooks for a single commit: `git commit --no-verify`
-
-### Building for Production
-
-```bash
-cd website
-npm run build
-```
-
-Output is generated in `website/build/`.
-
-### Deployment
-
-The site auto-deploys to Netlify on every push to `main`. No manual deployment needed.
-
-## Architecture
-
-### Directory Structure
+## Project Structure
 
 ```
-draftail.org/
-├── docs/                    # Documentation source (Markdown)
-├── website/                 # Docusaurus site
-│   ├── blog/               # Blog posts (Markdown)
-│   ├── pages/en/           # Custom pages (React/JS)
-│   ├── static/             # Static assets (images, CSS, JS)
-│   ├── versioned_docs/     # Versioned documentation
-│   ├── versioned_sidebars/ # Versioned sidebar configs
-│   ├── siteConfig.js       # Main Docusaurus config
-│   └── sidebars.json       # Sidebar structure
-├── .githooks/              # Git hooks for pre-commit checks
-└── package.json            # Root package for linting tools
+├── docs/                    # Main documentation (Markdown + MDX)
+├── blog/                    # Blog posts (Markdown with frontmatter)
+├── versioned_docs/          # Versioned documentation snapshots
+├── versioned_sidebars/      # Versioned sidebar configs
+├── versions.json            # List of available doc versions
+├── src/
+│   ├── css/                 # Custom styling (custom.css, error.css)
+│   └── pages/               # Custom React pages (About, Help, etc.)
+├── static/                  # Static assets (images, favicons, etc.)
+├── docusaurus.config.ts     # Main Docusaurus config
+├── sidebars.ts              # Sidebar structure for current docs
+├── biome.json               # Biome linter/formatter config
+└── tsconfig.json            # TypeScript config
 ```
 
-### Two-Level Package Structure
+## Code Style Guidelines
 
-This project has a nested structure:
+### Formatting
 
-- **Root level**: Tooling for linting (Biome, Prettier, commitlint)
-- **website/ level**: Docusaurus and site dependencies
-
-Always run linting from root, but development server from `website/`.
-
-### Documentation Versioning
-
-Docusaurus handles versioning:
-
-- Current docs: `docs/` directory
-- Versioned docs: `website/versioned_docs/version-X.X.X/`
-- Version list: `website/versions.json`
-- Undocumented versions listed in `siteConfig.js`
-
-### Configuration Files
-
-**Biome** (`biome.json`):
-
-- Ignores: `website/build`, `package.json`
-- JavaScript style: semicolons as-needed, arrow parens always, trailing commas all
-- Indentation: 2 spaces
-- Uses `.editorconfig`
-
-**Prettier** (`prettier.config.js`):
-
-- No semicolons
-- Trailing commas: all
-- Arrow parens: always
-- Line width: 80
-
-**Commitlint** (`commitlint.config.js`):
-
-- Uses conventional commits format
-
-### Docusaurus Config
-
-Main configuration in `website/siteConfig.js`:
-
-- **Search**: Algolia DocSearch (index rebuilt every 24hrs)
-- **Deployment**: Auto-publish via Netlify
-- **Edit URLs**: Point to GitHub main branch
-- **Syntax highlighting**: Prism with JSX support, custom JSON5 support
-
-### Custom Pages
-
-Located in `website/pages/en/`:
-
-- `index.js`: Homepage with demo editor
-- `examples.js`: Interactive examples
-- `about.js`: About page
-- `versions.js`: Version history
-- `help.js`: Help/resources
-- `code-of-conduct.js`: Community guidelines
-- `404.js`: Error page
-
-These are React components, not Markdown.
-
-## Code Style
-
-### JavaScript/TypeScript
-
-- Use Biome's recommended rules
-- Semi-colons: as-needed (omit when possible)
+- **Biome** handles JS/TS/CSS/JSON formatting and linting
+- **Prettier** handles Markdown, YAML, and HTML
+- 2-space indentation (configured in `.editorconfig` and `biome.json`)
+- Semicolons: optional (ASI style)
 - Arrow functions: always use parentheses
-- Trailing commas: always
-- `forEach` loop rule disabled
+- Trailing commas: always for JS/TS, never for JSON
 
-### Markdown/YAML/HTML
+### Commit Messages
 
-- Use Prettier defaults with 80-char line width
-- No trailing semicolons in frontmatter
-- Preserve prose wrapping
+- Follows [Conventional Commits](https://www.conventionalcommits.org/)
+- Enforced by commitlint with `@commitlint/config-conventional`
+- Examples: `feat: add new feature`, `fix: correct bug`, `docs: update README`
 
-### Commits
+## Documentation Management
 
-- Follow conventional commits: `type(scope): message`
-- Types: `feat`, `fix`, `docs`, `chore`, `refactor`, etc.
-- Enforced by commitlint in git hooks
+### Versioning
 
-## Working with Documentation
+- Documentation versions are managed via `versions.json`
+- Current versions: 2.0.0, 1.4.0, 1.3.0, 1.2.1, 1.2.0, 1.1.0, 1.0.0
+- Create new version: `npm run version 2.1.0`
+- Versioned docs stored in `versioned_docs/version-X.Y.Z/`
+- Versioned sidebars stored in `versioned_sidebars/version-X.Y.Z-sidebars.json`
 
-### Adding New Docs
+### Adding Documentation
 
-1. Create Markdown file in `docs/`
-2. Add appropriate frontmatter:
-   ```md
-   ---
-   id: unique-id
-   title: Page Title
-   ---
-   ```
-3. Update `website/sidebars.json` to include in navigation
+1. Add Markdown/MDX files to `docs/` directory
+2. Update `sidebars.ts` to include new pages in navigation
+3. Use frontmatter for metadata (title, description, etc.)
+4. Link to GitHub edit URL is auto-generated for each page
 
 ### Blog Posts
 
-- Create in `website/blog/` with date format: `YYYY-MM-DD-slug.md`
-- Frontmatter should include: `title`, `author`, `authorURL`, `authorImageURL`
+- Add Markdown files to `blog/` with date-prefixed filenames: `YYYY-MM-DD-slug.md`
+- Include frontmatter with title, author, tags, etc.
+- Reading time calculated automatically
 
-### Images and Assets
+## Configuration Notes
 
-- Place in `website/static/img/` or `docs/assets/`
-- Reference as `/img/path` in docs (absolute from static)
+### Algolia Search
 
-## Common Issues
+- App ID: `BPY62S0W69`
+- Index: `draftail`
+- Facet filtered to show results for version 2.0.0 by default
+- Context-aware search disabled
+- Search index config: [algolia/docsearch-configs:draftail.json](https://github.com/algolia/docsearch-configs/blob/master/configs/draftail.json)
 
-### Module Resolution
+### Broken Links
 
-The site uses an older version of Docusaurus (1.14.7). If you encounter module issues:
+- `onBrokenLinks: "log"` - broken links logged but don't fail build
+- `onBrokenMarkdownLinks: "log"` - same for Markdown links
+- This is intentional for the Draftail site
 
-- Ensure you're in the correct directory (`website/` for dev server)
-- Dependencies are installed in both root and `website/`
+### Browser Support
 
-### Hook Failures
+Targets defined in `package.json`:
 
-If git hooks fail:
+- `> 1%`
+- Not IE 11
+- Firefox ESR
+- Not Opera Mini
 
-- Run `npm run format` to auto-fix formatting
-- Check output for specific linting errors
-- Bypass with `--no-verify` if necessary (not recommended)
+## Special Files
 
-### Build Errors
+### Static Editor Content
 
-- Ensure all links in docs are valid
-- Check that all referenced images exist
-- Verify frontmatter syntax in Markdown files
+The demo site contains static HTML exported with [draftjs_exporter](https://github.com/springload/draftjs_exporter) for:
+
+- Better SEO
+- Improved initial loading experience
+
+To regenerate:
+
+1. Get serialised ContentState from index page editor (in `sessionStorage`)
+2. Go to [Draftail playground](http://playground.draftail.org/)
+3. Place ContentState in that editor's `sessionStorage` value
+4. Export and update static content
+
+### Icons & Assets
+
+- Icons from [IcoMoon](https://icomoon.io/)
+- Emojis from [FxEmojis](https://github.com/mozilla/fxemoji)
+- Favicons generated with [RealFaviconGenerator](https://realfavicongenerator.net/)
+- Original pencil icon: Noun Project crayon (CC0)
+
+## Architecture Notes
+
+### Docusaurus Integration
+
+This is a standard Docusaurus 3 Classic preset site with:
+
+- Docs plugin for versioned documentation
+- Blog plugin with RSS/Atom feeds
+- Custom CSS in `src/css/`
+- Custom React pages in `src/pages/`
+
+The main Draftail library code is NOT in this repository - this is documentation only. The actual Draftail editor is at [springload/draftail](https://github.com/springload/draftail).
+
+### Theme Customization
+
+- Dark mode respects system preference (`respectPrefersColorScheme: true`)
+- Custom CSS files: `src/css/custom.css` and `src/css/error.css`
+- Syntax highlighting: GitHub theme (light) / Dracula (dark)
+- Additional Prism language: SCSS

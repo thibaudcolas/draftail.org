@@ -31,6 +31,7 @@ BIOME_STAGED=$(grep -E '.(css|js|ts|tsx|json|jsonc|json5)$' <<< "$STAGED" || tru
 BIOME_FULLY_STAGED=$(grep -E '.(css|js|ts|tsx|json|jsonc|json5)$' <<< "$FULLY_STAGED" || true)
 PRETTIER_STAGED=$(grep -E '.(md|yml|yaml|html)$' <<< "$STAGED" || true)
 PRETTIER_FULLY_STAGED=$(grep -E '.(md|yml|yaml|html)$' <<< "$FULLY_STAGED" || true)
+TS_STAGED=$(grep -E '.(ts|tsx)$' <<< "$STAGED" || true)
 # Uncomment, and add more variables to the list, for debugging help.
 # tr ' ' '\n' <<< "STAGED $STAGED PATCH_STAGED $PATCH_STAGED FULLY_STAGED $FULLY_STAGED
 
@@ -50,4 +51,8 @@ fi
 
 if [ -n "$PRETTIER_STAGED" ]; then
   npx prettier --check $PRETTIER_STAGED
+fi
+
+if [ -n "$TS_STAGED" ]; then
+  npx tsc --noEmit
 fi

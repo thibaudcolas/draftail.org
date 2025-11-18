@@ -27,3 +27,4 @@ jobs:
       - uses: biomejs/setup-biome@v2
       - run: biome ci
       - run: npx prettier --check '**/?(.)*.{md,yaml,yml,html}'
+      - run: npx tsc --noEmit

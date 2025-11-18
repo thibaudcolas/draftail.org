@@ -36,7 +36,7 @@ const undocumentedVersions = [
   "0.1.0",
 ]
 
-export default (props): ReactNode => {
+export default (): ReactNode => {
   const { siteConfig } = useDocusaurusContext()
   const baseUrl = useBaseUrl("/")
   const latestVersion = versions[0]

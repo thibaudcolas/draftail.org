@@ -28,12 +28,12 @@
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.3.6",
+    "@commitlint/cli": "20.1.0",
+    "@commitlint/config-conventional": "20.0.0",
     "@docusaurus/module-type-aliases": "^3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
-    "@biomejs/biome": "1.9.4",
-    "@commitlint/cli": "20.1.0",
-    "@commitlint/config-conventional": "20.0.0",
     "prettier": "3.6.2",
     "typescript": "5.6.2"
   },
@@ -45,7 +45,7 @@
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "docusaurus": "docusaurus",
-    "lint": "biome check && prettier --check '**/?(.)*.{md,yaml,yml,html}'",
+    "lint": "biome check && prettier --check '**/?(.)*.{md,yaml,yml,html}' && tsc --noEmit",
     "format": "biome format --write && prettier --write '**/?(.)*.{md,yaml,yml,html}'",
     "prepare": "./.githooks/deploy.sh"
   }

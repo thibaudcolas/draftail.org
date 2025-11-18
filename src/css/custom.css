@@ -21,6 +21,39 @@
   --font-size-h4: 1.25rem;
 }
 
+hr {
+  border: 0;
+  border-top: 1px;
+}
+
+blockquote {
+  color: inherit;
+  background: #fafbfc;
+  border-inline-start-color: var(--color-e0e0e0);
+}
+
+/* Keyboard shortcuts */
+table td code {
+  color: var(--color-393939);
+  word-break: normal;
+}
+
+/* Links within the content of pages */
+article a[class=""] {
+  color: var(--color-1a1a1a);
+  background: #eef8ff;
+  border-bottom: 1px dotted #007d7e;
+
+  &:hover {
+    text-decoration: none;
+    background-color: initial;
+  }
+
+  & code {
+    background-color: initial;
+  }
+}
+
 .iframe {
   display: block;
   width: 100%;
@@ -94,44 +127,4 @@
   width: 100%;
   min-height: 340px;
   margin: 0 auto 10px;
-}
-
-hr {
-  border: 0;
-  border-top: 1px;
-}
-
-blockquote {
-  color: inherit;
-  background: #fafbfc;
-  border-inline-start-color: var(--color-e0e0e0);
-}
-
-/* Links within the content of pages */
-article a[class=""] {
-  color: var(--color-1a1a1a);
-  background: #eef8ff;
-  border-bottom: 1px dotted #007d7e;
-
-  &:hover {
-    text-decoration: none;
-    background-color: initial;
-  }
-
-  & code {
-    background-color: initial;
-  }
-}
-
-/* ####### HEADER & FOOTER ####### */
-
-.algolia-autocomplete {
-  line-height: 20px;
-}
-
-/* ####### POST ####### */
-
-table td code {
-  color: var(--color-393939);
-  word-break: normal;
 }
