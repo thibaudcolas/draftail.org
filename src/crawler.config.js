@@ -6,81 +6,72 @@ new Crawler({
   apiKey: "",
   schedule: "at 15:40 on Tuesday",
   rateLimit: 8,
-  startUrls: [
-    "https://www.draftail.org/docs/",
-    "https://www.draftail.org/",
-    "https://www.draftail.org/docs/getting-started",
-  ],
-  renderJavaScript: false,
+  startUrls: ["https://www.draftail.org/"],
   sitemaps: ["https://www.draftail.org/sitemap.xml"],
-  exclusionPatterns: [],
-  ignoreCanonicalTo: false,
+  ignoreCanonicalTo: true,
   discoveryPatterns: ["https://www.draftail.org/**"],
+  exclusionPatterns: [],
   actions: [
     {
       indexName: "draftail",
-      pathsToMatch: [
-        "https://www.draftail.org/docs/**",
-        "https://www.draftail.org/docs/getting-started**/**",
-      ],
+      pathsToMatch: ["https://www.draftail.org/docs/**"],
       recordExtractor: ({ $, helpers }) => {
-        // Removing DOM elements we don't want to crawl
-        const toRemove = ".hash-link"
-        $(toRemove).remove()
+        // priority order: deepest active sub list header -> navbar active item -> 'Documentation'
+        const lvl0 =
+          $(
+            ".menu__link.menu__link--sublist.menu__link--active, .navbar__item.navbar__link--active",
+          )
+            .last()
+            .text() || "Documentation"
 
         return helpers.docsearch({
           recordProps: {
-            lvl1: ".post h1",
-            content: ".post article p, .post article li",
             lvl0: {
-              selectors: ".navGroup > h3.collapsible",
-              defaultValue: "Documentation",
+              selectors: "",
+              defaultValue: lvl0,
             },
-            lvl2: ".post h2",
-            lvl3: ".post h3",
-            lvl4: ".post h4",
-            lvl5: ".post h5",
+            lvl1: ["header h1", "article h1"],
+            lvl2: "article h2",
+            lvl3: "article h3",
+            lvl4: "article h4",
+            lvl5: "article h5, article td:first-child",
+            lvl6: "article h6",
+            content: "article p, article li, article td:last-child",
           },
           indexHeadings: true,
+          aggregateContent: true,
+          recordVersion: "v3",
         })
       },
     },
   ],
   initialIndexSettings: {
     draftail: {
-      attributesForFaceting: ["type", "lang", "language", "version"],
-      attributesToRetrieve: ["hierarchy", "content", "anchor", "url"],
-      attributesToHighlight: ["hierarchy", "hierarchy_camel", "content"],
+      attributesForFaceting: [
+        "type",
+        "lang",
+        "language",
+        "version",
+        "docusaurus_tag",
+      ],
+      attributesToRetrieve: [
+        "hierarchy",
+        "content",
+        "anchor",
+        "url",
+        "url_without_anchor",
+        "type",
+      ],
+      attributesToHighlight: ["hierarchy", "content"],
       attributesToSnippet: ["content:10"],
-      camelCaseAttributes: ["hierarchy", "hierarchy_radio", "content"],
+      camelCaseAttributes: ["hierarchy", "content"],
       searchableAttributes: [
-        "unordered(hierarchy_radio_camel.lvl0)",
-        "unordered(hierarchy_radio.lvl0)",
-        "unordered(hierarchy_radio_camel.lvl1)",
-        "unordered(hierarchy_radio.lvl1)",
-        "unordered(hierarchy_radio_camel.lvl2)",
-        "unordered(hierarchy_radio.lvl2)",
-        "unordered(hierarchy_radio_camel.lvl3)",
-        "unordered(hierarchy_radio.lvl3)",
-        "unordered(hierarchy_radio_camel.lvl4)",
-        "unordered(hierarchy_radio.lvl4)",
-        "unordered(hierarchy_radio_camel.lvl5)",
-        "unordered(hierarchy_radio.lvl5)",
-        "unordered(hierarchy_radio_camel.lvl6)",
-        "unordered(hierarchy_radio.lvl6)",
-        "unordered(hierarchy_camel.lvl0)",
         "unordered(hierarchy.lvl0)",
-        "unordered(hierarchy_camel.lvl1)",
         "unordered(hierarchy.lvl1)",
-        "unordered(hierarchy_camel.lvl2)",
         "unordered(hierarchy.lvl2)",
-        "unordered(hierarchy_camel.lvl3)",
         "unordered(hierarchy.lvl3)",
-        "unordered(hierarchy_camel.lvl4)",
         "unordered(hierarchy.lvl4)",
-        "unordered(hierarchy_camel.lvl5)",
         "unordered(hierarchy.lvl5)",
-        "unordered(hierarchy_camel.lvl6)",
         "unordered(hierarchy.lvl6)",
         "content",
       ],
@@ -110,6 +101,7 @@ new Crawler({
       advancedSyntax: true,
       attributeCriteriaComputedByMinProximity: true,
       removeWordsIfNoResults: "allOptional",
+      separatorsToIndex: "_",
     },
   },
 })
