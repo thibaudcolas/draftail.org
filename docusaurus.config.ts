@@ -168,6 +168,7 @@ const config: Config = {
     algolia: {
       appId: "BPY62S0W69",
       apiKey: "955c25bc248c31c769967251c34747a9",
+      askAi: "PEufRDB0CoHu",
       indexName: "draftail",
       contextualSearch: true,
     },
