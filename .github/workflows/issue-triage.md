@@ -1,8 +1,15 @@
 ---
+description: |
+  Intelligent issue triage assistant that processes new and reopened issues.
+  Analyzes issue content, selects appropriate labels, detects spam, gathers context
+  from similar issues, and provides analysis notes including debugging strategies,
+  reproduction steps, and resource links. Helps maintainers quickly understand and
+  prioritize incoming issues.
+
 on:
   issues:
     types: [opened, reopened]
-  stop-after: +30d # workflow will no longer trigger after 30 days. Remove this and recompile to run indefinitely
+  stop-after: +1mo # workflow will no longer trigger after 1 month. Remove this and recompile to run indefinitely
   reaction: eyes
 
 permissions: read-all
@@ -19,7 +26,7 @@ tools:
   web-search:
 
 timeout-minutes: 10
-source: githubnext/agentics/workflows/issue-triage.md@09e77ed2e49f0612e258db12839e86e8e2a6c692
+source: githubnext/agentics/workflows/issue-triage.md@d3422bf940923ef1d43db5559652b8e1e71869f3
 ---
 
 # Agentic Triage
