@@ -50,7 +50,25 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-  plugins: [],
+  plugins: [
+    [
+      "docusaurus-plugin-llms",
+      {
+        generateLLMsTxt: true,
+        generateLLMsFullTxt: true,
+        generateMarkdownFiles: true,
+        docsDir: "docs",
+        includeBlog: false,
+        excludeImports: true,
+        removeDuplicateHeadings: true,
+        title: "Draftail documentation",
+        description:
+          "Complete documentation for Draftail - a configurable rich text editor built with Draft.js",
+        includeOrder: ["GettingStarted.md", "API.md", "**/*.md"],
+        includeUnmatchedLast: true,
+      },
+    ],
+  ],
   themeConfig: {
     colorMode: {
       respectPrefersColorScheme: true,
