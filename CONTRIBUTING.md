@@ -44,3 +44,7 @@ The wesite’s icons come from [IcoMoon](https://icomoon.io/). Emojis come from 
 The demo site contains static content exported with [draftjs_exporter](https://github.com/springload/draftjs_exporter). It is placed there for SEO, and also to make the loading experience nicer.
 
 To regenerate it, get the serialised ContentState for the index page's editor (in `sessionStorage`), go to [the Draftail playground](http://playground.draftail.org/), and place the ContentState in the `sessionStorage` value of that editor.
+
+## Content
+
+- Always use [relative file links](https://docusaurus.io/docs/markdown-features/links) to `.md` files inside Markdown docs to preserve link validation, and in-editor file navigation.

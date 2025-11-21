@@ -85,12 +85,12 @@ const config: Config = {
       },
       items: [
         {
-          to: "docs/getting-started",
+          to: "docs/introduction/getting-started",
           label: "Docs",
           position: "right",
         },
         {
-          to: "docs/api",
+          to: "docs/reference/api",
           label: "API",
           position: "right",
         },
@@ -115,15 +115,15 @@ const config: Config = {
           items: [
             {
               label: "Getting Started",
-              to: "docs/getting-started",
+              to: "docs/introduction/getting-started",
             },
             {
               label: "User Guide",
-              to: "docs/user-guide",
+              to: "docs/user-guides/user-guide",
             },
             {
               label: "API Reference",
-              to: "docs/api",
+              to: "docs/reference/api",
             },
             {
               label: "Versions",

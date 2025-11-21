@@ -32,8 +32,10 @@ const Features = () => {
             >
               Draftail is easy to use regardless of skill level. All rich text
               formatting is available via the toolbar, and{" "}
-              <Link to="/docs/keyboard-shortcuts">keyboard shortcuts</Link>.
-              Power users can even use Markdown!
+              <Link to="/docs/user-guides/keyboard-shortcuts">
+                keyboard shortcuts
+              </Link>
+              . Power users can even use Markdown!
             </FeatureCard>
           </div>
           <div className="col col--4 margin-bottom--lg">
@@ -75,7 +77,9 @@ const Features = () => {
               title="Ready for translations"
             >
               All of the editor's labels can easily be translated. Have a look
-              at our <Link to="/docs/i18n">example with react-intl</Link>.
+              at our{" "}
+              <Link to="/docs/api-reference/i18n">example with react-intl</Link>
+              .
             </FeatureCard>
           </div>
           <div className="col col--6 margin-bottom--lg">
@@ -85,7 +89,7 @@ const Features = () => {
             >
               Draftail's UI is very simple to customise, so it integrates
               perfectly within your app. Take a look at the{" "}
-              <Link to="/docs/ui-theming">UI theming</Link> docs.
+              <Link to="/docs/api-reference/ui-theming">UI theming</Link> docs.
             </FeatureCard>
           </div>
         </div>
@@ -148,7 +152,7 @@ export default function Home() {
                 "button button--primary button--lg",
                 styles.getStarted,
               )}
-              to={useBaseUrl("/docs/getting-started")}
+              to={useBaseUrl("/docs/introduction/getting-started")}
             >
               Get Started
             </Link>
@@ -187,8 +191,10 @@ export default function Home() {
             <ul className="bullet-list">
               <li>
                 Support for{" "}
-                <a href="/docs/keyboard-shortcuts">keyboard shortcuts</a>. Lots
-                of them!
+                <a href="/docs/user-guides/keyboard-shortcuts">
+                  keyboard shortcuts
+                </a>
+                . Lots of them!
               </li>
               <li>
                 Autolists – start a line with <kbd>-</kbd>, <kbd>*</kbd>,{" "}

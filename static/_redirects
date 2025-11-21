@@ -1,0 +1,28 @@
+# Redirects for refactored docs structure
+# Introduction
+/docs/getting-started /docs/introduction/getting-started 301
+/docs/formatting-options /docs/introduction/formatting-options 301
+/docs/inline-styles /docs/introduction/inline-styles 301
+/docs/blocks /docs/introduction/blocks 301
+/docs/entities /docs/introduction/entities 301
+/docs/decorators /docs/introduction/decorators 301
+/docs/arbitrary-controls /docs/introduction/arbitrary-controls 301
+/docs/plugins /docs/introduction/plugins 301
+/docs/importing-and-exporting-html /docs/guides/importing-and-exporting-html 301
+/docs/form-validation /docs/guides/form-validation 301
+/docs/getting-started-with-extensions /docs/guides/getting-started-with-extensions 301
+/docs/draftjs-vs-draftail /docs/guides/draftjs-vs-draftail 301
+/docs/extensions-tutorial-max-length /docs/guides/extensions-tutorial-max-length 301
+/docs/extensions-tutorial-linkify /docs/guides/extensions-tutorial-linkify 301
+/docs/user-guide /docs/user-guides/user-guide 301
+/docs/keyboard-shortcuts /docs/user-guides/keyboard-shortcuts 301
+/docs/markdown-support /docs/user-guides/markdown-support 301
+/docs/api /docs/reference/api 301
+/docs/content-storage /docs/reference/content-storage 301
+/docs/controlled-component /docs/reference/controlled-component 301
+/docs/ui-theming /docs/reference/ui-theming 301
+/docs/customising-icons /docs/reference/customising-icons 301
+/docs/customising-toolbars /docs/reference/customising-toolbars 301
+/docs/i18n /docs/reference/i18n 301
+/docs/browser-support /docs/reference/browser-support 301
+/docs/troubleshooting /docs/reference/troubleshooting 301

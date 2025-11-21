@@ -1,34 +1,38 @@
 {
   "docs": {
     "Introduction": [
-      "getting-started",
-      "formatting-options",
-      "inline-styles",
-      "blocks",
-      "entities",
-      "decorators",
-      "arbitrary-controls",
-      "plugins"
+      "introduction/getting-started",
+      "introduction/formatting-options",
+      "introduction/inline-styles",
+      "introduction/blocks",
+      "introduction/entities",
+      "introduction/decorators",
+      "introduction/arbitrary-controls",
+      "introduction/plugins"
     ],
     "Guides": [
-      "importing-and-exporting-html",
-      "form-validation",
-      "getting-started-with-extensions",
-      "draftjs-vs-draftail",
-      "extensions-tutorial-max-length",
-      "extensions-tutorial-linkify"
+      "guides/importing-and-exporting-html",
+      "guides/form-validation",
+      "guides/getting-started-with-extensions",
+      "guides/draftjs-vs-draftail",
+      "guides/extensions-tutorial-max-length",
+      "guides/extensions-tutorial-linkify"
     ],
-    "User guides": ["user-guide", "keyboard-shortcuts", "markdown-support"],
-    "API reference": [
-      "api",
-      "content-storage",
-      "controlled-component",
-      "ui-theming",
-      "customising-icons",
-      "customising-toolbars",
-      "i18n",
-      "browser-support",
-      "troubleshooting"
+    "User guides": [
+      "user-guides/user-guide",
+      "user-guides/keyboard-shortcuts",
+      "user-guides/markdown-support"
+    ],
+    "Reference": [
+      "reference/api",
+      "reference/content-storage",
+      "reference/controlled-component",
+      "reference/ui-theming",
+      "reference/customising-icons",
+      "reference/customising-toolbars",
+      "reference/i18n",
+      "reference/browser-support",
+      "reference/troubleshooting"
     ]
   }
 }

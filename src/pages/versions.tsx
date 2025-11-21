@@ -58,7 +58,7 @@ export default (): ReactNode => {
                 <tr>
                   <th>{latestVersion}</th>
                   <td>
-                    <a href={useBaseUrl("docs/getting-started")}>
+                    <a href={useBaseUrl("docs/introduction/getting-started")}>
                       Documentation
                     </a>
                   </td>

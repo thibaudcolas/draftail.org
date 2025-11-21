@@ -17,15 +17,15 @@ A few years later, Draftail is now very capable for many use cases, and it comes
 
 The main goal of Draftail is to provide a bullet-proof content editing experience for basic rich text content. A modern take on WYSIWYG.
 
-- All of the interactions with the editor should be doable with [keyboard shortcuts](/docs/keyboard-shortcuts).
-- Power users should be able to use [Markdown shortcuts](/docs/markdown-support) in the editor to format content even faster.
+- All of the interactions with the editor should be doable with [keyboard shortcuts](/docs/user-guides/keyboard-shortcuts).
+- Power users should be able to use [Markdown shortcuts](/docs/user-guides/markdown-support) in the editor to format content even faster.
 - Copy-paste, drag and drop, should just work.
 
 We also want Draftail to be heavily customisable, just like Draft.js is, but with sane defaults.
 
 - Implementing basic formatting with strong guarantees should just be a matter of configuration – No need to reinvent your own Draft.js toolbar.
 - More advanced extensions should be able to reach out for lower-level APIs, without compromising on consitency of the experience for end users.
-- Experimenting with new capabilities to the editor shouldn’t require constant core changes – there should be [plugin APIs](/docs/plugins).
+- Experimenting with new capabilities to the editor shouldn't require constant core changes – there should be [plugin APIs](/docs/introduction/plugins).
 
 As a project, it’s also fundamental that:
 
