@@ -52,6 +52,7 @@ const config: Config = {
   ],
   plugins: [
     [
+      // https://github.com/rachfop/docusaurus-plugin-llms
       "docusaurus-plugin-llms",
       {
         generateLLMsTxt: true,
@@ -64,7 +65,14 @@ const config: Config = {
         title: "Draftail documentation",
         description:
           "Complete documentation for Draftail - a configurable rich text editor built with Draft.js",
-        includeOrder: ["GettingStarted.md", "API.md", "**/*.md"],
+        includeOrder: [
+          "docs/introduction/getting-started.md",
+          "docs/reference/api.md",
+          "docs/introduction/**/*.md",
+          "docs/guides/**/*.md",
+          "docs/reference/**/*.md",
+        ],
+        ignoreFiles: ["docs/user-guides/**/*.md"],
         includeUnmatchedLast: true,
       },
     ],
