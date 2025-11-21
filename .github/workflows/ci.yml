@@ -26,5 +26,5 @@ jobs:
       - run: git log -1 --pretty=%B >> latest.log && ./.git/hooks/commit-msg latest.log
       - uses: biomejs/setup-biome@v2
       - run: biome ci
-      - run: npx prettier --check '**/?(.)*.{md,yaml,yml,html}'
+      - run: npx prettier --check '**/*.{md,yaml,yml,html}'
       - run: npx tsc --noEmit
