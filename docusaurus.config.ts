@@ -25,8 +25,8 @@ const config: Config = {
         docs: {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          editUrl:
-            "https://github.com/thibaudcolas/draftail.org/edit/main/docs/",
+          editUrl: ({ versionDocsDirPath, docPath }) =>
+            `https://github.com/thibaudcolas/draftail.org/edit/main/${versionDocsDirPath}/${docPath}`,
           path: "docs",
           sidebarPath: "./sidebars.ts",
         },
