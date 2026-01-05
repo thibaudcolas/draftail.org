@@ -62,9 +62,9 @@ const config: Config = {
         includeBlog: false,
         excludeImports: true,
         removeDuplicateHeadings: true,
-        title: "Draftail documentation",
+        title: "Draftail and Draft.js documentation",
         description:
-          "Complete documentation for Draftail - a configurable rich text editor built with Draft.js",
+          "Complete documentation for Draftail, a configurable rich text editor built with Draft.js. Also includes the Draft.js documentation directly combined into the Draftail documentation.",
         includeOrder: [
           "docs/introduction/getting-started.md",
           "docs/reference/api.md",
@@ -72,8 +72,42 @@ const config: Config = {
           "docs/guides/**/*.md",
           "docs/reference/**/*.md",
         ],
-        ignoreFiles: ["docs/user-guides/**/*.md"],
+        ignoreFiles: ["docs/user-guides/*"],
         includeUnmatchedLast: true,
+        customLLMFiles: [
+          {
+            filename: "draftail-llms.txt",
+            ignorePatterns: ["docs/draft-js/**/*.md"],
+            fullContent: false,
+            title: "Draftail documentation",
+            description:
+              "Complete documentation for Draftail, a configurable rich text editor built with Draft.js.",
+          },
+          {
+            filename: "draftail-llms-full.txt",
+            ignorePatterns: ["docs/draft-js/**/*.md"],
+            fullContent: true,
+            title: "Draftail documentation",
+            description:
+              "Complete documentation for Draftail, a configurable rich text editor built with Draft.js.",
+          },
+          {
+            filename: "draft-js-llms.txt",
+            includePatterns: ["docs/draft-js/**/*.md"],
+            fullContent: false,
+            title: "Draft.js documentation",
+            description:
+              "Documentation for the low-level Draft.js library to build rich text editors with React.",
+          },
+          {
+            filename: "draft-js-llms-full.txt",
+            includePatterns: ["docs/draft-js/**/*.md"],
+            fullContent: true,
+            title: "Draft.js documentation",
+            description:
+              "Documentation for the low-level Draft.js library to build rich text editors with React.",
+          },
+        ],
       },
     ],
   ],
