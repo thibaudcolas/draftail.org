@@ -28,7 +28,6 @@ hr {
 
 blockquote {
   color: inherit;
-  background: #fafbfc;
   border-inline-start-color: var(--color-e0e0e0);
 }
 
@@ -40,17 +39,10 @@ table td code {
 
 /* Links within the content of pages */
 article a[class=""] {
-  color: var(--color-1a1a1a);
-  background: #eef8ff;
   border-bottom: 1px dotted #007d7e;
 
   &:hover {
     text-decoration: none;
-    background-color: initial;
-  }
-
-  & code {
-    background-color: initial;
   }
 }
 
