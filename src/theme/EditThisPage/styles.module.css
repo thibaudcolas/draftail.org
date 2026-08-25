@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.9em;
+}
+
+.separator {
+  margin: 0 0.4rem;
+  color: var(--ifm-color-emphasis-400);
+  opacity: 0.5;
+}
+
+.copyButton {
+  appearance: none;
+  background: none;
+  border: none;
+  color: var(--ifm-link-color);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font: inherit;
+  padding: 0;
+  text-decoration: var(--ifm-link-decoration);
+  white-space: nowrap;
+}
+
+.copyButton:hover {
+  color: var(--ifm-link-hover-color);
+  text-decoration: var(--ifm-link-hover-decoration);
+}
+
+.icon {
+  margin-right: 0.2rem;
+  width: 1em;
+  height: 1em;
+}
+
+@media (max-width: 996px) {
+  .container {
+    justify-content: flex-start;
+  }
+}
