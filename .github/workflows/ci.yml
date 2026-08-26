@@ -20,7 +20,7 @@ jobs:
       - run: npm run prepare
       # Test commit message validation in CI.
       - run: git log -1 --pretty=%B >> latest.log && ./.git/hooks/commit-msg latest.log
-      - uses: biomejs/setup-biome@v2
+      - uses: biomejs/setup-biome@4c91541eaada48f67d7dbd7833600ce162b68f51 # v2
       - run: biome ci
       - run: npx prettier --check '**/*.{md,yaml,yml,html}'
       - run: npx tsc --noEmit
