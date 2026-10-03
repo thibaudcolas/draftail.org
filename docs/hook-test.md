@@ -1,3 +1,0 @@
-# Badly formatted
-
-Text here.
