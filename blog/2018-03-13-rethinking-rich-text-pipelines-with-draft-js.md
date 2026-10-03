@@ -78,7 +78,7 @@ The Draft.js -&gt; HTML conversion may seem like extra overhead, but its impact 
 - Adding classes to list items, `ul` and `ol` tags so you can use your favourite CSS architecture or methodology.
 - Automagically making all links pointing to third-party sites open in a separate tabs by adding `target="_blank"` on the `a` tags.
 
-In practice, the API allows completely arbitrary rendering. It comes from the [Draft.js exporter](https://github.com/springload/draftjs_exporter), and is heavily inspired by React’s [`createElement`](https://facebook.github.io/react/docs/top-level-api.html#react.createelement) (what powers JSX):
+In practice, the API allows completely arbitrary rendering. It comes from the [Draft.js exporter](https://github.com/springload/draftjs_exporter), and is heavily inspired by React’s [`createElement`](https://react.dev/reference/react/createElement) (what powers JSX):
 
 ```python
 
@@ -120,6 +120,6 @@ Isn’t that exciting?! Unfortunately (insert sad face emoji here), this isn’t
 
 With the help of Draft.js, we are bringing more [structure and semantics](https://torchbox.com/blog/rich-text-fields-and-faster-horses/) to rich text, and making rich text more reliable for end users. This doesn’t mean that developers should start using rich text for all content. Wagtail’s StreamField still is a wonderful medium. Plain text also has a bright future.
 
-However, beyond the rich text pipeline, there is another area where Draft.js helps a lot: building better user experiences for content authors. This could be as simple as having a reliable way to measure the length of written content, or calculating other useful metrics like [reading level](https://github.com/vixdigital/wagtail-readinglevel). Or simply converting "quotes" into their “smart” equivalent, to make your site’s microcopy shine even brighter. All of those features could (and should) be available on plain-text content, and here as well Draft.js and its programmatic API could help tremendously.
+However, beyond the rich text pipeline, there is another area where Draft.js helps a lot: building better user experiences for content authors. This could be as simple as having a reliable way to measure the length of written content, or calculating other useful metrics like the reading level. Or simply converting "quotes" into their “smart” equivalent, to make your site’s microcopy shine even brighter. All of those features could (and should) be available on plain-text content, and here as well Draft.js and its programmatic API could help tremendously.
 
 [Draftail](https://www.draftail.org/) already does quite a bit in this direction, in particular with its keyboard-centric control, and we’ll explore future possibilities in an upcoming blog post.

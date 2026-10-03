@@ -132,7 +132,7 @@ function findLinkEntities(contentBlock, callback, contentState) {
 
 ## More Information
 
-See the [updated examples](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0).
+See the [updated examples](https://github.com/facebookarchive/draft-js/tree/master/examples/draft-0-10-0).
 
 <head>
   <link rel="canonical" href="https://draftjs.org/docs/v0-10-api-migration" />

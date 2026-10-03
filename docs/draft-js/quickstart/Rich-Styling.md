@@ -6,7 +6,7 @@ title: Rich Styling
 Now that we have established the basics of the top-level API, we can go a step
 further and examine how basic rich styling can be added to a `Draft` editor.
 
-A [rich text example](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/rich)
+A [rich text example](https://github.com/facebookarchive/draft-js/tree/master/examples/draft-0-10-0/rich)
 is also available to follow along.
 
 ## EditorState: Yours to Command

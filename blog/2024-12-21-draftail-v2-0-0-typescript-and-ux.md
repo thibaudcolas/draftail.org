@@ -7,7 +7,7 @@ Draftail v2.0.0! 🌈 I have been working on this new release for two years now,
 
 <!-- truncate -->
 
-According to git, it took 205 changed files with 10k additions and deletions. There are around 205 files in the repository, so pretty much everything has changed! View the full diff: [v1.4.1...v2.0.0](https://github.com/springload/draftail/compare/v1.4.1...v2.0.0). It also took [20 pre-release versions](https://www.npmjs.com/package/draftail?activeTab=versions), something I rarely bother to do but felt necessary this time.
+According to git, it took 205 changed files with 10k additions and deletions. There are around 205 files in the repository, so pretty much everything has changed! View the full diff: [v1.4.1...v2.0.0](https://github.com/wagtail/draftail/compare/v1.4.1...v2.0.0). It also took [20 pre-release versions](https://www.npmjs.com/package/draftail?activeTab=versions), something I rarely bother to do but felt necessary this time.
 
 ## Big change: TypeScript
 
@@ -39,4 +39,4 @@ This release also comes with stark improvements to contrast themes support, righ
 
 ---
 
-See the [v2.0.0 changelog](https://github.com/springload/draftail/releases/tag/v2.0.0) for a list of all other improvements.
+See the [v2.0.0 changelog](https://github.com/wagtail/draftail/releases/tag/v2.0.0) for a list of all other improvements.

@@ -3,7 +3,7 @@ title: "Draftail v1.4.0: small improvements"
 authors: thibaudcolas
 ---
 
-Long time no see! Draftail [v1.4.0](https://github.com/springload/draftail/blob/main/CHANGELOG.md#v140) is out, another release focused on gradual editor improvements.
+Long time no see! Draftail [v1.4.0](https://github.com/wagtail/draftail/blob/main/CHANGELOG.md#v140) is out, another release focused on gradual editor improvements.
 
 <!-- truncate -->
 

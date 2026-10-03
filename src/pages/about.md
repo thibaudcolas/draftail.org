@@ -34,7 +34,7 @@ As a project, it’s also fundamental that:
 
 ## Roadmap
 
-Work on the editor is tracked in GitHub issues, and prioritised with [Milestones](https://github.com/springload/draftail/milestones). Have a look if you’re wondering what we’re up to!
+Work on the editor is tracked in GitHub issues, and prioritised with [Milestones](https://github.com/wagtail/draftail/milestones). Have a look if you’re wondering what we’re up to!
 
 For the foreseeable future, high-level items on the roadmap are:
 

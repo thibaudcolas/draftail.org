@@ -8,7 +8,7 @@ want to add to our editor. The Facebook comment input, for example, provides
 blue background highlights for mentions and hashtags.
 
 To support flexibility for custom rich text, Draft provides a "decorator"
-system. The [tweet example](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/tweet)
+system. The [tweet example](https://github.com/facebookarchive/draft-js/tree/master/examples/draft-0-10-0/tweet)
 offers a live example of decorators in action.
 
 ## CompositeDecorator
@@ -112,19 +112,19 @@ const HashtagSpan = (props) => {
 The Decorator Component will receive various pieces of metadata in `props`,
 including a copy of the `contentState`, the `entityKey` if there is one, and the
 `blockKey`. For a full list of props supplied to a Decorator Component see the
-[DraftDecoratorComponentProps type](https://github.com/facebook/draft-js/blob/master/src/model/decorators/DraftDecorator.js).
+[DraftDecoratorComponentProps type](https://github.com/facebookarchive/draft-js/blob/master/src/model/decorators/DraftDecorator.js).
 
 Note that `props.children` is passed through to the rendered output. This is
 done to ensure that the text is rendered within the decorated `span`.
 
 You can use the same approach for links, as demonstrated in our
-[link example](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/link).
+[link example](https://github.com/facebookarchive/draft-js/tree/master/examples/draft-0-10-0/link).
 
 ### Beyond CompositeDecorator
 
 The decorator object supplied to an `EditorState` need only match the expectations
 of the
-[DraftDecoratorType](https://github.com/facebook/draft-js/blob/master/src/model/decorators/DraftDecoratorType.js)
+[DraftDecoratorType](https://github.com/facebookarchive/draft-js/blob/master/src/model/decorators/DraftDecoratorType.js)
 Flow type definition, which means that you can create any decorator classes
 you wish, as long as they match the expected type -- you are not bound by
 `CompositeDecorator`.

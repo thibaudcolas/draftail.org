@@ -4,7 +4,7 @@ title: API Basics
 ---
 
 This document provides an overview of the basics of the `Draft` API. A
-[working example](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/plaintext)
+[working example](https://github.com/facebookarchive/draft-js/tree/master/examples/draft-0-10-0/plaintext)
 is also available to follow along.
 
 ## Controlled Inputs

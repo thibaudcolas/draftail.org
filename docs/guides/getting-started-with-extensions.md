@@ -9,7 +9,7 @@ Do you want to write extensions for Draftail? This is a good place to start. I�
 
 It all comes down to [`contenteditable`](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content), which is very hard to make work. [Draft.js](https://draftjs.org/) partly saves us from this. If you want to know more, read on [Why Wagtail’s new editor is built with Draft.js](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js).
 
-The TL;DR; is that there are a lot of issues with specific interactions within `contenteditable`. I made a list of the [issues I know about in Draft.js / Draftail](https://github.com/springload/draftail/issues/138). Here are the high-level problems you will have to make peace with:
+The TL;DR; is that there are a lot of issues with specific interactions within `contenteditable`. I made a list of the [issues I know about in Draft.js / Draftail](https://github.com/wagtail/draftail/issues/138). Here are the high-level problems you will have to make peace with:
 
 - [Support for IMEs (Input Method Editor)](https://en.wikipedia.org/wiki/Input_method). which is how [CJK characters](https://en.wikipedia.org/wiki/CJK_characters) are entered, and how OS-level autocomplete and autocorrect works. Differently in each OS/browser, of course.
 - Mobile support. For Draft.js, Android Chrome is particularly problematic – because of its implementation of text input as IME in all languages that does not match with other browsers (including Chrome desktop).
@@ -43,9 +43,9 @@ Any kind of custom "link" feature is a good fit for a Draftail extension. This c
 
 - Links to specific entities from the domain model of your site. This could be links that have a specific icon next to them to denote their target is special, like branches of an chain store.
 - Links that are not supported by the traditional "Link" feature. Anchor links come to mind.
-- Enhanced links with embedded content, or inline previews. The official ["stock" example](http://docs.wagtail.org/en/stable/advanced_topics/customisation/extending_draftail.html#creating-new-entities) is one of those. Here is what its attached quote card looked like on the Forbes website:
+- Enhanced links with embedded content, or inline previews. The official ["stock" example](https://docs.wagtail.org/en/stable/extending/extending_draftail.html#creating-new-entities) is one of those. Here is what its attached quote card looked like on the Forbes website:
 
-[![Screenshot of a quote card in a Forbes article. The quote card expands from the word "Google" in the text, showing Google's stock and relevant articles.](../assets/getting-started-with-extensions/forbes-quotecard-expanded.png)](https://www.forbes.com/sites/jasonbloomberg/2018/02/04/the-real-reason-red-hat-is-acquiring-coreos/#70a79bf05c4d)
+[![Screenshot of a quote card in a Forbes article. The quote card expands from the word "Google" in the text, showing Google's stock and relevant articles.](../assets/getting-started-with-extensions/forbes-quotecard-expanded.png)]
 
 > Quote cards enrich Forbes articles with stock information, and also show related content that readers might find helpful.
 
@@ -65,13 +65,13 @@ By "token", I mean any content that could be confused with other plain text if i
 
 ### Editor metrics, highlighting, helpers
 
-Anything that helps the end user without necessarily changing the content. The folks from VIX Digital have some great examples from this category: [vixdigital/draftail-plugins](https://github.com/vixdigital/draftail-plugins).
+Anything that helps the end user without necessarily changing the content. For example, VIX Digital had built some great examples in this category, such as a reading level plugin for Draft.js.
 
 - Text metrics – content length, readability, reading time, and much more.
 - Highlighting – be it syntax highlighting for programmers, or highlighting of specific words that are particularly important in the content.
 - Spellcheckers and writing assistants. They will highlight content, as well as offer alternative text.
 
-[![Screenshot of the reading level plugin, with readability metrics updating as the user types in the editor](../assets/getting-started-with-extensions/reading-level-plugin.gif)](https://vixdigital.github.io/draftail-plugins/)
+[![Screenshot of the reading level plugin, with readability metrics updating as the user types in the editor](../assets/getting-started-with-extensions/reading-level-plugin.gif)](../assets/getting-started-with-extensions/reading-level-plugin.gif)
 
 > The Reading Level plugin from VIX Digital is a great example. The metrics help you understand your content better, without interrupting the writing flow.
 > Better yet, it updates as you type, and is helpful regardless of whether your content is rich text or not.

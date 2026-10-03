@@ -74,7 +74,7 @@ Draft.js represents each block with the following attributes:
 
 The block `type` generally defines how a block is meant to be used in the editor, and displayed later on in the content lifecycle. Blocks are `unstyled` by default.
 
-Draft.js comes with [predefined types](https://github.com/facebook/draft-js/blob/master/src/model/immutable/DefaultDraftBlockRenderMap.js), which generally map to HTML elements:
+Draft.js comes with [predefined types](https://github.com/facebookarchive/draft-js/blob/master/src/model/immutable/DefaultDraftBlockRenderMap.js), which generally map to HTML elements:
 
 - `unstyled`
 - `header-one`
@@ -93,7 +93,7 @@ Draft.js comes with [predefined types](https://github.com/facebook/draft-js/blob
 
 `inlineStyleRanges` lists all of the locations in the block’s text where styles have been applied, based on starting `offset` and `length`. When multiple styles are applied to a given chunk of text, the ranges can overlap.
 
-Here as well, Draft.js comes with [predefined types of styles](https://github.com/facebook/draft-js/blob/master/src/model/immutable/DefaultDraftInlineStyle.js):
+Here as well, Draft.js comes with [predefined types of styles](https://github.com/facebookarchive/draft-js/blob/master/src/model/immutable/DefaultDraftInlineStyle.js):
 
 - `BOLD`
 - `CODE`

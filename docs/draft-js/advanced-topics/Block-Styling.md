@@ -13,7 +13,7 @@ to specify classes that should be applied to blocks at render time.
 ## DraftStyleDefault.css
 
 The Draft library includes default block CSS styles within
-[DraftStyleDefault.css](https://github.com/facebook/draft-js/blob/master/src/component/utils/DraftStyleDefault.css). _(Note that the annotations on the CSS class names are
+[DraftStyleDefault.css](https://github.com/facebookarchive/draft-js/blob/master/src/component/utils/DraftStyleDefault.css). _(Note that the annotations on the CSS class names are
 artifacts of Facebook's internal CSS module management system.)_
 
 These CSS rules are largely devoted to providing default styles for list items,

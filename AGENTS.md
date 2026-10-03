@@ -4,7 +4,7 @@
 
 ## Project overview
 
-This is the source of [draftail.org](https://www.draftail.org/), the documentation website for [Draftail](https://github.com/springload/draftail) (the editor library lives in a separate repository). It is a [Docusaurus](https://docusaurus.io/) site with documentation, blog posts, versioned docs, and demos.
+This is the source of [draftail.org](https://www.draftail.org/), the documentation website for [Draftail](https://github.com/wagtail/draftail) (the editor library lives in a separate repository). It is a [Docusaurus](https://docusaurus.io/) site with documentation, blog posts, versioned docs, and demos.
 
 **Key technologies:**
 
@@ -33,6 +33,7 @@ Documentation lives in `docs/`, with the current draft of the next version. Publ
 - `npm` for dependency management
 - `biome` for JS/TS/CSS/JSON, `prettier` for Markdown/YAML/HTML
 - `tsc --noEmit` for type checking
+- `lychee` for link checking (`npm run check-links`)
 - `commitlint` with Conventional Commits, run by a Git hook on every commit
 - Git hooks (Biome, Prettier, tsc on staged files) installed with `npm run prepare`
 - GitHub Actions for CI, Netlify for automatic deploys of `main`

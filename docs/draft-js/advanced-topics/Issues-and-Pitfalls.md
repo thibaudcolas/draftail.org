@@ -109,8 +109,8 @@ ReactDOM.render(<App />, document.getElementById("root"))
 Draft.js is moving towards full mobile support, but does not officially support
 mobile browsers at this point. There are some known issues affecting Android and
 iOS - see issues tagged
-['android'](https://github.com/facebook/draft-js/labels/android) or
-['ios'](https://github.com/facebook/draft-js/labels/ios) for the current status.
+['android'](https://github.com/facebookarchive/draft-js/labels/android) or
+['ios'](https://github.com/facebookarchive/draft-js/labels/ios) for the current status.
 
 <head>
   <link rel="canonical" href="https://draftjs.org/docs/advanced-topics-issues-and-pitfalls" />

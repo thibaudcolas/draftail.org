@@ -44,7 +44,6 @@ Why this happened, and how – read the following blog posts:
 ### More Draft.js
 
 - [Stickers](https://www.draft-js-plugins.com/plugin/sticker)
-- [Mathjax](https://efloti.github.io/draft-js-mathjax-plugin/)
 - [KaTeX](https://letranloc.github.io/draft-js-katex-plugin/)
 - [Markdown shortcuts](https://ngs.github.io/draft-js-markdown-shortcuts-plugin/)
 

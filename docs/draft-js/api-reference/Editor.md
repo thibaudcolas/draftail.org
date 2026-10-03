@@ -5,7 +5,7 @@ title: Editor Component
 
 This article discusses the API and props of the core controlled contentEditable
 component itself, `Editor`. Props are defined within
-[`DraftEditorProps`](https://github.com/facebook/draft-js/blob/master/src/component/base/DraftEditorProps.js).
+[`DraftEditorProps`](https://github.com/facebookarchive/draft-js/blob/master/src/component/base/DraftEditorProps.js).
 
 ## Props
 
@@ -41,7 +41,7 @@ placeholder?: string
 Optional placeholder string to display when the editor is empty.
 
 Note: You can use CSS to style or hide your placeholder as needed. For instance,
-in the [rich editor example](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/rich), the placeholder is hidden when the user changes block styling in an empty editor.
+in the [rich editor example](https://github.com/facebookarchive/draft-js/tree/master/examples/draft-0-10-0/rich), the placeholder is hidden when the user changes block styling in an empty editor.
 This is because the placeholder may not line up with the cursor when the style
 is changed.
 
@@ -183,7 +183,7 @@ Default is `false`.
 ### ARIA props
 
 These props allow you to set accessibility properties on your editor. See
-[DraftEditorProps](https://github.com/facebook/draft-js/blob/master/src/component/base/DraftEditorProps.js) for the exhaustive list of supported attributes.
+[DraftEditorProps](https://github.com/facebookarchive/draft-js/blob/master/src/component/base/DraftEditorProps.js) for the exhaustive list of supported attributes.
 
 ### `editorKey`
 

@@ -3,7 +3,7 @@ title: "Draftail v1.2.0: supporting modern experiences"
 authors: thibaudcolas
 ---
 
-Draftail [v1.2.0](https://github.com/springload/draftail/blob/main/CHANGELOG.md#v120) is out, and it packs a punch. While the [previous release](/blog/2019/02/08/draftail-v1-1-0-a-quality-of-life-release) focused on maintainability and bug fixes, this time around it's all about shiny new features: support for the [Draft.js Plugins](https://www.draft-js-plugins.com/) architecture and its plugin ecosystem, and new ways to format content with Markdown shortcuts.
+Draftail [v1.2.0](https://github.com/wagtail/draftail/blob/main/CHANGELOG.md#v120) is out, and it packs a punch. While the [previous release](/blog/2019/02/08/draftail-v1-1-0-a-quality-of-life-release) focused on maintainability and bug fixes, this time around it's all about shiny new features: support for the [Draft.js Plugins](https://www.draft-js-plugins.com/) architecture and its plugin ecosystem, and new ways to format content with Markdown shortcuts.
 
 <!-- truncate -->
 
@@ -47,12 +47,12 @@ Again, experimenting with this new type of interaction pattern is made possible 
 
 Here are examples of feature requests to Draftail that can now be implemented as extensions, thanks to the new APIs:
 
-- [#62 – Add "linkify" feature](https://github.com/springload/draftail/issues/62)
-- [#64 – Add editor UI with Medium-style controls](https://github.com/springload/draftail/issues/64)
-- [#113 – Add character replacements for typing convenience & typographic correctness](https://github.com/springload/draftail/issues/113)
-- [#118 – Add support for emojis](https://github.com/springload/draftail/issues/118)
-- [#158 – Support atomic blocks (images, embeds, hr, etc) without wrapper text blocks](https://github.com/springload/draftail/issues/158)
-- [#169 – Support advanced customisations to block rendering](https://github.com/springload/draftail/issues/169)
+- [#62 – Add "linkify" feature](https://github.com/wagtail/draftail/issues/62)
+- [#64 – Add editor UI with Medium-style controls](https://github.com/wagtail/draftail/issues/64)
+- [#113 – Add character replacements for typing convenience & typographic correctness](https://github.com/wagtail/draftail/issues/113)
+- [#118 – Add support for emojis](https://github.com/wagtail/draftail/issues/118)
+- [#158 – Support atomic blocks (images, embeds, hr, etc) without wrapper text blocks](https://github.com/wagtail/draftail/issues/158)
+- [#169 – Support advanced customisations to block rendering](https://github.com/wagtail/draftail/issues/169)
 
 ## Markdown shortcuts for inline styles
 
@@ -64,4 +64,4 @@ Have a look at the [keyboard shortcuts](/docs/keyboard-shortcuts) to see what’
 
 ---
 
-Now I’m excited to see what people will be building with those new APIs! Please come by the [#draftail](https://github.com/wagtail/wagtail/wiki/Slack) Slack channel if you need any help, or don’t hesitate to [participate in the Draftail issue tracker](https://github.com/springload/draftail).
+Now I’m excited to see what people will be building with those new APIs! Please come by the [#draftail](https://github.com/wagtail/wagtail/wiki/Slack) Slack channel if you need any help, or don’t hesitate to [participate in the Draftail issue tracker](https://github.com/wagtail/draftail).

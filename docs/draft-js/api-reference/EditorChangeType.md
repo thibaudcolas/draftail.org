@@ -3,7 +3,7 @@ id: editor-change-type
 title: EditorChangeType
 ---
 
-[EditorChangeType](https://github.com/facebook/draft-js/blob/master/src/model/immutable/EditorChangeType.js)
+[EditorChangeType](https://github.com/facebookarchive/draft-js/blob/master/src/model/immutable/EditorChangeType.js)
 is an enum that lists the possible set of change operations that can be handled
 the Draft model. It is represented as a Flow type, as a union of strings.
 
@@ -16,7 +16,7 @@ handling, spellcheck behavior, and more. Therefore, while it is possible to
 provide an arbitrary string value as the `changeType` parameter here, you should
 avoid doing so.
 
-We highly recommend that you install [Flow](http://flowtype.org) to perform
+We highly recommend that you install [Flow](https://flow.org) to perform
 static typechecking on your project. Flow will enforce the use of an appropriate
 `EditorChangeType` value.
 
@@ -48,7 +48,7 @@ An inline style is being applied or removed for one or more characters.
 
 ### `move-block`
 
-A block is being moved within the [BlockMap](https://github.com/facebook/draft-js/blob/master/src/model/immutable/BlockMap.js).
+A block is being moved within the [BlockMap](https://github.com/facebookarchive/draft-js/blob/master/src/model/immutable/BlockMap.js).
 
 ### `delete-character`
 
@@ -61,7 +61,7 @@ One or more characters is being inserted at a selection state.
 ### `insert-fragment`
 
 A "fragment" of content (i.e. a
-[BlockMap](https://github.com/facebook/draft-js/blob/master/src/model/immutable/BlockMap.js))
+[BlockMap](https://github.com/facebookarchive/draft-js/blob/master/src/model/immutable/BlockMap.js))
 is being inserted at a selection state.
 
 ### `redo`
@@ -89,5 +89,5 @@ An undo operation is being performed. Since undo behavior is handled by the
 Draft core, it is unlikely that you will need to use this explicitly.
 
 <head>
-  <link rel="canonical" href="https://draftjs.org/docs/api-reference-change-type" />
+  <link rel="canonical" href="https://draftjs.org/docs/api-reference-editor-change-type" />
 </head>

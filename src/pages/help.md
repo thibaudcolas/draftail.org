@@ -23,4 +23,4 @@ There are some questions & answers on Stack Overflow – either searching for [
 
 ## GitHub
 
-At our [GitHub repository](https://github.com/springload/draftail) – Browse and submit [issues](https://github.com/springload/draftail/issues) or [pull requests](https://github.com/springload/draftail/pulls) for bugs or enhancements. Be sure to also check out our [contributing guidelines](https://github.com/springload/draftail/blob/main/docs/CONTRIBUTING.md).
+At our [GitHub repository](https://github.com/wagtail/draftail) – Browse and submit [issues](https://github.com/wagtail/draftail/issues) or [pull requests](https://github.com/wagtail/draftail/pulls) for bugs or enhancements. Be sure to also check out our [contributing guidelines](https://github.com/wagtail/draftail/blob/main/docs/CONTRIBUTING.md).

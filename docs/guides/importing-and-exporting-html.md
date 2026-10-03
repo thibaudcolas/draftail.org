@@ -19,7 +19,7 @@ There are a lot of tools available to convert content. We built the Python [Draf
 
 The key is to make sure that the content converters and the editor all use the same identifiers for formatting types: [inline styles](../introduction/inline-styles.md), [blocks](../introduction/blocks.md), and [entities](../introduction/entities.md), and that they all preserve the same attributes/props when needed.
 
-For common formats, Draft.js has its predefined identifiers: [block types](https://github.com/facebook/draft-js/blob/master/src/model/constants/DraftBlockType.js), [inline styles](https://github.com/facebook/draft-js/blob/master/src/model/immutable/DefaultDraftInlineStyle.js), and `LINK` and `IMAGE` for entities. Draftail [exposes the same identifiers](../reference/api.md#content-format-identifiers) (and some more) for convenience, although using the exact same string everywhere will also work.
+For common formats, Draft.js has its predefined identifiers: [block types](https://github.com/facebookarchive/draft-js/blob/master/src/model/constants/DraftBlockType.js), [inline styles](https://github.com/facebookarchive/draft-js/blob/master/src/model/immutable/DefaultDraftInlineStyle.js), and `LINK` and `IMAGE` for entities. Draftail [exposes the same identifiers](../reference/api.md#content-format-identifiers) (and some more) for convenience, although using the exact same string everywhere will also work.
 
 ```js
 import { INLINE_STYLE, BLOCK_TYPE, ENTITY_TYPE } from "draftail"

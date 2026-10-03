@@ -150,7 +150,7 @@ getEntity(): ?string
 ```
 
 Returns the entity key (if any) for this character, as mapped to the global set of
-entities tracked by the [`Entity`](https://github.com/facebook/draft-js/blob/master/src/model/entity/DraftEntity.js)
+entities tracked by the [`Entity`](https://github.com/facebookarchive/draft-js/blob/master/src/model/entity/DraftEntity.js)
 module.
 
 By tracking a string key here, we can keep the corresponding metadata separate

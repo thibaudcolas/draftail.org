@@ -56,41 +56,41 @@ stripPastedStyles: boolean
 multiline: boolean
 
 /** Set whether spellcheck is turned on for your editor.
- * See https://draftjs.org/docs/api-reference-editor.html#spellcheck.
+ * See https://draftjs.org/docs/api-reference-editor#spellcheck.
  */
 spellCheck: boolean
 
 /** Set whether the editor should be rendered in readOnly mode.
- * See https://draftjs.org/docs/api-reference-editor.html#readonly
+ * See https://draftjs.org/docs/api-reference-editor#readonly
  */
 readOnly: boolean
 
 /** Optionally set the overriding text alignment for this editor.
- * See https://draftjs.org/docs/api-reference-editor.html#textalignment.
+ * See https://draftjs.org/docs/api-reference-editor#textalignment.
  */
 textAlignment?: string | null
 
 /** Optionally set the overriding text directionality for this editor.
- * See https://draftjs.org/docs/api-reference-editor.html#textdirectionality.
+ * See https://draftjs.org/docs/api-reference-editor#textdirectionality.
  */
 textDirectionality: TextDirectionality
 
 /** Set if auto capitalization is turned on and how it behaves.
- * See https://draftjs.org/docs/api-reference-editor.html#autocapitalize-string.
+ * See https://draftjs.org/docs/api-reference-editor#autocapitalize-string.
  */
 autoCapitalize?: string | null
 
 /** Set if auto complete is turned on and how it behaves.
- * See https://draftjs.org/docs/api-reference-editor.html#autocomplete-string.
+ * See https://draftjs.org/docs/api-reference-editor#autocomplete-string.
  */
 autoComplete?: string | null
 
 /** Set if auto correct is turned on and how it behaves.
- * See https://draftjs.org/docs/api-reference-editor.html#autocorrect-string.
+ * See https://draftjs.org/docs/api-reference-editor#autocorrect-string.
  */
 autoCorrect?: string | null
 
-/** See https://draftjs.org/docs/api-reference-editor.html#aria-props. */
+/** See https://draftjs.org/docs/api-reference-editor#aria-props. */
 ariaDescribedBy?: string | null
 ariaExpanded?: boolean | null
 ariaLabel?: string | null
@@ -293,7 +293,7 @@ Each item in `plugins` follows the [draft-js-plugins API](https://github.com/dra
 
 ## Managing focus
 
-The `DraftailEditor` has a `focus()` API [like that of Draft.js](https://draftjs.org/docs/advanced-topics-managing-focus.html#content). Use it to imperatively move focus to the editor. There are also `onFocus` and `onBlur` props to hook into the editor’s focus lifecycle, for example for [form validation](/guides/form-validation.md).
+The `DraftailEditor` has a `focus()` API [like that of Draft.js](https://draftjs.org/docs/advanced-topics-managing-focus#content). Use it to imperatively move focus to the editor. There are also `onFocus` and `onBlur` props to hook into the editor’s focus lifecycle, for example for [form validation](/guides/form-validation.md).
 
 ## Content format identifiers
 
@@ -306,7 +306,7 @@ import { INLINE_STYLE, BLOCK_TYPE, ENTITY_TYPE } from "draftail"
 For inline styles:
 
 ```js
-// See https://github.com/facebook/draft-js/blob/master/src/model/immutable/DefaultDraftInlineStyle.js
+// See https://github.com/facebookarchive/draft-js/blob/master/src/model/immutable/DefaultDraftInlineStyle.js
 export const INLINE_STYLE = {
   BOLD: "BOLD",
   ITALIC: "ITALIC",
@@ -328,7 +328,7 @@ export const INLINE_STYLE = {
 For blocks:
 
 ```js
-// See https://github.com/facebook/draft-js/blob/master/src/model/immutable/DefaultDraftBlockRenderMap.js
+// See https://github.com/facebookarchive/draft-js/blob/master/src/model/immutable/DefaultDraftBlockRenderMap.js
 export const BLOCK_TYPE = {
   // This is used to represent a normal text block (paragraph).
   UNSTYLED: "unstyled",

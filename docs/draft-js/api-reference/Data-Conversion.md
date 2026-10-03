@@ -15,7 +15,7 @@ and from markdown or markup, since different clients may have different requirem
 for these formats. We instead provide JavaScript objects that can be converted
 to other formats as needed.
 
-The Flow type [`RawDraftContentState`](https://github.com/facebook/draft-js/blob/master/src/model/encoding/RawDraftContentState.js)
+The Flow type [`RawDraftContentState`](https://github.com/facebookarchive/draft-js/blob/master/src/model/encoding/RawDraftContentState.js)
 denotes the expected structure of the raw format of the contents. The raw state
 contains a list of content blocks, as well as a map of all relevant entity
 objects.
@@ -63,7 +63,7 @@ Given an HTML fragment, convert it to an object with two keys; one holding the
 array of `ContentBlock` objects, and the other holding a reference to the
 entityMap. Construct content state from the array of block elements and the
 entityMap, and then update the editor state with it. Full example available
-[here](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/convertFromHTML).
+[here](https://github.com/facebookarchive/draft-js/tree/master/examples/draft-0-10-0/convertFromHTML).
 
 <head>
   <link rel="canonical" href="https://draftjs.org/docs/api-reference-data-conversion" />

@@ -67,7 +67,7 @@ Draft.js isn’t the only tool to use this “content model separate from `conte
 
 The sky is the limit! This flexibility comes at a cost though: even seemingly basic rich text interactions might require extra code. Additionally, the model’s conceptual constraints can drastically reduce what the framework can be used for:
 
-- It is impossible to represent nested structures beyond nested lists (at least [for now](https://github.com/facebook/draft-js/pull/388)).
+- It is impossible to represent nested structures beyond nested lists.
 - Highlights-heavy rich text is hard to work with (think comments or annotations on text containing a link).
 - Collaborative editing isn’t designed for.
 
@@ -77,9 +77,9 @@ The implementation itself also has its shortcomings, but those are generally eas
 
 ## Abstracting over cross-browser differences
 
-Front-end developers know very well how hard it can be to build UIs across the Web’s fragmented landscape – multiple browsers, on different operating systems, at different screen sizes, and more. Cross-browser rich text editing faces those same problems, except even the modern browsers behave in their own quirky ways. Draft.js abstracts this all away from view, but it has its shortcomings, especially on [Android](https://github.com/facebook/draft-js/issues/1077).
+Front-end developers know very well how hard it can be to build UIs across the Web’s fragmented landscape – multiple browsers, on different operating systems, at different screen sizes, and more. Cross-browser rich text editing faces those same problems, except even the modern browsers behave in their own quirky ways. Draft.js abstracts this all away from view, but it has its shortcomings, especially on [Android](https://github.com/facebookarchive/draft-js/issues/1077).
 
-I have spent enough time working with Draft.js editors and looking at the Draft.js issue tracker to know that, yep, it works, mostly. There is a lot of improvement to be done in handling of text drag-and-drop, IMEs, and rich text copy-paste in particular – you can see the full list of issues you might run into for non-IME usage [here](https://github.com/springload/draftail/issues/138).
+I have spent enough time working with Draft.js editors and looking at the Draft.js issue tracker to know that, yep, it works, mostly. There is a lot of improvement to be done in handling of text drag-and-drop, IMEs, and rich text copy-paste in particular – you can see the full list of issues you might run into for non-IME usage [here](https://github.com/wagtail/draftail/issues/138).
 
 ## Built with React
 

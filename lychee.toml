@@ -1,0 +1,20 @@
+# Link checking configuration for lychee – https://lychee.cli.rs
+# Run locally with `npm run check-links`; also runs in CI.
+
+# Sites that block automated checks (401/403/bot detection).
+exclude = [
+  'https://stackoverflow\.com/.*',
+  # Internal site routes (/docs, /blog, etc.) – resolved against static/ by root-dir,
+  # but they only exist in the built site, not as source files.
+  '/static/(docs|blog|examples|guides|code-of-conduct|user-guides)',
+  # Add here: known-broken sources in different files (mention which)
+]
+
+# Build output and published documentation snapshots, not live sources.
+exclude_path = ["build", "versioned_docs", "static/browserconfig.xml"]
+
+# Root directory for absolute links (/img/... maps to static/img/...).
+root_dir = "static"
+
+# Accept rate limiting as a non-failure (retries were already attempted).
+accept = [200, 204, 429]
