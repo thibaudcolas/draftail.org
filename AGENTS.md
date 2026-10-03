@@ -34,8 +34,8 @@ Documentation lives in `docs/`, with the current draft of the next version. Publ
 - `biome` for JS/TS/CSS/JSON, `prettier` for Markdown/YAML/HTML
 - `tsc --noEmit` for type checking
 - `lychee` for link checking (`npm run check-links`)
-- `commitlint` with Conventional Commits, run by a Git hook on every commit
-- Git hooks (Biome, Prettier, tsc on staged files) installed with `npm run prepare`
+- `commitlint` with Conventional Commits, run by the `commit-msg` Git hook on every commit
+- Git hooks (Biome, Prettier, tsc on staged files) managed by husky and lint-staged, installed with `npm run prepare`
 - GitHub Actions for CI, Netlify for automatic deploys of `main`
 
 ## Coding style & conventions
