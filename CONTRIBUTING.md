@@ -18,16 +18,30 @@ npm install
 
 ### Working on the project
 
-> Everything mentioned in the installation process should already be done.
-
 ```sh
-cd website
-npm run start
+# Start the dev server at http://localhost:3000.
+npm start
+
+# Production build, and local preview of it.
+npm run build
+npm run serve
+
+# Lint, format, and type-check (also run in CI).
+npm run lint
+npm run format
 ```
+
+Git hooks are installed automatically with `npm install` (via `npm run prepare`). They format staged files, run Biome, Prettier, and `tsc --noEmit`, and validate commit messages with commitlint.
 
 ### Releases
 
 The website is automatically published on every push to main, with [Netlify](https://www.netlify.com). The search engine index is automatically rebuilt every 24hrs. Full config: [algolia/docsearch-configs:draftail.json](https://github.com/algolia/docsearch-configs/blob/master/configs/draftail.json)
+
+## Documentation management
+
+- Documentation for the upcoming version lives in `docs/`. Published versions are snapshot in `versioned_docs/`, listed in `versions.json`.
+- To release a new documentation version, run `npm run version X.Y.Z`.
+- Always use [relative file links](https://docusaurus.io/docs/markdown-features/links) to `.md` files inside Markdown docs to preserve link validation, and in-editor file navigation.
 
 ## Favicons
 
@@ -44,7 +58,3 @@ The wesite’s icons come from [IcoMoon](https://icomoon.io/). Emojis come from 
 The demo site contains static content exported with [draftjs_exporter](https://github.com/springload/draftjs_exporter). It is placed there for SEO, and also to make the loading experience nicer.
 
 To regenerate it, get the serialised ContentState for the index page's editor (in `sessionStorage`), go to [the Draftail playground](http://playground.draftail.org/), and place the ContentState in the `sessionStorage` value of that editor.
-
-## Content
-
-- Always use [relative file links](https://docusaurus.io/docs/markdown-features/links) to `.md` files inside Markdown docs to preserve link validation, and in-editor file navigation.
