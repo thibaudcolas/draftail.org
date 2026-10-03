@@ -3,13 +3,13 @@ id: content-storage
 title: Content storage
 ---
 
-Like all Draft.js editors, Draftail does not process content directly as HTML but as a more structured format called [ContentState](https://draftjs.org/docs/api-reference-content-state/).
+Like all Draft.js editors, Draftail does not process content directly as HTML but as a more structured format called [ContentState](../draft-js/api-reference/ContentState.md).
 
 ## How Draft.js represents rich text
 
 Internally, Draft.js uses its `ContentState` representation, which uses a fixed schema, with predefined rich text types. There are strong constraints on content structure – what is block-level formatting and what is inline, what can have data and how.
 
-For storage, editors output a [raw ContentState](https://draftjs.org/docs/api-reference-data-conversion#converttoraw) representation that is then serialisable as JSON, or can be converted to another format like HTML.
+For storage, editors output a [raw ContentState](../draft-js/api-reference/Data-Conversion.md#converttoraw) representation that is then serialisable as JSON, or can be converted to another format like HTML.
 
 Here is a simple rich text example:
 
@@ -113,7 +113,7 @@ In the `entityMap`, entities are stored as:
 
 ## EditorState vs ContentState
 
-While ContentState is what Draft.js uses to represent the editor’s content, the content is only one part of the state of the editor – [`EditorState`](https://draftjs.org/docs/api-reference-editor-state) is what Draft.js uses to store all of the editor’s state: content, text selection, undo/redo stack, and more.
+While ContentState is what Draft.js uses to represent the editor’s content, the content is only one part of the state of the editor – [`EditorState`](../draft-js/api-reference/EditorState.md) is what Draft.js uses to store all of the editor’s state: content, text selection, undo/redo stack, and more.
 
 ---
 

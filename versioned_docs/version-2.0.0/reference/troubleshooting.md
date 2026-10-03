@@ -7,7 +7,7 @@ title: Troubleshooting
 
 - Pressing return on an empty list item should un-indent it until it is not nested, and then remove it.
 - Pressing return at the end of a block should create an empty unstyled block.
-- Atomic blocks (images, embeds, `hr`) are always preceded and followed by a block (empty if no other block is present). See [facebook/draft-js#327](https://github.com/facebook/draft-js/issues/327).
+- Atomic blocks (images, embeds, `hr`) are always preceded and followed by a block (empty if no other block is present). This behavior comes from Draft.js (see [facebook/draft-js#327](https://github.com/facebook/draft-js/issues/327), kept as-is in the archived repository).
 - Blocks starting with "- ", "\* ", "1. " are automatically converted to list items.
 - Pasting content with block nesting above the configured maximum should reduce the depth up to the maximum.
 
@@ -15,7 +15,7 @@ title: Troubleshooting
 
 ### Draft.js
 
-Draft.js is relatively stable but also historically slow to address bugs. Draftail sometimes has to override behavior in a way that may be problematic if the Draft.js API is updated.
+Draft.js is no longer maintained: its repository is archived, so reported issues will not be fixed upstream. Draftail sometimes has to override Draft.js behavior in a way that may be problematic if the Draft.js API is updated.
 
 When upgrading to a more recent Draft.js version, always review the full [CHANGELOG](https://github.com/facebook/draft-js/blob/master/CHANGELOG.md) as well as individual changes.
 
@@ -35,4 +35,4 @@ Here are specific parts of the code that **should always be reviewed before upgr
 
 ## Known issues
 
-Please have a look at [Draft.js Known Issues](https://draftjs.org/docs/advanced-topics-issues-and-pitfalls#known-issues), as well as Draftail’s list of [Known issues with Draftail, Draft.js, contenteditable, and other dependencies (springload/draftail#138)](https://github.com/springload/draftail/issues/138).
+Please have a look at [Draft.js known issues](../draft-js/advanced-topics/Issues-and-Pitfalls.md#known-issues), as well as Draftail’s list of [Known issues with Draftail, Draft.js, contenteditable, and other dependencies (springload/draftail#138)](https://github.com/springload/draftail/issues/138).

@@ -3,7 +3,7 @@ id: plugins
 title: Plugins
 ---
 
-> Those extensions require a good understanding of the [Draft.js](https://draftjs.org/) API.
+> Those extensions require a good understanding of the [Draft.js](../draft-js/quickstart/overview.md) API.
 
 Draftail supports plugins following the [Draft.js Plugins](https://www.draft-js-plugins.com/) architecture. Such plugins are the most advanced and powerful type of extension for Draftail, offering customisation capabilities equal to what would be possible with a custom Draft.js editor. From the rendering of any block, to the text input handling, keyboard shortcuts, copy-paste handling – **all that is customisable in a bespoke Draft.js implementation should be customisable with plugins.**
 

@@ -24,7 +24,7 @@ Different browser events can trigger the `Editor` to create a new state and call
 
 This cycle works great, however, it is an asynchronous operation because of the `setState` call. This introduces a delay between setting the state and rendering the `Editor` with the new state. During this time period other JS code can be executed.
 
-![Race condition diagram 1](../../assets/draft-js/editorstate-race-condition-1-handler.png)
+![Race condition diagram 1](../../../../docs/assets/draft-js/editorstate-race-condition-1-handler.png)
 
 Non-atomic operations like this can potentially introduce race conditions.
 Here's an example: Suppose you want to remove all the text styles that come from the paste. This can be implemented by listening to the onPaste event and removing all styles from the `EditorState`:
@@ -39,7 +39,7 @@ this.onPaste = function () {
 
 However, this won't work as expected. You now have two event handlers that set a new `EditorState` in the exact same browser event. Since the event handlers will run one after the other only the last `setState` will prevail. Here's how it looks like in the JS timeline:
 
-![Race condition diagram 2](../../assets/draft-js/editorstate-race-condition-2-handlers.png)
+![Race condition diagram 2](../../../../docs/assets/draft-js/editorstate-race-condition-2-handlers.png)
 
 As you can see, since `setState` is an asynchronous operation, the second `setState` will override whatever it was set on the first one making the `Editor` lose all the contents from the pasted text.
 

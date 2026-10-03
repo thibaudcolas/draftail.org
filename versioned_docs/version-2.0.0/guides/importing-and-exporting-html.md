@@ -7,7 +7,7 @@ Like all Draft.js editors, Draftail does not process HTML directly: It uses its 
 
 ## Deciding how to store content
 
-In some use cases, it may be desirable to store rich text as HTML. This is particularly useful for websites which do not need further processing of their content when displaying it, or which already have existing HTML processing (for example in a CMS). There are also scenarios in which it might be better to store content with the Draft.js [ContentState](https://draftjs.org/docs/api-reference-content-state/) representation, for example if the content is meant to be used in different mediums (web, mobile apps, email, etc).
+In some use cases, it may be desirable to store rich text as HTML. This is particularly useful for websites which do not need further processing of their content when displaying it, or which already have existing HTML processing (for example in a CMS). There are also scenarios in which it might be better to store content with the Draft.js [ContentState](../draft-js/api-reference/ContentState.md) representation, for example if the content is meant to be used in different mediums (web, mobile apps, email, etc).
 
 **In either case, Draftail has no preference as long as it is provided with raw ContentState when initialised with [`rawContentState`](../reference/api.md#rawcontentstate-and-onsave), or EditorState when using [`editorState`](../reference/api.md#editorstate-and-onchange).**
 
@@ -96,7 +96,7 @@ const editor = (
 )
 ```
 
-`convertFromHTML` does the heavy lifting, followed by the Draft.js [`convertToRaw`](https://draftjs.org/docs/api-reference-data-conversion#converttoraw), and we can then initialise Draftail with HTML.
+`convertFromHTML` does the heavy lifting, followed by the Draft.js [`convertToRaw`](../draft-js/api-reference/Data-Conversion.md#converttoraw), and we can then initialise Draftail with HTML.
 
 ### HTML export
 
@@ -167,7 +167,7 @@ const editor = (
 )
 ```
 
-Again, most of the configuration work is with `convertToHTML`, but we also need the Draft.js [`convertFromRaw`](https://draftjs.org/docs/api-reference-data-conversion#convertfromraw) to read content from Draftail.
+Again, most of the configuration work is with `convertToHTML`, but we also need the Draft.js [`convertFromRaw`](../draft-js/api-reference/Data-Conversion.md#convertfromraw) to read content from Draftail.
 
 ## Demo
 

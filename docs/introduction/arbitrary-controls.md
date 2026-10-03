@@ -3,7 +3,7 @@ id: arbitrary-controls
 title: Arbitrary controls
 ---
 
-> Those extensions require a good understanding of the [Draft.js](https://draftjs.org/) API.
+> Those extensions require a good understanding of the [Draft.js](../draft-js/quickstart/overview.md) API.
 
 Draftail also has an API to add arbitrary controls in the toolbar, via the [`controls`](../reference/api.md#controls-docs-arbitrary-controls) prop. This prop takes an array of objects, each which can have a `inline`, `block`, or `meta` key. This key maps to a React component which will be given a `getEditorState` function and the `onChange` handler as props.
 
@@ -17,7 +17,7 @@ Controls can use multiple keys if they need to be displayed in multiple toolbars
 
 For the React component props:
 
-- `getEditorState` can be used to retrieve and read the full Draft.js [EditorState](https://draftjs.org/docs/api-reference-editor-state).
+- `getEditorState` can be used to retrieve and read the full Draft.js [EditorState](../draft-js/api-reference/EditorState.md).
 - `onChange` can be called with a new EditorState.
 
 The controls can import the `Icon` and `ToolbarButton` components from Draftail if necessary.

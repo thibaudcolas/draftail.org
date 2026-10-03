@@ -3,7 +3,7 @@ id: getting-started
 title: Getting started
 ---
 
-Draftail is built with [Draft.js](https://draftjs.org/) and [React](https://reactjs.org/). Let’s start by installing them both, as well as Draftail:
+Draftail is built with [Draft.js](../draft-js/quickstart/overview.md) and [React](https://reactjs.org/). Let’s start by installing them both, as well as Draftail:
 
 ```sh
 npm install --save draftail draft-js@0.10.5 react react-dom
@@ -65,7 +65,7 @@ Optionally, the editor can also be used as a [controlled component](https://reac
 
 ## Why we need Draft.js and React
 
-[Draft.js](https://draftjs.org/) is the framework that Draftail is built upon, meant for rich text experiences in React-driven UIs. **Draftail is an opinionated implementation of a Draft.js editor** – abstracting away the complexities for the simple use cases.
+[Draft.js](../draft-js/quickstart/overview.md) is the framework that Draftail is built upon, meant for rich text experiences in React-driven UIs. **Draftail is an opinionated implementation of a Draft.js editor** – abstracting away the complexities for the simple use cases.
 
 You don’t need any Draft.js knowledge to make use of Draftail, unless you want to invest into more custom rich text formatting. React knowledge is likely needed, however.
 

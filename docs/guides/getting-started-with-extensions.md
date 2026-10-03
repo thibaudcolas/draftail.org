@@ -7,9 +7,9 @@ Do you want to write extensions for Draftail? This is a good place to start. I�
 
 ## Why you shouldn’t mess with rich text editors
 
-It all comes down to [`contenteditable`](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content), which is very hard to make work. [Draft.js](https://draftjs.org/) partly saves us from this. If you want to know more, read on [Why Wagtail’s new editor is built with Draft.js](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js).
+It all comes down to [`contenteditable`](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content), which is very hard to make work. [Draft.js](../draft-js/quickstart/overview.md) partly saves us from this. If you want to know more, read on [Why Wagtail’s new editor is built with Draft.js](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js).
 
-The TL;DR; is that there are a lot of issues with specific interactions within `contenteditable`. I made a list of the [issues I know about in Draft.js / Draftail](https://github.com/wagtail/draftail/issues/138). Here are the high-level problems you will have to make peace with:
+The TL;DR; is that there are a lot of issues with specific interactions within `contenteditable`. I made a list of the [issues I know about in Draft.js / Draftail](https://github.com/wagtail/draftail/issues/138) – many of those are inherent to Draft.js and `contenteditable` and won't be fixed upstream, as Draft.js is archived. Here are the high-level problems you will have to make peace with:
 
 - [Support for IMEs (Input Method Editor)](https://en.wikipedia.org/wiki/Input_method). which is how [CJK characters](https://en.wikipedia.org/wiki/CJK_characters) are entered, and how OS-level autocomplete and autocorrect works. Differently in each OS/browser, of course.
 - Mobile support. For Draft.js, Android Chrome is particularly problematic – because of its implementation of text input as IME in all languages that does not match with other browsers (including Chrome desktop).
@@ -97,7 +97,7 @@ Some of those questions can be hard to answer if you don’t have experience bui
 
 ### Required knowledge
 
-Most of the time spent developing extensions will be spent with the APIs of [Draft.js](https://draftjs.org/), the framework that Draftail [is built upon](../introduction/getting-started.md#why-we-need-draftjs-and-react). The Draftail documentation is a good resource to learn what types of extension are supported and general high-level concepts, but in order to develop an extension that manipulates the editor’s content, you will likely need to read the Draft.js docs – or search for examples of similar extensions built for Draft.js itself, which are likely reusable.
+Most of the time spent developing extensions will be spent with the APIs of [Draft.js](../draft-js/quickstart/overview.md), the framework that Draftail [is built upon](../introduction/getting-started.md#why-we-need-draftjs-and-react). The Draftail documentation is a good resource to learn what types of extension are supported and general high-level concepts, but in order to develop an extension that manipulates the editor’s content, you will likely need to read the Draft.js docs – or search for examples of similar extensions built for Draft.js itself, which are likely reusable.
 
 ### Prototyping extensions
 

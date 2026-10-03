@@ -174,7 +174,7 @@ export default function Home() {
           <noscript>
             <h2>
               Draftail is an editor built with{" "}
-              <a href="https://github.com/facebook/draft-js">Draft.js</a>
+              <a href="/docs/draft-js/quickstart/overview">Draft.js</a>
             </h2>
             <p>Try it out by editing this text!</p>
             <h3>Features 📝🍸</h3>

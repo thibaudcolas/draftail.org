@@ -56,41 +56,41 @@ stripPastedStyles: boolean
 multiline: boolean
 
 /** Set whether spellcheck is turned on for your editor.
- * See https://draftjs.org/docs/api-reference-editor.html#spellcheck.
+ * See ../draft-js/api-reference/editor.md#spellcheck.
  */
 spellCheck: boolean
 
 /** Set whether the editor should be rendered in readOnly mode.
- * See https://draftjs.org/docs/api-reference-editor.html#readonly
+ * See ../draft-js/api-reference/editor.md#readonly
  */
 readOnly: boolean
 
 /** Optionally set the overriding text alignment for this editor.
- * See https://draftjs.org/docs/api-reference-editor.html#textalignment.
+ * See ../draft-js/api-reference/editor.md#textalignment.
  */
 textAlignment?: string | null
 
 /** Optionally set the overriding text directionality for this editor.
- * See https://draftjs.org/docs/api-reference-editor.html#textdirectionality.
+ * See ../draft-js/api-reference/editor.md#textdirectionality.
  */
 textDirectionality: TextDirectionality
 
 /** Set if auto capitalization is turned on and how it behaves.
- * See https://draftjs.org/docs/api-reference-editor.html#autocapitalize-string.
+ * See ../draft-js/api-reference/editor.md#autocapitalize-string.
  */
 autoCapitalize?: string | null
 
 /** Set if auto complete is turned on and how it behaves.
- * See https://draftjs.org/docs/api-reference-editor.html#autocomplete-string.
+ * See ../draft-js/api-reference/editor.md#autocomplete-string.
  */
 autoComplete?: string | null
 
 /** Set if auto correct is turned on and how it behaves.
- * See https://draftjs.org/docs/api-reference-editor.html#autocorrect-string.
+ * See ../draft-js/api-reference/editor.md#autocorrect-string.
  */
 autoCorrect?: string | null
 
-/** See https://draftjs.org/docs/api-reference-editor.html#aria-props. */
+/** See ../draft-js/api-reference/editor.md#aria-props. */
 ariaDescribedBy?: string | null
 ariaExpanded?: boolean | null
 ariaLabel?: string | null
@@ -143,7 +143,7 @@ This is the editor’s [uncontrolled component](https://reactjs.org/docs/uncontr
 
 ### editorState and onChange
 
-`editorState` and `onChange` are used to set the state of the editor, and update this state whenever there are changes to the editor’s content or selection. They work with [`EditorState`](../reference/content-storage.md#editorstate-vs-contentstate) objects representing all of the editor’s state.
+`editorState` and `onChange` are used to set the state of the editor, and update this state whenever there are changes to the editor’s content or selection. They work with [`EditorState`](content-storage.md#editorstate-vs-contentstate) objects representing all of the editor’s state.
 
 This is the editor’s [controlled component](https://reactjs.org/docs/forms.html#controlled-components) API, matching that of other Draft.js examples.
 
@@ -293,7 +293,7 @@ Each item in `plugins` follows the [draft-js-plugins API](https://github.com/dra
 
 ## Managing focus
 
-The `DraftailEditor` has a `focus()` API [like that of Draft.js](https://draftjs.org/docs/advanced-topics-managing-focus.html#content). Use it to imperatively move focus to the editor. There are also `onFocus` and `onBlur` props to hook into the editor’s focus lifecycle, for example for [form validation](/guides/form-validation.md).
+The `DraftailEditor` has a `focus()` API [like that of Draft.js](../draft-js/advanced-topics/Managing-Focus.md). Use it to imperatively move focus to the editor. There are also `onFocus` and `onBlur` props to hook into the editor’s focus lifecycle, for example for [form validation](/guides/form-validation.md).
 
 ## Content format identifiers
 
@@ -359,7 +359,7 @@ export const ENTITY_TYPE = {
 
 ## Data conversion helpers
 
-How-to guide: [Data conversion helpers](../reference/controlled-component.md#data-conversion-helpers)
+How-to guide: [Data conversion helpers](controlled-component.md#data-conversion-helpers)
 
 Draftail exports the methods it uses internally to initialise the editor’s content via `rawContentState` and persist it in `onSave`: [`createEditorStateFromRaw`](#createeditorstatefromraw), and [`serialiseEditorStateToRaw`](#serialiseeditorstatetoraw).
 

@@ -3,7 +3,7 @@ id: extensions-tutorial-linkify
 title: "Extensions tutorial: linkify"
 ---
 
-Linkify features a type of interaction that’s easy to implement with the [Draft.js plugins](https://www.draft-js-plugins.com/) API (here, the [`handlePastedText`](https://draftjs.org/docs/api-reference-editor#handlepastedtext) API from Draft.js).
+Linkify features a type of interaction that’s easy to implement with the [Draft.js plugins](https://www.draft-js-plugins.com/) API (here, the [`handlePastedText`](../draft-js/api-reference/Editor.md#handlepastedtext) API from Draft.js).
 
 It only requires implementing `handlePastedText` and no other API:
 

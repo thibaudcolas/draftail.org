@@ -37,7 +37,7 @@ Additionally to the above, Draftail provides lower-level APIs for [entities](../
 
 Inline styles, blocks, and entities should be enough for most WYSIWYG experiences. For more advanced features, there are further low-level APIs available:
 
-- [Decorators](../introduction/decorators.md), access to the [corresponding Draft.js API](https://draftjs.org/docs/advanced-topics-decorators).
+- [Decorators](../introduction/decorators.md), access to the [corresponding Draft.js API](../draft-js/advanced-topics/Decorators.md).
 - [Controls](../introduction/arbitrary-controls.md), a very simple API to render a React component in the toolbar that can edit the editor content in any way.
 - [Plugins](../introduction/plugins.md), API of the [Draft.js Plugins](https://github.com/draft-js-plugins/draft-js-plugins) plugin architecture.
 

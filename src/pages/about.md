@@ -9,7 +9,7 @@ description: Building a WYSIWYG editor from scratch is (almost) never a good ide
 
 Draftail came about in 2016, as our team grew more and more frustrated with [Wagtail’s](https://github.com/wagtail/wagtail) rich text editor, and decided to build our own to eventually try and replace it.
 
-Building a WYSIWYG editor from scratch is (almost) never a good idea, so we quickly settled on [Draft.js](https://draftjs.org/) as a solid WYSIWYG editor framework to build upon. Draft.js + Wagtail – [Draftail was born](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js) 🎉 .
+Building a WYSIWYG editor from scratch is (almost) never a good idea, so we quickly settled on [Draft.js](/docs/draft-js/quickstart/overview) as a solid WYSIWYG editor framework to build upon. Draft.js + Wagtail – [Draftail was born](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js) 🎉 .
 
 A few years later, Draftail is now very capable for many use cases, and it comes with a nice little [fantail](https://en.wikipedia.org/wiki/Fantail) logo.
 
