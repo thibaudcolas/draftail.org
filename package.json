@@ -33,17 +33,17 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.6",
+    "@biomejs/biome": "^2.5.15",
     "@commitlint/cli": "21.2.3",
     "@commitlint/config-conventional": "21.2.3",
-    "@docusaurus/module-type-aliases": "^3.9.2",
+    "@docusaurus/module-type-aliases": "3.10.2",
     "@docusaurus/tsconfig": "3.10.2",
     "@docusaurus/types": "3.10.2",
-    "docusaurus-plugin-llms": "^0.2.2",
+    "docusaurus-plugin-llms": "^0.6.1",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "prettier": "3.9.9",
-    "typescript": "5.9.3"
+    "typescript": "7.0.2"
   },
   "scripts": {
     "start": "docusaurus start",
@@ -57,16 +57,5 @@
     "format": "biome format --write && prettier --write '**/*.{md,yaml,yml,html}'",
     "check-links": "lychee --no-progress --hidden .",
     "prepare": "husky"
-  },
-  "lint-staged": {
-    "*.{css,js,ts,tsx,json,jsonc,json5}": [
-      "biome check --write --no-errors-on-unmatched"
-    ],
-    "*.{md,yml,yaml,html}": [
-      "prettier --write"
-    ],
-    "*.{ts,tsx}": [
-      "tsc --noEmit"
-    ]
   }
 }

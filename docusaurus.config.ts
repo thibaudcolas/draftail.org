@@ -77,6 +77,7 @@ const config: Config = {
         customLLMFiles: [
           {
             filename: "draftail-llms.txt",
+            includePatterns: ["docs/**/*.md"],
             ignorePatterns: ["docs/draft-js/**/*.md"],
             fullContent: false,
             title: "Draftail documentation",
@@ -85,6 +86,7 @@ const config: Config = {
           },
           {
             filename: "draftail-llms-full.txt",
+            includePatterns: ["docs/**/*.md"],
             ignorePatterns: ["docs/draft-js/**/*.md"],
             fullContent: true,
             title: "Draftail documentation",
