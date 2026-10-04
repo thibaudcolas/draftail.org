@@ -21,6 +21,16 @@ It’s also possible to use Markdown shortcuts for inline formatting, not just a
 - Use `_`_underscores_`_` for italicized text.
 - Use `~`~~tilde~~`~` to strike through text.
 
+## Shortcut boundaries
+
+Markdown shortcuts apply formatting as you type; they are not a full Markdown parser. For inline formatting, place the opening marker at the start of a block or after a space, and put the markers directly against the text:
+
+- `**word**` applies bold.
+- `** word**` and `**word **` do not apply bold because of the space inside the markers.
+- `some**word**` does not activate the shortcut because the opening marker follows a letter.
+
+These boundaries reduce accidental formatting during normal typing. The corresponding format must be enabled in the editor. See the [discussion of the shortcut whitespace rules](https://github.com/wagtail/wagtail/pull/5117#issuecomment-474807668) for their rationale.
+
 ## More shortcuts
 
 Please have a look at the [full list of keyboard shortcuts](/user-guides/keyboard-shortcuts.md) to see all supported Markdown shortcuts.

@@ -50,3 +50,11 @@ Beyond supporting all of those APIs, most of the value in Draftail over plain Dr
 - Having good support for keyboard shortcuts and Markdown handling out of the box. There would be quite a lot of boilerplate code to write to get this with a vanilla editor.
 - Advanced support to allowlist only the formats you want the editor to support, automatically [filtering-out](https://github.com/thibaudcolas/draftjs-filters) paste of other formats the editor doesn’t have enabled.
 - Support for copy-paste of custom formatting between editors, which Draft.js doesn’t support [out of the box](https://github.com/thibaudcolas/draftjs-conductor).
+
+### Copy-paste between editors
+
+Draftail uses `draftjs-conductor` to carry serialized Draft content within clipboard HTML. A compatible receiving editor can recover custom blocks, entities, and soft line breaks instead of reconstructing them from ordinary HTML alone. Draftail then filters the content to the formats enabled in the receiving editor: preserving content during transport does not enable unsupported formats.
+
+When that serialized content is unavailable, pasting falls back to ordinary HTML handling. Other applications may use only the HTML representation, so copying out of Draftail does not guarantee that custom formatting or CSS appearance will be preserved.
+
+The [clipboard implementation discussion](https://github.com/facebookarchive/draft-js/pull/1784) records this distinction. That upstream Draft.js PR was not merged; Draftail provides the behavior through `draftjs-conductor`. Its older code examples predate API changes, so consult the package documentation for your version when building a separate integration.

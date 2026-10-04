@@ -38,11 +38,12 @@ Draft editor. It has three properties:
   a `'LINK'` entity might contain a `data` object that contains the `href` value
   for that link.
 
-All entities are stored in the ContentState record. The entities are referenced
-by key within `ContentState` and React components used to decorate annotated
-ranges. (A previous API for accessing Entities was deprecated – see
-issue
-[#839](https://github.com/facebookarchive/draft-js/issues/839) in the archived repository.)
+Access entities through the `ContentState` API. Entities are referenced by key
+within `ContentState` and React components used to decorate annotated ranges.
+The older global API was deprecated in v0.10 but retained in v0.11; the new API
+did not yet replace the underlying global store. See the local
+[entity API migration guide](../api-reference/APIMigration.md) for the version
+history and examples.
 
 Using [decorators](Decorators.md) or
 [custom block components](Block-Components.md), you can

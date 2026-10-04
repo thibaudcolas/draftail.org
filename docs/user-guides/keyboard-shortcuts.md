@@ -53,3 +53,5 @@ Here are all of the keyboard shortcuts supported by the editor. Please bear in m
 | Extend selection one word at a time               | `Double-click + Drag` | `Double-click + Drag` |          |
 | Select paragraph                                  | `Triple-click`        | `Triple-click`        |          |
 | Extend selection one paragraph at a time          | `Triple-click + Drag` | `Triple-click + Drag` |          |
+
+For inline Markdown examples and whitespace rules, see [Markdown shortcut boundaries](markdown-support.md#shortcut-boundaries).

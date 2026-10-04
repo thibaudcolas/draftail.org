@@ -36,7 +36,7 @@ Draftail supports all modern **desktop** browsers, in their latest version:
 | MS Edge | Windows        |
 | Safari  | macOS          |
 
-If your browser is not on this list, your mileage may vary. Have a look at the [list of known issues](https://github.com/wagtail/draftail/issues/138), or use one of the supported browsers.
+If your browser is not on this list, your mileage may vary. Have a look at the [list of known issues](../reference/troubleshooting.md#known-issues), or use one of the supported browsers.
 
 For mobile devices, Draftail is tested on the latest versions of iOS and Android. Support is limited – there are many known issues there as well, especially with custom keyboards like [Google’s GBoard keyboard](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin) or [SwiftKey](https://swiftkey.com/).
 

@@ -45,7 +45,9 @@ It is also possible to reuse the `ToolbarButton` and `Icon` components from Draf
 
 ## Toolbars with draft-js-plugins
 
-For more advanced use cases, [Draft.js plugins](https://www.draft-js-plugins.com/) offers really polished toolbars for Draft.js editors. These can easily be used with Draftail, **provided that they are set as the bottom toolbar of the editor** ([Plugin-supplied components cannot be placed above editor, #311](https://github.com/draft-js-plugins/draft-js-plugins/issues/311)).
+For more advanced use cases, [Draft.js plugins](https://www.draft-js-plugins.com/) offers toolbars for Draft.js editors. Use `bottomToolbar` to render plugin-supplied controls after the editor.
+
+This ordering avoids a historical initialization issue: affected plugins only set up their editor-state accessors when the editor renders. Controls rendered first can fail with `store.getEditorState is not a function`. Simply guarding against the missing method can leave the controls one update behind. The example below uses the documented workaround; whether it is required depends on your plugin version. See the [plugin initialization discussion](https://github.com/draft-js-plugins/draft-js-plugins/issues/311).
 
 ```jsx
 <DraftailEditor

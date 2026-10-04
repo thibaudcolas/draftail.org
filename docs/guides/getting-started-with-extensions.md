@@ -9,7 +9,7 @@ Do you want to write extensions for Draftail? This is a good place to start. I�
 
 It all comes down to [`contenteditable`](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content), which is very hard to make work. [Draft.js](../draft-js/quickstart/overview.md) partly saves us from this. If you want to know more, read on [Why Wagtail’s new editor is built with Draft.js](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js).
 
-The TL;DR; is that there are a lot of issues with specific interactions within `contenteditable`. I made a list of the [issues I know about in Draft.js / Draftail](https://github.com/wagtail/draftail/issues/138) – many of those are inherent to Draft.js and `contenteditable` and won't be fixed upstream, as Draft.js is archived. Here are the high-level problems you will have to make peace with:
+The TL;DR; is that there are a lot of issues with specific interactions within `contenteditable`. The local [known-issues summary](../reference/troubleshooting.md#known-issues) describes reported problems in Draft.js / Draftail – many of those are inherent to Draft.js and `contenteditable` and won't be fixed upstream, as Draft.js is archived. Here are the high-level problems you will have to make peace with:
 
 - [Support for IMEs (Input Method Editor)](https://en.wikipedia.org/wiki/Input_method). which is how [CJK characters](https://en.wikipedia.org/wiki/CJK_characters) are entered, and how OS-level autocomplete and autocorrect works. Differently in each OS/browser, of course.
 - Mobile support. For Draft.js, Android Chrome is particularly problematic – because of its implementation of text input as IME in all languages that does not match with other browsers (including Chrome desktop).
@@ -107,6 +107,10 @@ Generally, the hardest part to build when creating a content extension is the ed
 2. Make a simple decorator component displaying your custom content as bold (or any other very basic style) to see where your data is.
 3. Play with content conversion and storage, and get this right as soon as possible.
 4. Quickly prototype the front-end rendering of your new rich text content.
+
+### Testing entity interactions
+
+Test editing and removing entities with selections made in both directions, including right-to-left selections. Also test an absent or stale entity key. `DraftUtils.getEntitySelection` searches within the selected block, preserves selection direction, and returns the existing selection when the key is missing or unmatched. An unchanged selection does not establish that an entity was found. These cases were covered by the [entity-selection fixes in Draftail 1.1](https://github.com/wagtail/draftail/pull/168).
 
 ## Going further
 

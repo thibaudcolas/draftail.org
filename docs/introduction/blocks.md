@@ -43,6 +43,12 @@ You may also use CSS to style the block, via the `Draftail-block--tiny-text` cla
 }
 ```
 
+### Custom list blocks
+
+Use a type ending in `-list-item`, such as `action-list-item`, for a custom list block that should reuse Draftail’s list editing behavior. Pressing Enter at the end of a non-empty item continues the list. On an empty item, Enter reduces its nesting depth, or returns to an unstyled block at depth zero.
+
+This naming convention controls editing behavior; you still need to provide the list’s rendering and styling. It was introduced with [plugin support in Draftail 1.2](https://github.com/wagtail/draftail/pull/171).
+
 ### Examples
 
 With a live editor,
