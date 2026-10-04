@@ -1,9 +1,20 @@
 # Link checking configuration for lychee – https://lychee.cli.rs
 # Run locally with `npm run check-links`; also runs in CI.
 
-# Sites that block automated checks (401/403/bot detection).
+# Local development URLs do not require a running server during link checks.
+exclude_loopback = true
+
 exclude = [
+  # Sites that block automated checks (401/403/bot detection).
   'https://stackoverflow\.com/.*',
+  # Support links in the February and March 2019 blog posts.
+  '^https://www\.patreon\.com/thibaud_colas/?$',
+  # Saleor announcement in the August 2019 blog post.
+  '^https://medium\.com/saleor/february-release-of-saleor-three-new-dashboard-2-0-sections-6d775479882e/?$',
+  # Pre-release history in the December 2024 blog post.
+  '^https://www\.npmjs\.com/package/draftail\?activeTab=versions$',
+  # Campaign linked from docs/guides/getting-started-with-extensions.md.
+  '^https://www\.kickstarter\.com/projects/noripyt/wagtails-first-hatch/?$',
   # Internal site routes (/docs, /blog, etc.) – resolved against static/ by root-dir,
   # but they only exist in the built site, not as source files.
   '/static/(docs|blog|examples|guides|code-of-conduct|user-guides)',
