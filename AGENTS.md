@@ -20,7 +20,7 @@ Documentation lives in `docs/`, with the current draft of the next version. Publ
 
 ## Development commands
 
-- `nvm install && npm install` – set up dependencies
+- `nvm install "$(cat .node-version)" && npm install` – set up dependencies
 - `npm start` – dev server at http://localhost:3000
 - `npm run build` – production build to `build/`
 - `npm run serve` – preview the production build locally

@@ -3,6 +3,8 @@ id: formatting-options
 title: Formatting options
 ---
 
+import Demo from "@site/src/components/Demo"
+
 Draftail, like Draft.js, distinguishes between 3 content formats:
 
 - [Inline styles](../introduction/inline-styles.md), providing inline formatting for text. They can overlap: text can be both bold and italic.
@@ -17,7 +19,7 @@ Draftail, like Draft.js, distinguishes between 3 content formats:
 
 View the [all-formats example](/examples#all), or try them out below.
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--built-in-formats" class="iframe iframe--docs-250"></iframe>
+<Demo title="Draftail built in formats demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--built-in-formats" className="iframe iframe--docs-250" />
 
 Draftail does not come with built-in controls for things like images and links, so you can build your own exactly as you wish. This is particularly useful when integrating with content sources, like a CMS, an API, or other tools with a fixed schema.
 
@@ -54,6 +56,6 @@ Then, your mileage may vary! There is good support for custom block-level and in
 
 In addition to different formatting options, the editor also supports single-line rich text fields with the `multiline={false}` prop. Here’s an example:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--single-line" class="iframe iframe--docs-250"></iframe>
+<Demo title="Draftail single line demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--single-line" className="iframe iframe--docs-250" />
 
 In this mode, the editor will not allow line breaks, and any multiline pasted text gets converted to a single line.

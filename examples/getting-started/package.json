@@ -1,0 +1,19 @@
+{
+  "name": "draftail-getting-started",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "serve": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "draftail": "2.0.0",
+    "draft-js": "0.10.5",
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.4"
+  }
+}

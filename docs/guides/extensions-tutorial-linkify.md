@@ -3,6 +3,8 @@ id: extensions-tutorial-linkify
 title: "Extensions tutorial: linkify"
 ---
 
+import Demo from "@site/src/components/Demo"
+
 Linkify features a type of interaction that’s easy to implement with the [Draft.js plugins](https://www.draft-js-plugins.com/) API (here, the [`handlePastedText`](../draft-js/api-reference/Editor.md#handlepastedtext) API from Draft.js).
 
 It only requires implementing `handlePastedText` and no other API:
@@ -55,4 +57,4 @@ In the above example, there are two use cases:
 
 Here is a demo:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=plugins--linkify" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail linkify demo" src="https://demo.draftail.org/storybook/iframe.html?id=plugins--linkify" className="iframe iframe--docs-200" />

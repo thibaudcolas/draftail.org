@@ -3,6 +3,8 @@ id: decorators
 title: Decorators
 ---
 
+import Demo from "@site/src/components/Demo"
+
 > Those extensions require a good understanding of the [Draft.js](../draft-js/quickstart/overview.md) API.
 
 Custom decorators follow the Draft.js [CompositeDecorator](../draft-js/advanced-topics/Decorators.md#compositedecorator) API. They can be specified as an array via the [`decorators`](../reference/api.md#decorators-docs-decorators) prop of the editor, with `strategy` and `component` attributes.
@@ -30,4 +32,4 @@ Other more advanced examples could share state between the strategy and its rend
 
 ## Examples
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--decorators" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail decorators demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--decorators" className="iframe iframe--docs-200" />

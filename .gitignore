@@ -89,3 +89,7 @@ lib64
 # Your own project's ignores
 # -------------------------------------------------
 .docusaurus
+
+# Browser test artifacts
+/playwright-report/
+/test-results/

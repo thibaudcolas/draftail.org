@@ -3,6 +3,8 @@ id: customising-toolbars
 title: Customising toolbars
 ---
 
+import Demo from "@site/src/components/Demo"
+
 By default, Draftail comes with many options for toolbars:
 
 - A top static toolbar that contains all of the possible formatting, plus a few extra controls.
@@ -19,19 +21,19 @@ With the default toolbar, items are directly derived from the formats (block, st
 
 Here is an example, using the default toolbar but with all heading styles hidden as individual buttons, and only present in the custom dropdown:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--controls" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail controls demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--controls" className="iframe iframe--docs-200" />
 
 ## Disabling the toolbar
 
 It is possible to hide the toolbar by passing `null` to `topToolbar`:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--no-toolbar" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail no toolbar demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--no-toolbar" className="iframe iframe--docs-200" />
 
 ## Customising toolbars
 
 It’s also possible to provide your own custom component to `topToolbar`, `bottomToolbar` or `commandToolbar`, for example to have a UI that is more adapted to a given use case:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--custom-toolbars" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail custom toolbars demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--custom-toolbars" className="iframe iframe--docs-200" />
 
 The editor comes with a number of predefined toolbars:
 
@@ -62,4 +64,4 @@ For more advanced use cases, [Draft.js plugins](https://www.draft-js-plugins.com
 
 ### Example
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=plugins--custom-toolbars" class="iframe iframe--docs-250"></iframe>
+<Demo title="Draftail custom toolbars demo" src="https://demo.draftail.org/storybook/iframe.html?id=plugins--custom-toolbars" className="iframe iframe--docs-250" />

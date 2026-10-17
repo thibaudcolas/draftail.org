@@ -3,6 +3,8 @@ id: entities
 title: Entities
 ---
 
+import Demo from "@site/src/components/Demo"
+
 Entities annotate content with data to represent rich content beyond text. They can be inline (e.g. a link on a word), or block-based (e.g. an embedded video). They do not overlap – no content can be both a link and an embedded video (though there could be a combined "embedded video with link" entity).
 
 ## Built-in entities
@@ -220,4 +222,4 @@ Refer to our [Content storage](../reference/content-storage.md#entities) documen
 
 Here is an example of what this would look like in practice, with a very simple implementation of link and image chooser UIs.
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--entities" class="iframe iframe--docs-400"></iframe>
+<Demo title="Draftail entities demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--entities" className="iframe iframe--docs-400" />

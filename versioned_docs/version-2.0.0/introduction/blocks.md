@@ -3,6 +3,8 @@ id: blocks
 title: Blocks
 ---
 
+import Demo from "@site/src/components/Demo"
+
 Blocks provide structure to the content. They do not overlap – no content can be both a paragraph and a heading.
 
 ## Built-in blocks
@@ -47,7 +49,7 @@ You may also use CSS to style the block, via the `Draftail-block--tiny-text` cla
 
 With a live editor,
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--blocks" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail blocks demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--blocks" className="iframe iframe--docs-200" />
 
 ## Custom block rendering
 

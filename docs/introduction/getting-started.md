@@ -3,11 +3,15 @@ id: getting-started
 title: Getting started
 ---
 
+import Demo from "@site/src/components/Demo"
+
 Draftail is built with [Draft.js](../draft-js/quickstart/overview.md) and [React](https://reactjs.org/). Let’s start by installing them both, as well as Draftail:
 
 ```sh
-npm install --save draftail draft-js@0.10.5 react react-dom
+npm install --save-exact draftail@2.0.0 draft-js@0.10.5 react@16.14.0 react-dom@16.14.0
 ```
+
+This example targets Draftail 2.0.0 and its React 16 peer dependencies. The documentation website uses a separate React version. For a runnable project with a lockfile, see the [getting-started starter](https://github.com/thibaudcolas/draftail.org#runnable-starter).
 
 We will also need to import the styles of Draft.js, and of the editor. In a Sass stylesheet:
 
@@ -40,6 +44,7 @@ const onSave = (content) => {
 
 const editor = (
   <DraftailEditor
+    ariaLabel="Rich text editor"
     rawContentState={initial || null}
     onSave={onSave}
     blockTypes={[
@@ -55,7 +60,7 @@ ReactDOM.render(editor, document.querySelector("[data-mount]"))
 
 In this example, the editor will have four buttons in its toolbar: H3, bullet list, bold, and italic. Here is a demo of the result:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=draftail--simple" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail simple demo" src="https://demo.draftail.org/storybook/iframe.html?id=draftail--simple" className="iframe iframe--docs-200" />
 
 Draftail supports many more [formatting options](../introduction/formatting-options.md). Be sure to also check out the [required polyfills](../reference/browser-support.md).
 

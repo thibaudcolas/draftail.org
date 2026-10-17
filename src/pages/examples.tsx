@@ -1,12 +1,13 @@
 import Layout from "@theme/Layout"
 import type { ReactNode } from "react"
+import Demo from "../components/Demo"
 
 export default (): ReactNode => (
   <Layout
     title="Examples"
     description="View examples of various WYSIWYG formatting options and other types of Draft.js extensions"
   >
-    <div className="container container--fluid margin-vert--lg">
+    <main className="container container--fluid margin-vert--lg">
       <div className="row">
         <div className="col col--8 showcaseSection">
           <div className="prose">
@@ -28,7 +29,7 @@ export default (): ReactNode => (
               </a>
             </p>
           </div>
-          <iframe
+          <Demo
             title="Draftail custom formats demo"
             src="https://demo.draftail.org/storybook/iframe.html?id=examples--custom-formats"
             className="iframe iframe--custom"
@@ -49,13 +50,13 @@ export default (): ReactNode => (
               </a>
             </p>
           </div>
-          <iframe
+          <Demo
             title="Draftail all built-in formats demo"
             src="https://demo.draftail.org/storybook/iframe.html?id=examples--all-built-in-formats"
             className="iframe iframe--all"
           />
         </div>
       </div>
-    </div>
+    </main>
   </Layout>
 )

@@ -3,6 +3,8 @@ id: plugins
 title: Plugins
 ---
 
+import Demo from "@site/src/components/Demo"
+
 > Those extensions require a good understanding of the [Draft.js](../draft-js/quickstart/overview.md) API.
 
 Draftail supports plugins following the [Draft.js Plugins](https://www.draft-js-plugins.com/) architecture. Such plugins are the most advanced and powerful type of extension for Draftail, offering customisation capabilities equal to what would be possible with a custom Draft.js editor. From the rendering of any block, to the text input handling, keyboard shortcuts, copy-paste handling – **all that is customisable in a bespoke Draft.js implementation should be customisable with plugins.**
@@ -27,4 +29,4 @@ Please have a look at the official [How to create a plugin](https://github.com/d
 
 Here is an example of a custom "action list" plugin, which uses a custom block component:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=plugins--actions" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail actions demo" src="https://demo.draftail.org/storybook/iframe.html?id=plugins--actions" className="iframe iframe--docs-200" />

@@ -8,6 +8,10 @@ See anything you like in here? Anything missing? We welcome all support, whether
 
 If you just want to set up the project on your own computer, the contribution guidelines also contain all of the setup commands.
 
+## Runnable starter
+
+See the [getting-started starter](examples/getting-started/README.md) for a runnable Draftail 2.0.0 example with pinned React 16 dependencies and a lockfile.
+
 ## Credits
 
 The Draftail website is built with [Docusaurus](https://docusaurus.io/). Its search is powered by [Algolia DocSearch](https://docsearch.algolia.com/), and the site is powered by [Netlify](https://www.netlify.com/). Image credit: [FxEmojis](https://github.com/mozilla/fxemoji).

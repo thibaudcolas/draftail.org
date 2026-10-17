@@ -27,3 +27,8 @@ jobs:
       - uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
           args: --no-progress --hidden .
+      - run: npm run build
+      - run: npm ci --prefix examples/getting-started
+      - run: npm run build --prefix examples/getting-started
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:smoke

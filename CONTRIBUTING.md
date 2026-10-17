@@ -11,7 +11,7 @@ We welcome all support, whether on bug reports, feature requests, code, design, 
 > Clone the project on your computer, and install [Node](https://nodejs.org). This project also uses [nvm](https://github.com/creationix/nvm).
 
 ```sh
-nvm install
+nvm install "$(cat .node-version)"
 # Then, install all project dependencies.
 npm install
 ```
@@ -29,7 +29,16 @@ npm run serve
 # Lint, format, and type-check (also run in CI).
 npm run lint
 npm run format
+
+# Browser smoke tests against the production build.
+npx playwright install chromium
+npm ci --prefix examples/getting-started
+npm run build --prefix examples/getting-started
+npm run build
+npm run test:smoke
 ```
+
+The browser suite checks desktop and mobile layouts, documentation navigation, demo frame loading and keyboard exit, and starter persistence. Hosted demos use fixtures in CI so external outages do not fail site changes; check the live demos separately before releases.
 
 Git hooks are installed automatically with `npm install` (via `npm run prepare`). They format staged files, run Biome, Prettier, and `tsc --noEmit`, and validate commit messages with commitlint.
 

@@ -3,6 +3,8 @@ id: form-validation
 title: Form validation
 ---
 
+import Demo from "@site/src/components/Demo"
+
 Draftail is easy to integrate with form validation, whether as simple "required" checks or more advanced rich text metrics.
 
 ## Integrating with a validation library
@@ -84,4 +86,4 @@ Here is a full demo, using [Formik](https://jaredpalmer.com/formik) as a validat
 </Formik>
 ```
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--form-validation" class="iframe iframe--docs-250"></iframe>
+<Demo title="Draftail form validation demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--form-validation" className="iframe iframe--docs-250" />

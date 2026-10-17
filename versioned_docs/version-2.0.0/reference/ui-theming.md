@@ -3,6 +3,8 @@ id: ui-theming
 title: UI theming
 ---
 
+import Demo from "@site/src/components/Demo"
+
 The base editor has a very simple UI and its styles are relatively straightforward. To make sure everything works, use a CSS reset, like [Normalize.css](https://necolas.github.io/normalize.css/).
 
 ## CSS theming
@@ -126,4 +128,4 @@ Or alternatively, only import the constants to reuse them elsewhere in your proj
 
 ## Examples
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--ui-theming" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail ui theming demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--ui-theming" className="iframe iframe--docs-200" />

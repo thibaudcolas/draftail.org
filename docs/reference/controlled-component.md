@@ -3,6 +3,8 @@ id: controlled-component
 title: Controlled component
 ---
 
+import Demo from "@site/src/components/Demo"
+
 Since [v1.3.0](/blog/2019/08/15/draftail-v1-3-0-community-improvements-beyond-wagtail), the editor can now be used as a [controlled component](https://reactjs.org/docs/forms.html#controlled-components) with its [`editorState` and `onChange`](../reference/api.md#editorstate-and-onchange) props, like a vanilla Draft.js editor. For example, with the `useState` hook:
 
 ```js
@@ -30,7 +32,7 @@ The `editorState` prop must be set to a Draft.js [`EditorState`](../reference/co
 
 Here is a small example of this in action:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--controlled-component" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail controlled component demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--controlled-component" className="iframe iframe--docs-200" />
 
 ## Choosing between controlled and uncontrolled APIs
 

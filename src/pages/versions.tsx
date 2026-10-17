@@ -45,14 +45,14 @@ export default (): ReactNode => {
       title="Versions"
       description="Documentation and release notes for older versions of Draftail"
     >
-      <div className="container container--fluid margin-vert--lg">
+      <main className="container container--fluid margin-vert--lg">
         <div className="row">
           <div className="col col--8">
             <header className="postHeader">
-              <h2>{`${siteConfig.title} versions`}</h2>
+              <h1>{`${siteConfig.title} versions`}</h1>
             </header>
             <p>New versions of this project are released periodically.</p>
-            <h3 id="latest">Current version (stable)</h3>
+            <h2 id="latest">Current version (stable)</h2>
             <table className="versions">
               <tbody>
                 <tr>
@@ -71,14 +71,16 @@ export default (): ReactNode => {
               </tbody>
             </table>
             <p>This is the current stable version of the project.</p>
-            <h3 id="rc">Pre-release versions</h3>
+            <h2 id="rc">Pre-release versions</h2>
             <p>These are the latest changes that have yet to be released.</p>
             <table className="versions">
               <tbody>
                 <tr>
                   <th>main</th>
                   <td>
-                    <a href={`${baseUrl}docs/next/getting-started`}>
+                    <a
+                      href={`${baseUrl}docs/next/introduction/getting-started`}
+                    >
                       Documentation
                     </a>
                   </td>
@@ -89,7 +91,7 @@ export default (): ReactNode => {
               </tbody>
             </table>
             <div>
-              <h3 id="archive">Past versions</h3>
+              <h2 id="archive">Past versions</h2>
               <table className="versions">
                 <tbody>
                   {versions
@@ -119,7 +121,7 @@ export default (): ReactNode => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </Layout>
   )
 }

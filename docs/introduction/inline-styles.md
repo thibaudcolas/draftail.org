@@ -3,6 +3,8 @@ id: inline-styles
 title: Inline styles
 ---
 
+import Demo from "@site/src/components/Demo"
+
 Inline styles provide inline formatting for rich text. They can overlap: text can be both bold and italic.
 
 ## Built-in styles
@@ -60,4 +62,4 @@ All other props are optional, but styles need to have either a `label` or `icon`
 
 Those examples would render as:
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--inline-styles" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail inline styles demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--inline-styles" className="iframe iframe--docs-200" />

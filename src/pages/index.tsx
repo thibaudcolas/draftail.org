@@ -4,6 +4,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import Layout from "@theme/Layout"
 import clsx from "clsx"
 import type { ReactNode } from "react"
+import Demo from "../components/Demo"
 import styles from "./index.module.css"
 
 const FeatureCard = ({ image, title, children }): ReactNode => (
@@ -15,7 +16,7 @@ const FeatureCard = ({ image, title, children }): ReactNode => (
       width={128}
       height={128}
     />
-    <h3>{title}</h3>
+    <h2>{title}</h2>
     <p>{children}</p>
   </div>
 )
@@ -78,8 +79,7 @@ const Features = () => {
             >
               All of the editor's labels can easily be translated. Have a look
               at our{" "}
-              <Link to="/docs/api-reference/i18n">example with react-intl</Link>
-              .
+              <Link to="/docs/reference/i18n">example with react-intl</Link>.
             </FeatureCard>
           </div>
           <div className="col col--6 margin-bottom--lg">
@@ -89,7 +89,7 @@ const Features = () => {
             >
               Draftail's UI is very simple to customise, so it integrates
               perfectly within your app. Take a look at the{" "}
-              <Link to="/docs/api-reference/ui-theming">UI theming</Link> docs.
+              <Link to="/docs/reference/ui-theming">UI theming</Link> docs.
             </FeatureCard>
           </div>
         </div>
@@ -217,8 +217,9 @@ export default function Home() {
               <a href="https://embed.ly/">Embedly</a>.
             </p>
           </noscript>
-          <iframe
+          <Demo
             title="Draftail home demo"
+            loading="eager"
             src="https://demo.draftail.org/storybook/iframe.html?id=draftail--home"
             className="iframe iframe--home"
           />

@@ -3,6 +3,8 @@ id: arbitrary-controls
 title: Arbitrary controls
 ---
 
+import Demo from "@site/src/components/Demo"
+
 > Those extensions require a good understanding of the [Draft.js](../draft-js/quickstart/overview.md) API.
 
 Draftail also has an API to add arbitrary controls in the toolbar, via the [`controls`](../reference/api.md#controls-docs-arbitrary-controls) prop. This prop takes an array of objects, each which can have a `inline`, `block`, or `meta` key. This key maps to a React component which will be given a `getEditorState` function and the `onChange` handler as props.
@@ -29,4 +31,4 @@ Controls can be used for a wide range of use cases:
 - Generating metrics based on the whole content of the editor
 - Applying one-off transformations to the editor (e.g. inserting content from third-party data sources, clear formatting).
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--controls" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail controls demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--controls" className="iframe iframe--docs-200" />

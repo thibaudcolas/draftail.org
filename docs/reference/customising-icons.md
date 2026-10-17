@@ -3,6 +3,8 @@ id: customising-icons
 title: Customising icons
 ---
 
+import Demo from "@site/src/components/Demo"
+
 ## Icon formats
 
 A lot of the formatting options in Draftail rely on icons for toolbar buttons, allowing an `icon?: IconProp` attribute. There are multiple possible formats to this `IconProp`:
@@ -43,4 +45,4 @@ To customise the icons of BR, HR, and undo/redo buttons, use the `enableHorizont
 
 ## Example
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--icons" class="iframe iframe--docs-200"></iframe>
+<Demo title="Draftail icons demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--icons" className="iframe iframe--docs-200" />

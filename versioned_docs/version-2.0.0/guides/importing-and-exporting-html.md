@@ -3,6 +3,8 @@ id: importing-and-exporting-html
 title: Importing and exporting HTML
 ---
 
+import Demo from "@site/src/components/Demo"
+
 Like all Draft.js editors, Draftail does not process HTML directly: It uses its own content representation. [Content storage](../reference/content-storage.md) can be done with the Draft.js representation, but it is also possible to import and export HTML instead.
 
 ## Deciding how to store content
@@ -173,4 +175,4 @@ Again, most of the configuration work is with `convertToHTML`, but we also need 
 
 Here is a demo that initialises from HTML, and converts content to HTML on save (logged in the browser DevTools console).
 
-<iframe src="https://demo.draftail.org/storybook/iframe.html?id=docs--html-conversion" class="iframe iframe--docs-400"></iframe>
+<Demo title="Draftail html conversion demo" src="https://demo.draftail.org/storybook/iframe.html?id=docs--html-conversion" className="iframe iframe--docs-400" />

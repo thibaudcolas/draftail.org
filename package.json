@@ -39,6 +39,7 @@
     "@docusaurus/module-type-aliases": "3.10.2",
     "@docusaurus/tsconfig": "3.10.2",
     "@docusaurus/types": "3.10.2",
+    "@playwright/test": "1.64.1",
     "docusaurus-plugin-llms": "^0.6.1",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
@@ -48,7 +49,7 @@
   "scripts": {
     "start": "docusaurus start",
     "build": "docusaurus build",
-    "version": "docusaurus-version",
+    "version": "docusaurus docs:version",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
@@ -56,6 +57,7 @@
     "lint": "biome check && prettier --check '**/*.{md,yaml,yml,html}' && tsc --noEmit",
     "format": "biome format --write && prettier --write '**/*.{md,yaml,yml,html}'",
     "check-links": "lychee --no-progress --hidden .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test:smoke": "playwright test --tsconfig tests/tsconfig.json"
   }
 }
