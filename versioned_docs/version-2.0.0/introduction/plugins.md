@@ -1,6 +1,7 @@
 ---
 id: plugins
 title: Plugins
+description: Extend Draftail with Draft.js Plugins to customise blocks, input handling, keyboard shortcuts, and copy-paste, on par with a bespoke Draft.js editor.
 ---
 
 import Demo from "@site/src/components/Demo"

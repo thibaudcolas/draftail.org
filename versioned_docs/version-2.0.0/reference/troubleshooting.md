@@ -1,6 +1,7 @@
 ---
 id: troubleshooting
 title: Troubleshooting
+description: Expected Draftail editor behaviour, known issues inherited from Draft.js and contenteditable, and how to work around the most common problems.
 ---
 
 ## Expected editor behavior

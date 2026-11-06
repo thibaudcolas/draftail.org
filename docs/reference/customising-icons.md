@@ -1,6 +1,7 @@
 ---
 id: customising-icons
 title: Customising icons
+description: Set custom icons for Draftail toolbar buttons and controls, using SVG path data, path arrays, symbol references, or your own React components.
 ---
 
 import Demo from "@site/src/components/Demo"

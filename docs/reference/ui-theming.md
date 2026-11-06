@@ -1,6 +1,7 @@
 ---
 id: ui-theming
 title: UI theming
+description: Theme the Draftail editor UI using its stable, namespaced Draftail- CSS class names, or replace the default editor styles with your own.
 ---
 
 import Demo from "@site/src/components/Demo"

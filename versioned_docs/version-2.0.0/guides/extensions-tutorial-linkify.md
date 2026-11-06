@@ -1,6 +1,7 @@
 ---
 id: extensions-tutorial-linkify
 title: "Extensions tutorial: linkify"
+description: Build a Draftail extension that turns pasted URLs into links, using the handlePastedText hook from the Draft.js Plugins architecture.
 ---
 
 import Demo from "@site/src/components/Demo"

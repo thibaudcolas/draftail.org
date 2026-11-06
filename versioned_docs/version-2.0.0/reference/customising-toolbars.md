@@ -1,6 +1,7 @@
 ---
 id: customising-toolbars
 title: Customising toolbars
+description: Override and customise the Draftail toolbars – the static top and bottom toolbars, the floating inline toolbar, and the command palette.
 ---
 
 import Demo from "@site/src/components/Demo"

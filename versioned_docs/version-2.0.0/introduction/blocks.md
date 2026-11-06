@@ -1,6 +1,7 @@
 ---
 id: blocks
 title: Blocks
+description: Configure the block types available in Draftail, from built-in headings, lists, and quotes to fully custom block types with your own API.
 ---
 
 import Demo from "@site/src/components/Demo"

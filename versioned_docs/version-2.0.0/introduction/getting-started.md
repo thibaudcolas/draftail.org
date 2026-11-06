@@ -1,6 +1,7 @@
 ---
 id: getting-started
 title: Getting started
+description: Install Draftail and React, import the editor styles, and render your first rich text editor with a minimal Draft.js ContentState.
 ---
 
 import Demo from "@site/src/components/Demo"

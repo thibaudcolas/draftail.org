@@ -1,6 +1,7 @@
 ---
 id: content-storage
 title: Content storage
+description: How Draftail stores rich text using the Draft.js ContentState representation, the raw ContentState format, and converting content to HTML.
 ---
 
 Like all Draft.js editors, Draftail does not process content directly as HTML but as a more structured format called [ContentState](../draft-js/api-reference/ContentState.md).

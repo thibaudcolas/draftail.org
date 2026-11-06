@@ -1,6 +1,7 @@
 ---
 id: keyboard-shortcuts
 title: Keyboard shortcuts
+description: All the keyboard shortcuts supported by the Draftail editor, for common actions, inline styles, blocks, and Markdown-style formatting.
 ---
 
 Here are all of the keyboard shortcuts supported by the editor. Please bear in mind shortcuts may not be available if the corresponding action isn't enabled in the current editor.

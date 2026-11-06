@@ -1,0 +1,5 @@
+# robots.txt for www.draftail.org
+User-agent: *
+Allow: /
+
+Sitemap: https://www.draftail.org/sitemap.xml

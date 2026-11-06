@@ -6,7 +6,8 @@ import { themes as prismThemes } from "prism-react-renderer"
 
 const config: Config = {
   title: "Draftail",
-  tagline: "📝🍸 A configurable rich text editor built with Draft.js",
+  tagline:
+    "📝🍸 A configurable rich text editor for React, built with Draft.js",
   url: "https://www.draftail.org/",
   baseUrl: "/",
   organizationName: "thibaudcolas",
@@ -29,10 +30,26 @@ const config: Config = {
             `https://github.com/thibaudcolas/draftail.org/edit/main/${versionDocsDirPath}/${docPath}`,
           path: "docs",
           sidebarPath: "./sidebars.ts",
+          versions: {
+            // The draft of the next unreleased version is not a canonical
+            // destination, and the six legacy versions duplicate the current
+            // documentation. Keep them reachable, but out of the index, so
+            // search engines consolidate ranking signals on one copy per page.
+            current: { noIndex: true },
+            "1.4.0": { noIndex: true },
+            "1.3.0": { noIndex: true },
+            "1.2.1": { noIndex: true },
+            "1.2.0": { noIndex: true },
+            "1.1.0": { noIndex: true },
+            "1.0.0": { noIndex: true },
+          },
         },
         blog: {
           path: "blog",
           showReadingTime: true,
+          blogTitle: "Draftail blog",
+          blogDescription:
+            "Release notes, changelogs, and articles about Draftail, the rich text editor for React built on Draft.js, and Wagtail CMS.",
           feedOptions: {
             type: ["rss", "atom"],
             xslt: true,
@@ -46,6 +63,21 @@ const config: Config = {
         },
         theme: {
           customCss: ["./src/css/custom.css"],
+        },
+        sitemap: {
+          lastmod: "date",
+          changefreq: null,
+          priority: null,
+          // Only the released documentation and top-level pages belong in the
+          // sitemap. Legacy/unreleased docs, search, and error pages do not.
+          ignorePatterns: [
+            "/docs/next/**",
+            "/docs/1.*/**",
+            "/search",
+            "/404",
+            "/blog/archive",
+            "/blog/authors",
+          ],
         },
       } satisfies Preset.Options,
     ],
@@ -64,7 +96,7 @@ const config: Config = {
         removeDuplicateHeadings: true,
         title: "Draftail and Draft.js documentation",
         description:
-          "Complete documentation for Draftail, a configurable rich text editor built with Draft.js. Also includes the Draft.js documentation directly combined into the Draftail documentation.",
+          "Complete documentation for Draftail, a configurable rich text editor built with Draft.js. Also includes the Draft.js documentation directly combined into the Draftail documentation. This content tracks the Draftail main branch (next / pre-release). For the latest released version, see https://www.draftail.org/docs/reference/api.",
         includeOrder: [
           "docs/introduction/getting-started.md",
           "docs/reference/api.md",
@@ -138,13 +170,23 @@ const config: Config = {
           label: "API",
           position: "right",
         },
+        {
+          to: "examples",
+          label: "Examples",
+          position: "right",
+        },
         { to: "blog", label: "Blog", position: "right" },
+        {
+          to: "about",
+          label: "About",
+          position: "right",
+        },
         {
           type: "docsVersionDropdown",
           position: "right",
         },
         {
-          href: "https://github.com/springload/draftail",
+          href: "https://github.com/wagtail/draftail",
           label: "GitHub",
           position: "right",
         },
@@ -209,7 +251,7 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/springload/draftail",
+              href: "https://github.com/wagtail/draftail",
             },
             {
               label: "Author",

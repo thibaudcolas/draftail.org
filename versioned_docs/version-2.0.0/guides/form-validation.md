@@ -1,6 +1,7 @@
 ---
 id: form-validation
 title: Form validation
+description: Validate Draftail content with onSave or onChange, mark fields as touched with onFocus and onBlur, and check "required" or rich text metrics.
 ---
 
 import Demo from "@site/src/components/Demo"

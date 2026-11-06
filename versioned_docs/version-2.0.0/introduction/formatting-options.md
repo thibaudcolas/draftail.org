@@ -1,6 +1,7 @@
 ---
 id: formatting-options
 title: Formatting options
+description: Draftail distinguishes between inline styles, blocks, and entities. Learn how the three content formats relate and which built-in formats ship by default.
 ---
 
 import Demo from "@site/src/components/Demo"

@@ -1,6 +1,7 @@
 ---
 id: markdown-support
 title: Markdown support
+description: Format content faster in Draftail with Markdown markup shortcuts for headings, bold, italic, lists, quotes, code blocks, and more.
 ---
 
 Draftail supports formatting content with [Markdown](https://en.wikipedia.org/wiki/Markdown) markup. If you’ve never heard of Markdown this might sound like too much, but in reality it’s really simple, and makes for a much faster content editing experience, with less strange keyboard shortcuts to remember.

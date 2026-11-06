@@ -1,6 +1,7 @@
 ---
 id: user-guide
 title: User guide
+description: A guide to using the Draftail rich text editor, covering its keyboard-centric editing experience and the formatting options that can be enabled.
 ---
 
 Draftail is an editor built for sites and apps of all shapes and sizes. It aims for a mouse-free, keyboard-centric experience. Most formatting can be done by using common keyboard shortcuts, inspired by [Google Docs](https://support.google.com/docs/answer/179738) and [Markdown](https://en.wikipedia.org/wiki/Markdown).

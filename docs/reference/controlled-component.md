@@ -1,6 +1,7 @@
 ---
 id: controlled-component
 title: Controlled component
+description: Use Draftail as a controlled component with the editorState and onChange props, like a vanilla Draft.js editor, and manage content from React state.
 ---
 
 import Demo from "@site/src/components/Demo"

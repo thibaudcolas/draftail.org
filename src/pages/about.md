@@ -11,7 +11,13 @@ Draftail came about in 2016, as our team grew more and more frustrated with [Wa
 
 Building a WYSIWYG editor from scratch is (almost) never a good idea, so we quickly settled on [Draft.js](/docs/draft-js/quickstart/overview) as a solid WYSIWYG editor framework to build upon. Draft.js + Wagtail – [Draftail was born](/blog/2018/03/05/why-wagtail-new-editor-is-built-with-draft-js) 🎉 .
 
-A few years later, Draftail is now very capable for many use cases, and it comes with a nice little [fantail](https://en.wikipedia.org/wiki/Fantail) logo.
+A few years later, Draftail is now very capable for many use cases, and it comes with a nice little [fantail](https://en.wikipedia.org/wiki/Fantail) logo.
+
+:::note
+
+Draft.js, the framework Draftail is built on, was [archived by Meta in 2023](https://github.com/facebookarchive/draft-js). It is no longer actively developed upstream, though it remains stable and widely used. Draftail itself continues to be maintained as part of [Wagtail](https://wagtail.org/); its development is tracked in the [Draftail milestones](https://github.com/wagtail/draftail/milestones).
+
+:::
 
 ## Ambitions
 

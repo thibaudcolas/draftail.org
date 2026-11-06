@@ -1,3 +1,4 @@
+import Head from "@docusaurus/Head"
 import Link from "@docusaurus/Link"
 import useBaseUrl from "@docusaurus/useBaseUrl"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
@@ -15,6 +16,7 @@ const FeatureCard = ({ image, title, children }): ReactNode => (
       className={styles.featureImage}
       width={128}
       height={128}
+      loading="lazy"
     />
     <h2>{title}</h2>
     <p>{children}</p>
@@ -124,7 +126,13 @@ const Showcase = () => {
         <div className={styles.logos}>
           {users.map((user) => (
             <a className={styles.userLink} href={user.href} key={user.href}>
-              <img src={`/img/users/${user.image}`} alt="" width={150} />
+              <img
+                src={`/img/users/${user.image}`}
+                alt=""
+                width={150}
+                height={150}
+                loading="lazy"
+              />
               <span>{user.caption}</span>
             </a>
           ))}
@@ -137,11 +145,66 @@ const Showcase = () => {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext()
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${siteConfig.url}#website`,
+        url: siteConfig.url,
+        name: siteConfig.title,
+        description: siteConfig.tagline,
+        publisher: { "@id": `${siteConfig.url}#organization` },
+        potentialAction: {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate:
+              "https://www.draftail.org/search?q={search_term_string}",
+          },
+          "query-input": "required name=search_term_string",
+        },
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": `${siteConfig.url}#software`,
+        name: "Draftail",
+        description:
+          "A configurable, accessible rich text editor for React built on Draft.js.",
+        codeRepository: "https://github.com/wagtail/draftail",
+        programmingLanguage: "TypeScript",
+        runtimePlatform: "React",
+        license: "https://opensource.org/licenses/MIT",
+        version: "2.0.0",
+        url: siteConfig.url,
+        image: "https://www.draftail.org/img/draftail-ui-screenshot.png",
+        author: { "@id": `${siteConfig.url}#organization` },
+      },
+      {
+        "@type": "Organization",
+        "@id": `${siteConfig.url}#organization`,
+        name: "Draftail",
+        url: siteConfig.url,
+        logo: "https://www.draftail.org/img/logo.svg",
+        sameAs: [
+          "https://github.com/wagtail/draftail",
+          "https://www.npmjs.com/package/draftail",
+          "https://wagtail.org/",
+        ],
+      },
+    ],
+  }
+
   return (
     <Layout
-      title={siteConfig.title}
-      description="Keyboard shortcuts, Markdown, and powerful Draft.js & React customisations"
+      title="Rich text editor for React"
+      description="Draftail is a configurable, accessible rich text editor for React built on Draft.js. Keyboard shortcuts, Markdown, paste-from-Word, i18n, and the default editor of Wagtail CMS."
     >
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Head>
       <header className={clsx("hero", styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -232,7 +295,10 @@ export default function Home() {
             <div className="col col--6">
               <img
                 src={useBaseUrl("img/wagtail-page-edit-screenshot.png")}
-                alt=""
+                alt="Draftail in use editing a page in the Wagtail admin interface"
+                width={2880}
+                height={1619}
+                loading="lazy"
                 className={styles.wagtailImage}
               />
             </div>
@@ -244,6 +310,28 @@ export default function Home() {
                 management system used by{" "}
                 <a href="https://madewithwagtail.org/">
                   hundreds of organisations
+                </a>
+                .
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="container padding-vert--xl">
+          <div className="row">
+            <div className="col col--8">
+              <h2 id="draft-js">Draft.js is archived</h2>
+              <p>
+                Draft.js, the framework Draftail is built on, was{" "}
+                <a href="https://github.com/facebookarchive/draft-js">
+                  archived by Meta in 2023
+                </a>
+                . It is no longer actively developed upstream, though it remains
+                stable and widely used. Draftail continues to be maintained as
+                the editor behind Wagtail CMS; its own development is tracked in
+                the{" "}
+                <a href="https://github.com/wagtail/draftail/milestones">
+                  Draftail milestones
                 </a>
                 .
               </p>
@@ -276,6 +364,7 @@ export default function Home() {
                       alt="Introducing Draft.js in Wagtail – Wagtail Space 2018"
                       width="560"
                       height="315"
+                      loading="lazy"
                     />
                   </a>
                 </div>

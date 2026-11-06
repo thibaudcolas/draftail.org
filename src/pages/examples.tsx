@@ -24,7 +24,7 @@ export default (): ReactNode => (
               styles, blocks, entities, and other extensions (reading time).
             </p>
             <p>
-              <a href="https://github.com/springload/draftail/blob/main/examples/examples.story.tsx">
+              <a href="https://github.com/wagtail/draftail/blob/main/examples/examples.story.tsx">
                 Source: examples.story.tsx
               </a>
             </p>
@@ -45,7 +45,7 @@ export default (): ReactNode => (
               choosers/pickers and tooltips.
             </p>
             <p>
-              <a href="https://github.com/springload/draftail/blob/main/examples/examples.story.tsx">
+              <a href="https://github.com/wagtail/draftail/blob/main/examples/examples.story.tsx">
                 Source: examples.story.tsx
               </a>
             </p>

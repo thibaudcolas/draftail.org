@@ -1,6 +1,7 @@
 ---
 id: decorators
 title: Decorators
+description: Use Draft.js decorators in Draftail to render inline content like hashtags and mentions, configured through the decorators prop.
 ---
 
 import Demo from "@site/src/components/Demo"

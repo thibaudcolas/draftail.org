@@ -1,6 +1,7 @@
 ---
 id: browser-support
 title: Browser support and polyfills
+description: The browsers and devices Draftail supports, the polyfills required for older browsers, and how the editor handles cross-browser rich text editing.
 ---
 
 **Supported browser / device versions:**

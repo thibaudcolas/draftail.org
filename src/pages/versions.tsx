@@ -4,7 +4,7 @@ import Layout from "@theme/Layout"
 import type { ReactNode } from "react"
 import versions from "../../versions.json"
 
-const repoURL = "https://github.com/springload/draftail"
+const repoURL = "https://github.com/wagtail/draftail"
 
 const undocumentedVersions = [
   "0.17.2",

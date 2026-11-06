@@ -1,9 +1,16 @@
 ---
 id: draftjs-vs-draftail
 title: Draft.js vs Draftail
+description: How Draftail differs from plain Draft.js, which high-level APIs it adds, and when to choose one over the other for a React rich text editor.
 ---
 
 Do you already have some knowledge of Draft.js, and wonder how Draftail differs? Are you wondering which of the two is appropriate for your project? This reference is for you.
+
+:::note
+
+Draft.js was [archived by Meta in 2023](https://github.com/facebookarchive/draft-js), and is no longer actively developed upstream. It remains stable and widely used, and Draftail continues to be maintained on top of it. If you are starting a new project, this comparison still applies – Draftail adds the high-level editor APIs that plain Draft.js leaves up to you.
+
+:::
 
 ## TL;DR;
 

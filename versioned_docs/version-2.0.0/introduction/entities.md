@@ -1,6 +1,7 @@
 ---
 id: entities
 title: Entities
+description: Annotate Draftail content with entities representing links, images, and custom rich content, both inline and block-level, with your own React UI.
 ---
 
 import Demo from "@site/src/components/Demo"

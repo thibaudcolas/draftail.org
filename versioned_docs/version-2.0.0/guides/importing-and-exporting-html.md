@@ -1,6 +1,7 @@
 ---
 id: importing-and-exporting-html
 title: Importing and exporting HTML
+description: Convert Draftail content between the Draft.js ContentState representation and HTML, and decide which format to store in your database.
 ---
 
 import Demo from "@site/src/components/Demo"

@@ -1,6 +1,7 @@
 ---
 id: getting-started-with-extensions
 title: Getting started with extensions
+description: Why rich text extensions are hard, what you need to know before writing one for Draftail, and how to proceed with the Draft.js APIs available.
 ---
 
 Do you want to write extensions for Draftail? This is a good place to start. I’ll first try to discourage you from doing it (rich text is messy and unforgiving), then tell what you need to know, and how to proceed.

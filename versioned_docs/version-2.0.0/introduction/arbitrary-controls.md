@@ -1,6 +1,7 @@
 ---
 id: arbitrary-controls
 title: Arbitrary controls
+description: Add custom controls to the Draftail toolbar with the controls prop, for inline, block, or meta toolbars, backed by your own React components.
 ---
 
 import Demo from "@site/src/components/Demo"

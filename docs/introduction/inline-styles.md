@@ -1,6 +1,7 @@
 ---
 id: inline-styles
 title: Inline styles
+description: Configure inline styles in Draftail, from built-in bold and italic to custom styles with their own toolbar button, shortcut, and Markdown support.
 ---
 
 import Demo from "@site/src/components/Demo"

@@ -1,6 +1,7 @@
 ---
 id: api
 title: API reference
+description: The full Draftail API reference. Props, types, and helper methods for configuring the React rich text editor, with TypeScript definitions included.
 ---
 
 For projects using TypeScript, Draftail includes type definitions.
