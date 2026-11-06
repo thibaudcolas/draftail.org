@@ -11,8 +11,8 @@ exclude = [
   '^https://www\.patreon\.com/thibaud_colas/?$',
   # Saleor announcement in the August 2019 blog post.
   '^https://medium\.com/saleor/february-release-of-saleor-three-new-dashboard-2-0-sections-6d775479882e/?$',
-  # Pre-release history in the December 2024 blog post.
-  '^https://www\.npmjs\.com/package/draftail\?activeTab=versions$',
+  # npm blocks automated checks (403) on package and search pages alike.
+  '^https?://(www\.)?npmjs\.com/.*',
   # Campaign linked from docs/guides/getting-started-with-extensions.md.
   '^https://www\.kickstarter\.com/projects/noripyt/wagtails-first-hatch/?$',
   # Internal site routes (/docs, /blog, etc.) – resolved against static/ by root-dir,
